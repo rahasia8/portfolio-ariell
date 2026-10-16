@@ -1,0 +1,86 @@
+{
+  "person": "İŞİN ARKASINDAKİ KİŞİ",
+  "profile": "Yazılım mühendisi olarak yolculuğumu tanıyın. Yapay zekâ destekli etkileşimli sohbetlerle projelerimi, deneyimlerimi ve çalışmalarımın arkasındaki teknik kararları keşfedin.",
+  "explore": "SOHBET YOLUYLA KEŞFET",
+  "nav": ["Deneyim", "Projeler", "Yetenekler ve araçlar", "İletişim"],
+  "navQuestions": [
+    "Deneyimlerinden bahseder misin?",
+    "Projelerinden bahseder misin?",
+    "Yeteneklerin ve araçların hakkında bilgi verir misin?",
+    "Ariell ile nasıl iletişime geçebilirim? E-posta ve LinkedIn profilini paylaş."
+  ],
+  "grounded": "Gerçek çalışmalara dayalı.",
+  "sourceNote": "Cevaplar yayınlanmış portföy kaynaklarından alınmıştır.",
+  "privacyButton": "Gizlilik ve nasıl çalışır ↗",
+  "newChat": "Yeni sohbet",
+  "conversation": "Portföy sohbeti",
+  "introTag": "BENİ TANIMANIN FARKLI BİR YOLU",
+  "heading": "İyi iş şununla başlar:",
+  "headingLead": "iyi bir ",
+  "headingEm": "sohbet.",
+  "intro": "Deneyimlerim hakkında soru sorun, bir projeyi inceleyin veya bir zorluğa nasıl yaklaştığımı görün. Aşağıdan bir başlangıç noktası seçin.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Büyük resim",
+      "question": "Profesyonel geçmişinden bahseder misin?",
+      "detail": "Deneyim ve mühendislik odağı"
+    },
+    {
+      "icon": "02",
+      "title": "Perde arkası",
+      "question": "Hangi projeler mühendislik becerilerini en iyi şekilde gösteriyor?",
+      "detail": "Projeler ve teknik kararlar"
+    },
+    {
+      "icon": "03",
+      "title": "Olası bir uyum",
+      "question": "Backend mühendisliği rolü için hangi deneyimler ilgili?",
+      "detail": "Yetenekler ve rol uyumu"
+    }
+  ],
+  "ready": "Genel bilgi tabanı bağlandı",
+  "preparing": "Portföy içeriği hazırlanıyor. Yine de sohbeti deneyebilirsiniz.",
+  "messages": "Mesajlar",
+  "you": "SEN",
+  "assistant": "PORTFÖY ASİSTANI",
+  "sources": "KAYNAKLAR",
+  "thinking": "Genel kaynaklar taranıyor…",
+  "inputLabel": "Deneyim, projeler veya yetenekler hakkında soru sorun",
+  "placeholder": "Ne öğrenmek istersiniz?",
+  "send": "Soruyu gönder",
+  "honesty": "Kaynak destekli cevaplar. Eksik olanlar konusunda dürüst.",
+  "enter": "göndermek için ↵",
+  "footer": "MERAK ÜZERİNE İNŞA EDİLDİ.",
+  "footerDetail": "İnsan deneyimi. Yapay zeka arayüzü.",
+  "close": "Gizlilik bilgilerini kapat",
+  "transparent": "BİRAZ ŞEFFAFLIK",
+  "privacyTitle": "Sohbetiniz, açıklandı.",
+  "privacy": [
+    "Sorular ve son sohbet bağlamı, genel portföy belgelerini kullanarak cevap vermek üzere yapılandırılmış yapay zeka sağlayıcısına (varsayılan olarak Gemini) gönderilir. Sağlayıcı bu verileri kendi şartları altında işler.",
+    "Bu uygulama, sohbet geçmişini bu sekme için tarayıcınızın oturum depolama alanında tutar. Yeni sohbet bu geçmişi temizler. Veritabanında veya uygulama günlüklerinde sohbet metnini saklamaz.",
+    "Operasyonel günlükler; istek kimliklerini, zamanlamaları, token sayılarını ve yedek durumunu içerir. Karma ağ tanımlayıcıları, hız sınırlaması için geçici olarak kullanılır. Lütfen hassas kişisel bilgileri paylaşmayın.",
+    "Kaynaklar mevcut olduğunda gösterilir. Yapay zeka cevapları yine de hatalar içerebilir; önemli detayları kaynaklarından doğrulayın.",
+    "Otomatik dil, barındırma ülkesi sinyalini kullanır. Kullanılamıyorsa, tarayıcınız ipapi.co'dan bir ülke kodu ister ve bu servis IP adresinizi alır. Manuel seçiminiz bu tarayıcıda kaydedilir. Arayüz metni Gemini tarafından çevrilebilir; konumunuz Gemini'ye gönderilmez."
+  ],
+  "language": "Dil",
+  "auto": "Otomatik",
+  "sendError": "Sorunuz gönderilemedi. Lütfen tekrar deneyin.",
+  "timeout": "İstek zaman aşımına uğradı. Lütfen tekrar deneyin.",
+  "rateError": "Çok fazla soru sordunuz. Lütfen bir dakika içinde tekrar deneyin.",
+  "unavailable": "Asistan geçici olarak kullanılamıyor. Lütfen kısa süre sonra tekrar deneyin.",
+  "fallback": "Bu bilgi, portföyün genel bilgi tabanında henüz mevcut değil. Başka bir soru deneyin veya sahibi bilgilerini ekledikten sonra tekrar kontrol edin.",
+  "translationError": "Arayüz çevirisi kullanılamıyor. Şimdilik İngilizce gösteriliyor.",
+  "detecting": "Dil algılanıyor…",
+  "locationUnavailable": "Ülke algılama kullanılamıyor. Tarayıcı diliniz kullanılıyor; yukarıdan başka bir dil seçebilirsiniz.",
+  "retryLanguage": "Tekrar dene",
+  "accessibility": {
+    "skipChat": "Sohbete geç",
+    "skipInput": "Soru alanına geç",
+    "opensNewTab": "yeni sekmede açılır",
+    "inputHelp": "Göndermek için Enter; yeni satır için Shift+Enter.",
+    "remaining": "Kalan karakter: {count}",
+    "cleared": "Sohbet temizlendi.",
+    "home": "Portfolyo ana sayfası"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.netlify/
+.env*
+!.env.example
+coverage/
+*.tsbuildinfo
+.DS_Store
+
+playwright-report/
+test-results/
+!.env.test.example

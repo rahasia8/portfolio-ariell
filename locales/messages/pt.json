@@ -1,0 +1,86 @@
+{
+  "person": "A PESSOA POR TRÁS DO TRABALHO",
+  "profile": "Conheça minha trajetória como engenheiro de software. Explore meus projetos, minha experiência e as decisões técnicas por trás do meu trabalho por meio de conversas interativas com IA.",
+  "explore": "EXPLORE ATRAVÉS DE CONVERSA",
+  "nav": ["Experiência", "Projetos", "Habilidades e ferramentas", "Contato"],
+  "navQuestions": [
+    "Fale-me sobre sua experiência.",
+    "Fale-me sobre seus projetos.",
+    "Fale-me sobre suas habilidades e ferramentas.",
+    "Como posso entrar em contato com Ariell? Compartilhe seu e-mail e perfil do LinkedIn."
+  ],
+  "grounded": "Baseado em trabalho real.",
+  "sourceNote": "As respostas são extraídas de fontes publicadas no portfólio.",
+  "privacyButton": "Privacidade e como isso funciona ↗",
+  "newChat": "Nova conversa",
+  "conversation": "Conversa sobre o portfólio",
+  "introTag": "UMA MANEIRA DIFERENTE DE ME CONHECER",
+  "heading": "Um bom trabalho começa com",
+  "headingLead": "uma boa ",
+  "headingEm": "conversa.",
+  "intro": "Pergunte sobre minha experiência, explore um projeto ou veja como abordo um desafio. Escolha um ponto de partida abaixo.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "O panorama geral",
+      "question": "Fale-me sobre sua trajetória profissional.",
+      "detail": "Experiência e foco em engenharia"
+    },
+    {
+      "icon": "02",
+      "title": "Por trás das câmeras",
+      "question": "Quais projetos demonstram melhor suas habilidades de engenharia?",
+      "detail": "Projetos e decisões técnicas"
+    },
+    {
+      "icon": "03",
+      "title": "Uma possível compatibilidade",
+      "question": "Qual experiência é relevante para uma função de engenharia backend?",
+      "detail": "Habilidades e alinhamento com a função"
+    }
+  ],
+  "ready": "Base de conhecimento pública conectada",
+  "preparing": "O conteúdo do portfólio está sendo preparado. Você ainda pode tentar a conversa.",
+  "messages": "Mensagens",
+  "you": "VOCÊ",
+  "assistant": "ASSISTENTE DE PORTFÓLIO",
+  "sources": "FONTES",
+  "thinking": "Pesquisando nas fontes públicas…",
+  "inputLabel": "Pergunte sobre experiência, projetos ou habilidades",
+  "placeholder": "O que você gostaria de saber?",
+  "send": "Enviar pergunta",
+  "honesty": "Respostas baseadas em fontes. Honestidade sobre o que está faltando.",
+  "enter": "↵ para enviar",
+  "footer": "CONSTRUÍDO EM TORNO DA CURIOSIDADE.",
+  "footerDetail": "Experiência humana. Interface de IA.",
+  "close": "Fechar informações de privacidade",
+  "transparent": "UM POUCO DE TRANSPARÊNCIA",
+  "privacyTitle": "Sua conversa, explicada.",
+  "privacy": [
+    "Perguntas e o contexto recente da conversa são enviados ao provedor de IA configurado (Gemini por padrão) para responder usando documentos públicos do portfólio. O provedor processa esses dados sob seus próprios termos.",
+    "Este aplicativo mantém o histórico de chat no armazenamento de sessão do seu navegador para esta aba. Uma nova conversa limpa esse histórico. Ele não armazena o texto da conversa no banco de dados ou nos logs do aplicativo.",
+    "Os logs operacionais contêm IDs de solicitação, tempos, contagens de tokens e status de fallback. Identificadores de rede com hash são usados temporariamente para limitação de taxa. Por favor, não compartilhe informações pessoais sensíveis.",
+    "As fontes são exibidas quando disponíveis. As respostas da IA ainda podem cometer erros; verifique detalhes importantes em suas fontes.",
+    "O idioma automático usa o sinal do país de hospedagem. Se indisponível, seu navegador solicita um código de país do ipapi.co, que recebe seu endereço IP. Sua escolha manual é salva neste navegador. O texto da interface pode ser traduzido pelo Gemini; sua localização não é enviada ao Gemini."
+  ],
+  "language": "Idioma",
+  "auto": "Automático",
+  "sendError": "Não foi possível enviar sua pergunta. Por favor, tente novamente.",
+  "timeout": "A solicitação expirou. Por favor, tente novamente.",
+  "rateError": "Muitas perguntas. Por favor, tente novamente em um minuto.",
+  "unavailable": "O assistente está temporariamente indisponível. Por favor, tente novamente em breve.",
+  "fallback": "Essa informação ainda não está disponível na base de conhecimento pública deste portfólio. Tente outra pergunta ou verifique novamente após o proprietário adicionar suas informações.",
+  "translationError": "A tradução da interface está indisponível. Exibindo em inglês por enquanto.",
+  "detecting": "Detectando idioma…",
+  "locationUnavailable": "A detecção de país está indisponível. Usando o idioma do seu navegador; você pode escolher outro idioma acima.",
+  "retryLanguage": "Tentar novamente",
+  "accessibility": {
+    "skipChat": "Ir para a conversa",
+    "skipInput": "Ir para o campo de pergunta",
+    "opensNewTab": "abre em uma nova aba",
+    "inputHelp": "Enter para enviar; Shift+Enter para uma nova linha.",
+    "remaining": "{count} caracteres restantes",
+    "cleared": "Conversa apagada.",
+    "home": "Página inicial do portfólio"
+  }
+}

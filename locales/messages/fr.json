@@ -1,0 +1,86 @@
+{
+  "person": "LA PERSONNE DERRIÈRE LE TRAVAIL",
+  "profile": "Découvrez mon parcours d’ingénieur logiciel. Explorez mes projets, mon expérience et les choix techniques derrière mon travail à travers des échanges interactifs avec l’IA.",
+  "explore": "EXPLORER PAR LA CONVERSATION",
+  "nav": ["Expérience", "Projets", "Compétences et outils", "Contact"],
+  "navQuestions": [
+    "Parle-moi de ton expérience.",
+    "Parle-moi de tes projets.",
+    "Parle-moi de tes compétences et outils.",
+    "Comment puis-je contacter Ariell ? Partage son e-mail et son profil LinkedIn."
+  ],
+  "grounded": "Ancré dans un travail réel.",
+  "sourceNote": "Les réponses proviennent de sources de portfolio publiées.",
+  "privacyButton": "Confidentialité et fonctionnement ↗",
+  "newChat": "Nouvelle conversation",
+  "conversation": "Conversation sur le portfolio",
+  "introTag": "UNE AUTRE FAÇON D'APPRENDRE À ME CONNAÎTRE",
+  "heading": "Le bon travail commence par",
+  "headingLead": "une bonne ",
+  "headingEm": "conversation.",
+  "intro": "Posez des questions sur mon expérience, explorez un projet ou découvrez comment j'aborde un défi. Choisissez un point de départ ci-dessous.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "La vue d'ensemble",
+      "question": "Parle-moi de ton parcours professionnel.",
+      "detail": "Expérience et focus ingénierie"
+    },
+    {
+      "icon": "02",
+      "title": "Sous le capot",
+      "question": "Quels projets démontrent le mieux tes compétences en ingénierie ?",
+      "detail": "Projets et décisions techniques"
+    },
+    {
+      "icon": "03",
+      "title": "Une adéquation possible",
+      "question": "Quelle expérience est pertinente pour un rôle d'ingénieur backend ?",
+      "detail": "Compétences et adéquation au rôle"
+    }
+  ],
+  "ready": "Base de connaissances publique connectée",
+  "preparing": "Le contenu du portfolio est en cours de préparation. Vous pouvez tout de même essayer la conversation.",
+  "messages": "Messages",
+  "you": "VOUS",
+  "assistant": "ASSISTANT PORTFOLIO",
+  "sources": "SOURCES",
+  "thinking": "Recherche dans les sources publiques…",
+  "inputLabel": "Posez une question sur l'expérience, les projets ou les compétences",
+  "placeholder": "Que souhaitez-vous savoir ?",
+  "send": "Envoyer la question",
+  "honesty": "Réponses basées sur des sources. Honnête sur ce qui manque.",
+  "enter": "↵ pour envoyer",
+  "footer": "CONSTRUIT AUTOUR DE LA CURIOSITÉ.",
+  "footerDetail": "Expérience humaine. Interface IA.",
+  "close": "Fermer les informations de confidentialité",
+  "transparent": "UN PEU DE TRANSPARENCE",
+  "privacyTitle": "Votre conversation, expliquée.",
+  "privacy": [
+    "Les questions et le contexte récent de la conversation sont envoyés au fournisseur d'IA configuré (Gemini par défaut) pour répondre en utilisant les documents publics du portfolio. Le fournisseur traite ces données selon ses propres conditions.",
+    "Cette application conserve l'historique des discussions dans le stockage de session de votre navigateur pour cet onglet. Une nouvelle conversation efface cet historique. Elle ne stocke pas le texte de la conversation dans la base de données ou les journaux de l'application.",
+    "Les journaux opérationnels contiennent les identifiants de requête, les timings, le nombre de jetons et le statut de repli. Des identifiants réseau hachés sont utilisés temporairement pour limiter le débit. Veuillez ne pas partager d'informations personnelles sensibles.",
+    "Les sources sont affichées lorsqu'elles sont disponibles. Les réponses de l'IA peuvent toujours contenir des erreurs ; vérifiez les détails importants par rapport à leurs sources.",
+    "La langue automatique utilise le signal du pays d'hébergement. Si indisponible, votre navigateur demande un code pays à ipapi.co, qui reçoit votre adresse IP. Votre choix manuel est enregistré dans ce navigateur. Le texte de l'interface peut être traduit par Gemini ; votre localisation n'est pas envoyée à Gemini."
+  ],
+  "language": "Langue",
+  "auto": "Auto",
+  "sendError": "Impossible d'envoyer votre question. Veuillez réessayer.",
+  "timeout": "La requête a expiré. Veuillez réessayer.",
+  "rateError": "Trop de questions. Veuillez réessayer dans une minute.",
+  "unavailable": "L'assistant est temporairement indisponible. Veuillez réessayer sous peu.",
+  "fallback": "Ces informations ne sont pas encore disponibles dans la base de connaissances publique de ce portfolio. Essayez une autre question ou revenez après que le propriétaire ait ajouté ses informations.",
+  "translationError": "La traduction de l'interface est indisponible. Affichage en anglais pour le moment.",
+  "detecting": "Détection de la langue…",
+  "locationUnavailable": "La détection du pays est indisponible. Utilisation de la langue de votre navigateur ; vous pouvez choisir une autre langue ci-dessus.",
+  "retryLanguage": "Réessayer",
+  "accessibility": {
+    "skipChat": "Aller à la conversation",
+    "skipInput": "Aller au champ de question",
+    "opensNewTab": "s’ouvre dans un nouvel onglet",
+    "inputHelp": "Entrée pour envoyer ; Maj+Entrée pour une nouvelle ligne.",
+    "remaining": "{count} caractères restants",
+    "cleared": "Conversation effacée.",
+    "home": "Accueil du portfolio"
+  }
+}

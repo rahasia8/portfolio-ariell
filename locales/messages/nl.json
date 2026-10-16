@@ -1,0 +1,86 @@
+{
+  "person": "DE PERSOON ACHTER HET WERK",
+  "profile": "Leer mijn traject als software engineer kennen. Ontdek mijn projecten, ervaring en de technische keuzes achter mijn werk via interactieve gesprekken met AI.",
+  "explore": "VERKEN VIA EEN GESPREK",
+  "nav": ["Ervaring", "Projecten", "Vaardigheden & tools", "Contact"],
+  "navQuestions": [
+    "Vertel me over je ervaring.",
+    "Vertel me over je projecten.",
+    "Vertel me over je vaardigheden en tools.",
+    "Hoe kan ik contact opnemen met Ariell? Deel zijn e-mailadres en LinkedIn-profiel."
+  ],
+  "grounded": "Gebaseerd op echt werk.",
+  "sourceNote": "Antwoorden zijn afkomstig uit gepubliceerde portfoliobronnen.",
+  "privacyButton": "Privacy & hoe dit werkt ↗",
+  "newChat": "Nieuw gesprek",
+  "conversation": "Portfoliogesprek",
+  "introTag": "EEN ANDERE MANIER OM MIJ TE LEREN KENNEN",
+  "heading": "Goed werk begint met",
+  "headingLead": "een goed ",
+  "headingEm": "gesprek.",
+  "intro": "Vraag naar mijn ervaring, verken een project of zie hoe ik een uitdaging aanpak. Kies hieronder een startpunt.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Het grote geheel",
+      "question": "Vertel me over je professionele achtergrond.",
+      "detail": "Ervaring & focus op engineering"
+    },
+    {
+      "icon": "02",
+      "title": "Achter de schermen",
+      "question": "Welke projecten tonen het beste je engineeringvaardigheden aan?",
+      "detail": "Projecten & technische beslissingen"
+    },
+    {
+      "icon": "03",
+      "title": "Een mogelijke match",
+      "question": "Welke ervaring is relevant voor een backend engineering-rol?",
+      "detail": "Vaardigheden & rol-afstemming"
+    }
+  ],
+  "ready": "Publieke kennisbank verbonden",
+  "preparing": "Portfoliocontent wordt voorbereid. Je kunt het gesprek alvast proberen.",
+  "messages": "Berichten",
+  "you": "JIJ",
+  "assistant": "PORTFOLIO-ASSISTENT",
+  "sources": "BRONNEN",
+  "thinking": "Zoeken in de publieke bronnen…",
+  "inputLabel": "Vraag naar ervaring, projecten of vaardigheden",
+  "placeholder": "Wat zou je willen weten?",
+  "send": "Verstuur vraag",
+  "honesty": "Antwoorden ondersteund door bronnen. Eerlijk over wat ontbreekt.",
+  "enter": "↵ om te versturen",
+  "footer": "GEBOUWD ROND NIEUWSGIERIGHEID.",
+  "footerDetail": "Menselijke ervaring. AI-interface.",
+  "close": "Sluit privacy-informatie",
+  "transparent": "EEN BEETJE TRANSPARANTIE",
+  "privacyTitle": "Je gesprek, uitgelegd.",
+  "privacy": [
+    "Vragen en de context van recente gesprekken worden naar de geconfigureerde AI-provider (standaard Gemini) gestuurd om antwoord te geven met behulp van publieke portfoliodocumenten. De provider verwerkt deze gegevens onder zijn eigen voorwaarden.",
+    "Deze app bewaart de gespreksgeschiedenis in de sessieopslag van je browser voor dit tabblad. Een nieuw gesprek wist die geschiedenis. Het slaat geen gesprekstekst op in de database of applicatielogboeken.",
+    "Operationele logboeken bevatten verzoek-ID's, timing, het aantal tokens en de fallback-status. Gehashte netwerk-ID's worden tijdelijk gebruikt voor snelheidsbeperking. Deel alsjeblieft geen gevoelige persoonlijke informatie.",
+    "Bronnen worden getoond wanneer beschikbaar. AI-antwoorden kunnen nog steeds fouten bevatten; verifieer belangrijke details aan de hand van de bronnen.",
+    "Automatische taal gebruikt het signaal van het land van hosting. Indien niet beschikbaar, vraagt je browser een landcode op bij ipapi.co, dat je IP-adres ontvangt. Je handmatige keuze wordt in deze browser opgeslagen. UI-tekst kan door Gemini worden vertaald; je locatie wordt niet naar Gemini gestuurd."
+  ],
+  "language": "Taal",
+  "auto": "Auto",
+  "sendError": "Kon je vraag niet versturen. Probeer het opnieuw.",
+  "timeout": "Het verzoek is verlopen. Probeer het opnieuw.",
+  "rateError": "Te veel vragen. Probeer het over een minuut opnieuw.",
+  "unavailable": "De assistent is tijdelijk niet beschikbaar. Probeer het zo meteen opnieuw.",
+  "fallback": "Die informatie is nog niet beschikbaar in de publieke kennisbank van dit portfolio. Probeer een andere vraag of kijk later nog eens nadat de eigenaar zijn informatie heeft toegevoegd.",
+  "translationError": "Interfacevertaling is niet beschikbaar. We tonen voor nu Engels.",
+  "detecting": "Taal detecteren…",
+  "locationUnavailable": "Landdetectie is niet beschikbaar. We gebruiken je browsertaal; je kunt hierboven een andere taal kiezen.",
+  "retryLanguage": "Opnieuw proberen",
+  "accessibility": {
+    "skipChat": "Ga naar de chat",
+    "skipInput": "Ga naar het vraagveld",
+    "opensNewTab": "opent in een nieuw tabblad",
+    "inputHelp": "Enter om te verzenden; Shift+Enter voor een nieuwe regel.",
+    "remaining": "Nog {count} tekens",
+    "cleared": "Gesprek gewist.",
+    "home": "Portfolio-startpagina"
+  }
+}

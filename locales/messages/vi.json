@@ -1,0 +1,86 @@
+{
+  "person": "NGƯỜI ĐỨNG SAU CÔNG VIỆC",
+  "profile": "Khám phá hành trình của tôi với vai trò kỹ sư phần mềm. Tìm hiểu các dự án, kinh nghiệm và những quyết định kỹ thuật đằng sau công việc của tôi qua cuộc trò chuyện tương tác với AI.",
+  "explore": "KHÁM PHÁ QUA TRÒ CHUYỆN",
+  "nav": ["Kinh nghiệm", "Dự án", "Kỹ năng & công cụ", "Liên hệ"],
+  "navQuestions": [
+    "Hãy kể cho tôi nghe về kinh nghiệm của bạn.",
+    "Hãy kể cho tôi nghe về các dự án của bạn.",
+    "Hãy kể cho tôi nghe về các kỹ năng và công cụ của bạn.",
+    "Làm thế nào để liên hệ với Ariell? Hãy chia sẻ email và hồ sơ LinkedIn của anh ấy."
+  ],
+  "grounded": "Dựa trên công việc thực tế.",
+  "sourceNote": "Các câu trả lời được rút ra từ các nguồn danh mục đầu tư đã công bố.",
+  "privacyButton": "Quyền riêng tư & cách thức hoạt động ↗",
+  "newChat": "Cuộc trò chuyện mới",
+  "conversation": "Cuộc trò chuyện về danh mục đầu tư",
+  "introTag": "MỘT CÁCH KHÁC ĐỂ HIỂU VỀ TÔI",
+  "heading": "Công việc tốt bắt đầu từ",
+  "headingLead": "một ",
+  "headingEm": "cuộc trò chuyện tốt.",
+  "intro": "Hãy hỏi về kinh nghiệm của tôi, khám phá một dự án hoặc xem cách tôi tiếp cận một thử thách. Chọn một điểm bắt đầu bên dưới.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Bức tranh toàn cảnh",
+      "question": "Hãy kể cho tôi nghe về nền tảng chuyên môn của bạn.",
+      "detail": "Kinh nghiệm & trọng tâm kỹ thuật"
+    },
+    {
+      "icon": "02",
+      "title": "Tìm hiểu sâu hơn",
+      "question": "Dự án nào thể hiện rõ nhất kỹ năng kỹ thuật của bạn?",
+      "detail": "Dự án & các quyết định kỹ thuật"
+    },
+    {
+      "icon": "03",
+      "title": "Sự phù hợp tiềm năng",
+      "question": "Kinh nghiệm nào phù hợp với vai trò kỹ sư backend?",
+      "detail": "Kỹ năng & sự phù hợp với vai trò"
+    }
+  ],
+  "ready": "Cơ sở kiến thức công khai đã được kết nối",
+  "preparing": "Nội dung danh mục đầu tư đang được chuẩn bị. Bạn vẫn có thể thử trò chuyện.",
+  "messages": "Tin nhắn",
+  "you": "BẠN",
+  "assistant": "TRỢ LÝ DANH MỤC ĐẦU TƯ",
+  "sources": "NGUỒN",
+  "thinking": "Đang tìm kiếm qua các nguồn công khai…",
+  "inputLabel": "Hỏi về kinh nghiệm, dự án hoặc kỹ năng",
+  "placeholder": "Bạn muốn biết điều gì?",
+  "send": "Gửi câu hỏi",
+  "honesty": "Câu trả lời dựa trên nguồn tin. Trung thực về những gì còn thiếu.",
+  "enter": "↵ để gửi",
+  "footer": "ĐƯỢC XÂY DỰNG DỰA TRÊN SỰ TÒ MÒ.",
+  "footerDetail": "Trải nghiệm con người. Giao diện AI.",
+  "close": "Đóng thông tin quyền riêng tư",
+  "transparent": "MỘT CHÚT MINH BẠCH",
+  "privacyTitle": "Giải thích về cuộc trò chuyện của bạn.",
+  "privacy": [
+    "Các câu hỏi và ngữ cảnh cuộc trò chuyện gần đây được gửi đến nhà cung cấp AI đã cấu hình (mặc định là Gemini) để trả lời bằng cách sử dụng các tài liệu danh mục đầu tư công khai. Nhà cung cấp xử lý dữ liệu này theo các điều khoản riêng của họ.",
+    "Ứng dụng này lưu giữ lịch sử trò chuyện trong bộ nhớ phiên của trình duyệt cho tab này. Cuộc trò chuyện mới sẽ xóa lịch sử đó. Ứng dụng không lưu trữ văn bản cuộc trò chuyện trong cơ sở dữ liệu hoặc nhật ký ứng dụng.",
+    "Nhật ký vận hành chứa ID yêu cầu, thời gian, số lượng token và trạng thái dự phòng. Các định danh mạng được băm được sử dụng tạm thời để giới hạn tốc độ. Vui lòng không chia sẻ thông tin cá nhân nhạy cảm.",
+    "Các nguồn được hiển thị khi có sẵn. Câu trả lời của AI vẫn có thể có sai sót; hãy xác minh các chi tiết quan trọng dựa trên nguồn của chúng.",
+    "Ngôn ngữ tự động sử dụng tín hiệu từ quốc gia lưu trữ. Nếu không có, trình duyệt của bạn sẽ yêu cầu mã quốc gia từ ipapi.co, nơi nhận địa chỉ IP của bạn. Lựa chọn thủ công của bạn được lưu trong trình duyệt này. Văn bản giao diện có thể được dịch bởi Gemini; vị trí của bạn không được gửi đến Gemini."
+  ],
+  "language": "Ngôn ngữ",
+  "auto": "Tự động",
+  "sendError": "Không thể gửi câu hỏi của bạn. Vui lòng thử lại.",
+  "timeout": "Yêu cầu đã hết thời gian chờ. Vui lòng thử lại.",
+  "rateError": "Quá nhiều câu hỏi. Vui lòng thử lại sau một phút.",
+  "unavailable": "Trợ lý tạm thời không khả dụng. Vui lòng thử lại sau ít phút.",
+  "fallback": "Thông tin đó chưa có trong cơ sở kiến thức công khai của danh mục đầu tư này. Hãy thử câu hỏi khác hoặc kiểm tra lại sau khi chủ sở hữu thêm thông tin của họ.",
+  "translationError": "Bản dịch giao diện không khả dụng. Hiện đang hiển thị bằng tiếng Anh.",
+  "detecting": "Đang phát hiện ngôn ngữ…",
+  "locationUnavailable": "Tính năng phát hiện quốc gia không khả dụng. Đang sử dụng ngôn ngữ trình duyệt của bạn; bạn có thể chọn ngôn ngữ khác ở trên.",
+  "retryLanguage": "Thử lại",
+  "accessibility": {
+    "skipChat": "Chuyển đến trò chuyện",
+    "skipInput": "Chuyển đến ô câu hỏi",
+    "opensNewTab": "mở trong thẻ mới",
+    "inputHelp": "Enter để gửi; Shift+Enter để xuống dòng.",
+    "remaining": "Còn {count} ký tự",
+    "cleared": "Đã xóa cuộc trò chuyện.",
+    "home": "Trang chủ hồ sơ"
+  }
+}

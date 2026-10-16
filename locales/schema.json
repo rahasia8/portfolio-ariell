@@ -1,0 +1,374 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://portfolio.local/locales/schema.json",
+  "title": "Portfolio interface messages",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "person",
+    "profile",
+    "explore",
+    "nav",
+    "navQuestions",
+    "grounded",
+    "sourceNote",
+    "privacyButton",
+    "newChat",
+    "conversation",
+    "introTag",
+    "heading",
+    "headingLead",
+    "headingEm",
+    "intro",
+    "suggestions",
+    "ready",
+    "preparing",
+    "messages",
+    "you",
+    "assistant",
+    "sources",
+    "thinking",
+    "inputLabel",
+    "placeholder",
+    "send",
+    "honesty",
+    "enter",
+    "footer",
+    "footerDetail",
+    "close",
+    "transparent",
+    "privacyTitle",
+    "privacy",
+    "language",
+    "auto",
+    "sendError",
+    "timeout",
+    "rateError",
+    "unavailable",
+    "fallback",
+    "translationError",
+    "detecting",
+    "locationUnavailable",
+    "retryLanguage",
+    "accessibility"
+  ],
+  "properties": {
+    "person": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "profile": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "explore": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "nav": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "navQuestions": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "grounded": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "sourceNote": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "privacyButton": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "newChat": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "conversation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "introTag": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "heading": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "headingLead": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 10000
+    },
+    "headingEm": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "intro": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "suggestions": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["icon", "title", "question", "detail"],
+        "properties": {
+          "icon": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 10000
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 10000
+          }
+        }
+      }
+    },
+    "ready": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "preparing": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "messages": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "you": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "assistant": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "sources": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "thinking": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "inputLabel": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "placeholder": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "send": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "honesty": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "enter": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "footer": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "footerDetail": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "close": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "transparent": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "privacyTitle": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "privacy": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 10000
+      }
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "auto": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "sendError": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "timeout": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "rateError": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "unavailable": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "fallback": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "translationError": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "detecting": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "locationUnavailable": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "retryLanguage": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "skipChat",
+        "skipInput",
+        "opensNewTab",
+        "inputHelp",
+        "remaining",
+        "cleared",
+        "home"
+      ],
+      "properties": {
+        "skipChat": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "skipInput": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "opensNewTab": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "inputHelp": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "remaining": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "cleared": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        },
+        "home": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000
+        }
+      }
+    }
+  }
+}

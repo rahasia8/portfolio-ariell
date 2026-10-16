@@ -1,0 +1,86 @@
+{
+  "person": "INDIVIDU DI SEBALIK KERJA INI",
+  "profile": "Kenali perjalanan saya sebagai jurutera perisian. Terokai projek, pengalaman dan keputusan teknikal di sebalik hasil kerja saya melalui perbualan interaktif berasaskan AI.",
+  "explore": "TEROKA MELALUI PERBUALAN",
+  "nav": ["Pengalaman", "Projek", "Kemahiran & alatan", "Hubungi"],
+  "navQuestions": [
+    "Beritahu saya tentang pengalaman anda.",
+    "Beritahu saya tentang projek anda.",
+    "Beritahu saya tentang kemahiran dan alatan anda.",
+    "Bagaimana saya boleh menghubungi Ariell? Kongsikan e-mel dan profil LinkedIn beliau."
+  ],
+  "grounded": "Berasaskan kerja sebenar.",
+  "sourceNote": "Jawapan diambil daripada sumber portfolio yang diterbitkan.",
+  "privacyButton": "Privasi & cara ini berfungsi ↗",
+  "newChat": "Perbualan baharu",
+  "conversation": "Perbualan portfolio",
+  "introTag": "CARA BERBEZA UNTUK MENGENALI SAYA",
+  "heading": "Kerja yang baik bermula dengan",
+  "headingLead": "satu ",
+  "headingEm": "perbualan yang baik.",
+  "intro": "Tanya tentang pengalaman saya, teroka projek, atau lihat cara saya menangani cabaran. Pilih titik permulaan di bawah.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Gambaran keseluruhan",
+      "question": "Beritahu saya tentang latar belakang profesional anda.",
+      "detail": "Pengalaman & fokus kejuruteraan"
+    },
+    {
+      "icon": "02",
+      "title": "Di sebalik tabir",
+      "question": "Projek manakah yang paling menunjukkan kemahiran kejuruteraan anda?",
+      "detail": "Projek & keputusan teknikal"
+    },
+    {
+      "icon": "03",
+      "title": "Kesesuaian yang mungkin",
+      "question": "Apakah pengalaman yang relevan untuk peranan kejuruteraan bahagian belakang (backend)?",
+      "detail": "Kemahiran & penjajaran peranan"
+    }
+  ],
+  "ready": "Pangkalan pengetahuan awam disambungkan",
+  "preparing": "Kandungan portfolio sedang disediakan. Anda masih boleh mencuba perbualan ini.",
+  "messages": "Mesej",
+  "you": "ANDA",
+  "assistant": "PEMBANTU PORTFOLIO",
+  "sources": "SUMBER",
+  "thinking": "Sedang mencari melalui sumber awam…",
+  "inputLabel": "Tanya tentang pengalaman, projek, atau kemahiran",
+  "placeholder": "Apa yang anda ingin tahu?",
+  "send": "Hantar soalan",
+  "honesty": "Jawapan disokong oleh sumber. Jujur tentang apa yang tiada.",
+  "enter": "↵ untuk menghantar",
+  "footer": "DIBINA BERASASKAN RASA INGIN TAHU.",
+  "footerDetail": "Pengalaman manusia. Antara muka AI.",
+  "close": "Tutup maklumat privasi",
+  "transparent": "SEDIKIT KETELUSAN",
+  "privacyTitle": "Perbualan anda, dijelaskan.",
+  "privacy": [
+    "Soalan dan konteks perbualan terkini dihantar kepada penyedia AI yang dikonfigurasikan (Gemini secara lalai) untuk menjawab menggunakan dokumen portfolio awam. Penyedia memproses data ini di bawah terma mereka sendiri.",
+    "Aplikasi ini menyimpan sejarah sembang dalam storan sesi pelayar anda untuk tab ini. Perbualan baharu akan memadamkan sejarah tersebut. Ia tidak menyimpan teks perbualan dalam pangkalan data atau log aplikasi.",
+    "Log operasi mengandungi ID permintaan, masa, kiraan token, dan status sandaran. Pengecam rangkaian yang dicincang (hashed) digunakan buat sementara waktu untuk pengehadan kadar. Sila jangan kongsi maklumat peribadi yang sensitif.",
+    "Sumber ditunjukkan apabila tersedia. Jawapan AI masih boleh membuat kesilapan; sahkan butiran penting dengan sumbernya.",
+    "Bahasa automatik menggunakan isyarat negara pengehosan. Jika tidak tersedia, pelayar anda meminta kod negara daripada ipapi.co, yang menerima alamat IP anda. Pilihan manual anda disimpan dalam pelayar ini. Teks UI mungkin diterjemahkan oleh Gemini; lokasi anda tidak dihantar kepada Gemini."
+  ],
+  "language": "Bahasa",
+  "auto": "Auto",
+  "sendError": "Tidak dapat menghantar soalan anda. Sila cuba lagi.",
+  "timeout": "Permintaan tamat masa. Sila cuba lagi.",
+  "rateError": "Terlalu banyak soalan. Sila cuba lagi dalam seminit.",
+  "unavailable": "Pembantu buat sementara waktu tidak tersedia. Sila cuba lagi sebentar lagi.",
+  "fallback": "Maklumat itu belum tersedia dalam pangkalan pengetahuan awam portfolio ini. Cuba soalan lain, atau semak semula selepas pemilik menambah maklumat mereka.",
+  "translationError": "Terjemahan antara muka tidak tersedia. Memaparkan bahasa Inggeris buat masa ini.",
+  "detecting": "Mengesan bahasa…",
+  "locationUnavailable": "Pengesanan negara tidak tersedia. Menggunakan bahasa pelayar anda; anda boleh memilih bahasa lain di atas.",
+  "retryLanguage": "Cuba semula",
+  "accessibility": {
+    "skipChat": "Langkau ke perbualan",
+    "skipInput": "Langkau ke ruang soalan",
+    "opensNewTab": "dibuka dalam tab baharu",
+    "inputHelp": "Enter untuk menghantar; Shift+Enter untuk baris baharu.",
+    "remaining": "Baki {count} aksara",
+    "cleared": "Perbualan dipadamkan.",
+    "home": "Laman utama portfolio"
+  }
+}

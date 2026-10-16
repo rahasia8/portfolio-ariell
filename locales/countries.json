@@ -1,0 +1,1093 @@
+{
+  "AC": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "AD": {
+    "defaultLocale": "ca",
+    "languages": ["ca"]
+  },
+  "AE": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "AF": {
+    "defaultLocale": "fa",
+    "languages": ["fa", "ps", "uz-Arab", "tk"]
+  },
+  "AG": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "AI": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "AL": {
+    "defaultLocale": "sq",
+    "languages": ["sq"]
+  },
+  "AM": {
+    "defaultLocale": "hy",
+    "languages": ["hy"]
+  },
+  "AO": {
+    "defaultLocale": "pt",
+    "languages": ["pt"]
+  },
+  "AQ": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "AR": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "AS": {
+    "defaultLocale": "sm",
+    "languages": ["sm", "en"]
+  },
+  "AT": {
+    "defaultLocale": "de",
+    "languages": ["de", "hr", "sl", "hu"]
+  },
+  "AU": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "AW": {
+    "defaultLocale": "nl",
+    "languages": ["nl", "pap"]
+  },
+  "AX": {
+    "defaultLocale": "sv",
+    "languages": ["sv"]
+  },
+  "AZ": {
+    "defaultLocale": "az",
+    "languages": ["az", "az-Cyrl"]
+  },
+  "BA": {
+    "defaultLocale": "bs",
+    "languages": ["bs", "bs-Cyrl", "hr", "sr", "sr-Latn"]
+  },
+  "BB": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "BD": {
+    "defaultLocale": "bn",
+    "languages": ["bn"]
+  },
+  "BE": {
+    "defaultLocale": "nl",
+    "languages": ["nl", "fr", "de"]
+  },
+  "BF": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "BG": {
+    "defaultLocale": "bg",
+    "languages": ["bg"]
+  },
+  "BH": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "BI": {
+    "defaultLocale": "rn",
+    "languages": ["rn", "fr", "en"]
+  },
+  "BJ": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "BL": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "BM": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "BN": {
+    "defaultLocale": "ms",
+    "languages": ["ms", "ms-Arab"]
+  },
+  "BO": {
+    "defaultLocale": "es",
+    "languages": ["es", "qu", "ay"]
+  },
+  "BQ": {
+    "defaultLocale": "pap",
+    "languages": ["pap", "nl"]
+  },
+  "BR": {
+    "defaultLocale": "pt",
+    "languages": ["pt", "vec"]
+  },
+  "BS": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "BT": {
+    "defaultLocale": "dz",
+    "languages": ["dz"]
+  },
+  "BV": {
+    "defaultLocale": "no",
+    "languages": ["no"]
+  },
+  "BW": {
+    "defaultLocale": "en",
+    "languages": ["en", "tn"]
+  },
+  "BY": {
+    "defaultLocale": "ru",
+    "languages": ["ru", "be"]
+  },
+  "BZ": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "CA": {
+    "defaultLocale": "en",
+    "languages": ["en", "fr", "iu", "iu-Latn", "crk", "chp", "den", "dgr", "gwi"]
+  },
+  "CC": {
+    "defaultLocale": "ms",
+    "languages": ["ms", "en"]
+  },
+  "CD": {
+    "defaultLocale": "fr",
+    "languages": ["fr", "sw", "lua", "ln", "kg"]
+  },
+  "CF": {
+    "defaultLocale": "sg",
+    "languages": ["sg", "fr"]
+  },
+  "CG": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "CH": {
+    "defaultLocale": "de",
+    "languages": ["de", "gsw", "fr", "it", "rm"]
+  },
+  "CI": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "CK": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "CL": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "CM": {
+    "defaultLocale": "fr",
+    "languages": ["fr", "en"]
+  },
+  "CN": {
+    "defaultLocale": "zh",
+    "languages": ["zh", "ug", "za", "mn-Mong", "bo", "ko"]
+  },
+  "CO": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "CP": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "CQ": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "CR": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "CU": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "CV": {
+    "defaultLocale": "pt",
+    "languages": ["pt"]
+  },
+  "CW": {
+    "defaultLocale": "pap",
+    "languages": ["pap", "nl"]
+  },
+  "CX": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "CY": {
+    "defaultLocale": "el",
+    "languages": ["el", "tr"]
+  },
+  "CZ": {
+    "defaultLocale": "cs",
+    "languages": ["cs"]
+  },
+  "DE": {
+    "defaultLocale": "de",
+    "languages": ["de", "frr"]
+  },
+  "DG": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "DJ": {
+    "defaultLocale": "fr",
+    "languages": ["fr", "ar"]
+  },
+  "DK": {
+    "defaultLocale": "da",
+    "languages": ["da", "de", "kl"]
+  },
+  "DM": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "DO": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "DZ": {
+    "defaultLocale": "ar",
+    "languages": ["ar", "fr"]
+  },
+  "EA": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "EC": {
+    "defaultLocale": "es",
+    "languages": ["es", "qu"]
+  },
+  "EE": {
+    "defaultLocale": "et",
+    "languages": ["et"]
+  },
+  "EG": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "EH": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "ER": {
+    "defaultLocale": "ti",
+    "languages": ["ti", "en", "ar"]
+  },
+  "ES": {
+    "defaultLocale": "es",
+    "languages": ["es", "ca", "gl", "eu", "ast", "oc"]
+  },
+  "ET": {
+    "defaultLocale": "am",
+    "languages": ["am"]
+  },
+  "FI": {
+    "defaultLocale": "fi",
+    "languages": ["fi", "sv", "sms"]
+  },
+  "FJ": {
+    "defaultLocale": "en",
+    "languages": ["en", "hif", "fj"]
+  },
+  "FK": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "FM": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "FO": {
+    "defaultLocale": "fo",
+    "languages": ["fo"]
+  },
+  "FR": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "GA": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "GB": {
+    "defaultLocale": "en",
+    "languages": ["en", "cy", "ga", "gd"]
+  },
+  "GD": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "GE": {
+    "defaultLocale": "ka",
+    "languages": ["ka", "ab", "os"]
+  },
+  "GF": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "GG": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "GH": {
+    "defaultLocale": "ak",
+    "languages": ["ak", "en", "ee", "gaa"]
+  },
+  "GI": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "GL": {
+    "defaultLocale": "kl",
+    "languages": ["kl"]
+  },
+  "GM": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "GN": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "GP": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "GQ": {
+    "defaultLocale": "es",
+    "languages": ["es", "fr", "pt"]
+  },
+  "GR": {
+    "defaultLocale": "el",
+    "languages": ["el"]
+  },
+  "GS": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "GT": {
+    "defaultLocale": "es",
+    "languages": ["es", "cak", "quc", "ixl", "caa", "quv", "usp", "xin"]
+  },
+  "GU": {
+    "defaultLocale": "en",
+    "languages": ["en", "ch"]
+  },
+  "GW": {
+    "defaultLocale": "pt",
+    "languages": ["pt"]
+  },
+  "GY": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "HK": {
+    "defaultLocale": "zh-Hant",
+    "languages": ["zh-Hant", "en"]
+  },
+  "HM": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "HN": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "HR": {
+    "defaultLocale": "hr",
+    "languages": ["hr", "it", "vec"]
+  },
+  "HT": {
+    "defaultLocale": "ht",
+    "languages": ["ht", "fr"]
+  },
+  "HU": {
+    "defaultLocale": "hu",
+    "languages": ["hu"]
+  },
+  "IC": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "ID": {
+    "defaultLocale": "id",
+    "languages": ["id"]
+  },
+  "IE": {
+    "defaultLocale": "en",
+    "languages": ["en", "ga"]
+  },
+  "IL": {
+    "defaultLocale": "he",
+    "languages": ["he", "ar"]
+  },
+  "IM": {
+    "defaultLocale": "en",
+    "languages": ["en", "gv"]
+  },
+  "IN": {
+    "defaultLocale": "hi",
+    "languages": [
+      "hi",
+      "en",
+      "bn",
+      "te",
+      "mr",
+      "ta",
+      "ur",
+      "gu",
+      "kn",
+      "ml",
+      "or",
+      "pa",
+      "as",
+      "mai",
+      "ne",
+      "sat",
+      "ks",
+      "kok",
+      "sd",
+      "sd-Deva",
+      "kha",
+      "sa"
+    ]
+  },
+  "IO": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "IQ": {
+    "defaultLocale": "ar",
+    "languages": ["ar", "ckb", "az-Arab"]
+  },
+  "IR": {
+    "defaultLocale": "fa",
+    "languages": ["fa"]
+  },
+  "IS": {
+    "defaultLocale": "is",
+    "languages": ["is"]
+  },
+  "IT": {
+    "defaultLocale": "it",
+    "languages": ["it", "fr", "vec"]
+  },
+  "JE": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "JM": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "JO": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "JP": {
+    "defaultLocale": "ja",
+    "languages": ["ja"]
+  },
+  "KE": {
+    "defaultLocale": "sw",
+    "languages": ["sw", "en"]
+  },
+  "KG": {
+    "defaultLocale": "ky",
+    "languages": ["ky", "ru"]
+  },
+  "KH": {
+    "defaultLocale": "km",
+    "languages": ["km"]
+  },
+  "KI": {
+    "defaultLocale": "en",
+    "languages": ["en", "gil"]
+  },
+  "KM": {
+    "defaultLocale": "ar",
+    "languages": ["ar", "zdj", "wni", "fr"]
+  },
+  "KN": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "KP": {
+    "defaultLocale": "ko",
+    "languages": ["ko"]
+  },
+  "KR": {
+    "defaultLocale": "ko",
+    "languages": ["ko"]
+  },
+  "KW": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "KY": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "KZ": {
+    "defaultLocale": "ru",
+    "languages": ["ru", "kk"]
+  },
+  "LA": {
+    "defaultLocale": "lo",
+    "languages": ["lo"]
+  },
+  "LB": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "LC": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "LI": {
+    "defaultLocale": "de",
+    "languages": ["de", "gsw"]
+  },
+  "LK": {
+    "defaultLocale": "si",
+    "languages": ["si", "ta"]
+  },
+  "LR": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "LS": {
+    "defaultLocale": "st",
+    "languages": ["st", "en"]
+  },
+  "LT": {
+    "defaultLocale": "lt",
+    "languages": ["lt"]
+  },
+  "LU": {
+    "defaultLocale": "fr",
+    "languages": ["fr", "lb", "de"]
+  },
+  "LV": {
+    "defaultLocale": "lv",
+    "languages": ["lv"]
+  },
+  "LY": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "MA": {
+    "defaultLocale": "ar",
+    "languages": ["ar", "fr", "tzm"]
+  },
+  "MC": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "MD": {
+    "defaultLocale": "ro",
+    "languages": ["ro"]
+  },
+  "ME": {
+    "defaultLocale": "sr",
+    "languages": ["sr", "sr-Latn"]
+  },
+  "MF": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "MG": {
+    "defaultLocale": "mg",
+    "languages": ["mg", "fr", "en"]
+  },
+  "MH": {
+    "defaultLocale": "en",
+    "languages": ["en", "mh"]
+  },
+  "MK": {
+    "defaultLocale": "mk",
+    "languages": ["mk", "sq"]
+  },
+  "ML": {
+    "defaultLocale": "bm",
+    "languages": ["bm", "fr"]
+  },
+  "MM": {
+    "defaultLocale": "my",
+    "languages": ["my"]
+  },
+  "MN": {
+    "defaultLocale": "mn",
+    "languages": ["mn"]
+  },
+  "MO": {
+    "defaultLocale": "zh-Hant",
+    "languages": ["zh-Hant", "yue", "pt"]
+  },
+  "MP": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "MQ": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "MR": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "MS": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "MT": {
+    "defaultLocale": "mt",
+    "languages": ["mt", "en"]
+  },
+  "MU": {
+    "defaultLocale": "fr",
+    "languages": ["fr", "en"]
+  },
+  "MV": {
+    "defaultLocale": "dv",
+    "languages": ["dv"]
+  },
+  "MW": {
+    "defaultLocale": "en",
+    "languages": ["en", "ny"]
+  },
+  "MX": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "MY": {
+    "defaultLocale": "ms",
+    "languages": ["ms"]
+  },
+  "MZ": {
+    "defaultLocale": "pt",
+    "languages": ["pt"]
+  },
+  "NA": {
+    "defaultLocale": "af",
+    "languages": ["af", "en"]
+  },
+  "NC": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "NE": {
+    "defaultLocale": "ha",
+    "languages": ["ha", "fr"]
+  },
+  "NF": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "NG": {
+    "defaultLocale": "en",
+    "languages": ["en", "yo"]
+  },
+  "NI": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "NL": {
+    "defaultLocale": "nl",
+    "languages": ["nl", "fy"]
+  },
+  "NO": {
+    "defaultLocale": "nb",
+    "languages": ["nb", "no", "nn", "se"]
+  },
+  "NP": {
+    "defaultLocale": "ne",
+    "languages": ["ne"]
+  },
+  "NR": {
+    "defaultLocale": "en",
+    "languages": ["en", "na"]
+  },
+  "NU": {
+    "defaultLocale": "en",
+    "languages": ["en", "niu"]
+  },
+  "NZ": {
+    "defaultLocale": "en",
+    "languages": ["en", "mi"]
+  },
+  "OM": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "PA": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "PE": {
+    "defaultLocale": "es",
+    "languages": ["es", "qu"]
+  },
+  "PF": {
+    "defaultLocale": "fr",
+    "languages": ["fr", "ty"]
+  },
+  "PG": {
+    "defaultLocale": "tpi",
+    "languages": ["tpi", "en", "ho"]
+  },
+  "PH": {
+    "defaultLocale": "fil",
+    "languages": ["fil", "en", "ceb", "ilo", "hil", "war", "pag", "mdh", "tsg"]
+  },
+  "PK": {
+    "defaultLocale": "ur",
+    "languages": ["ur", "en"]
+  },
+  "PL": {
+    "defaultLocale": "pl",
+    "languages": ["pl", "de", "csb", "lt"]
+  },
+  "PM": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "PN": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "PR": {
+    "defaultLocale": "es",
+    "languages": ["es", "en"]
+  },
+  "PS": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "PT": {
+    "defaultLocale": "pt",
+    "languages": ["pt"]
+  },
+  "PW": {
+    "defaultLocale": "pau",
+    "languages": ["pau", "en"]
+  },
+  "PY": {
+    "defaultLocale": "gn",
+    "languages": ["gn", "es"]
+  },
+  "QA": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "RE": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "RO": {
+    "defaultLocale": "ro",
+    "languages": ["ro"]
+  },
+  "RS": {
+    "defaultLocale": "sr",
+    "languages": ["sr", "sr-Latn", "hu", "ro", "hr", "sk", "uk"]
+  },
+  "RU": {
+    "defaultLocale": "ru",
+    "languages": [
+      "ru",
+      "tt",
+      "ba",
+      "ce",
+      "av",
+      "udm",
+      "sah",
+      "kbd",
+      "myv",
+      "bua",
+      "mdf",
+      "kum",
+      "kv",
+      "lez",
+      "krc",
+      "inh",
+      "tyv",
+      "az-Cyrl",
+      "ady",
+      "lbe",
+      "koi"
+    ]
+  },
+  "RW": {
+    "defaultLocale": "rw",
+    "languages": ["rw", "en", "fr"]
+  },
+  "SA": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "SB": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "SC": {
+    "defaultLocale": "fr",
+    "languages": ["fr", "en"]
+  },
+  "SD": {
+    "defaultLocale": "ar",
+    "languages": ["ar", "en"]
+  },
+  "SE": {
+    "defaultLocale": "sv",
+    "languages": ["sv", "fi"]
+  },
+  "SG": {
+    "defaultLocale": "en",
+    "languages": ["en", "zh", "ms", "ta"]
+  },
+  "SH": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "SI": {
+    "defaultLocale": "sl",
+    "languages": ["sl", "vec"]
+  },
+  "SJ": {
+    "defaultLocale": "nb",
+    "languages": ["nb"]
+  },
+  "SK": {
+    "defaultLocale": "sk",
+    "languages": ["sk"]
+  },
+  "SL": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "SM": {
+    "defaultLocale": "it",
+    "languages": ["it"]
+  },
+  "SN": {
+    "defaultLocale": "wo",
+    "languages": [
+      "wo",
+      "fr",
+      "ff",
+      "srr",
+      "dyo",
+      "sav",
+      "mfv",
+      "bjt",
+      "snf",
+      "knf",
+      "bsc",
+      "mey-Latn",
+      "tnr"
+    ]
+  },
+  "SO": {
+    "defaultLocale": "so",
+    "languages": ["so", "ar"]
+  },
+  "SR": {
+    "defaultLocale": "nl",
+    "languages": ["nl"]
+  },
+  "SS": {
+    "defaultLocale": "ar",
+    "languages": ["ar", "en"]
+  },
+  "ST": {
+    "defaultLocale": "pt",
+    "languages": ["pt"]
+  },
+  "SV": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "SX": {
+    "defaultLocale": "en",
+    "languages": ["en", "nl"]
+  },
+  "SY": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "SZ": {
+    "defaultLocale": "en",
+    "languages": ["en", "ss"]
+  },
+  "TA": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "TC": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "TD": {
+    "defaultLocale": "ar",
+    "languages": ["ar", "fr"]
+  },
+  "TF": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "TG": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "TH": {
+    "defaultLocale": "th",
+    "languages": ["th"]
+  },
+  "TJ": {
+    "defaultLocale": "tg",
+    "languages": ["tg"]
+  },
+  "TK": {
+    "defaultLocale": "tkl",
+    "languages": ["tkl", "en"]
+  },
+  "TL": {
+    "defaultLocale": "pt",
+    "languages": ["pt", "tet"]
+  },
+  "TM": {
+    "defaultLocale": "tk",
+    "languages": ["tk"]
+  },
+  "TN": {
+    "defaultLocale": "ar",
+    "languages": ["ar", "fr"]
+  },
+  "TO": {
+    "defaultLocale": "to",
+    "languages": ["to", "en"]
+  },
+  "TR": {
+    "defaultLocale": "tr",
+    "languages": ["tr"]
+  },
+  "TT": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "TV": {
+    "defaultLocale": "tvl",
+    "languages": ["tvl", "en"]
+  },
+  "TW": {
+    "defaultLocale": "zh-Hant",
+    "languages": ["zh-Hant", "nan-Hant", "hak-Hant"]
+  },
+  "TZ": {
+    "defaultLocale": "sw",
+    "languages": ["sw", "en"]
+  },
+  "UA": {
+    "defaultLocale": "uk",
+    "languages": ["uk", "ru"]
+  },
+  "UG": {
+    "defaultLocale": "sw",
+    "languages": ["sw", "en"]
+  },
+  "UM": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "US": {
+    "defaultLocale": "en",
+    "languages": ["en", "es", "haw"]
+  },
+  "UY": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "UZ": {
+    "defaultLocale": "uz",
+    "languages": ["uz", "uz-Cyrl"]
+  },
+  "VA": {
+    "defaultLocale": "it",
+    "languages": ["it"]
+  },
+  "VC": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "VE": {
+    "defaultLocale": "es",
+    "languages": ["es"]
+  },
+  "VG": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "VI": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "VN": {
+    "defaultLocale": "vi",
+    "languages": ["vi"]
+  },
+  "VU": {
+    "defaultLocale": "bi",
+    "languages": ["bi", "en", "fr"]
+  },
+  "WF": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "WS": {
+    "defaultLocale": "sm",
+    "languages": ["sm", "en"]
+  },
+  "XK": {
+    "defaultLocale": "sq",
+    "languages": ["sq", "sr", "sr-Latn"]
+  },
+  "YE": {
+    "defaultLocale": "ar",
+    "languages": ["ar"]
+  },
+  "YT": {
+    "defaultLocale": "fr",
+    "languages": ["fr"]
+  },
+  "ZA": {
+    "defaultLocale": "en",
+    "languages": ["en", "zu", "xh", "af", "nso", "tn", "st", "ts", "ss", "ve", "nr"]
+  },
+  "ZM": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  },
+  "ZW": {
+    "defaultLocale": "sn",
+    "languages": ["sn", "en", "nd"]
+  },
+  "ZZ": {
+    "defaultLocale": "en",
+    "languages": ["en"]
+  }
+}

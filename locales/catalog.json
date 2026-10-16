@@ -1,0 +1,22 @@
+{
+  "ar": "messages/ar.json",
+  "de": "messages/de.json",
+  "en": "messages/en.json",
+  "es": "messages/es.json",
+  "fr": "messages/fr.json",
+  "hi": "messages/hi.json",
+  "id": "messages/id.json",
+  "it": "messages/it.json",
+  "ja": "messages/ja.json",
+  "ko": "messages/ko.json",
+  "ms": "messages/ms.json",
+  "nl": "messages/nl.json",
+  "pl": "messages/pl.json",
+  "pt": "messages/pt.json",
+  "ru": "messages/ru.json",
+  "th": "messages/th.json",
+  "tr": "messages/tr.json",
+  "vi": "messages/vi.json",
+  "zh-Hant": "messages/zh-Hant.json",
+  "zh": "messages/zh.json"
+}

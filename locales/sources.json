@@ -1,0 +1,104 @@
+{
+  "countryData": {
+    "publisher": "Unicode CLDR",
+    "version": "48.0.0",
+    "url": "https://github.com/unicode-org/cldr-json/blob/48.0.0/cldr-json/cldr-core/supplemental/territoryInfo.json",
+    "license": "https://www.unicode.org/license.txt"
+  },
+  "defaultSelection": "Unicode Intl likely subtags; traditional Chinese selected for TW, HK, MO. Defaults are product language choices, not legal statements. Visitors can override them.",
+  "catalogs": {
+    "en": {
+      "origin": "Project-authored"
+    },
+    "id": {
+      "origin": "Project-authored"
+    },
+    "de": {
+      "origin": "Project-authored"
+    },
+    "es": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "fr": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "nl": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "pt": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ar": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "it": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ja": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "zh": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "hi": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ko": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "pl": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ru": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "th": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "tr": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "vi": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "zh-Hant": {
+      "origin": "ICU Hans-Hant script conversion of the project’s machine-translated zh catalog",
+      "review": "Structurally validated; native review and regional wording review recommended"
+    },
+    "ms": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.1-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    }
+  }
+}

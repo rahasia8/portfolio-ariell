@@ -1,0 +1,86 @@
+{
+  "person": "THE PERSON BEHIND THE WORK",
+  "profile": "Discover my journey as a software engineer. Explore my projects, experience, and the technical decisions behind my work through interactive AI-powered conversations.",
+  "explore": "EXPLORE THROUGH CONVERSATION",
+  "nav": ["Experience", "Projects", "Skills & tools", "Contact"],
+  "navQuestions": [
+    "Tell me about your experience.",
+    "Tell me about your projects.",
+    "Tell me about your skills and tools.",
+    "How can I contact Ariell? Share his email and LinkedIn profile."
+  ],
+  "grounded": "Grounded in real work.",
+  "sourceNote": "Answers draw from published portfolio sources.",
+  "privacyButton": "Privacy & how this works ↗",
+  "newChat": "New conversation",
+  "conversation": "Portfolio conversation",
+  "introTag": "A DIFFERENT WAY TO GET TO KNOW ME",
+  "heading": "Good work starts with",
+  "headingLead": "a good ",
+  "headingEm": "conversation.",
+  "intro": "Ask about my experience, explore a project, or see how I approach a challenge. Pick a starting point below.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "The big picture",
+      "question": "Tell me about your professional background.",
+      "detail": "Experience & engineering focus"
+    },
+    {
+      "icon": "02",
+      "title": "Under the hood",
+      "question": "Which projects best demonstrate your engineering skills?",
+      "detail": "Projects & technical decisions"
+    },
+    {
+      "icon": "03",
+      "title": "A possible fit",
+      "question": "What experience is relevant to a backend engineering role?",
+      "detail": "Skills & role alignment"
+    }
+  ],
+  "ready": "Public knowledge base connected",
+  "preparing": "Portfolio content is being prepared. You can still try the conversation.",
+  "messages": "Messages",
+  "you": "YOU",
+  "assistant": "PORTFOLIO ASSISTANT",
+  "sources": "SOURCES",
+  "thinking": "Looking through the public sources…",
+  "inputLabel": "Ask about experience, projects, or skills",
+  "placeholder": "What would you like to know?",
+  "send": "Send question",
+  "honesty": "Source-backed answers. Honest about what’s missing.",
+  "enter": "↵ to send",
+  "footer": "BUILT AROUND CURIOSITY.",
+  "footerDetail": "Human experience. AI interface.",
+  "close": "Close privacy information",
+  "transparent": "A LITTLE TRANSPARENCY",
+  "privacyTitle": "Your conversation, explained.",
+  "privacy": [
+    "Questions and recent conversation context are sent to the configured AI provider (Gemini by default) to answer using public portfolio documents. The provider processes this data under its own terms.",
+    "This app keeps chat history in your browser’s session storage for this tab. New conversation clears that history. It does not store conversation text in the database or application logs.",
+    "Operational logs contain request IDs, timings, token counts, and fallback status. Hashed network identifiers are used temporarily for rate limiting. Please don’t share sensitive personal information.",
+    "Sources are shown when available. AI answers can still make mistakes; verify important details against their sources.",
+    "Automatic language uses the hosting country signal. If unavailable, your browser requests a country code from ipapi.co, which receives your IP address. Your manual choice is saved in this browser. UI text may be translated by Gemini; your location is not sent to Gemini."
+  ],
+  "language": "Language",
+  "auto": "Auto",
+  "sendError": "Could not send your question. Please try again.",
+  "timeout": "The request timed out. Please try again.",
+  "rateError": "Too many questions. Please try again in a minute.",
+  "unavailable": "The assistant is temporarily unavailable. Please try again shortly.",
+  "fallback": "That information isn’t available in this portfolio’s public knowledge base yet. Try another question, or check back after the owner adds their information.",
+  "translationError": "Interface translation is unavailable. Showing English for now.",
+  "detecting": "Detecting language…",
+  "locationUnavailable": "Country detection is unavailable. Using your browser language; you can choose another language above.",
+  "retryLanguage": "Retry",
+  "accessibility": {
+    "skipChat": "Skip to chat",
+    "skipInput": "Skip to question input",
+    "opensNewTab": "opens in a new tab",
+    "inputHelp": "Enter to send; Shift+Enter for a new line.",
+    "remaining": "{count} characters remaining",
+    "cleared": "Conversation cleared.",
+    "home": "Portfolio home"
+  }
+}

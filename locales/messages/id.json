@@ -1,0 +1,86 @@
+{
+  "person": "SOSOK DI BALIK KARYA",
+  "profile": "Kenali perjalanan saya sebagai software engineer—jelajahi proyek, pengalaman, dan keputusan teknis di balik karya saya melalui percakapan interaktif berbasis AI.",
+  "explore": "JELAJAHI MELALUI PERCAKAPAN",
+  "nav": ["Pengalaman", "Proyek", "Keahlian & alat", "Kontak"],
+  "navQuestions": [
+    "Ceritakan pengalaman profesional Anda.",
+    "Ceritakan proyek yang pernah Anda kerjakan.",
+    "Apa keahlian dan alat yang Anda gunakan?",
+    "Bagaimana cara menghubungi Ariell? Berikan email dan profil LinkedIn-nya."
+  ],
+  "grounded": "Berdasarkan karya nyata.",
+  "sourceNote": "Jawaban bersumber dari dokumen portfolio publik.",
+  "privacyButton": "Privasi & cara kerja ↗",
+  "newChat": "Percakapan baru",
+  "conversation": "Percakapan portfolio",
+  "introTag": "CARA BERBEDA UNTUK MENGENAL SAYA",
+  "heading": "Karya baik dimulai dari",
+  "headingLead": "",
+  "headingEm": "percakapan yang baik.",
+  "intro": "Tanyakan pengalaman saya, jelajahi sebuah proyek, atau kenali cara saya menghadapi tantangan. Pilih topik di bawah untuk memulai.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Gambaran besar",
+      "question": "Ceritakan latar belakang profesional Anda.",
+      "detail": "Pengalaman & fokus engineering"
+    },
+    {
+      "icon": "02",
+      "title": "Di balik layar",
+      "question": "Proyek mana yang paling menunjukkan keahlian engineering Anda?",
+      "detail": "Proyek & keputusan teknis"
+    },
+    {
+      "icon": "03",
+      "title": "Kecocokan peran",
+      "question": "Pengalaman apa yang relevan untuk posisi backend engineer?",
+      "detail": "Keahlian & kesesuaian peran"
+    }
+  ],
+  "ready": "Basis pengetahuan publik terhubung",
+  "preparing": "Konten portfolio sedang disiapkan. Anda tetap dapat mencoba percakapan.",
+  "messages": "Pesan",
+  "you": "ANDA",
+  "assistant": "ASISTEN PORTFOLIO",
+  "sources": "SUMBER",
+  "thinking": "Mencari informasi di sumber publik…",
+  "inputLabel": "Tanyakan pengalaman, proyek, atau keahlian",
+  "placeholder": "Apa yang ingin Anda ketahui?",
+  "send": "Kirim pertanyaan",
+  "honesty": "Jawaban bersumber. Jujur saat informasi belum tersedia.",
+  "enter": "↵ untuk mengirim",
+  "footer": "DIBANGUN DARI RASA INGIN TAHU.",
+  "footerDetail": "Pengalaman manusia. Antarmuka AI.",
+  "close": "Tutup informasi privasi",
+  "transparent": "TENTANG TRANSPARANSI",
+  "privacyTitle": "Tentang percakapan Anda.",
+  "privacy": [
+    "Pertanyaan dan konteks percakapan terbaru dikirim ke penyedia AI yang dikonfigurasi (Gemini secara default) untuk menjawab berdasarkan dokumen portfolio publik. Penyedia memproses data sesuai ketentuannya.",
+    "Aplikasi menyimpan riwayat di session storage browser untuk tab ini. Percakapan baru menghapus riwayat tersebut. Teks percakapan tidak disimpan di database atau log aplikasi.",
+    "Log operasional berisi ID permintaan, waktu proses, jumlah token, dan status fallback. Identitas jaringan yang di-hash digunakan sementara untuk pembatasan permintaan. Jangan membagikan informasi pribadi sensitif.",
+    "Sumber ditampilkan jika tersedia. Jawaban AI tetap dapat keliru; periksa detail penting pada sumbernya.",
+    "Bahasa otomatis menggunakan negara dari platform hosting. Jika tidak tersedia, browser meminta kode negara ke ipapi.co, yang menerima alamat IP Anda. Pilihan manual disimpan di browser. Terjemahan antarmuka dapat diproses oleh Gemini; lokasi tidak dikirim ke Gemini."
+  ],
+  "language": "Bahasa",
+  "auto": "Otomatis",
+  "sendError": "Pertanyaan belum dapat dikirim. Silakan coba lagi.",
+  "timeout": "Waktu permintaan habis. Silakan coba lagi.",
+  "rateError": "Terlalu banyak pertanyaan. Silakan coba lagi dalam satu menit.",
+  "unavailable": "Asisten sementara tidak tersedia. Silakan coba lagi nanti.",
+  "fallback": "Informasi tersebut belum tersedia di knowledge base publik portfolio ini. Silakan tanyakan hal lain atau kembali setelah pemilik menambahkan datanya.",
+  "translationError": "Terjemahan antarmuka belum tersedia. Bahasa Inggris ditampilkan sementara.",
+  "detecting": "Mendeteksi bahasa…",
+  "locationUnavailable": "Negara belum dapat dideteksi. Bahasa browser digunakan; Anda dapat memilih bahasa lain di atas.",
+  "retryLanguage": "Coba lagi",
+  "accessibility": {
+    "skipChat": "Langsung ke chat",
+    "skipInput": "Langsung ke kolom pertanyaan",
+    "opensNewTab": "dibuka di tab baru",
+    "inputHelp": "Enter untuk mengirim; Shift+Enter untuk baris baru.",
+    "remaining": "Sisa {count} karakter",
+    "cleared": "Percakapan dihapus.",
+    "home": "Beranda portfolio"
+  }
+}

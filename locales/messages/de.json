@@ -1,0 +1,86 @@
+{
+  "person": "DIE PERSON HINTER DER ARBEIT",
+  "profile": "Lernen Sie meinen Weg als Softwareentwickler kennen. Entdecken Sie meine Projekte, Erfahrungen und die technischen Entscheidungen hinter meiner Arbeit im interaktiven Gespräch mit KI.",
+  "explore": "IM GESPRÄCH ENTDECKEN",
+  "nav": ["Erfahrung", "Projekte", "Kenntnisse & Tools", "Kontakt"],
+  "navQuestions": [
+    "Erzählen Sie mir von Ihrer Berufserfahrung.",
+    "Erzählen Sie mir von Ihren Projekten.",
+    "Welche Kenntnisse und Tools setzen Sie ein?",
+    "Wie kann ich Ariell kontaktieren? Bitte nennen Sie seine E-Mail-Adresse und sein LinkedIn-Profil."
+  ],
+  "grounded": "Auf echter Arbeit aufgebaut.",
+  "sourceNote": "Antworten basieren auf öffentlichen Portfolioquellen.",
+  "privacyButton": "Datenschutz & Funktionsweise ↗",
+  "newChat": "Neues Gespräch",
+  "conversation": "Portfolio-Gespräch",
+  "introTag": "LERNEN SIE MICH IM GESPRÄCH KENNEN",
+  "heading": "Gute Arbeit beginnt mit",
+  "headingLead": "einem guten ",
+  "headingEm": "Gespräch.",
+  "intro": "Fragen Sie nach meiner Erfahrung, entdecken Sie ein Projekt oder erfahren Sie, wie ich Herausforderungen angehe. Wählen Sie unten einen Einstieg.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Der Überblick",
+      "question": "Erzählen Sie mir von Ihrem beruflichen Hintergrund.",
+      "detail": "Erfahrung & technische Schwerpunkte"
+    },
+    {
+      "icon": "02",
+      "title": "Hinter den Kulissen",
+      "question": "Welche Projekte zeigen Ihre technischen Fähigkeiten am besten?",
+      "detail": "Projekte & technische Entscheidungen"
+    },
+    {
+      "icon": "03",
+      "title": "Eine passende Rolle",
+      "question": "Welche Erfahrung ist für eine Stelle als Backend-Entwickler relevant?",
+      "detail": "Kenntnisse & Eignung"
+    }
+  ],
+  "ready": "Öffentliche Wissensbasis verbunden",
+  "preparing": "Die Portfolioinhalte werden vorbereitet. Sie können das Gespräch bereits ausprobieren.",
+  "messages": "Nachrichten",
+  "you": "SIE",
+  "assistant": "PORTFOLIO-ASSISTENT",
+  "sources": "QUELLEN",
+  "thinking": "Öffentliche Quellen werden durchsucht…",
+  "inputLabel": "Fragen zu Erfahrung, Projekten oder Kenntnissen",
+  "placeholder": "Was möchten Sie wissen?",
+  "send": "Frage senden",
+  "honesty": "Quellenbasierte Antworten. Ehrlich bei fehlenden Informationen.",
+  "enter": "↵ zum Senden",
+  "footer": "AUS NEUGIER ENTSTANDEN.",
+  "footerDetail": "Menschliche Erfahrung. KI-Oberfläche.",
+  "close": "Datenschutzhinweise schließen",
+  "transparent": "EIN WENIG TRANSPARENZ",
+  "privacyTitle": "Ihr Gespräch, erklärt.",
+  "privacy": [
+    "Fragen und der aktuelle Gesprächskontext werden an den konfigurierten KI-Anbieter (standardmäßig Gemini) gesendet, um anhand öffentlicher Portfoliodokumente zu antworten. Es gelten die Bedingungen des Anbieters.",
+    "Der Gesprächsverlauf wird im Sitzungsspeicher dieses Browser-Tabs gespeichert. Ein neues Gespräch löscht diesen Verlauf. Gesprächstexte werden nicht in der Datenbank oder den Anwendungsprotokollen gespeichert.",
+    "Betriebsprotokolle enthalten Anfrage-IDs, Laufzeiten, Tokenzahlen und den Fallback-Status. Gehashte Netzwerkkennungen werden vorübergehend zur Ratenbegrenzung verwendet. Bitte teilen Sie keine sensiblen persönlichen Informationen.",
+    "Quellen werden angezeigt, wenn sie verfügbar sind. KI-Antworten können Fehler enthalten; überprüfen Sie wichtige Angaben anhand der Quellen.",
+    "Die automatische Sprache nutzt das vom Hosting erkannte Land. Falls es fehlt, fragt der Browser einen Ländercode bei ipapi.co ab; dabei erhält der Dienst Ihre IP-Adresse. Ihre manuelle Auswahl wird im Browser gespeichert. Oberflächentexte können von Gemini übersetzt werden; Ihr Standort wird nicht an Gemini gesendet."
+  ],
+  "language": "Sprache",
+  "auto": "Automatisch",
+  "sendError": "Die Frage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+  "timeout": "Die Anfrage hat zu lange gedauert. Bitte versuchen Sie es erneut.",
+  "rateError": "Zu viele Fragen. Bitte versuchen Sie es in einer Minute erneut.",
+  "unavailable": "Der Assistent ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später erneut.",
+  "fallback": "Diese Information ist in der öffentlichen Wissensbasis dieses Portfolios noch nicht verfügbar. Stellen Sie eine andere Frage oder kommen Sie später wieder.",
+  "translationError": "Die Übersetzung ist derzeit nicht verfügbar. Die Oberfläche wird vorerst auf Englisch angezeigt.",
+  "detecting": "Sprache wird erkannt…",
+  "locationUnavailable": "Das Land konnte nicht erkannt werden. Die Browsersprache wird verwendet; oben können Sie eine andere Sprache auswählen.",
+  "retryLanguage": "Erneut versuchen",
+  "accessibility": {
+    "skipChat": "Zum Chat springen",
+    "skipInput": "Zur Frage springen",
+    "opensNewTab": "öffnet in einem neuen Tab",
+    "inputHelp": "Enter zum Senden; Umschalt+Enter für eine neue Zeile.",
+    "remaining": "Noch {count} Zeichen",
+    "cleared": "Gespräch gelöscht.",
+    "home": "Portfolio-Startseite"
+  }
+}

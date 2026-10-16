@@ -1,0 +1,86 @@
+{
+  "person": "OSOBA STOJĄCA ZA TĄ PRACĄ",
+  "profile": "Poznaj moją drogę jako inżyniera oprogramowania. Odkryj moje projekty, doświadczenie i decyzje techniczne stojące za moją pracą dzięki interaktywnym rozmowom z AI.",
+  "explore": "ODKRYWAJ POPRZEZ ROZMOWĘ",
+  "nav": ["Doświadczenie", "Projekty", "Umiejętności i narzędzia", "Kontakt"],
+  "navQuestions": [
+    "Opowiedz mi o swoim doświadczeniu.",
+    "Opowiedz mi o swoich projektach.",
+    "Opowiedz mi o swoich umiejętnościach i narzędziach.",
+    "Jak mogę skontaktować się z Ariellem? Podaj jego adres e-mail i profil na LinkedIn."
+  ],
+  "grounded": "Oparte na rzeczywistej pracy.",
+  "sourceNote": "Odpowiedzi bazują na opublikowanych materiałach z portfolio.",
+  "privacyButton": "Prywatność i jak to działa ↗",
+  "newChat": "Nowa rozmowa",
+  "conversation": "Rozmowa o portfolio",
+  "introTag": "INNY SPOSÓB, ABY MNIE POZNAĆ",
+  "heading": "Dobra praca zaczyna się od",
+  "headingLead": "dobrej ",
+  "headingEm": "rozmowy.",
+  "intro": "Zapytaj o moje doświadczenie, poznaj projekt lub zobacz, jak podchodzę do wyzwań. Wybierz punkt startowy poniżej.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Szersza perspektywa",
+      "question": "Opowiedz mi o swoim doświadczeniu zawodowym.",
+      "detail": "Doświadczenie i nacisk na inżynierię"
+    },
+    {
+      "icon": "02",
+      "title": "Pod maską",
+      "question": "Które projekty najlepiej demonstrują Twoje umiejętności inżynierskie?",
+      "detail": "Projekty i decyzje techniczne"
+    },
+    {
+      "icon": "03",
+      "title": "Możliwe dopasowanie",
+      "question": "Jakie doświadczenie jest istotne dla roli inżyniera backendu?",
+      "detail": "Umiejętności i dopasowanie do roli"
+    }
+  ],
+  "ready": "Połączono z publiczną bazą wiedzy",
+  "preparing": "Treść portfolio jest przygotowywana. Nadal możesz spróbować przeprowadzić rozmowę.",
+  "messages": "Wiadomości",
+  "you": "TY",
+  "assistant": "ASYSTENT PORTFOLIO",
+  "sources": "ŹRÓDŁA",
+  "thinking": "Przeszukiwanie publicznych źródeł…",
+  "inputLabel": "Zapytaj o doświadczenie, projekty lub umiejętności",
+  "placeholder": "O co chciałbyś zapytać?",
+  "send": "Wyślij pytanie",
+  "honesty": "Odpowiedzi poparte źródłami. Uczciwość w kwestii tego, czego brakuje.",
+  "enter": "↵ aby wysłać",
+  "footer": "ZBUDOWANE WOKÓŁ CIEKAWOŚCI.",
+  "footerDetail": "Ludzkie doświadczenie. Interfejs AI.",
+  "close": "Zamknij informacje o prywatności",
+  "transparent": "ODROBINA PRZEJRZYSTOŚCI",
+  "privacyTitle": "Twoja rozmowa, wyjaśniona.",
+  "privacy": [
+    "Pytania i kontekst ostatniej rozmowy są wysyłane do skonfigurowanego dostawcy AI (domyślnie Gemini), aby odpowiedzieć przy użyciu publicznych dokumentów portfolio. Dostawca przetwarza te dane zgodnie z własnym regulaminem.",
+    "Ta aplikacja przechowuje historię czatu w pamięci sesji przeglądarki dla tej karty. Nowa rozmowa czyści tę historię. Nie przechowuje tekstu rozmowy w bazie danych ani logach aplikacji.",
+    "Logi operacyjne zawierają identyfikatory żądań, czasy trwania, liczbę tokenów i statusy awaryjne. Skrócone identyfikatory sieciowe są używane tymczasowo do ograniczania liczby zapytań. Prosimy nie udostępniać wrażliwych danych osobowych.",
+    "Źródła są wyświetlane, gdy są dostępne. Odpowiedzi AI mogą nadal zawierać błędy; weryfikuj ważne szczegóły w źródłach.",
+    "Automatyczny język wykorzystuje sygnał kraju hostingu. Jeśli jest niedostępny, przeglądarka prosi o kod kraju z ipapi.co, który otrzymuje Twój adres IP. Twój ręczny wybór jest zapisywany w tej przeglądarce. Tekst interfejsu może być tłumaczony przez Gemini; Twoja lokalizacja nie jest wysyłana do Gemini."
+  ],
+  "language": "Język",
+  "auto": "Automatycznie",
+  "sendError": "Nie udało się wysłać pytania. Spróbuj ponownie.",
+  "timeout": "Upłynął czas oczekiwania na żądanie. Spróbuj ponownie.",
+  "rateError": "Zbyt wiele pytań. Spróbuj ponownie za minutę.",
+  "unavailable": "Asystent jest tymczasowo niedostępny. Spróbuj ponownie za chwilę.",
+  "fallback": "Te informacje nie są jeszcze dostępne w publicznej bazie wiedzy tego portfolio. Spróbuj zadać inne pytanie lub sprawdź ponownie, gdy właściciel doda swoje informacje.",
+  "translationError": "Tłumaczenie interfejsu jest niedostępne. Obecnie wyświetlany jest język angielski.",
+  "detecting": "Wykrywanie języka…",
+  "locationUnavailable": "Wykrywanie kraju jest niedostępne. Używam języka Twojej przeglądarki; możesz wybrać inny język powyżej.",
+  "retryLanguage": "Ponów próbę",
+  "accessibility": {
+    "skipChat": "Przejdź do czatu",
+    "skipInput": "Przejdź do pola pytania",
+    "opensNewTab": "otwiera się w nowej karcie",
+    "inputHelp": "Enter, aby wysłać; Shift+Enter, aby dodać nowy wiersz.",
+    "remaining": "Pozostało znaków: {count}",
+    "cleared": "Rozmowa została wyczyszczona.",
+    "home": "Strona główna portfolio"
+  }
+}
