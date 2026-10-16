@@ -5,17 +5,18 @@ import { chatSchema, readBoundedJson } from "@/lib/validation";
 import { allowRequest } from "@/lib/rate-limit";
 import { retrieve, answerFromChunks, localizedFallback } from "@/lib/rag";
 import { db } from "@/lib/db";
+import { allowedRequestOrigin } from "@/lib/request-origin";
 export const runtime = "nodejs";
 export const maxDuration = 60;
 export async function POST(request: Request) {
   const requestId = randomUUID();
   const start = Date.now();
   const headers = { "Cache-Control": "no-store" };
+  let phase = "rate_limit";
   const json = (body: unknown, status = 200, extra = {}) =>
     Response.json(body, { status, headers: { ...headers, ...extra } });
   try {
-    const origin = request.headers.get("origin");
-    if (origin && origin !== new URL(request.url).origin)
+    if (!allowedRequestOrigin(request))
       return json({ error: "Request origin not allowed.", requestId }, 403);
     const ip =
       config().TRUST_PROXY === "true"
@@ -62,6 +63,7 @@ export async function POST(request: Request) {
         requestId,
         fallback: true,
       });
+    phase = "retrieval";
     const retrievalStart = Date.now();
     const query = [
       ...input.history
@@ -74,6 +76,7 @@ export async function POST(request: Request) {
       .slice(-6000);
     const chunks = await retrieve(query);
     const retrievalMs = Date.now() - retrievalStart;
+    phase = "generation";
     const answer = await answerFromChunks(
       input.message,
       chunks,
@@ -93,9 +96,18 @@ export async function POST(request: Request) {
       }),
     );
     return json({ ...answer, conversationId, requestId });
-  } catch {
+  } catch (error) {
+    const code =
+      error && typeof error === "object" && "code" in error ? error.code : undefined;
     console.error(
-      JSON.stringify({ event: "chat_error", requestId, totalMs: Date.now() - start }),
+      JSON.stringify({
+        event: "chat_error",
+        requestId,
+        totalMs: Date.now() - start,
+        phase,
+        code:
+          typeof code === "string" && /^[A-Z0-9_]{1,40}$/.test(code) ? code : undefined,
+      }),
     );
     return json(
       {

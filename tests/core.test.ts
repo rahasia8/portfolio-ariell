@@ -154,6 +154,7 @@ describe("Gemini provider contracts", () => {
     }
   });
   it("parses structured generated answers", async () => {
+    const timeout = vi.spyOn(AbortSignal, "timeout");
     vi.stubGlobal(
       "fetch",
       vi.fn().mockResolvedValue(
@@ -181,8 +182,10 @@ describe("Gemini provider contracts", () => {
       expect((await new GeminiLLM().generate("hi", [chunk], [])).answer).toBe(
         "Supported",
       );
+      expect(timeout).toHaveBeenCalledWith(35000);
     } finally {
       vi.unstubAllGlobals();
+      timeout.mockRestore();
     }
   });
 });

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { getConnectionString, MissingDatabaseConnectionError } from "@netlify/database";
 const schema = z.object({
   DATABASE_URL: z.string().trim().optional(),
   GEMINI_API_KEY: z.string().trim().optional(),
@@ -16,7 +17,21 @@ const schema = z.object({
   RATE_LIMIT_PER_MINUTE: z.coerce.number().int().min(1).max(120).default(12),
   TRUST_PROXY: z.enum(["true", "false"]).default("false"),
 });
-export const config = () => schema.parse(process.env);
+function databaseUrl() {
+  try {
+    // Netlify.env carries the request's database credentials. process.env can
+    // contain the read-only URL exposed to the local CLI during a build.
+    return getConnectionString();
+  } catch (error) {
+    if (!(error instanceof MissingDatabaseConnectionError)) throw error;
+    return process.env.DATABASE_URL;
+  }
+}
+export const config = () =>
+  schema.parse({
+    ...process.env,
+    DATABASE_URL: databaseUrl(),
+  });
 export const configured = () => Boolean(config().DATABASE_URL && config().GEMINI_API_KEY);
 
 export function requireSettings(keys: ("DATABASE_URL" | "GEMINI_API_KEY")[]) {

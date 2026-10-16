@@ -1,11 +1,10 @@
 [build]
-  command = "npm run build"
+  command = "npm run knowledge:check && npm run build"
   publish = ".next"
 
 [build.environment]
   NODE_VERSION = "24"
   NPM_FLAGS = "--include=dev"
 
-# Only production builds publish the knowledge index. Previews must not replace it.
-[context.production]
-  command = "npm run build && npm run db:migrate && npm run ingest"
+# Netlify applies netlify/database/migrations immediately before publication.
+# Production database connections exposed to local CLI builds are read-only.

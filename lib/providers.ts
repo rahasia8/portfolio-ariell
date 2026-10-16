@@ -23,7 +23,9 @@ async function call(model: string, method: string, body: unknown) {
         "x-goog-api-key": config().GEMINI_API_KEY || "",
       },
       body: JSON.stringify(body),
-      signal: AbortSignal.timeout(15000),
+      // Generation can exceed 15 seconds on the free tier. Leave room within
+      // the chat client's 55-second and hosting's 60-second request limits.
+      signal: AbortSignal.timeout(method === "generateContent" ? 35000 : 15000),
     },
   );
   if (!response.ok) throw new Error("AI provider unavailable");

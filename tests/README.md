@@ -46,7 +46,7 @@ Reports: `playwright-report/index.html`. Screenshots/traces are retained only on
 
 ## CI
 
-`.github/workflows/tests.yml` runs format checks, types, locale validation, unit coverage, real database integration, production build, and Playwright on pushes/pull requests. Reports are uploaded as workflow artifacts even on failure. No production secrets are required. The workflow must be committed/pushed before GitHub can run it.
+`.github/workflows/tests.yml` runs format checks, types, locale validation, unit coverage, real database integration, production build, and Playwright on pushes/pull requests. Reports are uploaded as workflow artifacts even on failure. Tests require no production secrets. After both test jobs pass, pushes to `main` also deploy to Netlify using the `NETLIFY_AUTH_TOKEN` repository secret. Pull requests and other branches never deploy production. See [deployment setup](../docs/deployment.md#automatic-deployment-from-main).
 
 ## Formatting
 

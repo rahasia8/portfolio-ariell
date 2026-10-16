@@ -1,4 +1,4 @@
-name: Tests
+name: Tests and Netlify Deploy
 on:
   push:
   pull_request:
@@ -61,3 +61,70 @@ jobs:
           path: |
             playwright-report/
             test-results/
+  deploy:
+    name: Deploy production to Netlify
+    needs: [unit-and-integration, browser]
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: netlify-production
+      cancel-in-progress: false
+    env:
+      NETLIFY_SITE_ID: 934bb437-c5be-422f-85b2-2913ba3f5c87
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NEXT_TELEMETRY_DISABLED: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - name: Check this is still the latest main commit
+        id: revision
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          latest_sha=$(gh api "repos/$GITHUB_REPOSITORY/commits/main" --jq .sha)
+          if [ "$latest_sha" = "$GITHUB_SHA" ]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "A newer main commit exists; skipping this deployment."
+          fi
+      - name: Check deployment credentials
+        if: steps.revision.outputs.current == 'true'
+        run: |
+          if [ -z "$NETLIFY_AUTH_TOKEN" ]; then
+            echo "::error::Add the NETLIFY_AUTH_TOKEN repository secret before deploying."
+            exit 1
+          fi
+      - name: Install dependencies
+        if: steps.revision.outputs.current == 'true'
+        run: npm ci
+      - name: Build and deploy Next.js with the Netlify adapter
+        if: steps.revision.outputs.current == 'true'
+        run: >-
+          npx --yes --package=netlify-cli@27.12.1 netlify deploy
+          --prod --context production --site "$NETLIFY_SITE_ID"
+          --message "GitHub Actions commit $GITHUB_SHA"
+      - name: Verify production page and RAG readiness
+        if: steps.revision.outputs.current == 'true'
+        env:
+          DEPLOYMENT_URL: https://ariell-ariza-portfolio.netlify.app
+        run: |
+          node --input-type=module <<'JS'
+          const base = process.env.DEPLOYMENT_URL;
+          const page = await fetch(base, { signal: AbortSignal.timeout(30000) });
+          if (!page.ok || !(await page.text()).includes("Ariell")) {
+            throw new Error(`Portfolio page check failed: HTTP ${page.status}`);
+          }
+          const health = await fetch(`${base}/api/health`, {
+            signal: AbortSignal.timeout(30000),
+          });
+          const data = await health.json();
+          if (!health.ok || data.status !== "ok" || data.knowledgeReady !== true) {
+            throw new Error("Production RAG health check failed");
+          }
+          console.log(`Production verified: ${base}`);
+          JS
