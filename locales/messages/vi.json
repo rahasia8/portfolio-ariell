@@ -1,7 +1,7 @@
 {
   "person": "NGƯỜI ĐỨNG SAU CÔNG VIỆC",
   "profile": "Khám phá hành trình của tôi với vai trò kỹ sư phần mềm. Tìm hiểu các dự án, kinh nghiệm và những quyết định kỹ thuật đằng sau công việc của tôi qua cuộc trò chuyện tương tác với AI.",
-  "explore": "KHÁM PHÁ QUA TRÒ CHUYỆN",
+  "explore": "Câu hỏi gợi ý",
   "nav": ["Kinh nghiệm", "Dự án", "Kỹ năng & công cụ", "Liên hệ"],
   "navQuestions": [
     "Hãy kể cho tôi nghe về kinh nghiệm của bạn.",
@@ -15,7 +15,7 @@
   "newChat": "Cuộc trò chuyện mới",
   "conversation": "Cuộc trò chuyện về danh mục đầu tư",
   "introTag": "MỘT CÁCH KHÁC ĐỂ HIỂU VỀ TÔI",
-  "heading": "Công việc tốt bắt đầu từ",
+  "heading": "Trò chuyện với hồ sơ AI của tôi",
   "headingLead": "một ",
   "headingEm": "cuộc trò chuyện tốt.",
   "intro": "Hãy hỏi về kinh nghiệm của tôi, khám phá một dự án hoặc xem cách tôi tiếp cận một thử thách. Chọn một điểm bắt đầu bên dưới.",

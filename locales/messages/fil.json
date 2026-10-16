@@ -1,0 +1,86 @@
+{
+  "person": "ANG TAO SA LIKOD NG TRABAHO",
+  "profile": "Tuklasin ang aking paglalakbay bilang isang software engineer. Suriin ang aking mga proyekto, karanasan, at mga teknikal na desisyon sa likod ng aking trabaho sa pamamagitan ng mga interactive na pag-uusap na pinapagana ng AI.",
+  "explore": "Mga Iminungkahing Tanong",
+  "nav": ["Karanasan", "Mga Proyekto", "Mga Kasanayan at Kasangkapan", "Makipag-ugnayan"],
+  "navQuestions": [
+    "Sabihin sa akin ang tungkol sa iyong karanasan.",
+    "Sabihin sa akin ang tungkol sa iyong mga proyekto.",
+    "Sabihin sa akin ang tungkol sa iyong mga kasanayan at kasangkapan.",
+    "Paano ko makakausap si Ariell? Ibahagi ang kanyang email at LinkedIn profile."
+  ],
+  "grounded": "Batay sa totoong trabaho.",
+  "sourceNote": "Ang mga sagot ay kumukuha mula sa mga nai-publish na pinagmulan ng portfolio.",
+  "privacyButton": "Privacy at kung paano ito gumagana ↗",
+  "newChat": "Bagong pag-uusap",
+  "conversation": "Pag-uusap sa portfolio",
+  "introTag": "ISANG IBANG PARAAN UPANG KILALANIN AKO",
+  "heading": "Makipag-chat sa Aking AI Resume",
+  "headingLead": "isang magandang ",
+  "headingEm": "pag-uusap.",
+  "intro": "Magtanong tungkol sa aking karanasan, galugarin ang isang proyekto, o tingnan kung paano ko hinaharap ang isang hamon. Pumili ng simula sa ibaba.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Ang pangkalahatang pananaw",
+      "question": "Sabihin sa akin ang tungkol sa iyong propesyonal na background.",
+      "detail": "Karanasan at pokus sa engineering"
+    },
+    {
+      "icon": "02",
+      "title": "Sa loob ng sistema",
+      "question": "Aling mga proyekto ang pinakamahusay na nagpapakita ng iyong mga kasanayan sa engineering?",
+      "detail": "Mga proyekto at mga teknikal na desisyon"
+    },
+    {
+      "icon": "03",
+      "title": "Isang posibleng akma",
+      "question": "Anong karanasan ang nauugnay sa isang backend engineering role?",
+      "detail": "Mga kasanayan at pagkakahanay sa role"
+    }
+  ],
+  "ready": "Konektado ang pampublikong batayan ng kaalaman",
+  "preparing": "Inihahanda ang nilalaman ng portfolio. Maaari mo pa ring subukan ang pag-uusap.",
+  "messages": "Mga Mensahe",
+  "you": "IKAW",
+  "assistant": "PORTFOLIO ASSISTANT",
+  "sources": "MGA PINAGMULAN",
+  "thinking": "Tinitingnan ang mga pampublikong pinagmulan…",
+  "inputLabel": "Magtanong tungkol sa karanasan, mga proyekto, o mga kasanayan",
+  "placeholder": "Ano ang nais mong malaman?",
+  "send": "Ipadala ang tanong",
+  "honesty": "Mga sagot na sinusuportahan ng pinagmulan. Tapat tungkol sa mga nawawala.",
+  "enter": "↵ upang ipadala",
+  "footer": "GINAWA SA PALIGID NG KURIOSIDAD.",
+  "footerDetail": "Karanasan ng tao. Interface ng AI.",
+  "close": "Isara ang impormasyon sa privacy",
+  "transparent": "KAUNTING TRANSPARENCY",
+  "privacyTitle": "Ang iyong pag-uusap, ipinaliwanag.",
+  "privacy": [
+    "Ang mga tanong at konteksto ng kamakailang pag-uusap ay ipinapadala sa naka-configure na AI provider (Gemini bilang default) upang sumagot gamit ang mga pampublikong dokumento ng portfolio. Pinoproseso ng provider ang datang ito sa ilalim ng sarili nitong mga tuntunin.",
+    "Pinapanatili ng app na ito ang kasaysayan ng chat sa session storage ng iyong browser para sa tab na ito. Nililinis ng bagong pag-uusap ang kasaysayan na iyon. Hindi ito nag-imbak ng teksto ng pag-uusap sa database o mga log ng aplikasyon.",
+    "Ang mga operational log ay naglalaman ng mga ID ng kahilingan, mga timing, mga bilang ng token, at katayuan ng fallback. Ang mga naka-hash na identifier ng network ay pansamantalang ginagamit para sa rate limiting. Mangyaring huwag magbahagi ng sensitibong personal na impormasyon.",
+    "Ang mga pinagmulan ay ipinapakita kapag magagamit. Ang mga sagot ng AI ay maaari pa ring magkamali; i-verify ang mga mahalagang detalye laban sa kanilang mga pinagmulan.",
+    "Ang awtomatikong wika ay gumagamit ng senyas ng bansa kung saan ito naka-host. Kung hindi magagamit, humihiling ang iyong browser ng code ng bansa mula sa ipapi.co, na tumatanggap ng iyong IP address. Ang iyong manu-manong pagpipilian ay naka-save sa browser na ito. Ang teksto ng UI ay maaaring isalin ng Gemini; ang iyong lokasyon ay hindi ipinapadala sa Gemini."
+  ],
+  "language": "Wika",
+  "auto": "Auto",
+  "sendError": "Hindi maipadala ang iyong tanong. Mangyaring subukan muli.",
+  "timeout": "Nag-time out ang kahilingan. Mangyaring subukan muli.",
+  "rateError": "Napakaraming tanong. Mangyaring subukan muli pagkalipas ng isang minuto.",
+  "unavailable": "Ang assistant ay pansamantalang hindi magagamit. Mangyaring subukan muli mamaya.",
+  "fallback": "Ang impormasyong iyon ay hindi pa magagamit sa pampublikong batayan ng kaalaman ng portfolio na ito. Subukan ang isa pang tanong, o bumalik pagkatapos idagdag ng may-ari ang kanilang impormasyon.",
+  "translationError": "Hindi magagamit ang pagsasalin ng interface. Ipinapakita ang Ingles sa ngayon.",
+  "detecting": "Nakakakita ng wika…",
+  "locationUnavailable": "Hindi magagamit ang pagtuklas ng bansa. Ginagamit ang wika ng iyong browser; maaari kang pumili ng ibang wika sa itaas.",
+  "retryLanguage": "Subukang muli",
+  "accessibility": {
+    "skipChat": "Laktawan patungo sa chat",
+    "skipInput": "Laktawan patungo sa paglalagay ng tanong",
+    "opensNewTab": "bubukas sa bagong tab",
+    "inputHelp": "Enter upang ipadala; Shift+Enter para sa bagong linya.",
+    "remaining": "{count} na character ang natitira",
+    "cleared": "Nalinis ang pag-uusap.",
+    "home": "Home ng portfolio"
+  }
+}

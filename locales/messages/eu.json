@@ -1,0 +1,86 @@
+{
+  "person": "LANAREN ATZEAN DAGOEN PERTSONA",
+  "profile": "Ezagutu nire bidaia ingeniari de software gisa. Arakatu nire proiektuak, esperientzia eta nire lanaren atzean dauden erabaki teknikoak elkarrizketa interaktibo adimentsuen bidez.",
+  "explore": "Iradokitako galderak",
+  "nav": ["Esperientzia", "Proiektuak", "Trebetasunak eta tresnak", "Kontaktua"],
+  "navQuestions": [
+    "Hitz egin niri zure esperientziari buruz.",
+    "Hitz egin niri zure proiektuei buruz.",
+    "Hitz egin niri zure trebetasun eta tresnei buruz.",
+    "Nola jarri naiteke harremanetan Ariellekin? Partekatu bere posta elektronikoa eta LinkedIn profila."
+  ],
+  "grounded": "Benetako lanean oinarritua.",
+  "sourceNote": "Erantzunak portfolio publikoko iturrietatik ateratzen dira.",
+  "privacyButton": "Pribatutasuna eta nola funtzionatzen du ↗",
+  "newChat": "Elkarrizketa berria",
+  "conversation": "Portfolioaren elkarrizketa",
+  "introTag": "NI EZAGUTZEKO BESTE AUKERA BAT",
+  "heading": "Txateatu nire AI Curriculumarekin",
+  "headingLead": "ona den ",
+  "headingEm": "elkarrizketa bat.",
+  "intro": "Galdetu nire esperientziari buruz, arakatu proiektu bat edo ikusi erronka bati nola aurre egiten diodan. Aukeratu abiapuntu bat behean.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Ikuspegi orokorra",
+      "question": "Hitz egin niri zure ibilbide profesionalari buruz.",
+      "detail": "Esperientzia eta ingeniaritza ardatza"
+    },
+    {
+      "icon": "02",
+      "title": "Kaputxa azpian",
+      "question": "Zein proiektuk erakusten dituzte hobekien zure ingeniaritza trebetasunak?",
+      "detail": "Proiektuak eta erabaki teknikoak"
+    },
+    {
+      "icon": "03",
+      "title": "Balizko bat etortzea",
+      "question": "Zein esperientzia da garrantzitsua backend ingeniari rol baterako?",
+      "detail": "Trebetasunak eta rolerako egokitzapena"
+    }
+  ],
+  "ready": "Ezagutza base publikoa konektatuta",
+  "preparing": "Portfolioaren edukia prestatzen ari da. Elkarrizketa probatzen jarraitu dezakezu.",
+  "messages": "Mezuak",
+  "you": "ZU",
+  "assistant": "PORTFOLIOAREN LAGuntzailea",
+  "sources": "ITZURRIAK",
+  "thinking": "Iturri publikoak aztertzen…",
+  "inputLabel": "Galdetu esperientziari, proiektuei edo trebetasunei buruz",
+  "placeholder": "Zer jakin nahiko lukezu?",
+  "send": "Bidali galdera",
+  "honesty": "Iturrietan oinarritutako erantzunak. Zintzoa falta denarekin.",
+  "enter": "↵ bidaltzeko",
+  "footer": "JAKIN-MINAREN INGURUKOA.",
+  "footerDetail": "Giza esperientzia. AI interfazea.",
+  "close": "Itxi pribatutasun informazioa",
+  "transparent": "GIZATASUN PIXKAT BAT",
+  "privacyTitle": "Zure elkarrizketa, azaldua.",
+  "privacy": [
+    "Galderak eta azken elkarrizketaren testuingurua konfiguratutako AI hornitzaileari bidaiatzen zaizkio (lehenetsita Gemini) portfolio dokumentu publikoak erabiliz erantzuteko. Hornitzaileak datu hau bere baldintzapean prozesatzen du.",
+    "Aplikazio honek txataren historia zure nabigatzailearen saioaren biltegian gordetzen du fitxa honetarako. Elkarrizketa berri batek historia hori garbitzen du. Ez du elkarrizketaren testurik gordetzen datu-basean edo aplikazioaren erregistroetan.",
+    "Eragiketa-erregistroek eskaera IDak, denborak, token kopuruak eta erorketa-egoera dituzte. Sareko identifikatzaile aldatuak aldi baterako erabiltzen dira tasa-mugarako. Mesedez, ez partekatu informazio pertsonal sentikorrik.",
+    "Iturriak erabilgarri daudenean erakusten dira. AIren erantzunek oraindik akatsak egin ditzakete; egiaztatu xehetasun garrantzitsuak haien iturriekin.",
+    "Hizkuntza automatikoak ostalaritza herrialdearen seinalea erabiltzen du. Erabilgarri ez badago, zure nabigatzaileak herrialde kode bat eskatzen du ipapi.co-ri, eta honek zure IP helbidea jasotzen du. Zure eskuzko aukeraketa nabigatzaile honetan gordetzen da. Interfazearen testua Geminik itzul dezake; zure kokapena ez zaio Geminiri bidaltzen."
+  ],
+  "language": "Hizkuntza",
+  "auto": "Auto",
+  "sendError": "Ezin izan da zure galdera bidali. Mesedez, saiatu berriro.",
+  "timeout": "Eskaeraren denbora-muga gainditu da. Mesedez, saiatu berriro.",
+  "rateError": "Galdera gehiegi. Mesedez, saiatu berriro minutu barru.",
+  "unavailable": "Laguntzailea ez dago erabilgarri aldi baterako. Mesedez, saiatu berriro laster.",
+  "fallback": "Informazio hori ez dago eskuragarri portfolio honen ezagutza-base publikoan oraindik. Saiatu beste galdera batekin, edo itzuli jabeak bere informazioa gehitu ondoren.",
+  "translationError": "Interfazearen itzulpena ez dago eskuragarri. Ingelesa erakusten orain.",
+  "detecting": "Hizkuntza hautematen…",
+  "locationUnavailable": "Herrialdearen hautematea ez dago erabilgarri. Zure nabigatzailearen hizkuntza erabiltzen; beste hizkuntza bat hauta dezakezu goian.",
+  "retryLanguage": "Saiatu berriro",
+  "accessibility": {
+    "skipChat": "Joan txatera",
+    "skipInput": "Joan galderaren sarrerara",
+    "opensNewTab": "fitxa berri batean irekitzen da",
+    "inputHelp": "Sartu bidaltzeko; Shift+Sartu lerro berri baterako.",
+    "remaining": "{count} karaktere geratzen dira",
+    "cleared": "Elkarrizketa garbitu da.",
+    "home": "Portfolioaren hasiera"
+  }
+}

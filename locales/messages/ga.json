@@ -1,0 +1,86 @@
+{
+  "person": "AN DUINE TAOBH THAR AN OBAIR",
+  "profile": "Faigh amach mo thuras mar innealtóir bogearraí. Déan iniúchadh ar mo chuid tionscadal, m'taithí, agus na cinntí teicniúla taobh thar mo chuid oibre trí chomhráite idirghníomhacha faoi stiúir AI.",
+  "explore": "Ceisteanna Molta",
+  "nav": ["Taithí", "Tionscadail", "Scileanna & uirlisí", "Déan teagmháil"],
+  "navQuestions": [
+    "Inis dom faoi do thaithí.",
+    "Inis dom faoi do chuid tionscadal.",
+    "Inis dom faoi do scileanna agus d'uirlisí.",
+    "Conas gur féidir liom teagmháil a dhéanamh le hAriell? Roinn a ríomhphost agus a phróifíl LinkedIn."
+  ],
+  "grounded": "Bunaithe ar fhíoroibreacha.",
+  "sourceNote": "Tarraingítear freagraí ó fhoinsí foilsithe sa phunann.",
+  "privacyButton": "Príobháideachas & conas a oibríonn sé seo ↗",
+  "newChat": "Comhrá nua",
+  "conversation": "Comhrá punainne",
+  "introTag": "BEALACH EILE LE CUR AITHNE ORM",
+  "heading": "Comhrá le Mo CV AI",
+  "headingLead": "comhrá maith ",
+  "headingEm": ".",
+  "intro": "Cuir ceist faoi mo thaithí, déan iniúchadh ar thionscadal, nó féach conas a théann mé i ngleic le dúshlán. Roghnaigh pointe tosaigh thíos.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "An pictiúr mór",
+      "question": "Inis dom faoi do chúlra gairmiúil.",
+      "detail": "Taithí & fócas innealtóireachta"
+    },
+    {
+      "icon": "02",
+      "title": "Faoi an gcochall",
+      "question": "Cén tionscadal a léiríonn do scileanna innealtóireachta is fearr?",
+      "detail": "Tionscadail & cinntí teicniúla"
+    },
+    {
+      "icon": "03",
+      "title": "Comhoiriúnacht a d'fhéadfadh bheith ann",
+      "question": "Cén taithí atá ábhartha do ról innealtóireachta cúil?",
+      "detail": "Scileanna & comhoiriúnacht róil"
+    }
+  ],
+  "ready": "Bonneolas eolais poiblí ceangailte",
+  "preparing": "Tá ábhar an phunainne á ullmhú. Is féidir leat triail a bhaint as an gcomhrá fós.",
+  "messages": "Teachtaireachtaí",
+  "you": "TÚ",
+  "assistant": "CÚNTÓIR PUNAINNE",
+  "sources": "FOINSÍ",
+  "thinking": "Ag scrúdú na bhfoinsí poiblí…",
+  "inputLabel": "Cuir ceist faoi thaithí, tionscadail, nó scileanna",
+  "placeholder": "Cad ba mhaith leat a fháil amach?",
+  "send": "Seol ceist",
+  "honesty": "Freagraí bunaithe ar fhoinsí. Trédhearcach faoin méid atá ar iarraidh.",
+  "enter": "↵ le seoladh",
+  "footer": "TÓGTHA TIMPEALL AR CHRIOSNACHAS.",
+  "footerDetail": "Taithí dhaonna. Comhéadan AI.",
+  "close": "Dún faisnéis príobháideachais",
+  "transparent": "BEAGÁN TRÉDHEARCACHTA",
+  "privacyTitle": "Do chomhrá, mínithe.",
+  "privacy": [
+    "Seoltar ceisteanna agus comhthéacs comhrá le déanaí chuig an soláthraí AI cumraithe (Gemini de réir réamhshocraithe) chun freagairt ag baint úsáide as doiciméid phoiblí punainne. Próiseálann an soláthraí an data seo faoina théarmaí féin.",
+    "Coinníonn an aip seo stair an chomhrá i stóráil seisiúin do bhrabhsálaí don chluaisín seo. Glanann comhrá nua an stair sin. Ní stórálann sé téacs comhrá sa bhunachar sonraí ná i loganna feidhmchláir.",
+    "Tá IDanna iarratais, uainíochtaí, comhaireamh comharthaí, agus stádas cúltaca i loganna oibriúcháin. Úsáidtear aitheantóirí líonra hasháilte go sealadach le haghaidh teorannú ráta. Ná roinn faisnéis phearsanta íogair le do thoil.",
+    "Taispeántar foinsí nuair atá siad ar fáil. Is féidir le freagraí AI botúin a dhéanamh fós; fíoraigh sonraí tábhachtacha i gcoinne a bhfoinsí.",
+    "Úsáideann teanga uathoibríoch comhartha na tíre óstála. Mura bhfuil sé ar fáil, iarrann do bhrabhsálaí cód tíre ó ipapi.co, a fhaigheann do sheoladh IP. Sábháiltear do rogha láimhe sa bhrabhsálaí seo. Féadfaidh Gemini téacs comhéadain a aistriú; ní seoltar do shuíomh chuig Gemini."
+  ],
+  "language": "Teanga",
+  "auto": "Uathoibríoch",
+  "sendError": "Níorbh fhéidir do cheist a sheoladh. Bain triail aisti arís le do thoil.",
+  "timeout": "Exceeded ama an iarratais. Bain triail aisti arís le do thoil.",
+  "rateError": "Rómhór ceisteanna. Bain triail aisti arís i gceann nóiméad.",
+  "unavailable": "Níl an cúntóir ar fáil go sealadach. Bain triail aisti arís go luath.",
+  "fallback": "Níl an t-eolas sin ar fáil i mbunachar eolais poiblí an phunainne seo fós. Bain triail as ceist eile, nó seiceáil ar ais tar éis don úinéir a chuid eolais a chur leis.",
+  "translationError": "Níl aistriúchán comhéadain ar fáil. Ag taispeáint Béarla de thuras na huaire.",
+  "detecting": "Ag aimsir teanga…",
+  "locationUnavailable": "Níl aimsir tíre ar fáil. Ag úsáid teanga do bhrabhsálaí; is féidir leat teanga eile a roghnú thuas.",
+  "retryLanguage": "Athbhris",
+  "accessibility": {
+    "skipChat": "Léim chuig an gcomhrá",
+    "skipInput": "Léim chuig ionchur ceiste",
+    "opensNewTab": "osclaítear i gcluaisín nua",
+    "inputHelp": "Enter le seoladh; Shift+Enter le haghaidh líne nua.",
+    "remaining": "{count} carachtar fágtha",
+    "cleared": "Glanadh an comhrá.",
+    "home": "Baile an phunainne"
+  }
+}

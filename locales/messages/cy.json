@@ -1,0 +1,86 @@
+{
+  "person": "Y PERSON Y TU ÔL I'R WAITH",
+  "profile": "Darganfyddwch fy nhaith fel peiriannydd meddalwedd. Archwiliwch fy mhrosjektau, fy profiad, a'r penderfyniadau technegol y tu ôl i fy gwaith trwy sgwrs ryngweithiol wedi'i phweru gan AI.",
+  "explore": "Cwestiynau A Amlygir",
+  "nav": ["Profiad", "Prosiectau", "Kogwyddau a offer", "Cysylltu"],
+  "navQuestions": [
+    "Dywedwch wrthyf am eich profiad.",
+    "Dywedwch wrthyf am eich prosiectau.",
+    "Dywedwch wrthyf am eich sgiliau a'ch offer.",
+    "Sut gallaf gysylltu ag Ariell? Rhannwch ei e-bost a'i broffil LinkedIn."
+  ],
+  "grounded": "Wedi'i seilio ar waith go iawn.",
+  "sourceNote": "Mae atebion yn tynnu o ffynonellau portffolio cyhoeddedig.",
+  "privacyButton": "Preifatrwydd a sut mae hyn yn gweithio ↗",
+  "newChat": "Sgwrs newydd",
+  "conversation": "Sgwrs bortffolio",
+  "introTag": "FFORDD WAHANOL I DDOD I'M NABOD",
+  "heading": "Sgwrsiwch â'm Ail-ddechrau AI",
+  "headingLead": "sgwrs ",
+  "headingEm": "dda.",
+  "intro": "Gofynnwch am fy mhrofiad, archwiliwch brosiect, neu gweler sut rwy'n mynd i'r afael Her. Dewiswch fan cychwyn isod.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Y darlun mawr",
+      "question": "Dywedwch wrthyf am eich cefndir proffesiynol.",
+      "detail": "Profiad a ffocws peirianneg"
+    },
+    {
+      "icon": "02",
+      "title": "O dan y cwfl",
+      "question": "Pa brosiectau sy'n dangos eich sgiliau peirianneg orau?",
+      "detail": "Prosiectau a phenderfyniadau technegol"
+    },
+    {
+      "icon": "03",
+      "title": "Addasrwydd posibl",
+      "question": "Pa brofiad sy'n berthnasol i rôl peirianneg gefndirol?",
+      "detail": "Sgiliau a chyd-fynd rôl"
+    }
+  ],
+  "ready": "Sylfaen wybodaeth gyhoeddus wedi'i chysylltu",
+  "preparing": "Mae cynnwys y portffolio yn cael ei baratoi. Gallwch barhau i roi cynnig ar y sgwrs.",
+  "messages": "Negeseuon",
+  "you": "CHI",
+  "assistant": "CYNORTHWYYDD PORTFFOLIO",
+  "sources": "FFYNONELLAU",
+  "thinking": "Yn edrych trwy'r ffynonellau cyhoeddus…",
+  "inputLabel": "Gofynnwch am brofiad, prosiectau, neu sgiliau",
+  "placeholder": "Beth fyddech chi'n hoffi ei wybod?",
+  "send": "Anfon cwestiwn",
+  "honesty": "Atebion wedi'i gefnogi gan ffynonellau. Yn onest am yr hyn sydd ar goll.",
+  "enter": "↵ i anfon",
+  "footer": "WEDI'I ADEILADU O PALG UT",
+  "footerDetail": "Profiad dynol. Rhyngwyneb AI.",
+  "close": "Cau gwybodaeth preifatrwydd",
+  "transparent": "YCHYDIG O DRYLOWDER",
+  "privacyTitle": "Eich sgwrs, wedi'i esbonio.",
+  "privacy": [
+    "Anfonir cwestiynau a chyd-destun sgwrs ddiweddar at ddarparwr AI ffurfweddedig (Gemini yn ddiofal) i ateb gan ddefnyddio dogfennau portffolio cyhoeddus. Mae'r darparwr yn prosesu'r data hwn o dan ei delerau ei hun.",
+    "Mae'r ap hwn yn cadw hanes sgwrs yn storfa sesiwn eich porwr ar gyfer y tab hwn. Mae sgwrs newydd yn clirio'r hanes hwnnw. Nid yw'n storio testun sgwrs yn y gronfa ddata nac mewn logiau cymhwysiad.",
+    "Mae logiau gweithredol yn cynnwys IDs cais, amserau, cyfrif tocynnau, a statu cwympo yn ôl. Defnyddir dynodwyr rhwydwaith wedi'u hasio dros dro ar gyfer cyfyngu cyfradd. Peidiwch â rhannu gwybodaeth bersonol sensitif.",
+    "Dangosir ffynonellau pan fyddant ar gael. Gall atebion AI wneud camgymeriadau o hyd; gwiriwch fanylion pwysig yn erbyn eu ffynonellau.",
+    "Mae iaith awtomatig yn defnyddio signal y wlad sy'n cynnal. Os nad yw ar gael, mae eich porwr yn gofyn am god gwlad o ipapi.co, sy'n derbyn eich cyfeiriad IP. Cedwir eich dewis llawlyfr yn y porwr hwn. Gall testun rhyngwyneb gael ei gyfieithu gan Gemini; ni anfonir eich lleoliad at Gemini."
+  ],
+  "language": "Iaith",
+  "auto": "Awtomatig",
+  "sendError": "Methu ag anfon eich cwestiwn. Rhowch gynnig arall arni.",
+  "timeout": "Amser y cais wedi dod i ben. Rhowch gynnig arall arni.",
+  "rateError": "Gormod o gwestiynau. Rhowch gynnig arall arni mewn munud.",
+  "unavailable": "Nid yw'r cynorthwyydd ar gael dros dro. Rhowch gynnig arall arni yn fuan.",
+  "fallback": "Nid yw'r wybodaeth honno ar gael ym mhrif sylfaen wybodaeth gyhoeddus y portffolio hwn eto. Rhowch gynnig ar gwestiwn arall, neu edrychwch yn ôl ar ôl i'mrowch ychwanegu ei wybodaeth.",
+  "translationError": "Nid yw cyfieithiad y rhyngwyneb ar gael. Dangos Saesneg am y tro.",
+  "detecting": "Yn canfod iaith…",
+  "locationUnavailable": "Nid yw canfod gwlad ar gael. Defnyddio iaith eich porwr; gallwch ddewis iaith arall uchod.",
+  "retryLanguage": "Ailgeisiwch",
+  "accessibility": {
+    "skipChat": "Ewch yn syth i'r sgwrs",
+    "skipInput": "Ewch yn syth i fewnbynnu cwestiwn",
+    "opensNewTab": "yn agor mewn tab newydd",
+    "inputHelp": "Rhowch i anfon; Shift+Rhowch ar gyfer llinell newydd.",
+    "remaining": "{count} o gymeriadau yn weddill",
+    "cleared": "Sgwrs wedi'i chlirio.",
+    "home": "Hafan y portffolio"
+  }
+}

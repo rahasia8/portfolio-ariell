@@ -1,0 +1,86 @@
+{
+  "person": "IL-PERSUNA WARA X-XOGĦOL",
+  "profile": "Skopri l-vjaġġ tiegħi bħala inġinier tas-software. Esplora l-proġetti, l-esperjenza, u d-deċiżjonijiet techniċi wara x-xogħol tiegħi permezz ta' konversazzjonijiet interattivi li jaħdmu bl-AI.",
+  "explore": "Mistoqsijiet Ssuġġeriti",
+  "nav": ["Esperjenza", "Proġetti", "Hiliet u għodod", "Kuntatt"],
+  "navQuestions": [
+    "Għidli dwar l-esperjenza tiegħek.",
+    "Għidli dwar il-proġetti tiegħek.",
+    "Għidli dwar il-ħiliet u l-għodod tiegħek.",
+    "Kif nista' nikkuntattja lil Ariell? Aqsam l-email u l-profil tiegħu ta' LinkedIn."
+  ],
+  "grounded": "Ibbażat fuq xogħol reali.",
+  "sourceNote": "It-tweġibiet jinġibdu minn sorsi ta' portafoll ippubblikati.",
+  "privacyButton": "Privatezza u kif jaħdem dan ↗",
+  "newChat": "Konversazzjoni ġdida",
+  "conversation": "Konversazzjoni tal-portafoll",
+  "introTag": "MOD IEĦOR KIF TIEĦU KAF TIEGĦI",
+  "heading": "Iċċatta mar-Risum tal-AI Tiegħi",
+  "headingLead": "tajba ",
+  "headingEm": "konversazzjoni.",
+  "intro": "Stqis dwar l-esperjenza tiegħi, esplora proġett, jew ara kif nersaq lejn sfida. Agħżel punt tat-tluq hawn taħt.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Il-veduta ġenerali",
+      "question": "Għidli dwar il-passat professjonali tiegħek.",
+      "detail": "Esperjenza u fokus tal-inġinerija"
+    },
+    {
+      "icon": "02",
+      "title": "Taħt il-barnuża",
+      "question": "Liema proġetti juru l-aħjar il-ħiliet tal-inġinerija tiegħek?",
+      "detail": "Proġetti u deċiżjonijiet tekniċi"
+    },
+    {
+      "icon": "03",
+      "title": "Tqabbil possibbli",
+      "question": "Liema esperjenza hija rilevanti għal rwol ta' inġinerija backend?",
+      "detail": "Ħiliet u allinjament tar-rwol"
+    }
+  ],
+  "ready": "Bażi ta' għarfien pubbliku konnessa",
+  "preparing": "Il-kontenut tal-portafoll qed jiġi ppreparat. Xorta tista' tipprova l-konversazzjoni.",
+  "messages": "Messaġġi",
+  "you": "INT",
+  "assistant": "ASSISTENT TAL-PORTAFOLL",
+  "sources": "SORSI",
+  "thinking": "Nefittex mis-sorsi pubbliċi…",
+  "inputLabel": "Stqis dwar esperjenza, proġetti, jew ħiliet",
+  "placeholder": "X'tixtieq tkun taf?",
+  "send": "Ibgħat il-mistoqsija",
+  "honesty": "Tweġibiet appoġġjati mis-sorsi. Onest dwar dak li nieqes.",
+  "enter": "↵ biex tibgħat",
+  "footer": "MIBNI MADWAR IL-KURŻJONITÀ.",
+  "footerDetail": "Esperjenza umana. Interfaċċja tal-AI.",
+  "close": "Agħlaq l-informazzjoni dwar il-privatezza",
+  "transparent": "FTIT TRASPARENZA",
+  "privacyTitle": "Il-konversazzjoni tiegħek, spjegata.",
+  "privacy": [
+    "Mistoqsijiet u kuntest ta' konversazzjoni reċenti jintbagħtu lill-fornitur tal-AI ikkonfigurat (Gemini awtomatikament) b'mod li jwieġeb bl-użu ta' dokumenti pubbliċi tal-portafoll. Il-fornitur jipproċessa din id-data taħt it-termini tiegħu stess.",
+    "Din l-app iżżomm l-istorja taċ-chat fil-memorja tas-session tal-browser tiegħek għal din it-tab. Konversazzjoni ġdida tneħħi dik l-istorja. Hija ma taħżinx test ta' konversazzjoni fid-database jew fil-logs tal-applikazzjoni.",
+    "Il-logs operazzjonali fihom ID tar-reġistrazzjoni, ħinijiet, għadd ta' tokens, u status ta' fallback. Identifikaturi tan-netwerk imfittxija jintużaw temporanjament għall-limitazzjoni tar-rata. Jekk jogħġbok taqsamx informazzjoni personali sensittiva.",
+    "Is-sorsi jintwerew meta jkunu disponibbli. It-tweġibiet tal-AI xorta jistgħu jagħmlu żbalji; ivverifika dettalji importanti kontra s-sorsi tagħhom.",
+    "Il-lingwa awtomatika tuża s-sinjal tal-pajjiż li jospita. Jekk mhux disponibbli, il-browser tiegħek jitlob kodiċi tal-pajjiż minn ipapi.co, li jirċievi l-indirizz IP tiegħek. L-għażla manwali tiegħek tiġi salvata f'dan il-browser. It-test tal-UI jista' jiġi tradott minn Gemini; il-post tiegħek ma jintbagħatx lil Gemini."
+  ],
+  "language": "Lingwa",
+  "auto": "Awtomatiku",
+  "sendError": "Ma setgħetx tintbagħat il-mistoqsija tiegħek. Jekk jogħġbok erġa' prova.",
+  "timeout": "Ir-reġistrazzjoni skadiet. Jekk jogħġbok erġa' prova.",
+  "rateError": "Wisq mistoqsijiet. Jekk jogħġbok erġa' prova f'minuta.",
+  "unavailable": "L-assistent mhux disponibbli temporanjament. Jekk jogħġbok erġa' prova dalwaqt.",
+  "fallback": "Dik l-informazzjoni għadha mhux disponibbli fil-bażi ta' għarfien pubbliku ta' dan il-portafoll. Ipprova mistoqsija oħra, jew erġa' iċċekkja wara li s-sid iżid l-informazzjoni tiegħu.",
+  "translationError": "It-traduzzjoni tal-interfaċċja mhix disponibbli. Qed jintwera l-Ingliż għalissa.",
+  "detecting": "Sejbien tal-lingwa…",
+  "locationUnavailable": "Is-sejbien tal-pajjiż mhux disponibbli. Qed jintuża l-lingwa tal-browser tiegħek; tista' tagħżel lingwa oħra hawn fuq.",
+  "retryLanguage": "Erġa' prova",
+  "accessibility": {
+    "skipChat": "Aqbeż għas-chat",
+    "skipInput": "Aqbeż għall-input tal-mistoqsija",
+    "opensNewTab": "tinfetaħ f'tab ġdida",
+    "inputHelp": "Daħħal biex tibgħat; Shift+Enter għal linja ġdida.",
+    "remaining": "{count} karattri li fadal",
+    "cleared": "Konversazzjoni mneħħija.",
+    "home": "Paġna ewlenija tal-portafoll"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "person": "HENKILÖ TYÖN TAKANA",
+  "profile": "Tutustu matkaani ohjelmistosuunnittelijana. Tutki projektejani, kokemustani ja työni taustalla olevia teknisiä päätöksiä interaktiivisten tekoälypohjaisten keskustelujen kautta.",
+  "explore": "Ehdotetut kysymykset",
+  "nav": ["Kokemus", "Projektit", "Taidot & työkalut", "Ota yhteyttä"],
+  "navQuestions": [
+    "Kerro kokemuksestasi.",
+    "Kerro projekteistasi.",
+    "Kerro taidoistasi ja työkaluistasi.",
+    "Miten voin ottaa yhteyttä Arielliin? Jaa hänen sähköpostinsa ja LinkedIn-profiilinsa."
+  ],
+  "grounded": "Perustuu todelliseen työhön.",
+  "sourceNote": "Vastaukset perustuvat julkaistuihin portfoliolähteisiin.",
+  "privacyButton": "Yksityisyys & miten tämä toimii ↗",
+  "newChat": "Uusi keskustelu",
+  "conversation": "Portfoliokeskustelu",
+  "introTag": "ERILAINEN TAPA TUTUSTUA MINUUN",
+  "heading": "Keskustele tekoäly-ansioluetteloni kanssa",
+  "headingLead": "hyvä ",
+  "headingEm": "keskustelu.",
+  "intro": "Kysy kokemuksestani, tutustu projektiin tai katso, miten lähestyn haasteita. Valitse lähtökohta alta.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Kokonaiskuva",
+      "question": "Kerro ammatillisesta taustastasi.",
+      "detail": "Kokemus & ohjelmistokehityksen painopiste"
+    },
+    {
+      "icon": "02",
+      "title": "Konepellin alla",
+      "question": "Mitkä projektit osoittavat parhaiten ohjelmisto-osaamisesi?",
+      "detail": "Projektit & tekniset päätökset"
+    },
+    {
+      "icon": "03",
+      "title": "Mahdollinen sopivuus",
+      "question": "Mikä kokemus on olennaista taustaohjelmistojen kehittäjän roolissa?",
+      "detail": "Taidot & roolin yhteensopivuus"
+    }
+  ],
+  "ready": "Julkinen tietokanta yhdistetty",
+  "preparing": "Portfolion sisältöä valmistellaan. Voit silti kokeilla keskustelua.",
+  "messages": "Viestit",
+  "you": "SINÄ",
+  "assistant": "PORTFOLIO-AVUSTAJA",
+  "sources": "LÄHTEET",
+  "thinking": "Selataan julkisia lähteitä…",
+  "inputLabel": "Kysy kokemuksesta, projekteista tai taidoista",
+  "placeholder": "Mitä haluaisit tietää?",
+  "send": "Lähetä kysymys",
+  "honesty": "Lähteisiin perustuvat vastaukset. Rehellinen sen suhteen, mikä puuttuu.",
+  "enter": "↵ lähettääksesi",
+  "footer": "RAKENNETTU UTELIAISUUDEN YMPÄRILLE.",
+  "footerDetail": "Inhimillinen kokemus. Tekoälykäyttöliittymä.",
+  "close": "Sulje yksityisyydensuojatiedot",
+  "transparent": "HIEMAN LÄPINÄKYVYYTTÄ",
+  "privacyTitle": "Keskustelusi, selitettynä.",
+  "privacy": [
+    "Kysymykset ja viimeaikainen keskustelukonteksti lähetetään määritetylle tekoälyntarjoajalle (oletuksena Gemini) vastauksien antamiseksi julkisten portfoliodokumenttien avulla. Palveluntarjoaja käsittelee näitä tietoja omien ehtojensa mukaisesti.",
+    "Tämä sovellus pitää chat-historian selaimen istuntotallennustilassa tätä välilehteä varten kyseisen istunnon ajan. Uusi keskustelu tyhjentää kyseisen historian. Se ei tallenna keskustelutekstiä tietokantaan tai sovelluksen lokeihin.",
+    "Käyttölokit sisältävät pyyntötunnisteet, ajankohdat, token-määrät ja varatilatilan. Hajautettuja verkkotunnisteita käytetään tilapäisesti sivuston kuormituksen rajoittamiseen. Älä jaa arkaluonteisia henkilötietoja.",
+    "Lähteet näytetään, kun ne ovat saatavilla. Tekoälyn vastauksissa saattaa silti olla virheitä; tarkista tärkeät tiedot niiden lähteistä.",
+    "Automaattinen kieli käyttää isäntämaan signaalia. Jos se ei ole saatavilla, selaimesi pyytää maakoodia osoitteesta ipapi.co, joka vastaanottaa IP-osoitteesi. Manuaalinen valintasi tallennetaan tähän selaimeen. Gemini saattaa kääntää käyttöliittymän tekstit; sijaintiasi ei lähetetä Geminille."
+  ],
+  "language": "Kieli",
+  "auto": "Automaattinen",
+  "sendError": "Kysymyksen lähettäminen epäonnistui. Yritä uudelleen.",
+  "timeout": "Pyyntö aikakatkaistiin. Yritä uudelleen.",
+  "rateError": "Liian monta kysymystä. Yritä uudelleen minuutin kuluttua.",
+  "unavailable": "Avustaja ei ole tällä hetkellä saatavilla. Yritä hetken kuluttua uudelleen.",
+  "fallback": "Kyseiset tiedot eivät ole vielä saatavilla tämän portfolion julkisessa tietokannassa. Kokeile toista kysymystä tai palaa asiaan, kun omistaja on lisännyt tietonsa.",
+  "translationError": "Käyttöliittymän käännös ei ole saatavilla. Näytetään englanti toistaiseksi.",
+  "detecting": "Tunnistetaan kieltä…",
+  "locationUnavailable": "Maan tunnistus ei ole saatavilla. Käytetään selaimesi kieltä; voit valita toisen kielen yläpuolelta.",
+  "retryLanguage": "Yritä uudelleen",
+  "accessibility": {
+    "skipChat": "Siirry chattiin",
+    "skipInput": "Siirry kysymyksen syöttökenttään",
+    "opensNewTab": "avaa uudessa välilehdessä",
+    "inputHelp": "Lähetä painamalla Enter; uusi rivi Shift+Enter.",
+    "remaining": "{count} merkkiä jäljellä",
+    "cleared": "Keskustelu tyhjennetty.",
+    "home": "Portfolion etusivu"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "person": "OSEBA ZA DELOM",
+  "profile": "Spoznajte mojo pot programskega inženirja. Raziščite moje projekte, izkušnje in tehnične odločitve v ozadju mojega dela prek interaktivnih pogovorov z umetno inteligenco.",
+  "explore": "Predlagana vprašanja",
+  "nav": ["Izkušnje", "Projekti", "Znanj in orodja", "Kontakt"],
+  "navQuestions": [
+    "Povej mi več o svojih izkušnjah.",
+    "Povej mi več o svojih projektih.",
+    "Povej mi o svojih znanjih in orodjih.",
+    "Kako lahko stopim v stik z Ariellom? Deli njegovo e-pošto in profil na LinkedInu."
+  ],
+  "grounded": "Temelji na resničnem delu.",
+  "sourceNote": "Odgovori izvirajo iz objavljenih virov v portfelju.",
+  "privacyButton": "Zasebnost in delovanje ↗",
+  "newChat": "Nov pogovor",
+  "conversation": "Pogovor o portfelju",
+  "introTag": "DRUGAČEN NAČIN, KAKO ME SPOZNATI",
+  "heading": "Klepetajte z mojim življenjepisom z UI",
+  "headingLead": "dober ",
+  "headingEm": "pogovor.",
+  "intro": "Povprašajte o mojih izkušnjah, raziščite projekt ali preverite, kako pristopam k izzivom. Izberite izhodišče spodaj.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Celotna slika",
+      "question": "Povej mi o svojem poklicnem ozadju.",
+      "detail": "Izkušnje in inženirski fokus"
+    },
+    {
+      "icon": "02",
+      "title": "Pod pokrovom",
+      "question": "Kateri projekti najbolje prikazujejo vaše inženirske sposobnosti?",
+      "detail": "Projekti in tehnične odločitve"
+    },
+    {
+      "icon": "03",
+      "title": "Možno ujemanje",
+      "question": "Katere izkušnje so pomembne za vlogo backend inženirja?",
+      "detail": "Znanja in ujemanje z vlogo"
+    }
+  ],
+  "ready": "Javni bazen znanja je povezan",
+  "preparing": "Vsebina portfelja se pripravlja. Pogovor lahko vseeno preizkusite.",
+  "messages": "Sporočila",
+  "you": "VI",
+  "assistant": "POMOČNIK ZA PORTFELJ",
+  "sources": "VIRI",
+  "thinking": "Pregledujem javne vire…",
+  "inputLabel": "Povprašajte o izkušnjah, projektih ali znanjih",
+  "placeholder": "Kaj bi radi izvedeli?",
+  "send": "Pošlji vprašanje",
+  "honesty": "Odgovori temeljijo na virih. O manjkajočih podatkih govorim odkrito.",
+  "enter": "↵ za pošiljanje",
+  "footer": "USTVARJENO NA ZUNAJ UTEMELJENI RADOVEDNOSTI.",
+  "footerDetail": "Človeške izkušnje. Vmesnik z umetno inteligenco.",
+  "close": "Zapri informacije o zasebnosti",
+  "transparent": "MALCE LIKVIDNE PREPAREDI",
+  "privacyTitle": "Vaš pogovor, pojasnjen.",
+  "privacy": [
+    "Vprašanja in kontekst nedavnega pogovora se pošljejo nastavljenemu ponudniku umetne inteligence (privzeto Gemini) za odgovarjanje z uporabo javnih dokumentov iz portfelja. Ponudnik obdeluje te podatke v skladu s svojimi pogoji.",
+    "Ta aplikacija hrani zgodovino klepeta v začasnem pomnilniku (session storage) vašega brskalnika za ta zavihek. Nov pogovor izbriše to zgodovino. Besedila pogovorov ne shranjuje v bazo podatkov ali dnevnike aplikacije.",
+    "Operativni dnevniki vsebujejo ID-je zahtevkov, čase izvajanja, število žetonov in status nadomestnih možnosti. Zgoščeni omrežni identifikatorji se začasno uporabljajo za omejevanje pogostosti zahtev. Prosimo, ne delite občutljivih osebnih podatkov.",
+    "Viri so prikazani, kadar so na voljo. Odgovori umetne inteligence se lahko še vedno motijo; pomembne podrobnosti preverite v njihovih virih.",
+    "Samodejni jezik uporablja signal države gostiteljice. Če ni na voljo, vaš brskalnik zahteva kodo države s spletnega mesta ipapi.co, ki prejme vaš naslov IP. Vaša ročna izbira je shranjena v tem brskalniku. Besedilo vmesnika lahko prevede Gemini; vaša lokacija se ne pošilja Geminiju."
+  ],
+  "language": "Jezik",
+  "auto": "Samodejno",
+  "sendError": "Vašega vprašanja ni bilo mogoče poslati. Prosimo, poskusite znova.",
+  "timeout": "Zahteva je potekla. Prosimo, poskusite znova.",
+  "rateError": "Preveč vprašanj. Prosimo, poskusite znova čez minuto.",
+  "unavailable": "Pomočnik je začasno nedosegljiv. Prosimo, poskusite znova kmalu.",
+  "fallback": "Te informacije še niso na voljo v javnem znanstvenem bazi tega portfelja. Poskusite z drugim vprašanjem ali preverite pozneje, ko lastnik doda svoje podatke.",
+  "translationError": "Prevajanje vmesnika ni na voljo. Za zdaj je prikazana angleščina.",
+  "detecting": "Zaznavanje jezika…",
+  "locationUnavailable": "Zaznavanje države ni na voljo. Uporablja se jezik vašega brskalnika; drug jezik lahko izberete zgoraj.",
+  "retryLanguage": "Poskusi znova",
+  "accessibility": {
+    "skipChat": "Preskoči na klepet",
+    "skipInput": "Preskoči na vnos vprašanja",
+    "opensNewTab": "se odpre v novem zavihku",
+    "inputHelp": "Pritisnite Enter za pošiljanje; Shift+Enter za novo vrstico.",
+    "remaining": "preostalih {count} znakov",
+    "cleared": "Pogovor je izbrisan.",
+    "home": "Domov portfelja"
+  }
+}

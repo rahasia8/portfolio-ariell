@@ -1,0 +1,86 @@
+{
+  "person": "ISH ORTIDAGI INSON",
+  "profile": "Dasturiy ta'minot muhandisi sifatidagi yo'limni kashf eting. Loyihalarim, tajribam va ishim ortidagi texnik qarorlarni interaktiv sun'iy intellekt yordamidagi suhbatlar orqali o'rganing.",
+  "explore": "Tavsiya etilgan savollar",
+  "nav": ["Tajriba", "Loyihalar", "Ko'nikmalar va vositalar", "Aloqa"],
+  "navQuestions": [
+    "Tajribam haqida gapirib bering.",
+    "Loyihalarim haqida gapirib bering.",
+    "Ko'nikmalarim va vositalarim haqida gapirib bering.",
+    "Ariell bilan qanday bog'lanish mumkin? Uning elektron pochtasi va LinkedIn profillarini ulashib yuboring."
+  ],
+  "grounded": "Haqiqiy ishga asoslangan.",
+  "sourceNote": "Javoblar chop etilgan portfolio manbalaridan olinadi.",
+  "privacyButton": "Maxfiylik va bu qanday ishlaydi ↗",
+  "newChat": "Yangi suhbat",
+  "conversation": "Portfolio suhbati",
+  "introTag": "MENING BILAN TANISHISHNING BOSHQACHA USULI",
+  "heading": "AI Rezyumem bilan suhbatlashing",
+  "headingLead": "yahshi ",
+  "headingEm": "suhbat.",
+  "intro": "Tajribam haqida so'rang, loyihani o'rganing yoki muammoga qanday yondashishimni ko'ring. Quyidan boshlang'ich nuqtani tanlang.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Umumiy ko'rinish",
+      "question": "Professional faoliyatingiz haqida gapirib bering.",
+      "detail": "Tajriba va muhandislik yo'nalishi"
+    },
+    {
+      "icon": "02",
+      "title": "Parda ortida",
+      "question": "Qaysi loyihalar muhandislik ko'nikmalaringizni eng yaxshi namoyish etadi?",
+      "detail": "Loyihalar va texnik qarorlar"
+    },
+    {
+      "icon": "03",
+      "title": "Mumkin bo'lgan moslik",
+      "question": "Backend muhandisi lavozimiga qanday tajriba mos keladi?",
+      "detail": "Ko'nikmalar va lavozim mosligi"
+    }
+  ],
+  "ready": "Ommaviy bilimlar bazasi ulangan",
+  "preparing": "Portfolio mazmuni tayyorlanmoqda. Shunga qaramay, suhbatni sinab ko'rishingiz mumkin.",
+  "messages": "Xabarlar",
+  "you": "SIZ",
+  "assistant": "PORTFOLIO YORDAMCHISI",
+  "sources": "MANBALAR",
+  "thinking": "Ommaviy manbalar ko'rib chiqilmoqda…",
+  "inputLabel": "Tajriba, loyihalar yoki ko'nikmalar haqida so'rang",
+  "placeholder": "Nima bilishni xohlaysiz?",
+  "send": "Savol yuborish",
+  "honesty": "Manbalarga asoslangan javoblar. Nima yo'qligi haqida halol.",
+  "enter": "yuborish uchun ↵",
+  "footer": " QIZIQISH ATROFIDA QURILGAN.",
+  "footerDetail": "Inson tajribasi. Sun'iy intellekt interfeysi.",
+  "close": "Maxfiylik ma'lumotlarini yopish",
+  "transparent": "BIZ BILAN SHAFFAFLIK",
+  "privacyTitle": "Suhbatingiz tushuntirildi.",
+  "privacy": [
+    "Savollar va so'nggi suhbat konteksti ommaviy portfolio hujjatlaridan foydalangan holda javob berish uchun sozlangan AI provayderiga (standart bo'yicha Gemini) yuboriladi. Provayder bu ma'lumotlarni o'z shartlari asosida qayta ishlaydi.",
+    "Ushbu ilova chat tarixini ushbu yorliq uchun brauzeringizning seans xotirasida saqlaydi. Yangi suhbat bu tarixni tozalaydi. U suhbat matnini ma'lumotlar bazasida yoki ilova jurnallarida saqlamaydi.",
+    "Operatsion jurnallarda so'rov ID'lari, vaqtlar, tokenlar soni va zaxira holati mavjud. Tarmoq identifikatorlarining xeshlangan turlaridan so'rovlar sonini cheklash uchun vaqtincha foydalaniladi. Iltimos, maxfiy shaxsiy ma'lumotlarni ulashmang.",
+    "Manbalar mavjud bo'lganda ko'rsatiladi. Sun'iy intellekt javoblari hali ham xatolarga yo'l qo'yishi mumkin; muhim tafsilotlarni ularning manbalari asosida tekshiring.",
+    "Avtomatik til mezbon mamlakat signalidan foydalanadi. Agar mavjud bo'lmasa, brauzeringiz IP manzilingizni qabul qiluvchi ipapi.co saytidan mamlakat kodini so'raydi. Sizning qo'lda qilgan tanlovingiz ushbu brauzerda saqlanadi. UI matni Gemini tomonidan tarjima qilinishi mumkin; joylashuvingiz Gemini'ga yuborilmaydi."
+  ],
+  "language": "Til",
+  "auto": "Avtomatik",
+  "sendError": "Savolingizni yuborib bo'lmadi. Iltimos, qayta urinib ko'ring.",
+  "timeout": "So'rov vaqti tugadi. Iltimos, qayta urinib ko'ring.",
+  "rateError": "Savollar juda ko'p. Iltimos, bir daqiqadan so'ng qayta urinib ko'ring.",
+  "unavailable": "Yordamchi vaqtincha ishlamayapti. Iltimos, qisqa vaqtdan so'ng qayta urinib ko'ring.",
+  "fallback": "Bu ma'lumot hozircha ushbu portfolioning ommaviy bilimlar bazasida mavjud emas. Boshqa savolni sinab ko'ring yoki egasi o'z ma'lumotlarini qo'shganidan keyin qaytib keling.",
+  "translationError": "Interfeys tarjimasi mavjud emas. Hozircha ingliz tili ko'rsatilmoqda.",
+  "detecting": "Til aniqlanmoqda…",
+  "locationUnavailable": "Mamlakatni aniqlash imkoni yo'q. Brauzeringiz tilidan foydalanilmoqda; yuqoridan boshqa tilni tanlashingiz mumkin.",
+  "retryLanguage": "Qayta urinish",
+  "accessibility": {
+    "skipChat": "Chatga o'tish",
+    "skipInput": "Savol kiritishga o'tish",
+    "opensNewTab": "yangi oynada ochiladi",
+    "inputHelp": "Yuborish uchun Enter; yangi qator uchun Shift+Enter.",
+    "remaining": "{count} ta belgi qoldi",
+    "cleared": "Suhbat tozalandi.",
+    "home": "Portfolio bosh sahifasi"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "person": "THE PERSON BEHIND THE WORK",
   "profile": "Discover my journey as a software engineer. Explore my projects, experience, and the technical decisions behind my work through interactive AI-powered conversations.",
-  "explore": "EXPLORE THROUGH CONVERSATION",
+  "explore": "Suggested Questions",
   "nav": ["Experience", "Projects", "Skills & tools", "Contact"],
   "navQuestions": [
     "Tell me about your experience.",
@@ -15,7 +15,7 @@
   "newChat": "New conversation",
   "conversation": "Portfolio conversation",
   "introTag": "A DIFFERENT WAY TO GET TO KNOW ME",
-  "heading": "Good work starts with",
+  "heading": "Chat with My AI Resume",
   "headingLead": "a good ",
   "headingEm": "conversation.",
   "intro": "Ask about my experience, explore a project, or see how I approach a challenge. Pick a starting point below.",

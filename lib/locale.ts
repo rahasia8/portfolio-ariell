@@ -1,10 +1,15 @@
 import countries from "../locales/countries.json";
+import catalog from "../locales/catalog.json";
 export type Language = string;
 export function normalizeLanguage(value: unknown): Language | null {
   if (typeof value !== "string" || !/^[a-z]{2,3}(?:-[a-zA-Z]{2,8}){0,2}$/.test(value))
     return null;
   try {
     const tag = new Intl.Locale(value).baseName;
+    // Date formatting support varies by browser and does not determine whether
+    // our own JSON translation is supported (for example Welsh in Chromium).
+    if (Object.hasOwn(catalog, tag) || Object.hasOwn(catalog, tag.split("-")[0]))
+      return tag;
     return Intl.DateTimeFormat.supportedLocalesOf([tag]).length ? tag : null;
   } catch {
     return null;

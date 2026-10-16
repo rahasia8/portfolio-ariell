@@ -1,0 +1,86 @@
+{
+  "person": "OSOBA ZA TÍMTO DÍLEM",
+  "profile": "Objevte moji cestu softwarového inženýra. Prozkoumejte mé projekty, zkušenosti a technická rozhodnutí za mojí prací prostřednictvím interaktivních konverzací podporovaných umělou inteligencí.",
+  "explore": "Navrhované otázky",
+  "nav": ["Zkušenosti", "Projekty", "Dovednosti a nástroje", "Kontakt"],
+  "navQuestions": [
+    "Řekněte mi o svých zkušenostech.",
+    "Řekněte mi o svých projektech.",
+    "Řekněte mi o svých dovednostech a nástrojích.",
+    "Jak mohu kontaktovat Ariella? Sdílejte jeho e-mail a profil na LinkedInu."
+  ],
+  "grounded": "Založeno na skutečné práci.",
+  "sourceNote": "Odpovědi vycházejí ze zveřejněných zdrojů portfolia.",
+  "privacyButton": "Soukromí a jak to funguje ↗",
+  "newChat": "Nová konverzace",
+  "conversation": "Konverzace o portfoliu",
+  "introTag": "JINÝ ZPŮSOB, JAK MĚ POZNAT",
+  "heading": "Chatujte s mým AI životopisem",
+  "headingLead": "dobrá ",
+  "headingEm": "konverzace.",
+  "intro": "Zeptejte se na mé zkušenosti, prozkoumejte projekt nebo se podívejte, jak přistupuji k výzvám. Vyberte si výchozí bod níže.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Celkový obraz",
+      "question": "Řekněte mi o svém profesionálním pozadí.",
+      "detail": "Zkušenosti a inženýrské zaměření"
+    },
+    {
+      "icon": "02",
+      "title": "Pod kapotou",
+      "question": "Které projekty nejlépe demonstrují vaše inženýrské dovednosti?",
+      "detail": "Projekty a technická rozhodnutí"
+    },
+    {
+      "icon": "03",
+      "title": "Možná shoda",
+      "question": "Jaké zkušenosti jsou relevantní pro roli backendového inženýra?",
+      "detail": "Dovednosti a sladění s rolí"
+    }
+  ],
+  "ready": "Veřejná znalostní báze připojena",
+  "preparing": "Obsah portfolia se připravuje. Konverzaci si přesto můžete vyzkoušet.",
+  "messages": "Zprávy",
+  "you": "VY",
+  "assistant": "ASISTENT PORTFOLIA",
+  "sources": "ZDROJE",
+  "thinking": "Procházím veřejné zdroje…",
+  "inputLabel": "Zeptejte se na zkušenosti, projekty nebo dovednosti",
+  "placeholder": "Co byste chtěli vědět?",
+  "send": "Odeslat otázku",
+  "honesty": "Odpovědi podložené zdroji. Upřímné ohledně toho, co chybí.",
+  "enter": "↵ pro odeslání",
+  "footer": "POSTAVENO NA ZÁKLADĚ ZVĚDAVOSTI.",
+  "footerDetail": "Lidská zkušenost. Rozhraní AI.",
+  "close": "Zavřít informace o soukromí",
+  "transparent": "TROCHA TRANSPARENTNOSTI",
+  "privacyTitle": "Vaše konverzace, vysvětleno.",
+  "privacy": [
+    "Otázky a kontext nedávné konverzace jsou odesílány nakonfigurovanému poskytovateli AI (ve výchozím nastavení Gemini), aby odpověděl pomocí veřejných dokumentů portfolia. Poskytovatel zpracovává tato data podle svých vlastních podmínek.",
+    "Tato aplikace uchovává historii chatu v relaci vašeho prohlížeče pro tuto kartu. Nová konverzace tuto historii vymaže. Neukládá text konverzace v databázi ani v protokolech aplikace.",
+    "Provozní protokoly obsahují ID požadavků, časování, počty tokenů a stav záložního řešení. Hashované síťové identifikátory se dočasně používají pro omezování rychlosti (rate limiting). Nesdílejte prosím citlivé osobní údaje.",
+    "Zdroje se zobrazují, jsou-li k dispozici. Odpovědi AI mohou stále obsahovat chyby; ověřte si důležité podrobnosti u jejich zdrojů.",
+    "Automatický jazyk používá signál hostitelské země. Pokud není k dispozici, váš prohlížeč si vyžádá kód země od ipapi.co, který obdrží vaši IP adresu. Vaše manuální volba se uloží v tomto prohlížeči. Text uživatelského rozhraní může být přeložen pomocí Gemini; vaše poloha není odesílána do Gemini."
+  ],
+  "language": "Jazyk",
+  "auto": "Auto",
+  "sendError": "Nepodařilo se odeslat vaši otázku. Zkuste to prosím znovu.",
+  "timeout": "Vypršel časový limit požadavku. Zkuste to prosím znovu.",
+  "rateError": "Příliš mnoho otázek. Zkuste to prosím za minutu znovu.",
+  "unavailable": "Asistent je dočasně nedostupný. Zkuste to prosím za chvíli znovu.",
+  "fallback": "Tyto informace ještě nejsou k dispozici ve veřejné znalostní bázi tohoto portfolia. Zkuste jinou otázku nebo se vraťte poté, co majitel přidá své informace.",
+  "translationError": "Překlad rozhraní není k dispozici. Prozatím se zobrazení přepnulo do angličtiny.",
+  "detecting": "Zjišťování jazyka…",
+  "locationUnavailable": "Zjištění země není k dispozici. Používá se jazyk vašeho prohlížeče; jiný jazyk si můžete vybrat výše.",
+  "retryLanguage": "Zkusit znovu",
+  "accessibility": {
+    "skipChat": "Přejít na chat",
+    "skipInput": "Přejít na zadávání otázky",
+    "opensNewTab": "otevře se na nové kartě",
+    "inputHelp": "Stiskněte Enter pro odeslání; Shift+Enter pro nový řádek.",
+    "remaining": "zbývá {count} znaků",
+    "cleared": "Konverzace byla vymazána.",
+    "home": "Úvodní stránka portfolia"
+  }
+}

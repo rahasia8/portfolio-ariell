@@ -1,0 +1,86 @@
+{
+  "person": "PERSONA AI UZZŅĒMUMA AIZVĒSTURĒ",
+  "profile": "Atklājiet manu ceļojumu kā programmatūras inženierim. Izpētiet manus projektus, pieredzi un tehniskos lēmumus, kas slēpjas aiz mana darba, izmantojot interaktīvas sarunas ar mākslīgā intelekta atbalstu.",
+  "explore": "Ieteiktie jautājumi",
+  "nav": ["Pieredze", "Projekti", "Prasmes un rīki", "Kontakti"],
+  "navQuestions": [
+    "Pastāstiet man par savu pieredzi.",
+    "Pastāstiet man par saviem projektiem.",
+    "Pastāstiet man par savām prasmēm un rīkiem.",
+    "Kā es varu sazināties ar Ariell? Kopīgojiet viņa e-pastu un LinkedIn profilu."
+  ],
+  "grounded": "Balstīts uz reālu darbu.",
+  "sourceNote": "Atbildes balstītas uz publicētajiem portfeļa avotiem.",
+  "privacyButton": "Privātums un kā tas darbojas ↗",
+  "newChat": "Jauna saruna",
+  "conversation": "Portfeļa sarunai",
+  "introTag": "CITĀDS VEIDS, KĀ IEPAZĪT MANI",
+  "heading": "Tērzējiet ar manu AI CV",
+  "headingLead": "laba ",
+  "headingEm": "saruna.",
+  "intro": "Jautājiet par manu pieredzi, izpētiet projektu vai uzziniet, kā es pieeju izaicinājumiem. Izvēlieties sākumpunktu zemāk.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Lielā aina",
+      "question": "Pastāstiet man par savu profesionālo pieredzi.",
+      "detail": "Pieredze un inženiertehniskais fokuss"
+    },
+    {
+      "icon": "02",
+      "title": "Zem pārsega",
+      "question": "Kādi projekti vislabāk demonstrē jūsu inženiertehniskās prasmes?",
+      "detail": "Projekti un tehniskie lēmumi"
+    },
+    {
+      "icon": "03",
+      "title": "Iespējamā atbilstība",
+      "question": "Kāda pieredze ir svarīga backend inženiera lomai?",
+      "detail": "Prasmes un lomu saskaņošana"
+    }
+  ],
+  "ready": "Publiskā zināšanu bāze ir pievienota",
+  "preparing": "Portfeļa saturs tiek sagatavots. Varat tomēr mēģināt uzsākt sarunu.",
+  "messages": "Ziņojumi",
+  "you": "JŪS",
+  "assistant": "PORTFEĻA ASISTENTS",
+  "sources": "AVOTI",
+  "thinking": "Pārlūko publiskos avotus…",
+  "inputLabel": "Jautājiet par pieredzi, projektiem vai prasmēm",
+  "placeholder": "Ko jūs vēlētos uzzināt?",
+  "send": "Nosūtīt jautājumu",
+  "honesty": "Atbildes, kuru pamatā ir avoti. Godīgi par to, kas trūkst.",
+  "enter": "↵, lai nosūtītu",
+  "footer": "VEIDOTS AP UTKĀRĪBU.",
+  "footerDetail": "Cilvēka pieredze. AI saskarne.",
+  "close": "Aizvērt informāciju par privātumu",
+  "transparent": "MAZA CAURLAIDĪBA",
+  "privacyTitle": "Jūsu saruna, paskaidrota.",
+  "privacy": [
+    "Jautājumi un nesenās sarunas konteksts tiek nosūtīti konfigurētajam AI nodrošinātājam (pēc noklusējuma Gemini), lai atbildētu, izmantojot publiskos portfeļa dokumentus. Pakalpojuma sniedzējs apstrādā šos datus saskaņā ar saviem noteikumiem.",
+    "Šī lietotne saglabā tērzēšanas vēsturi jūsu pārlūkprogrammas sesijas krātuvē šai cilnei. Jauna saruna notīra šo vēsturi. Tā neuzglabā sarunas tekstu datu bāzē vai lietojumprogrammu žurnālos.",
+    "Darbības žurnāli satur pieprasījuma ID, laikus, pilnvaru skaitu un rezerves statusu. Jaucējkoda tīkla identifikatori tiek izmantoti īslaicīgi, lai ierobežotu pieprasījumu skaitu. Lūdzu, neizplatiet sensitīvu personisko informāciju.",
+    "Avoti tiek parādīti, kad tie ir pieejami. AI atbildes joprojām var saturēt kļūdas; pārbaudiet svarīgas detaļas pret to avotiem.",
+    "Automātiskā valoda izmanto mitinātājvalsts signālu. Ja tas nav pieejams, jūsu pārlūkprogramma pieprasa valsts kodu no ipapi.co, kas saņem jūsu IP adresi. Jūsu manuālā izvēle tiek saglabāta šajā pārlūkprogrammā. UI tekstu var tulkot Gemini; jūsu atrašanās vieta netiek nosūtīta Gemini."
+  ],
+  "language": "Valoda",
+  "auto": "Automātiski",
+  "sendError": "Neizdevās nosūtīt jautājumu. Lūdzu, mēģiniet vēlreiz.",
+  "timeout": "Pieprasījuma laiks ir beidzies. Lūdzu, mēģiniet vēlreiz.",
+  "rateError": "Pārāk daudz jautājumu. Lūdzu, mēģiniet vēlreiz pēc minūtes.",
+  "unavailable": "Asistents īslaicīgi nav pieejams. Lūdzu, mēģiniet vēlreiz drīzumā.",
+  "fallback": "Šī informācija šī portfeļa publiskajā zināšanu bāzē vēl nav pieejama. Izmēģiniet citu jautājumu vai atgriezieties vēlāk, kad īpašnieks būs pievienojis savu informāciju.",
+  "translationError": "Saskarnes tulkojums nav pieejams. Pagaidām tiek rādīta angļu valoda.",
+  "detecting": "Nosaka valodu…",
+  "locationUnavailable": "Valsts noteikšana nav pieejama. Tiek izmantota jūsu pārlūkprogrammas valoda; varat izvēlēties citu valodu iepriekš.",
+  "retryLanguage": "Mēģināt vēlreiz",
+  "accessibility": {
+    "skipChat": "Pāriet uz tērzēšanu",
+    "skipInput": "Pāriet uz jautājuma ievadi",
+    "opensNewTab": "atveras jaunā cilnē",
+    "inputHelp": "Ievadiet, lai nosūtītu; Shift+Enter, lai ievadītu jaunu rindu.",
+    "remaining": "Atlicis {count} rakstzīmju",
+    "cleared": "Saruna ir notīrīta.",
+    "home": "Portfeļa sākumlapa"
+  }
+}

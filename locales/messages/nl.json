@@ -1,7 +1,7 @@
 {
   "person": "DE PERSOON ACHTER HET WERK",
   "profile": "Leer mijn traject als software engineer kennen. Ontdek mijn projecten, ervaring en de technische keuzes achter mijn werk via interactieve gesprekken met AI.",
-  "explore": "VERKEN VIA EEN GESPREK",
+  "explore": "Voorgestelde vragen",
   "nav": ["Ervaring", "Projecten", "Vaardigheden & tools", "Contact"],
   "navQuestions": [
     "Vertel me over je ervaring.",
@@ -15,7 +15,7 @@
   "newChat": "Nieuw gesprek",
   "conversation": "Portfoliogesprek",
   "introTag": "EEN ANDERE MANIER OM MIJ TE LEREN KENNEN",
-  "heading": "Goed werk begint met",
+  "heading": "Chat met mijn AI-cv",
   "headingLead": "een goed ",
   "headingEm": "gesprek.",
   "intro": "Vraag naar mijn ervaring, verken een project of zie hoe ik een uitdaging aanpak. Kies hieronder een startpunt.",

@@ -1,7 +1,7 @@
 {
   "person": "LA PERSONA DIETRO IL LAVORO",
   "profile": "Scopri il mio percorso come ingegnere del software. Esplora i miei progetti, la mia esperienza e le decisioni tecniche alla base del mio lavoro attraverso conversazioni interattive con l’IA.",
-  "explore": "ESPLORA ATTRAVERSO LA CONVERSAZIONE",
+  "explore": "Domande suggerite",
   "nav": ["Esperienza", "Progetti", "Competenze e strumenti", "Contatti"],
   "navQuestions": [
     "Parlami della tua esperienza.",
@@ -15,7 +15,7 @@
   "newChat": "Nuova conversazione",
   "conversation": "Conversazione sul portfolio",
   "introTag": "UN MODO DIVERSO PER CONOSCERMI",
-  "heading": "Un buon lavoro inizia con",
+  "heading": "Chatta con il mio curriculum IA",
   "headingLead": "una buona ",
   "headingEm": "conversazione.",
   "intro": "Chiedi della mia esperienza, esplora un progetto o vedi come affronto una sfida. Scegli un punto di partenza qui sotto.",

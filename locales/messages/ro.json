@@ -1,0 +1,86 @@
+{
+  "person": "PERSOANA DIN SPATELE MUNCII",
+  "profile": "Descoperă parcursul meu ca inginer software. Explorează-mi proiectele, experiența și deciziile tehnice din spatele muncii mele prin intermediul unor conversații interactive bazate pe inteligență artificială.",
+  "explore": "Întrebări sugerate",
+  "nav": ["Experiență", "Proiecte", "Competențe și unelte", "Contact"],
+  "navQuestions": [
+    "Povestește-mi despre experiența ta.",
+    "Povestește-mi despre proiectele tale.",
+    "Povestește-mi despre competențele și uneltele tale.",
+    "Cum îl pot contacta pe Ariell? Distribuie adresa sa de e-mail și profilul de LinkedIn."
+  ],
+  "grounded": "Bazat pe activitatea reală.",
+  "sourceNote": "Răspunsurile se bazează pe sursele publicate din portofoliu.",
+  "privacyButton": "Confidențialitate și cum funcționează ↗",
+  "newChat": "Conversație nouă",
+  "conversation": "Conversație despre portofoliu",
+  "introTag": "UN MOD DIFERIT DE A MĂ CUNOAȘTE",
+  "heading": "Discută cu CV-ul meu bazat pe AI",
+  "headingLead": "o ",
+  "headingEm": "conversație bună.",
+  "intro": "Întreabă despre experiența mea, explorează un proiect sau vezi cum abordez o provocare. Alege un punct de plecare mai jos.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Imaginea de ansamblu",
+      "question": "Povestește-mi despre parcursul tău profesional.",
+      "detail": "Experiență și orientare spre inginerie"
+    },
+    {
+      "icon": "02",
+      "title": "Sub capotă",
+      "question": "Ce proiecte demonstrează cel mai bine abilitățile tale de inginer?",
+      "detail": "Proiecte și decizii tehnice"
+    },
+    {
+      "icon": "03",
+      "title": "O potrivire potențială",
+      "question": "Ce experiență este relevantă pentru un rol de inginer backend?",
+      "detail": "Competențe și aliniere la rol"
+    }
+  ],
+  "ready": "Baza de cunoștințe publice este conectată",
+  "preparing": "Conținutul portofoliului este în curs de pregătire. Poți încerca totuși conversația.",
+  "messages": "Mesaje",
+  "you": "TU",
+  "assistant": "ASISTENTUL PORTFOLIULUI",
+  "sources": "SURSE",
+  "thinking": "Se verifică sursele publice…",
+  "inputLabel": "Întreabă despre experiență, proiecte sau competențe",
+  "placeholder": "Ce ai vrea să afli?",
+  "send": "Trimite întrebarea",
+  "honesty": "Răspunsuri bazate pe surse. Onest cu privire la ceea ce lipsește.",
+  "enter": "↵ pentru trimitere",
+  "footer": "CONSTRUIT ÎN JURUL CURIOZITĂȚII.",
+  "footerDetail": "Experiență umană. Interfață AI.",
+  "close": "Închide informațiile privind confidențialitatea",
+  "transparent": "PUȚINĂ TRANSPARENȚĂ",
+  "privacyTitle": "Conversația ta, explicată.",
+  "privacy": [
+    "Întrebările și contextul recent al conversației sunt trimise furnizorului de AI configurat (Gemini în mod implicit) pentru a răspunde folosind documente publice din portofoliu. Furnizorului procesează aceste date în conformitate cu propriii termeni.",
+    "Această aplicație păstrează istoricul chatului în stocarea de sesiune a browserului tău pentru această filă. O conversație nouă șterge acest istoric. Nu stochează textul conversației în baza de date sau în jurnalele aplicației.",
+    "Jurnalele operaționale conțin ID-uri de cerere, momente temporale, număr de jetoane și starea de rezervă (fallback). Identificatorii de rețea hashuiți sunt utilizați temporar pentru limitarea ratei de cereri. Te rugăm să nu distribui informații personale sensibile.",
+    "Sursele sunt afișate atunci când sunt disponibile. Răspunsurile generate de AI pot conține totuși greșeli; verifică detaliile importante pe baza surselor lor.",
+    "Limba automată folosește semnalul țării de găzduire. Dacă nu este disponibilă, browserul tău solicită un cod de țară de la ipapi.co, care primește adresa ta IP. Alegerea ta manuală este salvată în acest browser. Textul interfeței poate fi tradus de Gemini; locația ta nu este trimisă către Gemini."
+  ],
+  "language": "Limbă",
+  "auto": "Automat",
+  "sendError": "Nu s-a putut trimite întrebarea. Te rugăm să încerci din nou.",
+  "timeout": "Cererea a expirat. Te rugăm să încerci din nou.",
+  "rateError": "Prea multe întrebări. Te rugăm să încerci din nou într-un minut.",
+  "unavailable": "Asistentul este indisponibil temporar. Te rugăm să încerci din nou în curând.",
+  "fallback": "Această informație nu este încă disponibilă în baza de cunoștințe publică a acestui portofoliu. Încearcă o altă întrebare sau revino după ce proprietarul își adaugă informațiile.",
+  "translationError": "Traducerea interfeței este indisponibilă. Se afișează limba engleză momentan.",
+  "detecting": "Se detectează limba…",
+  "locationUnavailable": "Detectarea țării este indisponibilă. Se folosește limba browserului tău; poți alege o altă limbă mai sus.",
+  "retryLanguage": "Reîncearcă",
+  "accessibility": {
+    "skipChat": "Treci la chat",
+    "skipInput": "Treci la introducerea întrebării",
+    "opensNewTab": "se deschide într-o filă nouă",
+    "inputHelp": "Enter pentru trimitere; Shift+Enter pentru o linie nouă.",
+    "remaining": "{count} caractere rămase",
+    "cleared": "Conversația a fost ștearsă.",
+    "home": "Pagina principală a portofoliului"
+  }
+}

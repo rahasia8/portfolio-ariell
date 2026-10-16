@@ -1,0 +1,86 @@
+{
+  "person": "AJILIN AR DAHSIN HÜN",
+  "profile": "Software engineer bolson zamnaltai taniltsaaraal. Minii töösöl, turshilga bolon tehnikiin shiidveruudtei interactiv AI-d suurilsan yaria ashiglan taniltsaarai.",
+  "explore": "Sanlygdsan Asuultuud",
+  "nav": ["Turshilga", "Töösöl", "Urladur ba bagajuud", "Holboo barih"],
+  "navQuestions": [
+    "Minii turshilgiin talaar yariach.",
+    "Minii töösölüüdiin talaar yariach.",
+    "Urladur ba bagajuudiin talaar yariach.",
+    "Bi Ariell-tai herhen holboo barih ve? Email bolon LinkedIn profile-iig ni huvaaltsaarai."
+  ],
+  "grounded": "Bodit ajild suurilsan.",
+  "sourceNote": "Hariultuud ni niitlegdsen portfolio-iin eh suurvalaas avagdaj baina.",
+  "privacyButton": "Nuutslel ba yaj ajilladag ve ↗",
+  "newChat": "Shine yaria",
+  "conversation": "Portfolio-iin yaria",
+  "introTag": "MINITAI TANILTSAH ÖÖR NEGEN ARGA",
+  "heading": "Minii AI Resume-tei yariaral",
+  "headingLead": "sain ",
+  "headingEm": "yaria.",
+  "intro": "Minii turshilgiin talaar asuuh, töösöltei taniltsah esvel soriold herhen handaj buigaagaa harah. Doorh ehelleh tsegiig songooroi.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Tom zurag",
+      "question": "Mэrgiin suuri turshilgiin talaar yariach.",
+      "detail": "Turshilga ba software engineering-iin chiglel"
+    },
+    {
+      "icon": "02",
+      "title": "Büteetshiin tsad",
+      "question": "Ali töösöl taanii engineering-iin urladugiig hamgiin sain haruulj baina ve?",
+      "detail": "Töösöl ba tehnikiin shiidveruud"
+    },
+    {
+      "icon": "03",
+      "title": "Bolomjtoi zohilt",
+      "question": "Backend engineering-iin alban tushild yamar turshilga hamamaar baigaa ve?",
+      "detail": "Urladur ba alban tushliin niitsemj"
+    }
+  ],
+  "ready": "Niitiin medlegiin baaz holbogdloo",
+  "preparing": "Portfolio-iin aguulga beltgegdej baina. Ta bas yariagaa turshij bolno.",
+  "messages": "Zurvasuud",
+  "you": "TA",
+  "assistant": "PORTFOLIO-IIN TUSLAH",
+  "sources": "EH SUURVALJ",
+  "thinking": "Niitiin eh suurvalliig shinjilj baina…",
+  "inputLabel": "Turshilga, töösöl esvel urladugiin talaar asuugaarai",
+  "placeholder": "Yu medхийг hussej baina ve?",
+  "send": "Asuult ilgeeh",
+  "honesty": "Eh suurvald suurilsan hariultuud. Yamar medeelliin dutuu baigaad unench.",
+  "enter": "↵ darj ilgeene",
+  "footer": "SÖNTSÖN SANIIG BUUTGELTEI.",
+  "footerDetail": "Hünii turshilga. AI interface.",
+  "close": "Nuutsleliin medeellig haah",
+  "transparent": "BAGAH ZERGIIN IL TOD BAIDAL",
+  "privacyTitle": "Taanii yariag tailbarlav.",
+  "privacy": [
+    "Asuultuud bolon suliin yariin aguulgiig niitiin portfolio-iin barimt bichgiig ashiglan hariulah zoriulalttai tohiruulsan AI uilchilgeegeer (default-oor Gemini) ilgeene. Uilchilgee uzuulegch ug ogogdliig oorstroo bolovsruulna.",
+    "Ene app chat-iin tuuhig taanii browser-iin session storage-d ene tab-d hadgalna. Shine yaria tuuhig tseverlene. Ogogdlin baaz ba application log-d yariin bichver hadgaldaggui.",
+    "Ajillalgin log-uud request ID, tsag, token-iin too, fallback status aguulna. Hashed network identifier-iig rate limit-d tur hugatsaagaar ashigladag. Hüniin emzeg huvin medeellig huvaaltsahgui baihiig husye.",
+    "Eh suurvaljuud bolomjtoi uyd haruulagdana. AI-iin hariult aldaatai baij boloh tul чухал medeellig eh suurvaljaas nvtgelj shalgaarai.",
+    "Avtomat hel ashiglalt ni bairshliin ulsad tohiruulna. Herev bolomjgui bol taanii browser ipapi.co-oos ulsnii code huselt gargaj, taanii IP haygiig huleen avna. Taanii garaar songoson songolt ene browser-t hadgalagdana. UI bichver Gemini-geer orchuulagdaj boloh ba taanii bairshil Gemini ruu ilgeegdehgvi."
+  ],
+  "language": "Hel",
+  "auto": "Avtomat",
+  "sendError": "Taanii asuultiig ilgeej chadsangui. Dahin oroldono uu.",
+  "timeout": "Huselt hugatsaa duuslaa. Dahin oroldono uu.",
+  "rateError": "Het olon asuult baina. Minutiin daraa dahin oroldono uu.",
+  "unavailable": "Tuslah tur bolomjgui baina. Tur huleegeed dahin oroldono uu.",
+  "fallback": "Ene portfolio-iin niitiin medlegiin baazd ter medeelliin alga baina. Oor asuult asuuh esvel ezen medeellig nemsnii daraa shalgaj uzne uu.",
+  "translationError": "Interface-iin orchuulga bolomjgui baina. Odoogoor Angli heler haruulj baina.",
+  "detecting": "Hel todorhoilj baina…",
+  "locationUnavailable": "Uls todorhoiloh bolomjgui baina. Browser-iin hel ashiglaj baina; ta deerhees oor hel songoj bolno.",
+  "retryLanguage": "Dahin oroldoh",
+  "accessibility": {
+    "skipChat": "Chat ruu algeshiih",
+    "skipInput": "Asuult oruulah ruu algeshiih",
+    "opensNewTab": "shine tab-d neene",
+    "inputHelp": "Enter darj ilgeene; Shift+Enter darj shine mor uusgene.",
+    "remaining": "{count} temdegt uldlee",
+    "cleared": "Yaria tseverlegdej.",
+    "home": "Portfolio-iin nuur"
+  }
+}

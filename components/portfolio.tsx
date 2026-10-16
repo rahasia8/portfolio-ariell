@@ -1,4 +1,5 @@
 "use client";
+import { loadSavedTranslation } from "@/lib/saved-translation";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import {
   browserLanguage,
@@ -13,7 +14,9 @@ import {
   type Translation,
 } from "@/lib/translations";
 import { detectVisitorLanguage } from "@/lib/location-client";
+import Image from "next/image";
 import PrivacyDialog from "./privacy-dialog";
+import Icon from "./icon";
 import type { Source } from "@/lib/types";
 type Message = {
   id: string;
@@ -35,7 +38,7 @@ export default function Portfolio({
   const [automaticLanguage, setAutomaticLanguage] = useState<Language>(initialLanguage);
   const [languageChoice, setLanguageChoice] = useState<"auto" | Language>("auto");
   const language = languageChoice === "auto" ? automaticLanguage : languageChoice;
-  const [remoteTranslation, setRemoteTranslation] = useState<{
+  const [loadedTranslation, setLoadedTranslation] = useState<{
     language: Language;
     messages: Translation;
   }>();
@@ -44,12 +47,11 @@ export default function Portfolio({
   const localTranslation = builtInTranslation(language);
   const t =
     localTranslation ||
-    (remoteTranslation?.language === language
-      ? remoteTranslation.messages
+    (loadedTranslation?.language === language
+      ? loadedTranslation.messages
       : builtInTranslation("en")!);
   const uiLanguage =
-    localTranslation || remoteTranslation?.language === language ? language : "en";
-  const suggestions = t.suggestions;
+    localTranslation || loadedTranslation?.language === language ? language : "en";
   const selectableLanguages = Array.from(new Set([...languageOptions, language])).sort();
   const nativeNames = new Intl.DisplayNames([language], { type: "language" });
   useEffect(() => {
@@ -95,15 +97,15 @@ export default function Portfolio({
     setTranslationFailed(false);
     if (builtInTranslation(language)) return;
     const cancel = new AbortController();
-    fetch(`/api/translations?locale=${encodeURIComponent(language)}`, {
-      signal: cancel.signal,
-    })
-      .then(async (response) => {
-        if (!response.ok) throw new Error("Translation unavailable");
-        const data = await response.json();
+    (async () => {
+      const saved = await loadSavedTranslation(language);
+      if (saved) return { locale: language, messages: saved };
+      throw new Error("Local translation unavailable");
+    })()
+      .then((data) => {
         if (data.locale !== language) throw new Error("Wrong translation language");
         const messages = validateTranslation(data.messages);
-        if (!cancel.signal.aborted) setRemoteTranslation({ language, messages });
+        if (!cancel.signal.aborted) setLoadedTranslation({ language, messages });
       })
       .catch(() => {
         if (!cancel.signal.aborted) setTranslationFailed(true);
@@ -123,7 +125,6 @@ export default function Portfolio({
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
-  const [ready, setReady] = useState(false);
   const [conversationId, setConversationId] = useState<string>();
   const [privacy, setPrivacy] = useState(false);
   const followLatest = useRef(true);
@@ -152,10 +153,6 @@ export default function Portfolio({
           setConversationId(saved.conversationId);
       }
     } catch {}
-    fetch("/api/health")
-      .then((r) => r.json())
-      .then((d) => setReady(d.knowledgeReady === true))
-      .catch(() => {});
     return () => controller.current?.abort();
   }, []);
   useEffect(() => {
@@ -271,71 +268,25 @@ export default function Portfolio({
       <div className="sr-only" role="status" aria-live="polite">
         {announcement}
       </div>
-      <aside className="sidebar">
-        <a className="brand" href="/" aria-label={t.accessibility.home}>
-          <span className="brand-mark" aria-hidden="true">
-            p<span>↗</span>
-          </span>
-          <span>
-            portfolio<span className="brand-dot">.ai</span>
-          </span>
-        </a>
-        <div className="profile">
-          <div className="avatar" aria-hidden="true">
-            {name === "Your name" ? "Y." : name.slice(0, 1) + "."}
-            <span />
-          </div>
-          <p className="eyebrow">{t.person}</p>
-          <h1>{name}</h1>
-          <p className="role">{role}</p>
-          <p className="profile-note">{t.profile}</p>
-        </div>
-        <nav aria-label={t.explore}>
-          <p className="nav-label">{t.explore}</p>
-          {t.nav.map((label, i) => (
-            <button
-              key={label}
-              disabled={busy}
-              onClick={() => void send(t.navQuestions[i])}
-            >
-              <span className="nav-icon" aria-hidden="true">
-                {["◷", "◇", "⌘", "↗"][i]}
-              </span>
-              {label}
-              <span className="nav-arrow" aria-hidden="true">
-                ↗
-              </span>
-            </button>
-          ))}
-        </nav>
-        <div className="sidebar-bottom">
-          <div className="source-note">
-            <span className="small-star" aria-hidden="true">
-              ✳
-            </span>
-            <div>
-              <strong>{t.grounded}</strong>
-              <p>{t.sourceNote}</p>
-            </div>
-          </div>
-          <button
-            type="button"
-            className="privacy-button"
-            aria-haspopup="dialog"
-            aria-controls="privacy-dialog"
-            aria-expanded={privacy}
-            aria-label={t.privacyButton.replace(/\s*↗$/, "")}
-            onClick={() => setPrivacy(true)}
-          >
-            {t.privacyButton}
-          </button>
-        </div>
-      </aside>
+      <div className="window-bar" aria-hidden="true">
+        <i />
+        <i />
+        <i />
+      </div>
       <main id="main" tabIndex={-1}>
         <header>
-          <div className="header-label">
-            <span className="status-dot" aria-hidden="true" /> PERSONAL AI PORTFOLIO
-          </div>
+          <a
+            className="brand"
+            href="/"
+            aria-label={`ariellbot · ${t.accessibility.home}`}
+          >
+            <span className="brand-mark" aria-hidden="true">
+              <Icon name="bot" size={30} />
+            </span>
+            <span>
+              ariell<span className="brand-dot">bot</span>
+            </span>
+          </a>
           <div className="header-actions">
             <label className="language-picker">
               <span className="sr-only">{t.language}</span>
@@ -354,13 +305,15 @@ export default function Portfolio({
                 ))}
               </select>
             </label>
-            <button className="reset" onClick={clear} disabled={busy}>
-              <span aria-hidden="true">↻</span> <span>{t.newChat}</span>
-            </button>
+            {messages.length > 0 && (
+              <button className="reset" onClick={clear} disabled={busy}>
+                <Icon name="refresh" size={16} /> <span>{t.newChat}</span>
+              </button>
+            )}
           </div>
         </header>
         {!localTranslation &&
-          remoteTranslation?.language !== language &&
+          loadedTranslation?.language !== language &&
           !translationFailed && (
             <div className="translation-notice" role="status">
               {t.detecting}
@@ -390,36 +343,41 @@ export default function Portfolio({
         >
           {!messages.length ? (
             <div className="welcome">
-              <div className="intro-tag">
-                <span aria-hidden="true">✳</span> {t.introTag}
+              <div className="portrait">
+                <Image
+                  src="/images/ariell-profile.jpeg"
+                  alt={name === "Your name" ? "Ariell" : name}
+                  width={160}
+                  height={160}
+                  priority
+                  className="portrait-image"
+                />
               </div>
-              <h2>
-                {t.heading}
-                <br />
-                {t.headingLead}
-                <em>{t.headingEm}</em>
-              </h2>
+              <h1>{t.heading}</h1>
               <p className="intro-copy">{t.intro}</p>
-              <div className="suggestions">
-                {suggestions.map((s) => (
-                  <button
-                    key={s.icon}
-                    onClick={() => void send(s.question)}
-                    disabled={busy}
-                  >
-                    <span className="card-number" aria-hidden="true">
-                      {s.icon}
-                      <span>↗</span>
-                    </span>
-                    <strong>{s.title}</strong>
-                    <span>{s.detail}</span>
-                  </button>
-                ))}
-              </div>
-              <div className="knowledge-status">
-                <span className={ready ? "status-dot" : "empty-dot"} aria-hidden="true" />
-                {ready ? t.ready : t.preparing}
-              </div>
+              <section className="suggestions-panel" aria-labelledby="suggestions-title">
+                <h2 id="suggestions-title">
+                  <Icon name="chat" size={24} />
+                  {t.explore}
+                </h2>
+                <div className="suggestions">
+                  {t.nav.map((label, i) => (
+                    <button
+                      key={label}
+                      onClick={() => void send(t.navQuestions[i])}
+                      disabled={busy}
+                    >
+                      <Icon
+                        name={
+                          (["experience", "projects", "skills", "contact"] as const)[i]
+                        }
+                        size={18}
+                      />
+                      <span className="suggestion-label">{label}</span>
+                    </button>
+                  ))}
+                </div>
+              </section>
             </div>
           ) : null}
           <div
@@ -442,7 +400,7 @@ export default function Portfolio({
                   ) : (
                     <>
                       {" "}
-                      <span aria-hidden="true">✳</span> {t.assistant}
+                      <Icon name="bot" size={18} /> ariellbot
                     </>
                   )}
                 </div>
@@ -458,7 +416,7 @@ export default function Portfolio({
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          {s.title} <span aria-hidden="true">↗</span>
+                          {s.title} <Icon name="external" size={12} />
                           <span className="sr-only">
                             {" "}
                             ({t.accessibility.opensNewTab})
@@ -488,7 +446,7 @@ export default function Portfolio({
               {error}
             </p>
           )}
-          <label className="input-label" htmlFor="question">
+          <label className="sr-only" htmlFor="question">
             {t.inputLabel}
           </label>
           <form onSubmit={submit} className="composer">
@@ -515,13 +473,13 @@ export default function Portfolio({
               disabled={busy || !input.trim()}
               aria-label={t.send}
             >
-              <span aria-hidden="true">{busy ? "…" : "↑"}</span>
+              {busy ? <span aria-hidden="true">…</span> : <Icon name="send" size={22} />}
             </button>
           </form>
-          <p id="question-help" className="input-help">
+          <p id="question-help" className="sr-only">
             {t.accessibility.inputHelp}
           </p>
-          <div className="composer-footer">
+          <div className="sr-only">
             <span>{t.honesty}</span>
             <span id="question-count">
               {t.accessibility.remaining.replace("{count}", String(2000 - input.length))}
@@ -529,17 +487,16 @@ export default function Portfolio({
           </div>
         </div>
         <footer>
-          <span>{t.footer}</span>
-          <span>{t.footerDetail}</span>
           <button
             type="button"
-            className="mobile-privacy privacy-button"
+            className="privacy-button"
             aria-haspopup="dialog"
             aria-controls="privacy-dialog"
             aria-expanded={privacy}
             onClick={() => setPrivacy(true)}
           >
-            {t.privacyButton}
+            <Icon name="shield" size={14} />
+            {t.privacyButton.replace(/\s*↗$/, "")}
           </button>
         </footer>
       </main>

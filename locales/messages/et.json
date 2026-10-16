@@ -1,0 +1,86 @@
+{
+  "person": "INIMENE TÖÖ TAGA",
+  "profile": "Tutvu minu teekonnaga tarkvarainsenerina. Avasta minu projektid, kogemused ja tehnilised otsused interaktiivsete tehisintellektil põhinevate vestluste kaudu.",
+  "explore": "Soovitatud küsimused",
+  "nav": ["Kogemus", "Projektid", "Oskused ja tööriistad", "Kontakt"],
+  "navQuestions": [
+    "Räägi mulle oma kogemustest.",
+    "Räägi mulle oma projektidest.",
+    "Räägi mulle oma oskustest ja tööriistadest.",
+    "Kuidas ma saan Arielliga ühendust võtta? Jaga tema e-inti ja LinkedIni profiili."
+  ],
+  "grounded": "Põhineb tegelikul tööl.",
+  "sourceNote": "Vastused põhinevad avaldatud portfoolio allikatel.",
+  "privacyButton": "Privaatsus ja kuidas see toimib ↗",
+  "newChat": "Uus vestlus",
+  "conversation": "Portfoolio vestlus",
+  "introTag": "TEEMASUVISELT ERINEV VIIS MINUGA TUTVUMISEKS",
+  "heading": "Vestle minu AI elulookirjeldusega",
+  "headingLead": "hea ",
+  "headingEm": "vestlus.",
+  "intro": "Küsi minu kogemuste kohta, tutvu mõne projektiga või vaata, kuidas ma lähenen väljakutsetele. Vali allpool olevast loendist alguspunkt.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Suur pilt",
+      "question": "Räägi mulle oma erialasest taustast.",
+      "detail": "Kogemus ja inseneritöö fookus"
+    },
+    {
+      "icon": "02",
+      "title": "Kapoti all",
+      "question": "Millised projektid demonstreerivad kõige paremini Sinu insenerioskuseid?",
+      "detail": "Projektid ja tehnilised otsused"
+    },
+    {
+      "icon": "03",
+      "title": "Võimalik sobivus",
+      "question": "Milline kogemus on oluline backend-inseneri rolli jaoks?",
+      "detail": "Oskused ja rolliga sobitumine"
+    }
+  ],
+  "ready": "Avalik teadmistebaas on ühendatud",
+  "preparing": "Portfoolio sisu on ette valmistamisel. Saad siiski vestlust proovida.",
+  "messages": "Sõnumid",
+  "you": "SINA",
+  "assistant": "PORTFOOLIO ASSISTENT",
+  "sources": "ALLIKAD",
+  "thinking": "Otsin avalikest allikatest…",
+  "inputLabel": "Küsi kogemuste, projektide või oskuste kohta",
+  "placeholder": "Mida sa soovid teada?",
+  "send": "Saada küsimus",
+  "honesty": "Allikatel põhinevad vastused. Aus selle suhtes, mis puudub.",
+  "enter": "↵ saatmiseks",
+  "footer": "ÜLES EHITATUD UUDISHIMU ÜMBER.",
+  "footerDetail": "Inimlik kogemus. AI liides.",
+  "close": "Sulge privaatsusteave",
+  "transparent": "VÄHEKE LÄBIPAISTVUST",
+  "privacyTitle": "Sinu vestlus, selgitatud.",
+  "privacy": [
+    "Küsimused ja hiljutine vestluse kontekst saadetakse konfigureeritud AI-teenuse pakkujale (vaikimisi Gemini), et vastata avalike portfooliodokumentide abil. Teenusepakkuja töötleb neid andmeid oma tingimuste alusel.",
+    "See rakendus hoiab vestluse ajalugu Sinu brauseri sessioonimälus selle vahekaardi jaoks. Uus vestlus kustutab selle ajaloo. See ei salvesta vestluse teksti andmebaasi ega rakenduse logidesse.",
+    "Töölogid sisaldavad päringu ID-sid, ajastusi, märkide arvu ja varuoleku olekut. Piirangute seadmiseks kasutatakse ajutiselt räsitud võrguidentifikaatoreid. Palun ära jaga tundlikke isikuandmeid.",
+    "Allikad kuvatakse, kui need on saadaval. AI vastustes võib siiski esineda vigu; kontrolli olulisi detaile nende allikatest.",
+    "Automaatne keel kasutab hostimisriigi signaali. Kui see pole saadaval, küsib Sinu brauser riigikoodi aadressilt ipapi.co, mis saab Sinu IP-aadressi. Sinu käsitsi tehtud valik salvestatakse sellesse brauserisse. Kasutajaliidese teksti võib tõlkida Gemini; Sinu asukohta Geminile ei saadeta."
+  ],
+  "language": "Keel",
+  "auto": "Automaatne",
+  "sendError": "Küsimuse saatmine ebaõnnestus. Palun proovi uuesti.",
+  "timeout": "Päringu aegumisaeg sai täis. Palun proovi uuesti.",
+  "rateError": "Liiga palju küsimusi. Palun proovi minuti pärast uuesti.",
+  "unavailable": "Assistent on ajutiselt kättesaamatu. Palun proovi varsti uuesti.",
+  "fallback": "See teave pole selle portfoolio avalikus teadmistebaasis veel saadaval. Proovi mõnda teist küsimust või vaata tagasi, kui omanik on oma teabe lisanud.",
+  "translationError": "Liidese tõlge pole saadaval. Kuvatakse inglise keel.",
+  "detecting": "Keele tuvastamine…",
+  "locationUnavailable": "Riigi tuvastamine pole saadaval. Kasutatakse Sinu brauseri keelt; saad ülalpool valida mõne teise keele.",
+  "retryLanguage": "Proovi uuesti",
+  "accessibility": {
+    "skipChat": "Liigu vestluse juurde",
+    "skipInput": "Liigu küsimuse sisestusväljale",
+    "opensNewTab": "avaneb uuel vahekaardil",
+    "inputHelp": "Vajuta Enter saatmiseks; Shift+Enter uue rea jaoks.",
+    "remaining": "{count} tähemärki jäänud",
+    "cleared": "Vestlus on tühjendatud.",
+    "home": "Portfoolio avaleht"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "person": "LA PERSONNE DERRIÈRE LE TRAVAIL",
   "profile": "Découvrez mon parcours d’ingénieur logiciel. Explorez mes projets, mon expérience et les choix techniques derrière mon travail à travers des échanges interactifs avec l’IA.",
-  "explore": "EXPLORER PAR LA CONVERSATION",
+  "explore": "Questions suggérées",
   "nav": ["Expérience", "Projets", "Compétences et outils", "Contact"],
   "navQuestions": [
     "Parle-moi de ton expérience.",
@@ -15,7 +15,7 @@
   "newChat": "Nouvelle conversation",
   "conversation": "Conversation sur le portfolio",
   "introTag": "UNE AUTRE FAÇON D'APPRENDRE À ME CONNAÎTRE",
-  "heading": "Le bon travail commence par",
+  "heading": "Discutez avec mon CV IA",
   "headingLead": "une bonne ",
   "headingEm": "conversation.",
   "intro": "Posez des questions sur mon expérience, explorez un projet ou découvrez comment j'aborde un défi. Choisissez un point de départ ci-dessous.",

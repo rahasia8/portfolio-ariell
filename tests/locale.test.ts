@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { browserLanguage, requestLanguage } from "../lib/locale";
+import { browserLanguage, requestLanguage, normalizeLanguage } from "../lib/locale";
 import { fallback, answerFromChunks } from "../lib/rag";
 import { chatSchema } from "../lib/validation";
 import { GET } from "../app/api/locale/route";
@@ -9,6 +9,17 @@ afterEach(() => {
   vi.unstubAllEnvs();
 });
 describe("visitor language", () => {
+  it("accepts saved catalogs even when the browser cannot format dates in that language", () => {
+    const formatting = vi
+      .spyOn(Intl.DateTimeFormat, "supportedLocalesOf")
+      .mockReturnValue([]);
+    try {
+      expect(normalizeLanguage("cy")).toBe("cy");
+      expect(normalizeLanguage("cy-GB")).toBe("cy-GB");
+    } finally {
+      formatting.mockRestore();
+    }
+  });
   it("does not mistake browser timezone for VPN location", () => {
     expect(browserLanguage(["en-US"], "Asia/Jakarta")).toBe("en-US");
   });

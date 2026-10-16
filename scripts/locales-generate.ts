@@ -3,7 +3,7 @@ import { mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { generateTranslation } from "../lib/translate";
 import { normalizeLanguage } from "../lib/locale";
-import { validateTranslation } from "../lib/translations";
+import { validateTranslation, translations } from "../lib/translations";
 const requested = process.argv.slice(2);
 if (!requested.length) {
   console.error("Usage: npm run locales:generate -- fr es ja ...");
@@ -41,6 +41,11 @@ async function worker() {
       for (let attempt = 0; attempt < 2; attempt++) {
         try {
           messages = await generateTranslation(language);
+          if (
+            language.split("-")[0] !== "en" &&
+            messages.heading === translations.en.heading
+          )
+            throw new Error("Generated catalog still has the English heading");
           break;
         } catch (error) {
           if (attempt === 1) throw error;
@@ -59,7 +64,7 @@ async function worker() {
     }
   }
 }
-await worker();
+await Promise.all([worker(), worker()]);
 const files = (await readdir("locales/messages"))
   .filter((file) => /^[a-z]{2,3}(?:-[a-zA-Z]{2,8}){0,2}\.json$/.test(file))
   .sort();

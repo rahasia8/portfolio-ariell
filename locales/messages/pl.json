@@ -1,7 +1,7 @@
 {
   "person": "OSOBA STOJĄCA ZA TĄ PRACĄ",
   "profile": "Poznaj moją drogę jako inżyniera oprogramowania. Odkryj moje projekty, doświadczenie i decyzje techniczne stojące za moją pracą dzięki interaktywnym rozmowom z AI.",
-  "explore": "ODKRYWAJ POPRZEZ ROZMOWĘ",
+  "explore": "Sugerowane pytania",
   "nav": ["Doświadczenie", "Projekty", "Umiejętności i narzędzia", "Kontakt"],
   "navQuestions": [
     "Opowiedz mi o swoim doświadczeniu.",
@@ -15,7 +15,7 @@
   "newChat": "Nowa rozmowa",
   "conversation": "Rozmowa o portfolio",
   "introTag": "INNY SPOSÓB, ABY MNIE POZNAĆ",
-  "heading": "Dobra praca zaczyna się od",
+  "heading": "Porozmawiaj z moim CV AI",
   "headingLead": "dobrej ",
   "headingEm": "rozmowy.",
   "intro": "Zapytaj o moje doświadczenie, poznaj projekt lub zobacz, jak podchodzę do wyzwań. Wybierz punkt startowy poniżej.",

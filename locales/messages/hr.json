@@ -1,0 +1,86 @@
+{
+  "person": "OSOBA STROGO VEZANA UZ RAD",
+  "profile": "Otkrijte moj put kao softverskog inženjera. Istražite moje projekte, iskustvo i tehničke odluke koje stoje iza mog rada kroz interaktivne razgovore pokretane umjetnom inteligencijom.",
+  "explore": "Predložena pitanja",
+  "nav": ["Iskustvo", "Projekti", "Vještine i alati", "Kontakt"],
+  "navQuestions": [
+    "Recite mi nešto o svom iskustvu.",
+    "Recite mi nešto o svojim projektima.",
+    "Recite mi nešto o svojim vještinama i alatima.",
+    "Kako mogu kontaktirati Ariella? Podijelite njegov e-mail i LinkedIn profil."
+  ],
+  "grounded": "Temeljeno na stvarnom radu.",
+  "sourceNote": "Odgovori se temelje na objavljenim izvorima iz portfelja.",
+  "privacyButton": "Privatnost i kako ovo funkcionira ↗",
+  "newChat": "Novi razgovor",
+  "conversation": "Razgovor o portfelju",
+  "introTag": "DRUGAČIJI NAČIN DA ME UPOZNATE",
+  "heading": "Razgovarajte s mojim AI životopisom",
+  "headingLead": "dobar ",
+  "headingEm": "razgovor.",
+  "intro": "Pitajte o mom iskustvu, istražite projekt ili pogledajte kako pristupam izazovima. Odaberite polazište u nastavku.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Šira slika",
+      "question": "Recite mi nešto o svojoj profesionalnoj pozadini.",
+      "detail": "Iskustvo i inženjerski fokus"
+    },
+    {
+      "icon": "02",
+      "title": "Iza kulisa",
+      "question": "Koji projekti najbolje pokazuju vaše inženjerske vještine?",
+      "detail": "Projekti i tehničke odluke"
+    },
+    {
+      "icon": "03",
+      "title": "Moguće poklapanje",
+      "question": "Koje je iskustvo relevantno za ulogu back-end inženjera?",
+      "detail": "Vještine i usklađenost uloga"
+    }
+  ],
+  "ready": "Javna baza znanja povezana",
+  "preparing": "Sadržaj portfelja se priprema. Ipak možete isprobati razgovor.",
+  "messages": "Poruke",
+  "you": "VI",
+  "assistant": "POMOĆNIK ZA PORTFELJ",
+  "sources": "IZVORI",
+  "thinking": "Pretraživanje javnih izvora…",
+  "inputLabel": "Pitajte o iskustvu, projektima ili vještinama",
+  "placeholder": "Što biste željeli znati?",
+  "send": "Pošalji pitanje",
+  "honesty": "Odgovori potkrijepljeni izvorima. Iskreno o onome što nedostaje.",
+  "enter": "↵ za slanje",
+  "footer": "IZGRAĐENO NA ZNATIŽELJI.",
+  "footerDetail": "Ljudsko iskustvo. AI sučelje.",
+  "close": "Zatvori informacije o privatnosti",
+  "transparent": "MALO TRANSPARENTNOSTI",
+  "privacyTitle": "Vaš razgovor, objašnjeno.",
+  "privacy": [
+    "Pitanja i kontekst nedavnog razgovora šalju se konfiguriranom pružatelju usluge umjetne inteligencije (zadano Gemini) radi odgovaranja pomoću dokumenata javnog portfelja. Pružatelj usluge obrađuje ove podatke pod vlastitim uvjetima.",
+    "Ova aplikacija pohranjuje povijest razgovora u pohranu sesije vašeg preglednika za ovu karticu. Novi razgovor briše tu povijest. Ne pohranjuje tekst razgovora u bazi podataka ili zapisnicima aplikacije.",
+    "Operativni zapisnici sadrže ID-jeve zahtjeva, vremena, brojeve tokena i status rezervnog plana. Heširani mrežni identifikatori privremeno se koriste za ograničavanje učestalosti (rate limiting). Molimo vas da ne dijelite osjetljive osobne podatke.",
+    "Izvori se prikazuju kada su dostupni. Odgovori umjetne inteligencije ipak mogu sadržavati pogreške; provjerite važne pojedinosti u njihovim izvorima.",
+    "Automatski jezik koristi signal države u kojoj se nalazi poslužitelj. Ako nije dostupan, vaš preglednik traži kod države od ipapi.co, koji prima vašu IP adresu. Vaš ručni odabir sprema se u ovom pregledniku. Tekst sučelja može prevesti Gemini; vaša lokacija se ne šalje Geminiju."
+  ],
+  "language": "Jezik",
+  "auto": "Automatski",
+  "sendError": "Nije moguće poslati vaše pitanje. Molimo pokušajte ponovno.",
+  "timeout": "Zahtjev je istekao. Molimo pokušajte ponovno.",
+  "rateError": "Previše pitanja. Molimo pokušajte ponovno za minutu.",
+  "unavailable": "Pomoćnik je privremeno nedostupan. Molimo pokušajte ponovno uskoro.",
+  "fallback": "Te informacije još nisu dostupne u javnoj bazi znanja ovog portfelja. Pokušajte s drugim pitanjem ili provjerite ponovno nakon što vlasnik doda svoje informacije.",
+  "translationError": "Prijevod sučelja nije dostupan. Za sada se prikazuje engleski.",
+  "detecting": "Otkrivanje jezika…",
+  "locationUnavailable": "Otkrivanje države nije dostupno. Koristi se jezik vašeg preglednika; možete odabrati drugi jezik iznad.",
+  "retryLanguage": "Pokušaj ponovno",
+  "accessibility": {
+    "skipChat": "Preskoči na razgovor",
+    "skipInput": "Preskoči na unos pitanja",
+    "opensNewTab": "otvara se u novoj kartici",
+    "inputHelp": "Pritisnite Enter za slanje; Shift+Enter za novi redak.",
+    "remaining": "preostalo znakova: {count}",
+    "cleared": "Razgovor je očišćen.",
+    "home": "Početna stranica portfelja"
+  }
+}

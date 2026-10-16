@@ -1,6 +1,6 @@
 import { readFile, readdir } from "node:fs/promises";
 import { validateTranslation } from "../lib/translations";
-import { normalizeLanguage } from "../lib/locale";
+import { normalizeLanguage, languageOptions } from "../lib/locale";
 import countries from "../locales/countries.json";
 import catalog from "../locales/catalog.json";
 const files = (await readdir("locales/messages")).filter((file) =>
@@ -12,6 +12,10 @@ for (const file of files) {
   validateTranslation(JSON.parse(await readFile(`locales/messages/${file}`, "utf8")));
   if ((catalog as Record<string, string>)[language] !== `messages/${file}`)
     throw new Error(`Unregistered catalog: ${file}`);
+}
+for (const locale of languageOptions) {
+  if (!Object.hasOwn(catalog, locale))
+    throw new Error(`Missing local catalog for selectable language: ${locale}`);
 }
 for (const [country, entry] of Object.entries(countries)) {
   if (

@@ -20,3 +20,9 @@ it("rejects unsupported locale paths", async () => {
   );
   expect(response.status).toBe(400);
 });
+
+it("does not generate unsupported catalogs at request time", async () => {
+  const response = await GET(new Request("http://localhost/api/translations?locale=eo"));
+  expect(response.status).toBe(404);
+  expect(allowRequest).not.toHaveBeenCalled();
+});

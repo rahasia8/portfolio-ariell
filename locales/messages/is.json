@@ -1,0 +1,86 @@
+{
+  "person": "MANNESKJAN Á BAK VIÐ VERKIÐ",
+  "profile": "Uppgötvaðu ferðalag mitt sem hugbúnaðarverkfræðingur. Kannaðu verkefni mín, reynslu og þær tæknilegu ákvarðanir sem liggja að baki verki mínu í gegnum gagnvirk gervigreindarsamtöl.",
+  "explore": "Tillögur að spurningum",
+  "nav": ["Reynsla", "Verkefni", "Hæfni & tæki", "Hafa samband"],
+  "navQuestions": [
+    "Segðu mér frá reynslu þinni.",
+    "Segðu mér frá verkefnum þínum.",
+    "Segðu mér frá hæfni þinni og tækjum.",
+    "Hvernig get ég haft samband við Ariell? Deildu tölvupóstinum hans og LinkedIn prófíl."
+  ],
+  "grounded": "Byggt á raunverulegum störfum.",
+  "sourceNote": "Svör sækja gögn úr birtum safnritum.",
+  "privacyButton": "Friðhelgi & hvernig þetta virkar ↗",
+  "newChat": "Nýtt samtal",
+  "conversation": "Safnritssamtal",
+  "introTag": "ÖÐRUVÍSI LEIÐ TIL AÐ KYNNAST MÉR",
+  "heading": "Spjallaðu við gervigreindarferilskrá mína",
+  "headingLead": "gott ",
+  "headingEm": "samtal.",
+  "intro": "Spyrðu um reynslu mína, skoðaðu verkefni eða sjáðu hvernig ég nálgast áskorun. Veldu upphafsstað hér að neðan.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Stóra myndin",
+      "question": "Segðu mér frá starfsferli þínum.",
+      "detail": "Reynsla & áhersla á verkfræði"
+    },
+    {
+      "icon": "02",
+      "title": "Undir húddinu",
+      "question": "Hvaða verkefni sýna verkfræðikunnáttu þína best?",
+      "detail": "Verkefni & tæknilegar ákvarðanir"
+    },
+    {
+      "icon": "03",
+      "title": "Mögulegur passari",
+      "question": "Hvaða reynsla á við um bakendaverkfræðingsstöðu?",
+      "detail": "Hæfni & hlutverkasamræmi"
+    }
+  ],
+  "ready": "Opinber þekkingargrunnur tengdur",
+  "preparing": "Innihald safnrits er í undirbúningi. Þú getur samt prófað samtalið.",
+  "messages": "Skilaboð",
+  "you": "ÞÚ",
+  "assistant": "SAFRITSSTOÐ",
+  "sources": "HEIMDIR",
+  "thinking": "Leita í opinberum heimildum…",
+  "inputLabel": "Spyrðu um reynslu, verkefni eða hæfni",
+  "placeholder": "Hvað viltu vita?",
+  "send": "Senda spurningu",
+  "honesty": "Svör studd heimildum. Heiðarleg um það sem vantar.",
+  "enter": "↵ til að senda",
+  "footer": "BYGGT Í KRINGUM FORVITNI.",
+  "footerDetail": "Mannleg reynsla. Gervigreindarviðmót.",
+  "close": "Loka friðhelgisupplýsingum",
+  "transparent": "ÖURLÍTID GEGNÆSI",
+  "privacyTitle": "Samtal þitt, útskýrt.",
+  "privacy": [
+    "Spurningar og nýlegt samtalsamhengi eru send til stillta gervigreindarveitunnar (Gemini sjálfgefið) til að svara með opinberum safnritsskjölum. Veitan vinnur úr þessum gögnum samkvæmt eigin skilmálum.",
+    "Þetta forrit geymir spjallferil í lotugeymslu vafra þessa ferils fyrir þennan flipa. Nýtt samtal hreinsar þennan feril. Það geymir ekki samtalsmál í gagnagrunni eða forritsannlum.",
+    "Notkunarannlar innihalda beiðniauðkenni, tímasetningu, táknatölur og varastöðu. Dulnefnd netauðkenni eru notuð tímabundið til takmörkunar á tíðni. Vinsamlegast deildu ekki viðkvæmum persónulegum upplýsingum.",
+    "Heimildir birtast þegar þær eru tiltækar. Svör gervigreindar geta samt gert mistök; staðfestu mikilvægar upplýsingar út frá heimildum þeirra.",
+    "Sjálfgefið tungumál notar merki hýsingarlandsins. Ef það er ekki tiltækt biður vafrinn þinn um landskóða frá ipapi.co, sem fær IP-tölu þína. Handvirka valið þitt er vistað í þessum vafra. Viðmótstexti gæti verið þýddur af Gemini; staðsetning þín er ekki send til Gemini."
+  ],
+  "language": "Tungumál",
+  "auto": "Sjálfvirkt",
+  "sendError": "Gat ekki sent spurningu þína. Vinsamlegast reyndu aftur.",
+  "timeout": "Beiðnin rann út á tíma. Vinsamlegast reyndu aftur.",
+  "rateError": "Of margar spurningar. Vinsamlegast reyndu aftur eftir eina mínútu.",
+  "unavailable": "Aðstoðarmaðurinn er tímabundið ófáanlegur. Vinsamlegast reyndu aftur eftir stutta stund.",
+  "fallback": "Þessar upplýsingar eru ekki fáanlegar í opinberum þekkingargrunni þessa safnrits enn þá. Prófaðu aðra spurningu eða kíktu aftur eftir að eigandinn bætir við upplýsingum sínum.",
+  "translationError": "Þýðing viðmóts er ekki tiltæk. Birtir ensku í bili.",
+  "detecting": "Greinir tungumál…",
+  "locationUnavailable": "Landgreining er ekki tiltæk. Notar tungumál vafra þíns; þú getur valið annað tungumál hér að ofan.",
+  "retryLanguage": "Reyna aftur",
+  "accessibility": {
+    "skipChat": "Fara í spjall",
+    "skipInput": "Fara í spurningainntak",
+    "opensNewTab": "opnast í nýjum flipa",
+    "inputHelp": "Ýttu á Enter til að senda; Shift+Enter fyrir nýja línu.",
+    "remaining": "{count} stafir eftir",
+    "cleared": "Samtali hreinsað.",
+    "home": "Heimasíða safnrits"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "person": "İŞİN ARXASINDAKI İNSAN",
+  "profile": "Proqram mühəndisi kimi səyahətimi kəşf edin. Layihələrimi, təcrübəmi və işimin arxasındakı texniki qərarları interaktiv süni intellekt əsaslı söhbətlər vasitəsilə araşdırın.",
+  "explore": "Təklif olunan suallar",
+  "nav": ["Təcrübə", "Layihələr", "Bacarıqlar və alətlər", "Əlaqə"],
+  "navQuestions": [
+    "Mənə təcrübən haqqında danış.",
+    "Mənə layihələrin haqqında danış.",
+    "Mənə bacarıq və alətlərin haqqında danış.",
+    "Ariell ilə necə əlaqə saxlaya bilərəm? Onun e-poçtunu və LinkedIn profilini paylaş."
+  ],
+  "grounded": "Real işə əsaslanır.",
+  "sourceNote": "Cavablar dərc edilmiş portfel mənbələrindən götürülür.",
+  "privacyButton": "Məxfilik və bunun işləmə prinsipi ↗",
+  "newChat": "Yeni söhbət",
+  "conversation": "Portfel söhbəti",
+  "introTag": "MƏNİ TANIŞMANIN FƏRQLİ YOLU",
+  "heading": "Süni İntellekt Rezyumemlə Söhbət Edin",
+  "headingLead": "yaxşı bir ",
+  "headingEm": "söhbət.",
+  "intro": "Təcrübəm haqqında soruşun, layihəni araşdırın və ya bir çətinliyin öhdəsindən necə gəldiyimi görün. Aşağıdan başlanğıc nöqtəsi seçin.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Ümumi mənzərə",
+      "question": "Peşəkar fonum haqqında mənə danış.",
+      "detail": "Təcrübə və mühəndislik diqqət mərkəzində"
+    },
+    {
+      "icon": "02",
+      "title": "Kapotun altından",
+      "question": "Hansı layihələr mühəndislik bacarıqlarınızı ən yaxşı şəkildə nümayiş etdirir?",
+      "detail": "Layihələr və texniki qərarlar"
+    },
+    {
+      "icon": "03",
+      "title": "Mümkün uyğunluq",
+      "question": "Hansı təcrübə backend mühəndisliyi roluna uyğundur?",
+      "detail": "Bacarıqlar və rol uyğunluğu"
+    }
+  ],
+  "ready": "İctimai bilik bazası qoşulub",
+  "preparing": "Portfel məzmunu hazırlanır. Yenə də söhbəti sınaya bilərsiniz.",
+  "messages": "Mesajlar",
+  "you": "SƏN",
+  "assistant": "PORTFEL KÖMƏKÇİSİ",
+  "sources": "MƏNBƏLƏR",
+  "thinking": "İctimai mənbələr nəzərdən keçirilir…",
+  "inputLabel": "Təcrübə, layihələr və ya bacarıqlar haqqında soruşun",
+  "placeholder": "Nəyi bilmək istərdiniz?",
+  "send": "Sual göndər",
+  "honesty": "Mənbəyə əsaslanan cavablar. Nəyin çatışmadığı barədə dürüstük.",
+  "enter": "göndərmək üçün ↵",
+  "footer": "MARAQLA İNŞA EDİLİB.",
+  "footerDetail": "İnsan təcrübəsi. Süni intellekt interfeysi.",
+  "close": "Məxfilik məlumatını bağla",
+  "transparent": "BİR QƏDƏR ŞƏFFAFLIQ",
+  "privacyTitle": "Söhbətiniz izah edildi.",
+  "privacy": [
+    "Suallar və son söhbət konteksti ictimai portfel sənədlərindən istifadə edərək cavab vermək üçün konfiqurasiya edilmiş süni intellekt provayderinə (defolt olaraq Gemini) göndərilir. Provayder bu məlumatı öz şərtləri əsasında emal edir.",
+    "Bu tətbiq söhbət tarixçəsini bu vərəq üçün brauzerinizin sessiya yaddaşında saxlayır. Yeni söhbət həmin tarixçəni təmizləyir. O, söhbət mətnini verilənlər bazasında və ya tətbiq loqlarında saxlamır.",
+    "Əməliyyat loqlarına sorğu ID-ləri, vaxtlar, token sayları və ehtiyat statusu daxildir. Rate limiting üçün şəbəkə identifikatorları müvəqqəti olaraq hasblənir. Zəhmət olmasa həssas şəxsi məlumatları paylaşmayın.",
+    "Mənbələr mövcud olduqda göstərilir. Süni intellekt cavabları yenə də səhvlərə yol verə bilər; vacib detalları mənbələri ilə yoxlayın.",
+    "Avtomatik dil ev sahibliyi edən ölkə siqnalından istifadə edir. Əgər mövcud deyilsə, brauzeriniz IP ünvanınızı alan ipapi.co-dan ölkə kodu tələb edir. Əl ilə etdiyiniz seçim bu brauzerdə yadda saxlanılır. İnterfeys mətni Gemini tərəfindən tərcümə oluna bilər; yerləşdiyiniz yer Gemini-yə göndərilmir."
+  ],
+  "language": "Dil",
+  "auto": "Avtomatik",
+  "sendError": "Sualınızı göndərmək olmadı. Yenidən cəhd edin.",
+  "timeout": "Sorğu vaxtı bitdi. Zəhmət olmasa yenidən cəhd edin.",
+  "rateError": "Çox çox sual verildi. Zəhmət olmasa bir dəqiqə sonra yenidən cəhd edin.",
+  "unavailable": "Köməkçi müvəqqəti olaraq əlçatmazdır. Zəhmət olmasa qısa müddət sonra yenidən cəhd edin.",
+  "fallback": "Bu məlumat hələlik bu portfelin ictimai bilik bazasında mövcud deyil. Başqa sual sınayın və ya sahib öz məlumatını əlavə etdikdən sonra yenidən yoxlayın.",
+  "translationError": "İnterfeys tərcüməsi əlçatmazdır. Hələlik İngilis dili göstərilir.",
+  "detecting": "Dil müəyyən edilir…",
+  "locationUnavailable": "Ölkənin müəyyən edilməsi mümkün deyil. Brauzerinizin dilindən istifadə olunur; yuxarıda başqa dil seçə bilərsiniz.",
+  "retryLanguage": "Yenidən cəhd et",
+  "accessibility": {
+    "skipChat": "Söhbətə keç",
+    "skipInput": "Sual girişinə keç",
+    "opensNewTab": "yeni vərəqdə açılır",
+    "inputHelp": "Göndərmək üçün Enter; yeni sətir üçün Shift+Enter.",
+    "remaining": "{count} simvol qalıb",
+    "cleared": "Söhbət təmizləndi.",
+    "home": "Portfel əsas səhifəsi"
+  }
+}

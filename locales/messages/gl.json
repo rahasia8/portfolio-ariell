@@ -1,0 +1,86 @@
+{
+  "person": "A PERSOABA DETRÁS DO TRABALLO",
+  "profile": "Descobre a miña traxectoria como enxeñeiro de software. Explora os meus proxectos, experiencia e as decisións técnicas detrás do meu traballo a través de conversacións interactivas impulsadas por IA.",
+  "explore": "Preguntas suxeridas",
+  "nav": ["Experiencia", "Proxectos", "Habilidades e ferramentas", "Contacto"],
+  "navQuestions": [
+    " Fala min da túa experiencia.",
+    "Fálame dos teus proxectos.",
+    "Fálame das túas habilidades e ferramentas.",
+    "Como podo contactar con Ariell? Comparte o seu correo electrónico e perfil de LinkedIn."
+  ],
+  "grounded": "Fundamentado no traballo real.",
+  "sourceNote": "As respostas obteñense de fontes do portafolio publicadas.",
+  "privacyButton": "Privacidade e funcionamento ↗",
+  "newChat": "Nova conversación",
+  "conversation": "Conversación do portafolio",
+  "introTag": "UNHA MANEIRA DIFERENTE DE COÑECERME",
+  "heading": "Chatea co meu currículum de IA",
+  "headingLead": "unha boa ",
+  "headingEm": "conversación.",
+  "intro": "Pregunta sobre a miña experiencia, explora un proxecto ou mira como abordo un reto. Escolle un punto de partida a continuación.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "A gran imaxe",
+      "question": "Fálame da túa traxectoria profesional.",
+      "detail": "Experiencia e enfoque en enxeñaría"
+    },
+    {
+      "icon": "02",
+      "title": "Baixo o capó",
+      "question": "Qué proxectos demostran mellor as túas habilidades en enxeñaría?",
+      "detail": "Proxectos e decisións técnicas"
+    },
+    {
+      "icon": "03",
+      "title": "Un axuste posible",
+      "question": "Que experiencia é relevante para un posto de enxeñaría backend?",
+      "detail": "Habilidades e aliñación de roles"
+    }
+  ],
+  "ready": "Base de coñecemento público conectada",
+  "preparing": "Estase a preparar o contido do portafolio. Aínda podes probar a conversación.",
+  "messages": "Mensaxes",
+  "you": " TI",
+  "assistant": "ASISTENTE DO PORTAFOLIO",
+  "sources": "FONTES",
+  "thinking": "Buscando polas fontes públicas…",
+  "inputLabel": "Pregunta sobre experiencia, proxectos ou habilidades",
+  "placeholder": "Que che gustaría saber?",
+  "send": "Enviar pregunta",
+  "honesty": "Respostas respaldadas por fontes. Sinceras sobre o que falta.",
+  "enter": "↵ para enviar",
+  "footer": "CONSTRUÍDO ARREDOR DA CURIOSIDADE.",
+  "footerDetail": "Experiencia humana. Interface de IA.",
+  "close": "Pechar información de privacidade",
+  "transparent": "UNHA PEQUENA TRANSPARENCIA",
+  "privacyTitle": "A túa conversación, explicada.",
+  "privacy": [
+    "As preguntas e o contexto recente da conversación envíanse ao provedor de IA configurado (Gemini por defecto) para responder usando documentos públicos do portafolio. O provedor procesa estes datos baixo os seus propios termos.",
+    "Esta aplicación garda o historial de chats no almacenamento de sesións do teu navegador para esta pestaña. A nova conversación borra ese historial. Non almacena o texto da conversación na base de datos nin nos rexistros da aplicación.",
+    "Os rexistros operacionais conteñen IDs de solicitudes, tempos, contas de tokens e estado de alternativa. Os identificadores de rede con hash utilízanse temporalmente para a limitación de velocidade. Non compartas información persoal sensible.",
+    "As fontes móstranse cando están dispoñibles. As respostas da IA aínda poden cometer erros; verifica os detalles importantes coas súas fontes.",
+    "A linguaxe automática usa o sinal do país de Aloxamento. Se non está dispoñible, o teu navegador solicita un código de país a ipapi.co, que recibe o teu enderezo IP. A túa elección manual gárdase neste navegador. O texto da IU pode ser traducido por Gemini; a túa localización non se envíe a Gemini."
+  ],
+  "language": "Idioma",
+  "auto": "Automático",
+  "sendError": "Non se puido enviar a túa pregunta. Por favor, tórnao a intentar.",
+  "timeout": "A solicitude esgotou o tempo de espera. Por favor, tórnao a intentar.",
+  "rateError": "Demasiadas preguntas. Por favor, inténtao de novo nun minuto.",
+  "unavailable": "O asistente non está dispoñible temporalmente. Por favor, inténtao de novo en breve.",
+  "fallback": "Esta información aínda non está dispoñible na base de coñecemento público deste portafolio. Proba outra pregunta ou volve consultar despois de que o propietario engada a súa información.",
+  "translationError": "A tradución da interface non está dispoñible. Amosando inglés por agora.",
+  "detecting": "Detectando idioma…",
+  "locationUnavailable": "A detección de países non está dispoñible. Usando o idioma do teu navegador; podes escoller outro idioma arriba.",
+  "retryLanguage": "Reintentar",
+  "accessibility": {
+    "skipChat": "Saltar ao chat",
+    "skipInput": "Saltar á entrada de preguntas",
+    "opensNewTab": "abrir nunha nova pestaña",
+    "inputHelp": "Intro para enviar; Maiús+Intro para unha nova liña.",
+    "remaining": "{count} caracteres restantes",
+    "cleared": "Conversación borrada.",
+    "home": "Inicio do portafolio"
+  }
+}

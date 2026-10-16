@@ -11,7 +11,7 @@ import {
   translations,
   validateTranslation,
 } from "../lib/translations";
-import { getTranslation } from "../lib/translate";
+import { getTranslation, generateTranslation } from "../lib/translate";
 import { GeminiLLM } from "../lib/providers";
 import { fallback } from "../lib/rag";
 afterEach(() => {
@@ -135,14 +135,14 @@ describe("visitor-side VPN detection", () => {
     expect(await detectVisitorLanguage(new AbortController().signal, mock)).toBeNull();
   });
 });
-describe("cached UI-only translation", () => {
+describe("local UI catalogs and development generation", () => {
   it("never contacts Gemini for built-in German", async () => {
     const mock = vi.fn();
     vi.stubGlobal("fetch", mock);
     expect((await getTranslation("de")).language).toBe("Sprache");
     expect(mock).not.toHaveBeenCalled();
   });
-  it("translates only interface strings, validates structure and caches results", async () => {
+  it("generates only interface strings and validates structure during development", async () => {
     vi.stubEnv("GEMINI_API_KEY", "test-only");
     const mock = vi.fn().mockResolvedValue(
       new Response(
@@ -156,11 +156,10 @@ describe("cached UI-only translation", () => {
       ),
     );
     vi.stubGlobal("fetch", mock);
-    await Promise.all([getTranslation("cy"), getTranslation("cy")]);
-    await getTranslation("cy");
+    await generateTranslation("eo");
     expect(mock).toHaveBeenCalledTimes(1);
     const body = JSON.parse(mock.mock.calls[0][1].body);
-    expect(body.systemInstruction.parts[0].text).toContain("Welsh");
+    expect(body.systemInstruction.parts[0].text).toContain("Esperanto");
     expect(JSON.parse(body.contents[0].parts[0].text)).toEqual(translations.en);
     expect(mock.mock.calls[0][1].body).not.toContain("ariell_ariza@yahoo.com");
   });
@@ -173,7 +172,7 @@ describe("cached UI-only translation", () => {
       .mockResolvedValueOnce(raw("{}"))
       .mockResolvedValueOnce(raw(JSON.stringify(translations.en)));
     vi.stubGlobal("fetch", mock);
-    await expect(getTranslation("ga")).rejects.toThrow("Invalid translation");
-    await expect(getTranslation("ga")).resolves.toBeTruthy();
+    await expect(generateTranslation("yo")).rejects.toThrow("Invalid translation");
+    await expect(generateTranslation("yo")).resolves.toBeTruthy();
   });
 });

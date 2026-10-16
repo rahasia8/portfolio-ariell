@@ -1,0 +1,86 @@
+{
+  "person": "MTU NYUMA YA KAZI",
+  "profile": "Gundua safari yangu kama mhandisi wa programu. Chunguza miradi yangu, uzoefu wangu, na maamuzi ya kiufundi yaliyo nyuma ya kazi yangu kupitia mazungumzo shirikishi yanayoendeshwa na AI.",
+  "explore": "Maswali Yanayopendekezwa",
+  "nav": ["Uzoefu", "Miradi", "Ujuzi na zana", "Wasiliana"],
+  "navQuestions": [
+    "Niambie kuhusu uzoefu wako.",
+    "Niambie kuhusu miradi yako.",
+    "Niambie kuhusu ujuzi na zana zako.",
+    "Ninawezaje kuwasiliana na Ariell? Shiriki barua pepe yake na wasifu wake wa LinkedIn."
+  ],
+  "grounded": "Msingi katika kazi halisi.",
+  "sourceNote": "Majibu yanatoka kwenye vyanzo vya kwingineko vilivyochapishwa.",
+  "privacyButton": "Faragha na jinsi hii inavyofanya kazi ↗",
+  "newChat": "Mazungumzo mapya",
+  "conversation": "Mazungumzo ya kwingineko",
+  "introTag": "NJIA TOFAUTI YA KUNISOMA",
+  "heading": "Zungumza na Wasifu wangu wa AI",
+  "headingLead": "mazungumzo ",
+  "headingEm": "mazuri.",
+  "intro": "Uliza kuhusu uzoefu wangu, chunguza mradi, au ona jinsi ninavyokabili changamoto. Chagua sehemu ya kuanzia hapa chini.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Picha kubwa",
+      "question": "Niambie kuhusu asili yako ya kitaaluma.",
+      "detail": "Uzoefu na mtazamo wa kihandisi"
+    },
+    {
+      "icon": "02",
+      "title": "Chini ya kofia",
+      "question": "Ni miradi gani inayoeleza vyema ujuzi wako wa kiuhandisi?",
+      "detail": "Miradi na maamuzi ya kiufundi"
+    },
+    {
+      "icon": "03",
+      "title": "Nafasi inayowezekana",
+      "question": "Ni uzoefu gani unaohusiana na jukumu la uhandisi wa mfumo wa nyuma (backend)?",
+      "detail": "Ujuzi na ulinganifu wa jukumu"
+    }
+  ],
+  "ready": "Msingi wa maarifa ya umma umeunganishwa",
+  "preparing": "Maudhui ya kwingineko yanatayarishwa. Bado unaweza kujaribu mazungumzo.",
+  "messages": "Ujumbe",
+  "you": "WEWE",
+  "assistant": "MSAIDIZI WA KWINGINEKO",
+  "sources": "VYANZO",
+  "thinking": "Kutafuta kupitia vyanzo vya umma…",
+  "inputLabel": "Uliza kuhusu uzoefu, miradi, au ujuzi",
+  "placeholder": "Ungependa kujua nini?",
+  "send": "Tuma swali",
+  "honesty": "Majibu yenye msingi wa vyanzo. Mwadilifu kuhusu kile kinachokosekana.",
+  "enter": "↵ kutuma",
+  "footer": " IMEJENGWA KUZUNGUKA UDAHIZI.",
+  "footerDetail": "Uzoefu wa kibinadamu. Kiolesura cha AI.",
+  "close": "Funga taarifa za faragha",
+  "transparent": "UWWAZI KADIRI FLANI",
+  "privacyTitle": "Mazungumzo yako, yamefafanuliwa.",
+  "privacy": [
+    "Maswali na muktadha wa mazungumzo ya hivi karibuni hutumwa kwa mtoa huduma wa AI aliyesanidiwa (Gemini kwa chaguo-msingi) ili kujibu kwa kutumia hati za kwingineko za umma. Mtoa huduma huchakata data hii chini ya sheria zake mwenyewe.",
+    "Programu hii huweka historia ya mazungumzo kwenye hifadhi ya kikao cha kivinjari chako kwa tabo hii. Mazungumzo mapya hufuta historia hiyo. Haihifadhi maandishi ya mazungumzo kwenye hifadhidata au kumbukumbu za programu.",
+    "Kumbukumbu za utendaji zina vitambulisho vya maombi, nyakati, idadi ya ishara (tokens), na hali ya dharura. Vitambulisho vya mtandao vilivyosimbwa hutumiwa kwa muda kwa udhibiti wa kasi. Tafadhali usishiriki taarifa nyeti za kibinafsi.",
+    "Vyanzo vinaonyeshwa vinapopatikana. Majibu ya AI bado yanaweza kufanya makosa; thibitisha maelezo muhimu dhidi ya vyanzo vyao.",
+    "Lugha ya kiotomatiki hutumia ishara ya nchi inayohifadhi. Isipopatikana, kivinjari chako huomba nchi kutoka ipapi.co, ambayo hupokea anwani yako ya IP. Chaguo lako la mwongozo limehifadhiwa katika kivinjari hiki. Maandishi ya UI yanaweza kutafsiriwa na Gemini; eneo lako halitumiwi kwa Gemini."
+  ],
+  "language": "Lugha",
+  "auto": "Oto",
+  "sendError": "Imeshindwa kutuma swali lako. Tafadhali jaribu tena.",
+  "timeout": "Muda wa ombi umeisha. Tafadhali jaribu tena.",
+  "rateError": "Maswali mengi sana. Tafadhali jaribu tena baada ya dakika moja.",
+  "unavailable": "Msaidizi hayapatikani kwa muda. Tafadhali jaribu tena hivi karibuni.",
+  "fallback": "Habari hiyo haipatikani katika msingi wa maarifa ya umma wa kwingineko hii bado. Jaribu swali lingine, au rudi tena baada ya mmiliki kuongeza habari zao.",
+  "translationError": "Tafsiri ya kiolesura haipatikani. Inaonyesha Kiingereza kwa sasa.",
+  "detecting": "Inatambua lugha…",
+  "locationUnavailable": "Kugundua nchi hakupatikani. Kutumia lugha ya kivinjari chako; unaweza kuchagua lugha nyingine hapo juu.",
+  "retryLanguage": "Jaribu tena",
+  "accessibility": {
+    "skipChat": "Rukia kwenye mazungumzo",
+    "skipInput": "Rukia kwenye uingizaji wa swali",
+    "opensNewTab": "inafungua katika kichupo kipya",
+    "inputHelp": "Ingiza ili kutuma; Shift+Ingiza kwa mstari mpya.",
+    "remaining": "herufi {count} zimesalia",
+    "cleared": "Mazungumzo yamefutwa.",
+    "home": "Nyumbani ya kwingineko"
+  }
+}

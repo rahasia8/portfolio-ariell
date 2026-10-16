@@ -5,9 +5,32 @@ import countries from "../locales/countries.json";
 import { catalogLoaders } from "../locales/catalog";
 import { getTranslation } from "../lib/translate";
 import { translations, validateTranslation } from "../lib/translations";
-import { countryLanguage } from "../lib/locale";
+import { countryLanguage, languageOptions } from "../lib/locale";
 afterEach(() => vi.unstubAllGlobals());
 describe("JSON translation catalogs", () => {
+  it("does not contact AI for an unknown runtime catalog", async () => {
+    const fetch = vi.fn();
+    vi.stubGlobal("fetch", fetch);
+    await expect(getTranslation("eo")).rejects.toThrow("Local translation unavailable");
+    expect(fetch).not.toHaveBeenCalled();
+  });
+  it("has a complete local catalog for every selectable language without an AI request", async () => {
+    const fetch = vi.fn();
+    vi.stubGlobal("fetch", fetch);
+    for (const language of languageOptions) {
+      expect(catalogLoaders[language], language).toBeTypeOf("function");
+      const messages = await getTranslation(language);
+      expect(validateTranslation(messages)).toBeTruthy();
+      expect(messages.accessibility.remaining, language).toContain("{count}");
+      expect(
+        messages.suggestions.map((item) => item.icon),
+        language,
+      ).toEqual(["01", "02", "03"]);
+      if (language !== "en")
+        expect(messages.heading, language).not.toBe(translations.en.heading);
+    }
+    expect(fetch).not.toHaveBeenCalled();
+  });
   it("registers every messages JSON file and loads its full shape", async () => {
     const files = (await readdir("locales/messages"))
       .filter((file) => file.endsWith(".json"))

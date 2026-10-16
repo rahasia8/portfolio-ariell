@@ -1,0 +1,86 @@
+{
+  "person": "PERSONA PAS PUNËS",
+  "profile": "Zbuloni rrugëtimin tim si inxhinier softuerësh. Eksploroni projektet, përvojën dhe vendimet teknike pas punës sime përmes bisedave ndërvepruese të fuqizuara nga inteligjenca artificiale.",
+  "explore": "Pyetje të sugjeruara",
+  "nav": ["Përvoja", "Projektet", "Aftësitë & mjetet", "Kontakti"],
+  "navQuestions": [
+    "Më trego rreth përvojës sate.",
+    "Më trego rreth projekteve të tua.",
+    "Më trego rreth aftësive dhe mjeteve të tua.",
+    "Si mund të kontaktoj me Ariell? Ndaj email-in dhe profilin e tij në LinkedIn."
+  ],
+  "grounded": "Bazuar në punë reale.",
+  "sourceNote": "Përgjigjet mbështeten në burimet e publikuara të portofolit.",
+  "privacyButton": "Privatësia & si funksionon kjo ↗",
+  "newChat": "Bisedë e re",
+  "conversation": "Biseda e portofolit",
+  "introTag": "NJË MËNYRË E NDRYSHME PËR TË MË NJOHUR",
+  "heading": "Bisedoni me CV-në time të AI",
+  "headingLead": "një ",
+  "headingEm": "bisedë e mirë.",
+  "intro": "Pyetni për përvojën time, eksploroni një projekt ose shihni se si i qasem një sfide. Zgjidhni një pikënisje më poshtë.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Pamja e përgjithshme",
+      "question": "Më trego rreth sfondit tim profesional.",
+      "detail": "Përvoja & fokusi inxhinierik"
+    },
+    {
+      "icon": "02",
+      "title": "Në brendësi",
+      "question": "Cilat projekte demonstrojnë më së miri aftësitë e tua inxhinierike?",
+      "detail": "Projektet & vendimet teknike"
+    },
+    {
+      "icon": "03",
+      "title": "Një përshtatje e mundshme",
+      "question": "Çfarë përvoje është e rëndësishme për një rol inxhinierie backend?",
+      "detail": "Aftësitë & përshtatja e rolit"
+    }
+  ],
+  "ready": "Baza e njohurive publike është e lidhur",
+  "preparing": "Përmbajtja e portofolit po përgatitet. Mund të provoni përsëri bisedën.",
+  "messages": "Mesazhet",
+  "you": "JU",
+  "assistant": "ASISTENTI I PORTOFOLIT",
+  "sources": "BURIMET",
+  "thinking": "Duke kërkuar në burimet publike…",
+  "inputLabel": "Pyetni për përvojën, projektet ose aftësitë",
+  "placeholder": "Çfarë do të dëshironit të dinit?",
+  "send": "Dërgo pyetjen",
+  "honesty": "Përgjigje të mbështetura në burime. Të sinqerta për atë që mungon.",
+  "enter": "↵ për të dërguar",
+  "footer": "NDËRTUAR RRETH KURIOZITETIT.",
+  "footerDetail": "Përvojë njerëzore. Ndërfaqe AI.",
+  "close": "Mbyll informacionin e privatësisë",
+  "transparent": "PAK TRANSPARENCË",
+  "privacyTitle": "Biseda juaj, e shpjeguar.",
+  "privacy": [
+    "Pyetjet dhe konteksti i bisedës së fundit i dërgohen ofruesit të konfiguruar të AI (Gemini si parazgjedhje) për të përdorur dokumentet publike të portofolit për përgjigje. Ofruesi e përpunon këtë të dhënë sipas kushteve të veta.",
+    "Ky aplikacion ruan historikun e bisedave në hapësirën e ruajtjes së sesionit të shfletuesit tuaj për këtë skedë. Biseda e re e fshin këtë historik. Ai nuk ruan tekstin e bisedës në bazën e të dhënave ose në regjistrat e aplikacionit.",
+    "Regjistrat operacionalë përmbajnë ID-të e kërkesave, kohëmatësit, numrin e shenjave (tokens) dhe statusin e rikthimit. Identifikuesit e rrjetit të koduar (hashed) përdoren përkohësisht për kufizimin e shpejtësisë. Ju lutemi mos ndani informacione të ndjeshme personale.",
+    "Burimet shfaqen kur janë të disponueshme. Përgjigjet e AI mund të bëjnë ende gabime; verifikoni detajet e rëndësishme kundrejt burimeve të tyre.",
+    "Gjuha automatike përdor sinjalin e vendit pritës. Nëse nuk është i disponueshëm, shfletuesi juaj kërkon një kod vendi nga ipapi.co, i cili merr adresën tuaj IP. Zgjedhja juaj manuale ruhet në këtë shfletues. Teksti i ndërfaqes mund të përkthehet nga Gemini; vendndodhja juaj nuk i dërgohet Gemini-t."
+  ],
+  "language": "Gjuha",
+  "auto": "Auto",
+  "sendError": "Nuk u the dot pyetja juaj. Ju lutemi provoni përsëri.",
+  "timeout": "Koha e kërkesës skadoi. Ju lutemi provoni përsëri.",
+  "rateError": "Shumë pyetje. Ju lutemi provoni përsëri pas një minute.",
+  "unavailable": "Asistenti është përkohësisht i padisponueshëm. Ju lutemi provoni përsëri së shpejti.",
+  "fallback": "Ky informacion nuk është i disponueshëm ende në bazën e njohurive publike të këtij portofoli. Provoni një pyetje tjetër, ose kthehuni pasi pronari të shtojë informacionin e tij.",
+  "translationError": "Përkthimi i ndërfaqes nuk është i disponueshëm. Po shfaqet Anglishtja për momentin.",
+  "detecting": "Duke zbuluar gjuhën…",
+  "locationUnavailable": "Zbulimi i vendit nuk është i disponueshëm. Po përdoret gjuha e shfletuesit tuaj; mund të zgjidhni një gjuhë tjetër më sipër.",
+  "retryLanguage": "Provo përsëri",
+  "accessibility": {
+    "skipChat": "Kalo te biseda",
+    "skipInput": "Kalo te futja e pyetjes",
+    "opensNewTab": "hapet në një skedë të re",
+    "inputHelp": "Shtyp Enter për të dërguar; Shift+Enter për një rresht të ri.",
+    "remaining": "{count} karaktere të mbetura",
+    "cleared": "Biseda u fshi.",
+    "home": "Fryma e portofolit"
+  }
+}

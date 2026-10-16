@@ -1,0 +1,86 @@
+{
+  "person": "PERSONEN BAKOM ARBETET",
+  "profile": "Upptäck min resa som mjukvaruingenjör. Utforska mina projekt, erfarenheter och de tekniska besluten bakom mitt arbete genom interaktiva AI-drivna konversationer.",
+  "explore": "Föreslagna frågor",
+  "nav": ["Erfarenhet", "Projekt", "Kompetenser & verktyg", "Kontakt"],
+  "navQuestions": [
+    "Berätta om din erfarenhet.",
+    "Berätta om dina projekt.",
+    "Berätta om dina kompetenser och verktyg.",
+    "Hur kan jag kontakta Ariell? Dela hans e-postadress och LinkedIn-profil."
+  ],
+  "grounded": "Förankrat i verkligt arbete.",
+  "sourceNote": "Svaren hämtas från publicerade portföljkällor.",
+  "privacyButton": "Integritet och hur detta fungerar ↗",
+  "newChat": "Ny konversation",
+  "conversation": "Portföljkonversation",
+  "introTag": "ETT ANNORLUNDA SÄTT ATT LÄRA KÄNNA MIG",
+  "heading": "Chatta med mitt AI-cv",
+  "headingLead": "ett bra ",
+  "headingEm": "samtal.",
+  "intro": "Fråga om min erfarenhet, utforska ett projekt eller se hur jag tar mig an en utmaning. Välj en startpunkt nedan.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Helhetsbilden",
+      "question": "Berätta om din yrkesbakgrund.",
+      "detail": "Erfarenhet & ingenjörsfokus"
+    },
+    {
+      "icon": "02",
+      "title": "Under huven",
+      "question": "Vilka projekt visar på dina ingenjörskunskaper på bästa sätt?",
+      "detail": "Projekt & tekniska beslut"
+    },
+    {
+      "icon": "03",
+      "title": "En möjlig matchning",
+      "question": "Vilken erfarenhet är relevant för en roll som backend-ingenjör?",
+      "detail": "Kompetenser & rollmatchning"
+    }
+  ],
+  "ready": "Offentlig kunskapsbas ansluten",
+  "preparing": "Portföljens innehåll förbereds. Du kan ändå prova konversationen.",
+  "messages": "Meddelanden",
+  "you": "DU",
+  "assistant": "PORTFÖLJASSISTENT",
+  "sources": "KÄLLOR",
+  "thinking": "Letar igenom offentliga källor…",
+  "inputLabel": "Fråga om erfarenhet, projekt eller kompetenser",
+  "placeholder": "Vad vill du veta?",
+  "send": "Skicka fråga",
+  "honesty": "Källbaserade svar. Ärlig med vad som saknas.",
+  "enter": "↵ för att skicka",
+  "footer": "BYGGD KRING NYFIKENHET.",
+  "footerDetail": "Mänsklig erfarenhet. AI-gränssnitt.",
+  "close": "Stäng integritetsinformation",
+  "transparent": "LITE TRANSPARENS",
+  "privacyTitle": "Din konversation, förklarad.",
+  "privacy": [
+    "Frågor och nyligen ställd konversationskontext skickas till den konfigurerade AI-leverantören (Gemini som standard) för att svara med hjälp av offentliga portföljdokument. Leverantören behandlar dessa data under egna villkor.",
+    "Denna app sparar chatthistorik i din webbläsares sessionslagring för den här fliken. Ny konversation rensar den historiken. Den lagrar inte konversationstext i databasen eller applikationsloggarna.",
+    "Driftsloggar innehåller förfrågnings-ID:n, tidsstämplar, tokengränser och fallback-status. Hashade nätverksidentifierare används tillfälligt för hastighetsbegränsning. Dela inte känslig personlig information.",
+    "Källor visas när de är tillgängliga. AI-svar kan ändå göra misstag; verifiera viktiga detaljer mot deras källor.",
+    "Automatiskt språk använder signalen från värdlandet. Om detta inte är tillgängligt begär din webbläsare en landskod från ipapi.co, som tar emot din IP-adress. Ditt manuella val sparas i den här webbläsaren. Gränssnittstext kan översättas av Gemini; din plats skickas inte till Gemini."
+  ],
+  "language": "Språk",
+  "auto": "Auto",
+  "sendError": "Kunde inte skicka din fråga. Försök igen.",
+  "timeout": "Begäran tog för lång tid. Försök igen.",
+  "rateError": "För många frågor. Försök igen om en minut.",
+  "unavailable": "Assistenten är tillfälligt otillgänglig. Försök igen snart.",
+  "fallback": "Den informationen är inte tillgänglig i den här portföljens offentliga kunskapsbas ännu. Prova en annan fråga eller kom tillbaka när ägaren har lagt till sin information.",
+  "translationError": "Gränssnittsöversättning är inte tillgänglig. Visar engelska så länge.",
+  "detecting": "Identifierar språk…",
+  "locationUnavailable": "Platsidentifiering är inte tillgänglig. Använder ditt webbläsarspråk; du kan välja ett annat språk ovan.",
+  "retryLanguage": "Försök igen",
+  "accessibility": {
+    "skipChat": "Hoppa till chatt",
+    "skipInput": "Hoppa till frågeinmatning",
+    "opensNewTab": "öppnas i en ny flik",
+    "inputHelp": "Retur för att skicka; Skift+Retur för en ny rad.",
+    "remaining": "{count} tecken kvar",
+    "cleared": "Konversationen har rensats.",
+    "home": "Portföljens startsida"
+  }
+}

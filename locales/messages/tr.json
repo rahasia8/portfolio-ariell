@@ -1,7 +1,7 @@
 {
   "person": "İŞİN ARKASINDAKİ KİŞİ",
   "profile": "Yazılım mühendisi olarak yolculuğumu tanıyın. Yapay zekâ destekli etkileşimli sohbetlerle projelerimi, deneyimlerimi ve çalışmalarımın arkasındaki teknik kararları keşfedin.",
-  "explore": "SOHBET YOLUYLA KEŞFET",
+  "explore": "Önerilen Sorular",
   "nav": ["Deneyim", "Projeler", "Yetenekler ve araçlar", "İletişim"],
   "navQuestions": [
     "Deneyimlerinden bahseder misin?",
@@ -15,7 +15,7 @@
   "newChat": "Yeni sohbet",
   "conversation": "Portföy sohbeti",
   "introTag": "BENİ TANIMANIN FARKLI BİR YOLU",
-  "heading": "İyi iş şununla başlar:",
+  "heading": "Yapay Zekâ Özgeçmişimle Sohbet Edin",
   "headingLead": "iyi bir ",
   "headingEm": "sohbet.",
   "intro": "Deneyimlerim hakkında soru sorun, bir projeyi inceleyin veya bir zorluğa nasıl yaklaştığımı görün. Aşağıdan bir başlangıç noktası seçin.",

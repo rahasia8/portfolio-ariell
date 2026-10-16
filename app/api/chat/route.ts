@@ -1,3 +1,4 @@
+import { GeminiRequestError } from "@/lib/gemini-request";
 import { requestLanguage } from "@/lib/locale";
 import { randomUUID } from "node:crypto";
 import { config, configured } from "@/lib/config";
@@ -105,6 +106,13 @@ export async function POST(request: Request) {
         requestId,
         totalMs: Date.now() - start,
         phase,
+        ...(error instanceof GeminiRequestError
+          ? {
+              providerStatus: error.status,
+              providerMethod: error.method,
+              attempts: error.attempts,
+            }
+          : {}),
         code:
           typeof code === "string" && /^[A-Z0-9_]{1,40}$/.test(code) ? code : undefined,
       }),

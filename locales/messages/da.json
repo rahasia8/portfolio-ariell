@@ -1,0 +1,86 @@
+{
+  "person": "PERSONEN BAG ARBEJDET",
+  "profile": "Oplev min rejse som softwareingeniør. Udforsk mine projekter, erfaring og de tekniske beslutninger bag mit arbejde gennem interaktive AI-drevne samtaler.",
+  "explore": "Foreslåede spørgsmål",
+  "nav": ["Erfaring", "Projekter", "Kompetencer & værktøjer", "Kontakt"],
+  "navQuestions": [
+    "Fortæl mig om din erfaring.",
+    "Fortæl mig om dine projekter.",
+    "Fortæl mig om dine kompetencer og værktøjer.",
+    "Hvordan kan jeg kontakte Ariell? Del hans e-mail og LinkedIn-profil."
+  ],
+  "grounded": "Baseret på rigtigt arbejde.",
+  "sourceNote": "Svar trækker fra offentliggjorte porteføljekilder.",
+  "privacyButton": "Privatliv & hvordan dette fungerer ↗",
+  "newChat": "Ny samtale",
+  "conversation": "Porteføljesamtale",
+  "introTag": "EN ANDEN MÅDE AT LÆRE MIG AT KENDE PÅ",
+  "heading": "Chat med mit AI-CV",
+  "headingLead": "en god ",
+  "headingEm": "samtale.",
+  "intro": "Spørg ind til min erfaring, udforsk et projekt, eller se, hvordan jeg griber en udfordring an. Vælg et startpunkt herunder.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Det store billede",
+      "question": "Fortæl mig om din faglige baggrund.",
+      "detail": "Erfaring & ingeniørmæssigt fokus"
+    },
+    {
+      "icon": "02",
+      "title": "Under kølerhjelmen",
+      "question": "Hvilke projekter demonstrerer bedst dine ingeniørfærdigheder?",
+      "detail": "Projekter & tekniske beslutninger"
+    },
+    {
+      "icon": "03",
+      "title": "Et muligt match",
+      "question": "Hvilken erfaring er relevant for en backend-ingeniørrolle?",
+      "detail": "Kompetencer & rolle-match"
+    }
+  ],
+  "ready": "Offentlig vidensbase tilsluttet",
+  "preparing": "Porteføljeindhold klargøres. Du kan stadig prøve samtalen.",
+  "messages": "Beskeder",
+  "you": "DIG",
+  "assistant": "PORTEFØLJEASSISTENT",
+  "sources": "KILDER",
+  "thinking": "Gennemser de offentlige kilder…",
+  "inputLabel": "Spørg om erfaring, projekter eller kompetencer",
+  "placeholder": "Hvad vil du gerne vide?",
+  "send": "Send spørgsmål",
+  "honesty": "Kildebaserede svar. Ærlig om hvad der mangler.",
+  "enter": "↵ for at sende",
+  "footer": "BYGGET OMKRING NYSGERRIGHED.",
+  "footerDetail": "Menneskelig erfaring. AI-grænseflade.",
+  "close": "Luk privatlivsinformation",
+  "transparent": "EN SMULE TRANSPARENS",
+  "privacyTitle": "Din samtale, forklaret.",
+  "privacy": [
+    "Spørgsmål og nylig samtale-kontekst sendes til den konfigurerede AI-udbyder (Gemini som standard) for at svare ved hjælp af offentlige porteføljedokumenter. Udbyderen behandler disse data under egne vilkår.",
+    "Denne app gemmer chathistorik i din browsers sessionslager for denne fane. Ny samtale rydder denne historik. Den gemmer ikke samtaletekst i databasen eller applikationslogfiler.",
+    "Operationelle logfiler indeholder anmodnings-id'er, tider, tokentællinger og fallback-status. Hashede netværksidentifikatorer bruges midlertidigt til hastighedsbegrænsning. Del venligst ikke følsomme personlige oplysninger.",
+    "Kilder vises, når de er tilgængelige. AI-svar kan stadig begå fejl; verificér vigtige detaljer op mod deres kilder.",
+    "Automatisk sprog bruger det værtslandets signal. Hvis utilgængeligt, anmoder din browser om en landekode fra ipapi.co, som modtager din IP-adresse. Dit manuelle valg gemmes i denne browser. UI-tekst kan blive oversat af Gemini; din placering sendes ikke til Gemini."
+  ],
+  "language": "Sprog",
+  "auto": "Auto",
+  "sendError": "Kunne ikke sende dit spørgsmål. Prøv venligst igen.",
+  "timeout": "Anmodningen fik timeout. Prøv venligst igen.",
+  "rateError": "For mange spørgsmål. Prøv venligst igen om et minuttid.",
+  "unavailable": "Assistenten er midlertidigt utilgængelig. Prøv venligst igen snart.",
+  "fallback": "De oplysninger er endnu ikke tilgængelige i denne porteføljes offentlige vidensbase. Prøv et andet spørgsmål, eller kig forbi igen, når ejeren har tilføjet deres oplysninger.",
+  "translationError": "Grænsefladeoversættelse er utilgængelig. Viser engelsk for en stund.",
+  "detecting": "Registrerer sprog…",
+  "locationUnavailable": "Landsregistrering er utilgængelig. Bruger dit browsersprog; du kan vælge et andet sprog ovenfor.",
+  "retryLanguage": "Prøv igen",
+  "accessibility": {
+    "skipChat": "Spring til chat",
+    "skipInput": "Spring til spørgsmålsfelt",
+    "opensNewTab": "åbner i en ny fane",
+    "inputHelp": "Enter for at sende; Shift+Enter for en ny linje.",
+    "remaining": "{count} tegn tilbage",
+    "cleared": "Samtaler rydde.",
+    "home": "Porteføljehjem"
+  }
+}

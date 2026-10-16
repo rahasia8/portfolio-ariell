@@ -1,0 +1,86 @@
+{
+  "person": "DIE PERSOON AGTER DIE WERK",
+  "profile": "Ontdek my reis as 'n sagteware-ingenieur. Verken my projekte, ervaring en die tegniese besluite agter my werk deur interaktiewe KI-aangedrewe gesprekke.",
+  "explore": "Voorgestelde Vrae",
+  "nav": ["Ervaring", "Projekte", "Vaardighede & gereedskap", "Kontak"],
+  "navQuestions": [
+    "Vertel my van jou ervaring.",
+    "Vertel my van jou projekte.",
+    "Vertel my van jou vaardighede en gereedskap.",
+    "Hoe kan ek Ariell kontak? Deel sy e-pos en LinkedIn-profiel."
+  ],
+  "grounded": "Gegrond in werklike werk.",
+  "sourceNote": "Antwoorde put uit gepubliseerde portefeuljebronne.",
+  "privacyButton": "Privaatheid & hoe dit werk ↗",
+  "newChat": "Nuwe gesprek",
+  "conversation": "Portefeuljegesprek",
+  "introTag": "'N ANDER MANIER OM MY TE LEER KEN",
+  "heading": "Gesels met my KI-Curae Vitae",
+  "headingLead": "'n goeie ",
+  "headingEm": "gesprek.",
+  "intro": "Vra oor my ervaring, verken 'n projek, of kyk hoe ek 'n uitdaging benader. Kies 'n beginpunt hieronder.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Die groot prentjie",
+      "question": "Vertel my van jou professionele agtergrond.",
+      "detail": "Ervaring & ingenieursfokus"
+    },
+    {
+      "icon": "02",
+      "title": "Onder die kap",
+      "question": "Watter projekte demonstreer jou ingenieursvaardighede die beste?",
+      "detail": "Projekte & tegniese besluite"
+    },
+    {
+      "icon": "03",
+      "title": "'n Moontlike passing",
+      "question": "Watter ervaring is relevant tot 'n backend-ingenieursrol?",
+      "detail": "Vaardighede & rolbelyning"
+    }
+  ],
+  "ready": "Openbare kennisbasis gekoppel",
+  "preparing": "Portefeulje-inhoud word voorberei. Jy kan steeds die gesprek probeer.",
+  "messages": "Boodskappe",
+  "you": "JY",
+  "assistant": "PORTEFEULJEASSISTENT",
+  "sources": "BRONNE",
+  "thinking": "Kyk deur die openbare bronne…",
+  "inputLabel": "Vra oor ervaring, projekte of vaardighede",
+  "placeholder": "Wat wil jy graag weet?",
+  "send": "Stuur vraag",
+  "honesty": "Bron-ondersteunde antwoorde. Eerlik oor wat ontbreek.",
+  "enter": "↵ om te stuur",
+  "footer": "GEBOU RONDOM NUUSIERIGHEID.",
+  "footerDetail": "Menslike ervaring. KI-koppelvlak.",
+  "close": "Sluit privaatheidsinligting",
+  "transparent": "'N BIETJIE DEURSIGTIGHEID",
+  "privacyTitle": "Jou gesprek, verduidelik.",
+  "privacy": [
+    "Vrae en onlangse geselskonteks word na die gekonfigureerde KI-verskaffer (standaard Gemini) gestuur om te antwoord met behulp van openbare portefeuljedokumente. Die verskaffer verwerk hierdie data onder sy eie voorwaardes.",
+    "Hierdie toepassing hou kletsgeskiedenis in jou blaaier se sessiestoering vir hierdie oortjie. Nuwe gesprek vee daardie geskiedenis uit. Dit stoor nie gespreksteks in die databasis of toepassingslogboeke nie.",
+    "Operasionele logboeke bevat versoek-ID's, tye, tokenstellings en terugvalstatus. Gehashte netwerkidentifiseerders word tydelik gebruik vir tempo-beperking. Moet asseblief nie sensitiewe persoonlike inligting deel nie.",
+    "Bronne word gewys wanneer beskikbaar. KI-antwoorde kan steeds foute maak; verifieer belangrike besonderhede teen hul bronne.",
+    "Outomatiese taal gebruik die gasheerlandsein. Indien onbeskikbaar, versoek jou blaaier 'n landkode vanaf ipapi.co, wat jou IP-adres ontvang. Jou handmatige keuse word in hierdie blaaier gestoor. UI-teks kan deur Gemini vertaal word; jou ligging word nie na Gemini gestuur nie."
+  ],
+  "language": "Taal",
+  "auto": "Outo",
+  "sendError": "Kon nie jou vraag stuur nie. Probeer asseblief weer.",
+  "timeout": "Die versoek het uitspeeltyd bereik. Probeer asseblief weer.",
+  "rateError": "Te veel vrae. Probeer asseblief weer oor 'n minuut.",
+  "unavailable": "Die assistent is tydelik onbeskikbaar. Probeer asseblief weer binnekort.",
+  "fallback": "Daardie inligting is nog nie in hierdie portefeulje se openbare kennisbasis beskikbaar nie. Probeer 'n ander vraag, of kyk later weer nadat die eienaar hulle inligting bygevoeg het.",
+  "translationError": "Koppelvlakvertaling is onbeskikbaar. Wys Engels vir eers.",
+  "detecting": "Bespeur taal…",
+  "locationUnavailable": "Landbespeuring is onbeskikbaar. Gebruik jou blaaier-taal; jy kan 'n ander taal hierbo kies.",
+  "retryLanguage": "Probeer weer",
+  "accessibility": {
+    "skipChat": "Spring na klets",
+    "skipInput": "Spring na vraag-invoer",
+    "opensNewTab": "maak in 'n nuwe oortjie oop",
+    "inputHelp": "Enter om te stuur; Shift+Enter vir 'n nuwe reël.",
+    "remaining": "{count} karakters oor",
+    "cleared": "Gesprek uitgevee.",
+    "home": "Portefeulje tuisblad"
+  }
+}

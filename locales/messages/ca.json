@@ -1,0 +1,86 @@
+{
+  "person": "LA PERSONA DARRERA DEL TREBALL",
+  "profile": "Descobreix el meu camí com a enginyer de programari. Explora els meus projectes, experiència i les decisions tècniques darrere del meu treball a través de converses interactives impulsades per IA.",
+  "explore": "Preguntes suggerides",
+  "nav": ["Experiència", "Projectes", "Habilitats i eines", "Contacte"],
+  "navQuestions": [
+    "Parla'm de la teva experiència.",
+    "Parla'm dels teus projectes.",
+    "Parla'm de les teves habilitats i eines.",
+    "Com puc contactar amb l'Ariell? Comparteix el seu correu electrònic i perfil de LinkedIn."
+  ],
+  "grounded": "Basat en el treball real.",
+  "sourceNote": "Les respostes s'obtenen de fonts publicades del portafoli.",
+  "privacyButton": "Privadesa i com funciona ↗",
+  "newChat": "Nova conversa",
+  "conversation": "Conversa del portafoli",
+  "introTag": "UNA MANERA DIFERENT DE CONÈIXER-ME",
+  "heading": "Xateja amb el meu currículum d'IA",
+  "headingLead": "una bona ",
+  "headingEm": "conversa.",
+  "intro": "Pregunta sobre la meva experiència, explora un projecte o mira com m'enfronto a un repte. Tria un punt de partida a continuació.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "La visió general",
+      "question": "Parla'm del teu bagatge professional.",
+      "detail": "Experiència i enfocament d'enginyeria"
+    },
+    {
+      "icon": "02",
+      "title": "Sota el capó",
+      "question": "Quins projectes demostren millor les teves habilitats d'enginyeria?",
+      "detail": "Projectes i decisions tècniques"
+    },
+    {
+      "icon": "03",
+      "title": "Un possible encaix",
+      "question": "Quina experiència és rellevant per a un rol d'enginyeria backend?",
+      "detail": "Habilitats i alineació de rols"
+    }
+  ],
+  "ready": "Base de coneixement públic connectada",
+  "preparing": "S'està preparant el contingut del portafoli. Encara pots provar la conversa.",
+  "messages": "Missatges",
+  "you": "TU",
+  "assistant": "ASSISTENT DEL PORTAFOLI",
+  "sources": "FONTS",
+  "thinking": "Cercant entre les fonts públiques…",
+  "inputLabel": "Pregunta sobre experiència, projectes o habilitats",
+  "placeholder": "Què t'agradaria saber?",
+  "send": "Envia la pregunta",
+  "honesty": "Respostes avalades per fonts. Sinceritat sobre el que falta.",
+  "enter": "↵ per enviar",
+  "footer": "CONSTRUït AL VOLTANT DE LA CURURIOSITAT.",
+  "footerDetail": "Experiència humana. Interfície d'IA.",
+  "close": "Tanca la informació de privadesa",
+  "transparent": "UNA MICA DE TRANSPARÈNCIA",
+  "privacyTitle": "La teva conversa, explicada.",
+  "privacy": [
+    "Les preguntes i el context recent de la conversa s'envien al proveïdor d'IA configurat (Gemini per defecte) per respondre utilitzant documents públics del portafoli. El proveïdor processa aquestes dades sota els seus propis termes.",
+    "Aquesta aplicació manté l'historial del xat a l'emmagatzematge de sessió del teu navegador per a aquesta pestanya. La nova conversa esborra aquest historial. No emmagatzema el text de la conversa a la base de dades ni als registres de l'aplicació.",
+    "Els registres operatius contenen IDs de sol·licitud, temps, recomptes de tokens i estat de reserva. Els identificadors de xarxa encriptats (hash) s'utilitzen temporalment per a la limitació de velocitat. Si us plau, no comparteixis informació personal sensible.",
+    "Les fonts es mostren quan estan disponibles. Les respostes de la IA encara poden cometre errors; verifica els detalls importants amb les seves fonts.",
+    "La llengua automàtica utilitza el senyal del país d'allotjament. Si no està disponible, el teu navegador sol·licita un codi de país a ipapi.co, el qual rep la teva adreça IP. La teva selecció manual es desa en aquest navegador. El text de la interfície pot ser traduït per Gemini; la teva ubicació no s'envia a Gemini."
+  ],
+  "language": "Idioma",
+  "auto": "Automàtic",
+  "sendError": "No s'ha pogut enviar la teva pregunta. Torna-ho a provar.",
+  "timeout": "S'ha esgotat el temps d'espera de la sol·licitud. Torna-ho a provar.",
+  "rateError": "Massa preguntes. Torna-ho a provar d'aquí a un minut.",
+  "unavailable": "L'assistent no està disponible temporalment. Torna-ho a provar d'aquí a una estona.",
+  "fallback": "Aquesta informació encara no està disponible a la base de coneixement públic d'aquest portafoli. Prova una altra pregunta o torna-hi a mirar quan el propietari hagi afegit la seva informació.",
+  "translationError": "La traducció de la interfície no està disponible. Es mostra en anglès de moment.",
+  "detecting": "Detectant l'idioma…",
+  "locationUnavailable": "La detecció de país no està disponible. S'està utilitzant l'idioma del teu navegador; pots triar un altre idioma a dalt.",
+  "retryLanguage": "Reintentar",
+  "accessibility": {
+    "skipChat": "Vés al xat",
+    "skipInput": "Vés a l'entrada de preguntes",
+    "opensNewTab": "s'obre en una pestanya nova",
+    "inputHelp": "Entrar per enviar; Majús+Entrar per a una línia nova.",
+    "remaining": "{count} caràcters restants",
+    "cleared": "Conversa esborrada.",
+    "home": "Inici del portafoli"
+  }
+}

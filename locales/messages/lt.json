@@ -1,0 +1,86 @@
+{
+  "person": "ASMENYBĖ UŽ ŠIO DARBO",
+  "profile": "Atraskite my kelionę kaip programinės įrangos inžinieriaus. Naršykite mano projektus, patirtį ir techninius sprendimus už mano darbų per interaktyvius dirbtinio intelekto pokalbius.",
+  "explore": "Siūlomi klausimai",
+  "nav": ["Patirtis", "Projektai", "Įgūdžiai ir įrankiai", "Kontaktai"],
+  "navQuestions": [
+    "Papasakokite apie savo patirtį.",
+    "Papasakokite apie savo projektus.",
+    "Papasakokite apie savo įgūdžius ir įrankius.",
+    "Kaip galiu susisiekti su Ariell? Pasidalykite jo el. paštu ir „LinkedIn“ profiliu."
+  ],
+  "grounded": "Pagrįsta realiais darbais.",
+  "sourceNote": "Atsakymai paremti paskelbtais portfolio šaltiniais.",
+  "privacyButton": "Privatumas ir kaip tai veikia ↗",
+  "newChat": "Naujas pokalbis",
+  "conversation": "Portfolio pokalbis",
+  "introTag": "KITOKS BŪDAS MANĘS PAPAŽINTI",
+  "heading": "Pasikalbėkite su mano AI gyvenimo aprašymu",
+  "headingLead": "geras ",
+  "headingEm": "pokalbis.",
+  "intro": "Paklauskite apie my patirtį, išnaršykite projektą arba pažiūrėkite, kaip sprendžiu iššūkius. Pasirinkite pradžios tašką žemiau.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Bendras vaizdas",
+      "question": "Papasakokite apie savo profesinį foną.",
+      "detail": "Patirtis ir inžinerinis dėmesys"
+    },
+    {
+      "icon": "02",
+      "title": "Po kapotu",
+      "question": "Kokie projektai geriausiai demonstruoja jūsų inžinerinius įgūdžius?",
+      "detail": "Projektai ir techniniai sprendimai"
+    },
+    {
+      "icon": "03",
+      "title": "Galimas atitikmuo",
+      "question": "Kokia patirtis yra svarbi serverio pusės (backend) inžinieriaus pozicijai?",
+      "detail": "Įgūdžiai ir pozicijos atitiktis"
+    }
+  ],
+  "ready": "Vieša žinių bazė prijungta",
+  "preparing": "Portfolio turinys yra ruošiamas. Vis tiek galite išbandyti pokalbį.",
+  "messages": "Žinutės",
+  "you": "JŪS",
+  "assistant": "PORTFOLIO ASISTENTAS",
+  "sources": "ŠALTINIAI",
+  "thinking": "Ieškoma viešuose šaltiniuose…",
+  "inputLabel": "Paklauskite apie patirtį, projektus arba įgūdžius",
+  "placeholder": "Ko norėtumėte sužinoti?",
+  "send": "Siųsti klausimą",
+  "honesty": "Atsakymai paremti šaltiniais. Sąžiningai nurodoma, ko trūksta.",
+  "enter": "↵ norint išsiųsti",
+  "footer": "SUKURTA APIE SMALSUMĄ.",
+  "footerDetail": "Žmogiškoji patirtis. DI sąsaja.",
+  "close": "Uždaryti privatumo informaciją",
+  "transparent": "ŠIEK TIEK SKAIDRUMO",
+  "privacyTitle": "Jūsų pokalbis, paaiškintas.",
+  "privacy": [
+    "Klausimai ir naujausio pokalbio kontekstas siunčiami sukonfigūruotam DI teikėjui („Gemini“ pagal numatytuosius nustatymus), kad būtų galima atsakyti naudojant viešus portfolio dokumentus. Teikėjas apdoroja šiuos duomenis pagal savo sąlygas.",
+    "Ši programėlė saugo pokalbių istoriją jūsų naršyklės sesijos atmintyje šiam skirtukui. Naujas pokalbis išvalo šią istoriją. Ji nesaugo pokalbio teksto duomenų bazėje ar programėlės žurnaluose.",
+    "Veikimo žurnaluose pateikiami užklausų ID, laikai, žetonų skaičius ir atsarginės būsenos. Maišyti tinklo identifikatoriai laikinai naudojami užklausų dažniui riboti. Prašome nebendrinti jautrios asmeninės informacijos.",
+    "Šaltiniai rodomi, kai jie pasiekiami. DI atsakymai vis tiek gali padaryti klaidų; patikrinkite svarbias detales pagal jų šaltinius.",
+    "Automatinė kalba naudoja priimančiosios šalies signalą. Jei ji nepasiekiama, jūsų naršyklė užklausia šalies kodo iš ipapi.co, kuris gauna jūsų IP adresą. Jūsų rankinis pasirinkimas išsaugomas šioje naršyklėje. UI tekstą gali išversti „Gemini“; jūsų vieta į „Gemini“ nesiunčiama."
+  ],
+  "language": "Kalba",
+  "auto": "Automatinė",
+  "sendError": "Nepavyko išsiųsti jūsų klausimo. Bandykite dar kartą.",
+  "timeout": "Užklausos laikas baigėsi. Bandykite dar kartą.",
+  "rateError": "Per daug klausimų. Bandykite dar kartą po minutės.",
+  "unavailable": "Asistentas laikinai nepasiekiamas. Bandykite dar kartą netrukus.",
+  "fallback": "Šios informacijos dar nėra šiame portfolio viešojoje žinių bazėje. Pabandykite užduoti kitą klausimą arba patikrinkite vėliau, kai savininkas pridės savo informaciją.",
+  "translationError": "Sąsajos vertimas nepasiekiamas. Kol kas rodoma anglų kalba.",
+  "detecting": "Aptinkama kalba…",
+  "locationUnavailable": "Šalies aptikimas nepasiekiamas. Naudojama jūsų naršyklės kalba; galite pasirinkti kitą kalbą aukščiau.",
+  "retryLanguage": "Bandyti dar kartą",
+  "accessibility": {
+    "skipChat": "Pereiti prie pokalbio",
+    "skipInput": "Pereiti prie klausimo įvesties",
+    "opensNewTab": "atsidaro naujame skirtuke",
+    "inputHelp": "Paspauskite Enter norėdami siųsti; Shift+Enter naujai eilutei.",
+    "remaining": "liko {count} simbolių",
+    "cleared": "Pokalbis išvalytas.",
+    "home": "Portfolio pradžia"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "person": "SOSOK DI BALIK KARYA",
   "profile": "Kenali perjalanan saya sebagai software engineer—jelajahi proyek, pengalaman, dan keputusan teknis di balik karya saya melalui percakapan interaktif berbasis AI.",
-  "explore": "JELAJAHI MELALUI PERCAKAPAN",
+  "explore": "Saran Pertanyaan",
   "nav": ["Pengalaman", "Proyek", "Keahlian & alat", "Kontak"],
   "navQuestions": [
     "Ceritakan pengalaman profesional Anda.",
@@ -15,7 +15,7 @@
   "newChat": "Percakapan baru",
   "conversation": "Percakapan portfolio",
   "introTag": "CARA BERBEDA UNTUK MENGENAL SAYA",
-  "heading": "Karya baik dimulai dari",
+  "heading": "Chat dengan AI Resume Saya",
   "headingLead": "",
   "headingEm": "percakapan yang baik.",
   "intro": "Tanyakan pengalaman saya, jelajahi sebuah proyek, atau kenali cara saya menghadapi tantangan. Pilih topik di bawah untuk memulai.",

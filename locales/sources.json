@@ -99,6 +99,266 @@
       "origin": "Machine-translated project UI with configured Gemini model",
       "model": "gemini-3.1-flash-lite",
       "review": "Structurally validated; native-language review recommended"
+    },
+    "af": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "am": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "az": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "bg": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "bn": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "bs": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ca": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "cs": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "cy": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "da": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "el": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "et": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "eu": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "fa": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "fi": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "fil": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ga": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "gl": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "gu": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "he": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "hr": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "hu": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "hy": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "is": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ka": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "kk": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "km": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "lo": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "lt": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "lv": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "mk": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "mn": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "mr": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "mt": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "my": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "nb": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ne": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "pa": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ro": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "si": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "sk": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "sl": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "sq": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "sr": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "sv": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "sw": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ta": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "te": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "uk": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "ur": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "uz": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
+    },
+    "zu": {
+      "origin": "Machine-translated project UI with configured Gemini model",
+      "model": "gemini-3.5-flash-lite",
+      "review": "Structurally validated; native-language review recommended"
     }
   }
 }

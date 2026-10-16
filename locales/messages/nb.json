@@ -1,0 +1,86 @@
+{
+  "person": "PERSONEN BAK ARBEIDET",
+  "profile": "Oppdag reisen min som programvareutvikler. Utforsk prosjektene mine, erfaringen og de tekniske beslutningene bak arbeidet mitt gjennom interaktive KI-drevne samtaler.",
+  "explore": "Foreslåtte spørsmål",
+  "nav": ["Erfaring", "Prosjekter", "Ferdigheter og verktøy", "Kontakt"],
+  "navQuestions": [
+    "Fortell meg om din erfaring.",
+    "Fortell meg om prosjektene dine.",
+    "Fortell meg om dine ferdigheter og verktøy.",
+    "Hvordan kan jeg kontakte Ariell? Del hans e-post og LinkedIn-profil."
+  ],
+  "grounded": "Basert på ekte arbeid.",
+  "sourceNote": "Svarene henter fra publiserte porteføljekilder.",
+  "privacyButton": "Personvern og hvordan dette fungerer ↗",
+  "newChat": "Ny samtale",
+  "conversation": "Porteføljesamtale",
+  "introTag": "EN ANNERLEDES MÅTE Å BLI KJENT MED MEG PÅ",
+  "heading": "Chat med min KI-CV",
+  "headingLead": "en god ",
+  "headingEm": "samtale.",
+  "intro": "Spør om min erfaring, utforsk et prosjekt, eller se hvordan jeg griper an en utfordring. Velg et startpunkt nedenfor.",
+  "suggestions": [
+    {
+      "icon": "01",
+      "title": "Det store bildet",
+      "question": "Fortell meg om din profesjonelle bakgrunn.",
+      "detail": "Erfaring og ingeniørfokus"
+    },
+    {
+      "icon": "02",
+      "title": "Under panseret",
+      "question": "Hvilke prosjekter demonstrerer dine ingeniørferdigheter best?",
+      "detail": "Prosjekter og tekniske beslutninger"
+    },
+    {
+      "icon": "03",
+      "title": "En mulig match",
+      "question": "Hvilken erfaring er relevant for en backend-utviklerrolle?",
+      "detail": "Ferdigheter og rolletilpasning"
+    }
+  ],
+  "ready": "Offentlig kunnskapsbase tilkoblet",
+  "preparing": "Porteføljeinnhold klargjøres. Du kan fremdeles prøve samtalen.",
+  "messages": "Meldinger",
+  "you": "DU",
+  "assistant": "PORTEFØLJEASSISTENT",
+  "sources": "KILDER",
+  "thinking": "Går gjennom offentlige kilder…",
+  "inputLabel": "Spør om erfaring, prosjekter eller ferdigheter",
+  "placeholder": "Hva vil du vite?",
+  "send": "Send spørsmål",
+  "honesty": "Kildebaserte svar. Ærlig om det som mangler.",
+  "enter": "↵ for å sende",
+  "footer": "BYGD RUNDT NYSGJERRIGHET.",
+  "footerDetail": "Menneskelig erfaring. KI-grensesnitt.",
+  "close": "Lukk personverninformasjon",
+  "transparent": "LITT ÅPENHET",
+  "privacyTitle": "Samtalen din, forklart.",
+  "privacy": [
+    "Spørsmål og nylig samtalekontekst sendes til den konfigurerte KI-leverandøren (Gemini som standard) for å svare ved hjelp av offentlige porteføljedokumenter. Leverandøren behandler disse dataene under sine egne vilkår.",
+    "Denne appen lagrer chathistorikk i nettleserens øktlager for denne fanen. Ny samtale tømmer den historikken. Den lagrer ikke samtaletekst i databasen eller applikasjonsloggene.",
+    "Operasjonelle logger inneholder forespørsels-ID-er, tidsstempler, antall tokens og fallback-status. Hashede nettverksidentifikatorer brukes midlertidig for hastighetsbegrensning (rate limiting). Vennligst ikke del sensitiv personlig informasjon.",
+    "Kilder vises når de er tilgjengelige. KI-svar kan fremdeles gjøre feil; verifiser viktige detaljer mot kildene deres.",
+    "Automatisk språk bruker signalet fra vertsområdet. Hvis utilgjengelig, ber nettleseren om en landskode fra ipapi.co, som mottar IP-adressen din. Ditt manuelle valg lagres i denne nettleseren. Brukergrensesnitttekst kan bli oversatt av Gemini; posisjonen din sendes ikke til Gemini."
+  ],
+  "language": "Språk",
+  "auto": "Auto",
+  "sendError": "Kunne ikke sende spørsmålet ditt. Prøv igjen.",
+  "timeout": "Forespørselen tidsutløp. Prøv igjen.",
+  "rateError": "For mange spørsmål. Prøv igjen om et minutt.",
+  "unavailable": "Assistenten er midlertidig utilgjengelig. Prøv igjen om litt.",
+  "fallback": "Den informasjonen er ikke tilgjengelig i denne porteføljens offentlige kunnskapsbase ennå. Prøv et annet spørsmål, eller sjekk igjen etter at eieren har lagt til informasjonen sin.",
+  "translationError": "Oversettelse av grensesnittet er utilgjengelig. Viser engelsk i mellomtiden.",
+  "detecting": "Oppdager språk…",
+  "locationUnavailable": "Stedsgjenkjenning er utilgjengelig. Bruker nettleserspråket ditt; du kan velge et annet språk ovenfor.",
+  "retryLanguage": "Prøv igjen",
+  "accessibility": {
+    "skipChat": "Hopp til chat",
+    "skipInput": "Hopp til spørsmålsfelt",
+    "opensNewTab": "åpner i en ny fane",
+    "inputHelp": "Enter for å sende; Shift+Enter for en ny linje.",
+    "remaining": "{count} tegn gjenstår",
+    "cleared": "Samtaler tømt.",
+    "home": "Porteføljehjem"
+  }
+}

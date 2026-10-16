@@ -1,7 +1,7 @@
 {
   "person": "A PESSOA POR TRÁS DO TRABALHO",
   "profile": "Conheça minha trajetória como engenheiro de software. Explore meus projetos, minha experiência e as decisões técnicas por trás do meu trabalho por meio de conversas interativas com IA.",
-  "explore": "EXPLORE ATRAVÉS DE CONVERSA",
+  "explore": "Perguntas sugeridas",
   "nav": ["Experiência", "Projetos", "Habilidades e ferramentas", "Contato"],
   "navQuestions": [
     "Fale-me sobre sua experiência.",
@@ -15,7 +15,7 @@
   "newChat": "Nova conversa",
   "conversation": "Conversa sobre o portfólio",
   "introTag": "UMA MANEIRA DIFERENTE DE ME CONHECER",
-  "heading": "Um bom trabalho começa com",
+  "heading": "Converse com meu currículo com IA",
   "headingLead": "uma boa ",
   "headingEm": "conversa.",
   "intro": "Pergunte sobre minha experiência, explore um projeto ou veja como abordo um desafio. Escolha um ponto de partida abaixo.",

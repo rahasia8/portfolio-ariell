@@ -8,7 +8,7 @@
 - `sources.json`: data sources, provider provenance, and translation review status.
 - `UNICODE-LICENSE.txt`: upstream country-data license.
 
-Resolution: exact locale → language/script → base language → existing on-demand translation service. Saved files are served without an AI call. On-demand results remain a transient cache; run the generation command to make a locale an editable, versioned JSON file.
+Resolution: exact locale → language/script → base language → English UI with a visible notice. Saved files are served without an AI call. Run the generation command during development to add an editable, versioned JSON catalog.
 
 ## Add or edit a language
 
@@ -19,7 +19,7 @@ npm run locales:generate -- fr es ja
 npm run locales:check
 ```
 
-The generator sends only the project's English UI strings to the configured Gemini model. It preserves existing files, validates new dictionaries, writes atomically, and regenerates both manifests. It does not upload resume, contact, conversation, or visitor-location data. AI-generated catalogs require native-language review; structural validation cannot certify translation quality.
+The generator sends only the project's English UI strings to the configured Gemini model. It preserves existing files, validates new dictionaries, writes atomically, and regenerates both manifests. It does not upload resume documents, contact details, conversation history, or visitor-location data. The UI dictionary contains the owner’s display name. AI-generated catalogs require native-language review; structural validation cannot certify translation quality.
 
 To replace an existing machine translation, edit it directly. To regenerate an existing file, move the old JSON outside `messages/` first, then run the generator. Generated dictionaries follow the source shape; add any new UI keys to all catalogs before shipping.
 
@@ -29,6 +29,6 @@ Research sources: [Unicode CLDR country-language data](https://github.com/unicod
 
 ## Current saved coverage
 
-20 catalogs: Arabic, German, English, Spanish, French, Hindi, Indonesian, Italian, Japanese, Korean, Malay, Dutch, Polish, Portuguese, Russian, Thai, Turkish, Vietnamese, simplified Chinese, and traditional Chinese.
+All 72 languages in `lib/locale.ts` have complete, editable JSON catalogs. `npm run locales:check` fails if a selectable language has no catalog. Browser language switching loads these files lazily and requires no Gemini request. The translation endpoint serves local dictionaries only, including regional fallback (for example `fr-CA` uses `fr`). Unknown automatic languages show the English UI with a notice; their UI text is never generated at request time.
 
-The 258 country/territory mappings include 176 defaults directly covered by a saved catalog. Others retain the existing on-demand translation fallback. The list is intentionally distinct from a claim that all countries have a reviewed local translation. Additional catalogs are machine-translated; traditional Chinese was produced by ICU Hans-Hant conversion of the Chinese catalog after provider errors. See per-locale provenance in `sources.json`.
+New catalogs were machine-translated from the project's English UI during development. Structural validation does not certify linguistic accuracy: native-language review is recommended, especially for uncommon languages. See per-locale provenance in `sources.json`.
