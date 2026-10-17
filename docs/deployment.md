@@ -1,8 +1,8 @@
 # Deployment: Netlify Free + PostgreSQL
 
 [`netlify.toml`](../netlify.toml) configures Node 24 and the `.next` publish
-directory. Netlify automatically installs its OpenNext adapter to run Next.js
-pages and API routes. No static export or manual `npm start` server is needed.
+directory. The pinned `@netlify/plugin-nextjs` adapter is registered explicitly in
+`netlify.toml` so Git and CLI builds both package Next.js pages and API routes. No static export or manual `npm start` server is needed.
 
 ## Account access
 
@@ -16,6 +16,9 @@ using `localhost`. Never commit `.env.local` or paste credentials into chat.
 - Site: https://ariell-ariza-portfolio.netlify.app
 - Dashboard: https://app.netlify.com/projects/ariell-ariza-portfolio
 - Hosting: Netlify Free, deployed directly with the CLI.
+- Latest production repair: `6ad339a6360135912bccac74` (17 October 2026),
+  published with the explicit Next.js adapter and Groq production settings.
+  Homepage, database readiness, and a cited Indonesian chat answer were verified.
 - Access: public production site. Preview access remains controlled separately
   through the Netlify dashboard.
 - Database: Netlify Database, provisioned in the same Free account.

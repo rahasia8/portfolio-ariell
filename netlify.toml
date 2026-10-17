@@ -8,3 +8,7 @@
 
 # Netlify applies netlify/database/migrations immediately before publication.
 # Production database connections exposed to local CLI builds are read-only.
+
+# Explicit adapter registration ensures Git and CLI builds package server routes.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

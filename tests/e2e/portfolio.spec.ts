@@ -93,11 +93,15 @@ test("keeps input available while waiting and reports provider outages", async (
   );
 });
 test("preserves manual language choice and supports RTL", async ({ app }) => {
+  await app.getByRole("textbox").fill("Tell me about your projects.");
+  await app.getByRole("textbox").press("Enter");
+  await expect(app.getByText("A test portfolio answer.")).toBeVisible();
   await app.getByRole("combobox").selectOption("de");
   await expect(app.locator("html")).toHaveAttribute("lang", "de");
   await expect(app.getByRole("button", { name: "Neues Gespräch" })).toBeVisible();
   await app.reload();
   await expect(app.locator("html")).toHaveAttribute("lang", "de");
+  await expect(app.getByRole("button", { name: "Neues Gespräch" })).toBeVisible();
   await app.getByRole("combobox").selectOption("ar");
   await expect(app.locator("html")).toHaveAttribute("dir", "rtl");
 });
@@ -119,10 +123,15 @@ test("skip links activate by keyboard and dark mode follows browser preference",
   await skip.focus();
   await app.keyboard.press("Enter");
   await expect(app.getByRole("textbox")).toBeFocused();
+  const background = () =>
+    app.evaluate(() => getComputedStyle(document.body).backgroundImage);
+  const lightBackground = await background();
+  expect(lightBackground).not.toBe("none");
   await app.emulateMedia({ colorScheme: "dark" });
-  await expect
-    .poll(() => app.evaluate(() => getComputedStyle(document.body).backgroundColor))
-    .toBe("rgb(18, 18, 18)");
+  await expect.poll(background).not.toBe(lightBackground);
+  await expect.poll(background).not.toBe("none");
+  await app.emulateMedia({ colorScheme: "light" });
+  await expect.poll(background).toBe(lightBackground);
 });
 test("page and privacy dialog pass axe and fit the viewport", async ({ app }) => {
   await app.addScriptTag({ path: require.resolve("axe-core/axe.min.js") });
