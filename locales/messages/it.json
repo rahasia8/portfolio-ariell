@@ -57,11 +57,11 @@
   "transparent": "UN PO' DI TRASPARENZA",
   "privacyTitle": "La tua conversazione, spiegata.",
   "privacy": [
-    "Le domande e il contesto della conversazione recente vengono inviati al provider AI configurato (Gemini per impostazione predefinita) per rispondere utilizzando i documenti pubblici del portfolio. Il provider elabora questi dati secondo i propri termini.",
+    "Le domande e il contesto della conversazione recente vengono inviati al provider AI configurato (Groq per impostazione predefinita) per rispondere utilizzando i documenti pubblici del portfolio. Il provider elabora questi dati secondo i propri termini.",
     "Questa app mantiene la cronologia della chat nella memoria di sessione del tuo browser per questa scheda. Una nuova conversazione cancella tale cronologia. Non memorizza il testo della conversazione nel database o nei log dell'applicazione.",
     "I log operativi contengono ID di richiesta, tempistiche, conteggio dei token e stato di fallback. Gli identificatori di rete hash sono utilizzati temporaneamente per la limitazione della frequenza. Per favore, non condividere informazioni personali sensibili.",
     "Le fonti vengono mostrate quando disponibili. Le risposte dell'AI possono comunque contenere errori; verifica i dettagli importanti rispetto alle loro fonti.",
-    "La lingua automatica utilizza il segnale del paese di hosting. Se non disponibile, il tuo browser richiede un codice paese da ipapi.co, che riceve il tuo indirizzo IP. La tua scelta manuale viene salvata in questo browser. Il testo dell'interfaccia utente può essere tradotto da Gemini; la tua posizione non viene inviata a Gemini."
+    "La lingua automatica utilizza il segnale del paese di hosting. Se non disponibile, il tuo browser richiede un codice paese da ipapi.co, che riceve il tuo indirizzo IP. La tua scelta manuale viene salvata in questo browser. Il testo dell'interfaccia utente può essere tradotto da Groq; la tua posizione non viene inviata a Groq."
   ],
   "language": "Lingua",
   "auto": "Auto",

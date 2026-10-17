@@ -11,50 +11,32 @@ const doc: KnowledgeDocument = {
   version: 1,
   content: "Approved test knowledge.",
 };
-const embedding = () => [1, ...Array(767).fill(0)];
 describe("ingestion preparation", () => {
-  it("never embeds private or draft documents", async () => {
-    const embed = vi.fn(async (texts: string[]) => texts.map(embedding));
-    const rows = await prepareKnowledge(
-      [
+  it("prepares public chunks without an API key or embedding request", async () => {
+    const fetcher = vi.fn();
+    vi.stubGlobal("fetch", fetcher);
+    try {
+      const rows = await prepareKnowledge([
         doc,
-        { ...doc, id: "private", visibility: "private", content: "Secret" },
+        { ...doc, id: "private", visibility: "private" },
         { ...doc, id: "draft", visibility: "draft" },
-      ],
-      { embed },
-    );
-    expect(embed).toHaveBeenCalledWith([doc.content], "RETRIEVAL_DOCUMENT");
-    expect(rows.map((row) => row.document.id)).toEqual(["test"]);
+      ]);
+      expect(rows.map((row) => row.document.id)).toEqual(["test"]);
+      expect(rows[0].embedding).toBeNull();
+      expect(fetcher).not.toHaveBeenCalled();
+    } finally {
+      vi.unstubAllGlobals();
+    }
   });
-  it("rejects duplicate source IDs before requesting embeddings", async () => {
-    const embed = vi.fn();
-    await expect(prepareKnowledge([doc, doc], { embed })).rejects.toThrow("Duplicate");
-    expect(embed).not.toHaveBeenCalled();
+  it("rejects duplicate source IDs before publication", async () => {
+    await expect(prepareKnowledge([doc, doc])).rejects.toThrow("Duplicate");
   });
   it("requires explicit permission for an empty replacement", async () => {
-    const embed = vi.fn();
-    await expect(prepareKnowledge([], { embed })).rejects.toThrow("No public");
-    expect(await prepareKnowledge([], { embed }, true)).toEqual([]);
-    expect(embed).not.toHaveBeenCalled();
-  });
-  it("propagates embedding failures before publication", async () => {
-    await expect(
-      prepareKnowledge([doc], {
-        embed: async () => {
-          throw Error("outage");
-        },
-      }),
-    ).rejects.toThrow("outage");
-  });
-  it("rejects missing or malformed embeddings", async () => {
-    await expect(prepareKnowledge([doc], { embed: async () => [] })).rejects.toThrow(
-      "count",
-    );
-    await expect(prepareKnowledge([doc], { embed: async () => [[NaN]] })).rejects.toThrow(
-      "Invalid embedding",
-    );
+    await expect(prepareKnowledge([])).rejects.toThrow("No public");
+    expect(await prepareKnowledge([], true)).toEqual([]);
   });
 });
+
 describe("snapshot publication", () => {
   it("commits only after all chunks are inserted and releases the connection", async () => {
     const query = vi.fn(async (_sql: string, _params?: unknown[]) => ({
@@ -64,9 +46,7 @@ describe("snapshot publication", () => {
     const pool = {
       connect: vi.fn(async () => ({ query, release })),
     } as unknown as Pool;
-    const rows = await prepareKnowledge([doc], {
-      embed: async () => [embedding()],
-    });
+    const rows = await prepareKnowledge([doc]);
     await publishKnowledge(pool, rows, "test-model");
     const sql = query.mock.calls.map((call) => call[0] as unknown as string);
     expect(sql[0]).toBe("BEGIN");
@@ -85,9 +65,7 @@ describe("snapshot publication", () => {
     const pool = {
       connect: vi.fn(async () => ({ query, release })),
     } as unknown as Pool;
-    const rows = await prepareKnowledge([doc], {
-      embed: async () => [embedding()],
-    });
+    const rows = await prepareKnowledge([doc]);
     await expect(publishKnowledge(pool, rows, "test-model")).rejects.toThrow(
       "insert failed",
     );

@@ -19,7 +19,7 @@ npm run locales:generate -- fr es ja
 npm run locales:check
 ```
 
-The generator sends only the project's English UI strings to the configured Gemini model. It preserves existing files, validates new dictionaries, writes atomically, and regenerates both manifests. It does not upload resume documents, contact details, conversation history, or visitor-location data. The UI dictionary contains the owner’s display name. AI-generated catalogs require native-language review; structural validation cannot certify translation quality.
+The generator sends only the project's English UI strings to the configured LLM provider (Groq by default). It preserves existing files, validates new dictionaries, writes atomically, and regenerates both manifests. It does not upload resume documents, contact details, conversation history, or visitor-location data. The UI dictionary contains the owner’s display name. AI-generated catalogs require native-language review; structural validation cannot certify translation quality.
 
 To replace an existing machine translation, edit it directly. To regenerate an existing file, move the old JSON outside `messages/` first, then run the generator. Generated dictionaries follow the source shape; add any new UI keys to all catalogs before shipping.
 
@@ -29,6 +29,6 @@ Research sources: [Unicode CLDR country-language data](https://github.com/unicod
 
 ## Current saved coverage
 
-All 72 languages in `lib/locale.ts` have complete, editable JSON catalogs. `npm run locales:check` fails if a selectable language has no catalog. Browser language switching loads these files lazily and requires no Gemini request. The translation endpoint serves local dictionaries only, including regional fallback (for example `fr-CA` uses `fr`). Unknown automatic languages show the English UI with a notice; their UI text is never generated at request time.
+All 72 languages in `lib/locale.ts` have complete, editable JSON catalogs. `npm run locales:check` fails if a selectable language has no catalog. Browser language switching loads these files lazily and requires no LLM request. The translation endpoint serves local dictionaries only, including regional fallback (for example `fr-CA` uses `fr`). Unknown automatic languages show the English UI with a notice; their UI text is never generated at request time.
 
 New catalogs were machine-translated from the project's English UI during development. Structural validation does not certify linguistic accuracy: native-language review is recommended, especially for uncommon languages. See per-locale provenance in `sources.json`.

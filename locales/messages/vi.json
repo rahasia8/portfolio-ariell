@@ -57,11 +57,11 @@
   "transparent": "MỘT CHÚT MINH BẠCH",
   "privacyTitle": "Giải thích về cuộc trò chuyện của bạn.",
   "privacy": [
-    "Các câu hỏi và ngữ cảnh cuộc trò chuyện gần đây được gửi đến nhà cung cấp AI đã cấu hình (mặc định là Gemini) để trả lời bằng cách sử dụng các tài liệu danh mục đầu tư công khai. Nhà cung cấp xử lý dữ liệu này theo các điều khoản riêng của họ.",
+    "Các câu hỏi và ngữ cảnh cuộc trò chuyện gần đây được gửi đến nhà cung cấp AI đã cấu hình (mặc định là Groq) để trả lời bằng cách sử dụng các tài liệu danh mục đầu tư công khai. Nhà cung cấp xử lý dữ liệu này theo các điều khoản riêng của họ.",
     "Ứng dụng này lưu giữ lịch sử trò chuyện trong bộ nhớ phiên của trình duyệt cho tab này. Cuộc trò chuyện mới sẽ xóa lịch sử đó. Ứng dụng không lưu trữ văn bản cuộc trò chuyện trong cơ sở dữ liệu hoặc nhật ký ứng dụng.",
     "Nhật ký vận hành chứa ID yêu cầu, thời gian, số lượng token và trạng thái dự phòng. Các định danh mạng được băm được sử dụng tạm thời để giới hạn tốc độ. Vui lòng không chia sẻ thông tin cá nhân nhạy cảm.",
     "Các nguồn được hiển thị khi có sẵn. Câu trả lời của AI vẫn có thể có sai sót; hãy xác minh các chi tiết quan trọng dựa trên nguồn của chúng.",
-    "Ngôn ngữ tự động sử dụng tín hiệu từ quốc gia lưu trữ. Nếu không có, trình duyệt của bạn sẽ yêu cầu mã quốc gia từ ipapi.co, nơi nhận địa chỉ IP của bạn. Lựa chọn thủ công của bạn được lưu trong trình duyệt này. Văn bản giao diện có thể được dịch bởi Gemini; vị trí của bạn không được gửi đến Gemini."
+    "Ngôn ngữ tự động sử dụng tín hiệu từ quốc gia lưu trữ. Nếu không có, trình duyệt của bạn sẽ yêu cầu mã quốc gia từ ipapi.co, nơi nhận địa chỉ IP của bạn. Lựa chọn thủ công của bạn được lưu trong trình duyệt này. Văn bản giao diện có thể được dịch bởi Groq; vị trí của bạn không được gửi đến Groq."
   ],
   "language": "Ngôn ngữ",
   "auto": "Tự động",

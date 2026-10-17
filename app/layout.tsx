@@ -1,6 +1,7 @@
 import { headers } from "next/headers";
 import { languageDirection, requestLanguage } from "@/lib/locale";
 import type { Metadata } from "next";
+import StartupLoader from "@/components/startup-loader";
 import "./globals.css";
 export const metadata: Metadata = {
   title: "ariellbot | Ariell’s AI Resume",
@@ -11,7 +12,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const { language } = requestLanguage(await headers());
   return (
     <html lang={language} dir={languageDirection(language)}>
-      <body>{children}</body>
+      <body>
+        <StartupLoader />
+        <noscript>
+          <style>{`.startup-loader { display: none; }`}</style>
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }

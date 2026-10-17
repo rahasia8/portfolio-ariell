@@ -2,10 +2,9 @@ import { createHash } from "node:crypto";
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { escapeLiteral } from "pg";
-import { config, requireSettings } from "../lib/config";
+import { knowledgeIndex } from "../lib/config";
 import { prepareKnowledge } from "../lib/ingestion";
 import { parseDocument } from "../lib/knowledge";
-import { GeminiEmbedding } from "../lib/providers";
 
 async function files(dir: string): Promise<string[]> {
   const result: string[] = [];
@@ -26,7 +25,7 @@ try {
     ),
   );
   const publicDocuments = documents.filter((d) => d.visibility === "public");
-  const model = config().EMBEDDING_MODEL;
+  const model = knowledgeIndex();
   const hash = createHash("sha256")
     .update(JSON.stringify({ model, documents: publicDocuments }))
     .digest("hex");
@@ -43,10 +42,8 @@ try {
       "Knowledge changed. Run npm run knowledge:migration before deploying.",
     );
   } else {
-    requireSettings(["GEMINI_API_KEY"]);
     const rows = await prepareKnowledge(
       documents,
-      new GeminiEmbedding(),
       process.argv.includes("--allow-empty"),
     );
     const literal = (value: string | number | null) =>

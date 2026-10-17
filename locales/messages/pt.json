@@ -57,11 +57,11 @@
   "transparent": "UM POUCO DE TRANSPARÊNCIA",
   "privacyTitle": "Sua conversa, explicada.",
   "privacy": [
-    "Perguntas e o contexto recente da conversa são enviados ao provedor de IA configurado (Gemini por padrão) para responder usando documentos públicos do portfólio. O provedor processa esses dados sob seus próprios termos.",
+    "Perguntas e o contexto recente da conversa são enviados ao provedor de IA configurado (Groq por padrão) para responder usando documentos públicos do portfólio. O provedor processa esses dados sob seus próprios termos.",
     "Este aplicativo mantém o histórico de chat no armazenamento de sessão do seu navegador para esta aba. Uma nova conversa limpa esse histórico. Ele não armazena o texto da conversa no banco de dados ou nos logs do aplicativo.",
     "Os logs operacionais contêm IDs de solicitação, tempos, contagens de tokens e status de fallback. Identificadores de rede com hash são usados temporariamente para limitação de taxa. Por favor, não compartilhe informações pessoais sensíveis.",
     "As fontes são exibidas quando disponíveis. As respostas da IA ainda podem cometer erros; verifique detalhes importantes em suas fontes.",
-    "O idioma automático usa o sinal do país de hospedagem. Se indisponível, seu navegador solicita um código de país do ipapi.co, que recebe seu endereço IP. Sua escolha manual é salva neste navegador. O texto da interface pode ser traduzido pelo Gemini; sua localização não é enviada ao Gemini."
+    "O idioma automático usa o sinal do país de hospedagem. Se indisponível, seu navegador solicita um código de país do ipapi.co, que recebe seu endereço IP. Sua escolha manual é salva neste navegador. O texto da interface pode ser traduzido pelo Groq; sua localização não é enviada ao Groq."
   ],
   "language": "Idioma",
   "auto": "Automático",

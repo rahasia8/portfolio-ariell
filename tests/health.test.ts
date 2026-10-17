@@ -17,7 +17,7 @@ it("reports setup required without connecting to an unconfigured database", asyn
 });
 it("reports a configured populated public index as ready", async () => {
   vi.stubEnv("DATABASE_URL", "postgresql://test");
-  vi.stubEnv("GEMINI_API_KEY", "test-only");
+  vi.stubEnv("GROQ_API_KEY", "test-only");
   query.mockResolvedValue({ rows: [{ count: 2 }] });
   const res = await GET();
   expect(await res.json()).toEqual({ status: "ok", knowledgeReady: true });
@@ -25,7 +25,7 @@ it("reports a configured populated public index as ready", async () => {
 });
 it("handles a configured but empty index", async () => {
   vi.stubEnv("DATABASE_URL", "postgresql://test");
-  vi.stubEnv("GEMINI_API_KEY", "test-only");
+  vi.stubEnv("GROQ_API_KEY", "test-only");
   query.mockResolvedValue({ rows: [{ count: 0 }] });
   expect((await (await GET()).json()).knowledgeReady).toBe(false);
 });

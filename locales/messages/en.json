@@ -57,11 +57,11 @@
   "transparent": "A LITTLE TRANSPARENCY",
   "privacyTitle": "Your conversation, explained.",
   "privacy": [
-    "Questions and recent conversation context are sent to the configured AI provider (Gemini by default) to answer using public portfolio documents. The provider processes this data under its own terms.",
+    "Questions and recent conversation context are sent to the configured AI provider (Groq by default) to answer using public portfolio documents. The provider processes this data under its own terms.",
     "This app keeps chat history in your browser’s session storage for this tab. New conversation clears that history. It does not store conversation text in the database or application logs.",
     "Operational logs contain request IDs, timings, token counts, and fallback status. Hashed network identifiers are used temporarily for rate limiting. Please don’t share sensitive personal information.",
     "Sources are shown when available. AI answers can still make mistakes; verify important details against their sources.",
-    "Automatic language uses the hosting country signal. If unavailable, your browser requests a country code from ipapi.co, which receives your IP address. Your manual choice is saved in this browser. UI text may be translated by Gemini; your location is not sent to Gemini."
+    "Automatic language uses the hosting country signal. If unavailable, your browser requests a country code from ipapi.co, which receives your IP address. Your manual choice is saved in this browser. UI text may be translated by Groq; your location is not sent to Groq."
   ],
   "language": "Language",
   "auto": "Auto",

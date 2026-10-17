@@ -57,11 +57,11 @@
   "transparent": "UWWAZI KADIRI FLANI",
   "privacyTitle": "Mazungumzo yako, yamefafanuliwa.",
   "privacy": [
-    "Maswali na muktadha wa mazungumzo ya hivi karibuni hutumwa kwa mtoa huduma wa AI aliyesanidiwa (Gemini kwa chaguo-msingi) ili kujibu kwa kutumia hati za kwingineko za umma. Mtoa huduma huchakata data hii chini ya sheria zake mwenyewe.",
+    "Maswali na muktadha wa mazungumzo ya hivi karibuni hutumwa kwa mtoa huduma wa AI aliyesanidiwa (Groq kwa chaguo-msingi) ili kujibu kwa kutumia hati za kwingineko za umma. Mtoa huduma huchakata data hii chini ya sheria zake mwenyewe.",
     "Programu hii huweka historia ya mazungumzo kwenye hifadhi ya kikao cha kivinjari chako kwa tabo hii. Mazungumzo mapya hufuta historia hiyo. Haihifadhi maandishi ya mazungumzo kwenye hifadhidata au kumbukumbu za programu.",
     "Kumbukumbu za utendaji zina vitambulisho vya maombi, nyakati, idadi ya ishara (tokens), na hali ya dharura. Vitambulisho vya mtandao vilivyosimbwa hutumiwa kwa muda kwa udhibiti wa kasi. Tafadhali usishiriki taarifa nyeti za kibinafsi.",
     "Vyanzo vinaonyeshwa vinapopatikana. Majibu ya AI bado yanaweza kufanya makosa; thibitisha maelezo muhimu dhidi ya vyanzo vyao.",
-    "Lugha ya kiotomatiki hutumia ishara ya nchi inayohifadhi. Isipopatikana, kivinjari chako huomba nchi kutoka ipapi.co, ambayo hupokea anwani yako ya IP. Chaguo lako la mwongozo limehifadhiwa katika kivinjari hiki. Maandishi ya UI yanaweza kutafsiriwa na Gemini; eneo lako halitumiwi kwa Gemini."
+    "Lugha ya kiotomatiki hutumia ishara ya nchi inayohifadhi. Isipopatikana, kivinjari chako huomba nchi kutoka ipapi.co, ambayo hupokea anwani yako ya IP. Chaguo lako la mwongozo limehifadhiwa katika kivinjari hiki. Maandishi ya UI yanaweza kutafsiriwa na Groq; eneo lako halitumiwi kwa Groq."
   ],
   "language": "Lugha",
   "auto": "Oto",

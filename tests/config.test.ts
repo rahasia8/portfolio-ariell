@@ -7,14 +7,14 @@ afterEach(() => {
 });
 it("reports all missing settings without exposing values", () => {
   vi.stubEnv("DATABASE_URL", "");
-  vi.stubEnv("GEMINI_API_KEY", "");
-  expect(() => requireSettings(["DATABASE_URL", "GEMINI_API_KEY"])).toThrow(
-    "Missing DATABASE_URL, GEMINI_API_KEY. Set these in .env.local",
+  vi.stubEnv("GROQ_API_KEY", "");
+  expect(() => requireSettings(["DATABASE_URL", "GROQ_API_KEY"])).toThrow(
+    "Missing DATABASE_URL, GROQ_API_KEY. Set these in .env.local",
   );
 });
 it("migration settings do not require an AI key", () => {
   vi.stubEnv("DATABASE_URL", "postgresql://localhost/portfolio");
-  vi.stubEnv("GEMINI_API_KEY", "");
+  vi.stubEnv("GROQ_API_KEY", "");
   expect(requireSettings(["DATABASE_URL"]).DATABASE_URL).toBe(
     "postgresql://localhost/portfolio",
   );

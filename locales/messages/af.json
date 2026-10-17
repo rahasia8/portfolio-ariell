@@ -57,11 +57,11 @@
   "transparent": "'N BIETJIE DEURSIGTIGHEID",
   "privacyTitle": "Jou gesprek, verduidelik.",
   "privacy": [
-    "Vrae en onlangse geselskonteks word na die gekonfigureerde KI-verskaffer (standaard Gemini) gestuur om te antwoord met behulp van openbare portefeuljedokumente. Die verskaffer verwerk hierdie data onder sy eie voorwaardes.",
+    "Vrae en onlangse geselskonteks word na die gekonfigureerde KI-verskaffer (standaard Groq) gestuur om te antwoord met behulp van openbare portefeuljedokumente. Die verskaffer verwerk hierdie data onder sy eie voorwaardes.",
     "Hierdie toepassing hou kletsgeskiedenis in jou blaaier se sessiestoering vir hierdie oortjie. Nuwe gesprek vee daardie geskiedenis uit. Dit stoor nie gespreksteks in die databasis of toepassingslogboeke nie.",
     "Operasionele logboeke bevat versoek-ID's, tye, tokenstellings en terugvalstatus. Gehashte netwerkidentifiseerders word tydelik gebruik vir tempo-beperking. Moet asseblief nie sensitiewe persoonlike inligting deel nie.",
     "Bronne word gewys wanneer beskikbaar. KI-antwoorde kan steeds foute maak; verifieer belangrike besonderhede teen hul bronne.",
-    "Outomatiese taal gebruik die gasheerlandsein. Indien onbeskikbaar, versoek jou blaaier 'n landkode vanaf ipapi.co, wat jou IP-adres ontvang. Jou handmatige keuse word in hierdie blaaier gestoor. UI-teks kan deur Gemini vertaal word; jou ligging word nie na Gemini gestuur nie."
+    "Outomatiese taal gebruik die gasheerlandsein. Indien onbeskikbaar, versoek jou blaaier 'n landkode vanaf ipapi.co, wat jou IP-adres ontvang. Jou handmatige keuse word in hierdie blaaier gestoor. UI-teks kan deur Groq vertaal word; jou ligging word nie na Groq gestuur nie."
   ],
   "language": "Taal",
   "auto": "Outo",

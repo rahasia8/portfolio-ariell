@@ -10,16 +10,6 @@ export function db() {
     statement_timeout: 8000,
   }));
 }
-export function vector(values: number[]) {
-  if (
-    values.length !== 768 ||
-    values.some((v) => !Number.isFinite(v)) ||
-    values.every((v) => v === 0)
-  )
-    throw new Error("Invalid embedding");
-  return `[${values.join(",")}]`;
-}
-
 export async function closeDb() {
   const pool = globalDb.portfolioPool;
   if (pool) {

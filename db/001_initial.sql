@@ -19,3 +19,9 @@ CREATE TABLE IF NOT EXISTS rate_limits (
   window_start TIMESTAMPTZ NOT NULL DEFAULT now(),
   hits INTEGER NOT NULL DEFAULT 1
 );
+
+-- Text search uses public content directly and does not need embedding vectors.
+ALTER TABLE knowledge_chunks ALTER COLUMN embedding DROP NOT NULL;
+CREATE INDEX IF NOT EXISTS knowledge_fulltext_idx ON knowledge_chunks
+  USING GIN (to_tsvector('english', title || ' ' || content))
+  WHERE visibility = 'public';

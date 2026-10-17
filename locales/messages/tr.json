@@ -57,11 +57,11 @@
   "transparent": "BİRAZ ŞEFFAFLIK",
   "privacyTitle": "Sohbetiniz, açıklandı.",
   "privacy": [
-    "Sorular ve son sohbet bağlamı, genel portföy belgelerini kullanarak cevap vermek üzere yapılandırılmış yapay zeka sağlayıcısına (varsayılan olarak Gemini) gönderilir. Sağlayıcı bu verileri kendi şartları altında işler.",
+    "Sorular ve son sohbet bağlamı, genel portföy belgelerini kullanarak cevap vermek üzere yapılandırılmış yapay zeka sağlayıcısına (varsayılan olarak Groq) gönderilir. Sağlayıcı bu verileri kendi şartları altında işler.",
     "Bu uygulama, sohbet geçmişini bu sekme için tarayıcınızın oturum depolama alanında tutar. Yeni sohbet bu geçmişi temizler. Veritabanında veya uygulama günlüklerinde sohbet metnini saklamaz.",
     "Operasyonel günlükler; istek kimliklerini, zamanlamaları, token sayılarını ve yedek durumunu içerir. Karma ağ tanımlayıcıları, hız sınırlaması için geçici olarak kullanılır. Lütfen hassas kişisel bilgileri paylaşmayın.",
     "Kaynaklar mevcut olduğunda gösterilir. Yapay zeka cevapları yine de hatalar içerebilir; önemli detayları kaynaklarından doğrulayın.",
-    "Otomatik dil, barındırma ülkesi sinyalini kullanır. Kullanılamıyorsa, tarayıcınız ipapi.co'dan bir ülke kodu ister ve bu servis IP adresinizi alır. Manuel seçiminiz bu tarayıcıda kaydedilir. Arayüz metni Gemini tarafından çevrilebilir; konumunuz Gemini'ye gönderilmez."
+    "Otomatik dil, barındırma ülkesi sinyalini kullanır. Kullanılamıyorsa, tarayıcınız ipapi.co'dan bir ülke kodu ister ve bu servis IP adresinizi alır. Manuel seçiminiz bu tarayıcıda kaydedilir. Arayüz metni Groq tarafından çevrilebilir; konumunuz Groq'ye gönderilmez."
   ],
   "language": "Dil",
   "auto": "Otomatik",

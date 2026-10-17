@@ -51,7 +51,7 @@ One repository secret is required:
 
 Set it at GitHub **Settings → Secrets and variables → Actions → New repository
 secret**. Never commit the token. The existing site ID is explicitly configured
-in the workflow; it is not a secret. Gemini and database credentials remain in
+in the workflow; it is not a secret. Groq and database credentials remain in
 Netlify and are loaded by its CLI during the production build.
 
 The workflow uses Node 24, a pinned Netlify CLI, and the Next.js adapter. It builds
@@ -63,10 +63,10 @@ production upload is allowed to finish rather than being interrupted.
 
 Before committing changed knowledge, run `npm run knowledge:migration` locally
 and include the new SQL migration. The Netlify build checks the snapshot first
-and fails if it is stale, without requesting new embeddings. Keep applied
+and fails if it is stale, without calling an AI provider. Keep applied
 migration files unchanged. After publishing, Actions checks the homepage and
 `/api/health`; a missing server handler or unavailable knowledge fails the job.
-These checks do not send questions to Gemini.
+These checks do not send questions to the LLM provider.
 
 Push all deployment changes together, including the database SDK/configuration,
 public knowledge migrations, and origin handling required by the live site.
@@ -90,11 +90,9 @@ would produce a second deployment for each push.
    | ------------------------ | ----------------------------------------------------------------- |
    | `DATABASE_URL`           | Neon pooled connection string                                     |
    | `APP_ORIGIN`             | `https://ariell-ariza-portfolio.netlify.app` (your public origin) |
-   | `GEMINI_API_KEY`         | Existing Gemini API key                                           |
    | `AWS_LAMBDA_JS_RUNTIME`  | `nodejs24.x`                                                      |
-   | `EMBEDDING_MODEL`        | `gemini-embedding-001`                                            |
-   | `GENERATION_MODEL`       | `gemini-3.1-flash-lite`                                           |
-   | `RELEVANCE_THRESHOLD`    | `0.55`                                                            |
+   | `GROQ_API_KEY`           | Groq Free API key from https://console.groq.com/keys              |
+   | `GROQ_MODEL`             | `openai/gpt-oss-20b`                                              |
    | `TOP_K`                  | `5`                                                               |
    | `MAX_MESSAGE_LENGTH`     | `2000`                                                            |
    | `RATE_LIMIT_PER_MINUTE`  | `12`                                                              |
@@ -103,7 +101,10 @@ would produce a second deployment for each push.
    | `NEXT_PUBLIC_OWNER_NAME` | `Ariell Zaki Prabaswara Ariza`                                    |
    | `NEXT_PUBLIC_OWNER_ROLE` | `Software Engineer`                                               |
 
-   Verify that both models are available to the Gemini account. Runtime
+   Verify Groq model access and [Free plan quotas](https://console.groq.com/docs/rate-limits).
+   Ingestion and migrations publish public text without an embedding API.
+   Groq handles query expansion, answer generation, and development translations.
+   Runtime
    variables belong in Netlify's environment settings: variables in
    `netlify.toml` are only available during the build. Set
    `AWS_LAMBDA_JS_RUNTIME` through the UI, CLI, or API, not in the TOML file.
@@ -117,9 +118,9 @@ would produce a second deployment for each push.
 6. Open the returned `.netlify.app` URL and `/api/health`. Expect `status: "ok"`
    and `knowledgeReady: true`, then check the chat's answers and sources.
 
-Knowledge migrations contain only public source text and its embeddings, never
+Knowledge migrations contain only public source text and metadata, never
 API keys or database credentials. `npm run knowledge:migration` generates a new
-version only when public knowledge or the embedding model changes. Netlify
+version only when public knowledge or the text index format changes. Netlify
 applies it transactionally before publishing; keep all previously applied SQL
 files unchanged. A failed migration blocks publication. Netlify's native preview
 branches isolate preview migrations from production.
@@ -156,7 +157,7 @@ the `.next` directory as static files does not deploy the API routes.
   fallback (`LOCATION_PROVIDER=none`). Vercel headers are not used.
 - `TRUST_PROXY=false` leaves unverified forwarded headers untrusted. The
   current application shares its rate limit between visitors in this mode.
-- Netlify Free (including Database), Neon Free, and Gemini free quotas have usage limits. Select
+- Netlify Free (including Database), Neon Free, and Groq Free quotas have usage limits. Select
   free plans and check model quotas; zero cost is not unlimited usage.
 - `APP_ORIGIN` explicitly allows the public site origin when Netlify forwards
   an internal URL to Next.js. Update it if the public domain changes. Forwarded
@@ -172,4 +173,4 @@ the `.next` directory as static files does not deploy the API routes.
 - [Netlify plans](https://www.netlify.com/pricing/)
 - [Neon plans](https://neon.com/pricing)
 - [Neon pgvector](https://neon.com/docs/extensions/pgvector)
-- [Gemini pricing](https://ai.google.dev/gemini-api/docs/pricing)
+- [Groq Free rate limits](https://console.groq.com/docs/rate-limits)

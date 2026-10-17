@@ -2,8 +2,7 @@ import { describe, it, expect, vi } from "vitest";
 import { parseDocument, chunkText, safeUrl } from "../lib/knowledge";
 import { chatSchema, readBoundedJson } from "../lib/validation";
 import { answerFromChunks, selectSources, fallback } from "../lib/rag";
-import { vector } from "../lib/db";
-import { SYSTEM_PROMPT, GeminiEmbedding, GeminiLLM } from "../lib/providers";
+import { SYSTEM_PROMPT } from "../lib/providers";
 import type { RetrievedChunk } from "../lib/types";
 const doc = {
   id: "project-one",
@@ -116,76 +115,5 @@ describe("chat boundaries", () => {
   it("keeps documents and history untrusted in the system prompt", () => {
     expect(SYSTEM_PROMPT).toContain("untrusted data");
     expect(SYSTEM_PROMPT).toContain("never evidence");
-  });
-  it("rejects malformed vectors", () => {
-    expect(() => vector([1, 2])).toThrow();
-    expect(() => vector(Array(768).fill(0))).toThrow();
-    expect(() => vector(Array(768).fill(NaN))).toThrow();
-  });
-});
-describe("Gemini provider contracts", () => {
-  it("normalizes embeddings with document/query task types", async () => {
-    const mock = vi.fn().mockResolvedValue(
-      new Response(JSON.stringify({ embedding: { values: Array(768).fill(1) } }), {
-        status: 200,
-      }),
-    );
-    vi.stubGlobal("fetch", mock);
-    try {
-      const [embedding] = await new GeminiEmbedding().embed(["test"], "RETRIEVAL_QUERY");
-      expect(embedding).toHaveLength(768);
-      expect(embedding.reduce((sum, v) => sum + v * v, 0)).toBeCloseTo(1);
-      expect(JSON.parse(mock.mock.calls[0][1].body).taskType).toBe("RETRIEVAL_QUERY");
-    } finally {
-      vi.unstubAllGlobals();
-    }
-  });
-  it("does not expose provider response errors", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn().mockResolvedValue(new Response("secret credentials", { status: 500 })),
-    );
-    try {
-      await expect(
-        new GeminiEmbedding().embed(["test"], "RETRIEVAL_QUERY"),
-      ).rejects.toThrow("AI provider unavailable");
-    } finally {
-      vi.unstubAllGlobals();
-    }
-  });
-  it("parses structured generated answers", async () => {
-    const timeout = vi.spyOn(AbortSignal, "timeout");
-    vi.stubGlobal(
-      "fetch",
-      vi.fn().mockResolvedValue(
-        new Response(
-          JSON.stringify({
-            candidates: [
-              {
-                content: {
-                  parts: [
-                    {
-                      text: JSON.stringify({
-                        answer: "Supported",
-                        sourceIds: [doc.id],
-                      }),
-                    },
-                  ],
-                },
-              },
-            ],
-          }),
-        ),
-      ),
-    );
-    try {
-      expect((await new GeminiLLM().generate("hi", [chunk], [])).answer).toBe(
-        "Supported",
-      );
-      expect(timeout).toHaveBeenCalledWith(35000);
-    } finally {
-      vi.unstubAllGlobals();
-      timeout.mockRestore();
-    }
   });
 });

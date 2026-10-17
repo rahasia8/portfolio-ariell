@@ -1,7 +1,7 @@
 import { setTimeout as sleep } from "node:timers/promises";
 import { config } from "./config";
 
-export class GeminiRequestError extends Error {
+export class GroqRequestError extends Error {
   readonly code = "AI_PROVIDER_UNAVAILABLE";
   constructor(
     readonly status: number | undefined,
@@ -9,17 +9,15 @@ export class GeminiRequestError extends Error {
     readonly attempts: number,
   ) {
     super("AI provider unavailable");
-    this.name = "GeminiRequestError";
+    this.name = "GroqRequestError";
   }
 }
 
 /** Retry transient failures within one timeout budget, including response bodies. */
-export async function geminiRequest(
-  model: string,
-  method: "generateContent" | "embedContent",
-  body: unknown,
-  timeoutMs = method === "generateContent" ? 35000 : 15000,
-) {
+export async function groqRequest(body: Record<string, unknown>, timeoutMs = 35000) {
+  const key = config().GROQ_API_KEY;
+  if (!key) throw new GroqRequestError(undefined, "chat/completions", 0);
+  const method = "chat/completions";
   const signal = AbortSignal.timeout(timeoutMs);
   const deadline = Date.now() + timeoutMs;
   const payload = JSON.stringify(body);
@@ -27,32 +25,29 @@ export async function geminiRequest(
   for (let attempt = 1; attempt <= 3; attempt++) {
     let retryAfter: string | null = null;
     try {
-      const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:${method}`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "x-goog-api-key": config().GEMINI_API_KEY || "",
-          },
-          body: payload,
-          signal,
+      const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${key}`,
         },
-      );
+        body: payload,
+        signal,
+      });
       status = response.status;
       if (response.ok) return await response.json();
       retryAfter = response.headers.get("retry-after");
       await response.body?.cancel();
       if (![408, 429, 500, 502, 503, 504].includes(status))
-        throw new GeminiRequestError(status, method, attempt);
+        throw new GroqRequestError(status, method, attempt);
     } catch (error) {
-      if (error instanceof GeminiRequestError) throw error;
+      if (error instanceof GroqRequestError) throw error;
       // Retry transport failures, but not malformed JSON or exhausted timeouts.
       if (signal.aborted || !(error instanceof TypeError))
-        throw new GeminiRequestError(status, method, attempt);
+        throw new GroqRequestError(status, method, attempt);
       status = undefined;
     }
-    if (attempt === 3) throw new GeminiRequestError(status, method, attempt);
+    if (attempt === 3) throw new GroqRequestError(status, method, attempt);
     const seconds = retryAfter === null ? NaN : Number(retryAfter);
     const requestedDelay = Number.isFinite(seconds)
       ? Math.max(0, seconds * 1000)
@@ -65,11 +60,11 @@ export async function geminiRequest(
     );
     // Do not ignore Retry-After or start a retry with almost no time left.
     if (Date.now() + delay + 1000 >= deadline)
-      throw new GeminiRequestError(status, method, attempt);
+      throw new GroqRequestError(status, method, attempt);
     console.warn(
       JSON.stringify({
-        event: "gemini_retry",
-        model,
+        event: "groq_retry",
+        model: body.model,
         method,
         status,
         attempt,
@@ -79,8 +74,8 @@ export async function geminiRequest(
     try {
       await sleep(delay, undefined, { signal });
     } catch {
-      throw new GeminiRequestError(status, method, attempt);
+      throw new GroqRequestError(status, method, attempt);
     }
   }
-  throw new GeminiRequestError(status, method, 3);
+  throw new GroqRequestError(status, method, 3);
 }

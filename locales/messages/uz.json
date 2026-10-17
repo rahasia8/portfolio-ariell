@@ -57,11 +57,11 @@
   "transparent": "BIZ BILAN SHAFFAFLIK",
   "privacyTitle": "Suhbatingiz tushuntirildi.",
   "privacy": [
-    "Savollar va so'nggi suhbat konteksti ommaviy portfolio hujjatlaridan foydalangan holda javob berish uchun sozlangan AI provayderiga (standart bo'yicha Gemini) yuboriladi. Provayder bu ma'lumotlarni o'z shartlari asosida qayta ishlaydi.",
+    "Savollar va so'nggi suhbat konteksti ommaviy portfolio hujjatlaridan foydalangan holda javob berish uchun sozlangan AI provayderiga (standart bo'yicha Groq) yuboriladi. Provayder bu ma'lumotlarni o'z shartlari asosida qayta ishlaydi.",
     "Ushbu ilova chat tarixini ushbu yorliq uchun brauzeringizning seans xotirasida saqlaydi. Yangi suhbat bu tarixni tozalaydi. U suhbat matnini ma'lumotlar bazasida yoki ilova jurnallarida saqlamaydi.",
     "Operatsion jurnallarda so'rov ID'lari, vaqtlar, tokenlar soni va zaxira holati mavjud. Tarmoq identifikatorlarining xeshlangan turlaridan so'rovlar sonini cheklash uchun vaqtincha foydalaniladi. Iltimos, maxfiy shaxsiy ma'lumotlarni ulashmang.",
     "Manbalar mavjud bo'lganda ko'rsatiladi. Sun'iy intellekt javoblari hali ham xatolarga yo'l qo'yishi mumkin; muhim tafsilotlarni ularning manbalari asosida tekshiring.",
-    "Avtomatik til mezbon mamlakat signalidan foydalanadi. Agar mavjud bo'lmasa, brauzeringiz IP manzilingizni qabul qiluvchi ipapi.co saytidan mamlakat kodini so'raydi. Sizning qo'lda qilgan tanlovingiz ushbu brauzerda saqlanadi. UI matni Gemini tomonidan tarjima qilinishi mumkin; joylashuvingiz Gemini'ga yuborilmaydi."
+    "Avtomatik til mezbon mamlakat signalidan foydalanadi. Agar mavjud bo'lmasa, brauzeringiz IP manzilingizni qabul qiluvchi ipapi.co saytidan mamlakat kodini so'raydi. Sizning qo'lda qilgan tanlovingiz ushbu brauzerda saqlanadi. UI matni Groq tomonidan tarjima qilinishi mumkin; joylashuvingiz Groq'ga yuborilmaydi."
   ],
   "language": "Til",
   "auto": "Avtomatik",

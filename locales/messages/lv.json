@@ -57,11 +57,11 @@
   "transparent": "MAZA CAURLAIDĪBA",
   "privacyTitle": "Jūsu saruna, paskaidrota.",
   "privacy": [
-    "Jautājumi un nesenās sarunas konteksts tiek nosūtīti konfigurētajam AI nodrošinātājam (pēc noklusējuma Gemini), lai atbildētu, izmantojot publiskos portfeļa dokumentus. Pakalpojuma sniedzējs apstrādā šos datus saskaņā ar saviem noteikumiem.",
+    "Jautājumi un nesenās sarunas konteksts tiek nosūtīti konfigurētajam AI nodrošinātājam (pēc noklusējuma Groq), lai atbildētu, izmantojot publiskos portfeļa dokumentus. Pakalpojuma sniedzējs apstrādā šos datus saskaņā ar saviem noteikumiem.",
     "Šī lietotne saglabā tērzēšanas vēsturi jūsu pārlūkprogrammas sesijas krātuvē šai cilnei. Jauna saruna notīra šo vēsturi. Tā neuzglabā sarunas tekstu datu bāzē vai lietojumprogrammu žurnālos.",
     "Darbības žurnāli satur pieprasījuma ID, laikus, pilnvaru skaitu un rezerves statusu. Jaucējkoda tīkla identifikatori tiek izmantoti īslaicīgi, lai ierobežotu pieprasījumu skaitu. Lūdzu, neizplatiet sensitīvu personisko informāciju.",
     "Avoti tiek parādīti, kad tie ir pieejami. AI atbildes joprojām var saturēt kļūdas; pārbaudiet svarīgas detaļas pret to avotiem.",
-    "Automātiskā valoda izmanto mitinātājvalsts signālu. Ja tas nav pieejams, jūsu pārlūkprogramma pieprasa valsts kodu no ipapi.co, kas saņem jūsu IP adresi. Jūsu manuālā izvēle tiek saglabāta šajā pārlūkprogrammā. UI tekstu var tulkot Gemini; jūsu atrašanās vieta netiek nosūtīta Gemini."
+    "Automātiskā valoda izmanto mitinātājvalsts signālu. Ja tas nav pieejams, jūsu pārlūkprogramma pieprasa valsts kodu no ipapi.co, kas saņem jūsu IP adresi. Jūsu manuālā izvēle tiek saglabāta šajā pārlūkprogrammā. UI tekstu var tulkot Groq; jūsu atrašanās vieta netiek nosūtīta Groq."
   ],
   "language": "Valoda",
   "auto": "Automātiski",

@@ -1,4 +1,4 @@
-import { geminiRequest } from "./gemini-request";
+import { groqRequest } from "./groq-request";
 import { loadSavedTranslation } from "./saved-translation";
 export { loadSavedTranslation } from "./saved-translation";
 import { config } from "./config";
@@ -18,35 +18,21 @@ export async function generateTranslation(rawLocale: string): Promise<Translatio
   const language = normalizeLanguage(rawLocale);
   if (!language) throw new Error("Unsupported language");
   const c = config();
-  if (!c.GEMINI_API_KEY) throw new Error("Translation service unavailable");
-  const raw = await geminiRequest(
-    c.GENERATION_MODEL,
-    "generateContent",
+  const instruction = `Translate all string VALUES in the supplied UI dictionary into ${languageName(language)} (${language}). Preserve every JSON key, array length/order, and object structure exactly. Preserve numeric icons, URLs, product names, email addresses, keyboard symbols, placeholders such as {count}, and proper names. Return only the translated JSON object. Do not add commentary or new facts.`;
+  const raw = await groqRequest(
     {
-      systemInstruction: {
-        parts: [
-          {
-            text: `Translate all string VALUES in the supplied UI dictionary into ${languageName(language)} (${language}). Preserve every JSON key, array length/order, and object structure exactly. Preserve numeric icons, URLs, product names, email addresses, keyboard symbols, placeholders such as {count}, and proper names. Return only the translated JSON object. Do not add commentary or new facts.`,
-          },
-        ],
-      },
-      contents: [
-        {
-          role: "user",
-          parts: [{ text: JSON.stringify(translations.en) }],
-        },
+      model: c.GROQ_MODEL,
+      messages: [
+        { role: "system", content: instruction },
+        { role: "user", content: JSON.stringify(translations.en) },
       ],
-      generationConfig: {
-        temperature: 0,
-        maxOutputTokens: 12000,
-        responseMimeType: "application/json",
-      },
+      temperature: 0,
+      max_completion_tokens: 12000,
+      response_format: { type: "json_object" },
     },
     30000,
   );
-  const text = raw.candidates?.[0]?.content?.parts
-    ?.map((p: { text?: string }) => p.text || "")
-    .join("");
-  const result = validateTranslation(JSON.parse(text || "null"));
-  return result;
+  if (raw.choices?.[0]?.finish_reason !== "stop")
+    throw new Error("Incomplete provider translation");
+  return validateTranslation(JSON.parse(raw.choices?.[0]?.message?.content || "null"));
 }

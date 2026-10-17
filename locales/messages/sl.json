@@ -57,11 +57,11 @@
   "transparent": "MALCE LIKVIDNE PREPAREDI",
   "privacyTitle": "Vaš pogovor, pojasnjen.",
   "privacy": [
-    "Vprašanja in kontekst nedavnega pogovora se pošljejo nastavljenemu ponudniku umetne inteligence (privzeto Gemini) za odgovarjanje z uporabo javnih dokumentov iz portfelja. Ponudnik obdeluje te podatke v skladu s svojimi pogoji.",
+    "Vprašanja in kontekst nedavnega pogovora se pošljejo nastavljenemu ponudniku umetne inteligence (privzeto Groq) za odgovarjanje z uporabo javnih dokumentov iz portfelja. Ponudnik obdeluje te podatke v skladu s svojimi pogoji.",
     "Ta aplikacija hrani zgodovino klepeta v začasnem pomnilniku (session storage) vašega brskalnika za ta zavihek. Nov pogovor izbriše to zgodovino. Besedila pogovorov ne shranjuje v bazo podatkov ali dnevnike aplikacije.",
     "Operativni dnevniki vsebujejo ID-je zahtevkov, čase izvajanja, število žetonov in status nadomestnih možnosti. Zgoščeni omrežni identifikatorji se začasno uporabljajo za omejevanje pogostosti zahtev. Prosimo, ne delite občutljivih osebnih podatkov.",
     "Viri so prikazani, kadar so na voljo. Odgovori umetne inteligence se lahko še vedno motijo; pomembne podrobnosti preverite v njihovih virih.",
-    "Samodejni jezik uporablja signal države gostiteljice. Če ni na voljo, vaš brskalnik zahteva kodo države s spletnega mesta ipapi.co, ki prejme vaš naslov IP. Vaša ročna izbira je shranjena v tem brskalniku. Besedilo vmesnika lahko prevede Gemini; vaša lokacija se ne pošilja Geminiju."
+    "Samodejni jezik uporablja signal države gostiteljice. Če ni na voljo, vaš brskalnik zahteva kodo države s spletnega mesta ipapi.co, ki prejme vaš naslov IP. Vaša ročna izbira je shranjena v tem brskalniku. Besedilo vmesnika lahko prevede Groq; vaša lokacija se ne pošilja Groqju."
   ],
   "language": "Jezik",
   "auto": "Samodejno",

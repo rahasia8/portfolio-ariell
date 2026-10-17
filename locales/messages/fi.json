@@ -57,11 +57,11 @@
   "transparent": "HIEMAN LÄPINÄKYVYYTTÄ",
   "privacyTitle": "Keskustelusi, selitettynä.",
   "privacy": [
-    "Kysymykset ja viimeaikainen keskustelukonteksti lähetetään määritetylle tekoälyntarjoajalle (oletuksena Gemini) vastauksien antamiseksi julkisten portfoliodokumenttien avulla. Palveluntarjoaja käsittelee näitä tietoja omien ehtojensa mukaisesti.",
+    "Kysymykset ja viimeaikainen keskustelukonteksti lähetetään määritetylle tekoälyntarjoajalle (oletuksena Groq) vastauksien antamiseksi julkisten portfoliodokumenttien avulla. Palveluntarjoaja käsittelee näitä tietoja omien ehtojensa mukaisesti.",
     "Tämä sovellus pitää chat-historian selaimen istuntotallennustilassa tätä välilehteä varten kyseisen istunnon ajan. Uusi keskustelu tyhjentää kyseisen historian. Se ei tallenna keskustelutekstiä tietokantaan tai sovelluksen lokeihin.",
     "Käyttölokit sisältävät pyyntötunnisteet, ajankohdat, token-määrät ja varatilatilan. Hajautettuja verkkotunnisteita käytetään tilapäisesti sivuston kuormituksen rajoittamiseen. Älä jaa arkaluonteisia henkilötietoja.",
     "Lähteet näytetään, kun ne ovat saatavilla. Tekoälyn vastauksissa saattaa silti olla virheitä; tarkista tärkeät tiedot niiden lähteistä.",
-    "Automaattinen kieli käyttää isäntämaan signaalia. Jos se ei ole saatavilla, selaimesi pyytää maakoodia osoitteesta ipapi.co, joka vastaanottaa IP-osoitteesi. Manuaalinen valintasi tallennetaan tähän selaimeen. Gemini saattaa kääntää käyttöliittymän tekstit; sijaintiasi ei lähetetä Geminille."
+    "Automaattinen kieli käyttää isäntämaan signaalia. Jos se ei ole saatavilla, selaimesi pyytää maakoodia osoitteesta ipapi.co, joka vastaanottaa IP-osoitteesi. Manuaalinen valintasi tallennetaan tähän selaimeen. Groq saattaa kääntää käyttöliittymän tekstit; sijaintiasi ei lähetetä Groqlle."
   ],
   "language": "Kieli",
   "auto": "Automaattinen",

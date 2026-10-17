@@ -57,11 +57,11 @@
   "transparent": "UN PEU DE TRANSPARENCE",
   "privacyTitle": "Votre conversation, expliquée.",
   "privacy": [
-    "Les questions et le contexte récent de la conversation sont envoyés au fournisseur d'IA configuré (Gemini par défaut) pour répondre en utilisant les documents publics du portfolio. Le fournisseur traite ces données selon ses propres conditions.",
+    "Les questions et le contexte récent de la conversation sont envoyés au fournisseur d'IA configuré (Groq par défaut) pour répondre en utilisant les documents publics du portfolio. Le fournisseur traite ces données selon ses propres conditions.",
     "Cette application conserve l'historique des discussions dans le stockage de session de votre navigateur pour cet onglet. Une nouvelle conversation efface cet historique. Elle ne stocke pas le texte de la conversation dans la base de données ou les journaux de l'application.",
     "Les journaux opérationnels contiennent les identifiants de requête, les timings, le nombre de jetons et le statut de repli. Des identifiants réseau hachés sont utilisés temporairement pour limiter le débit. Veuillez ne pas partager d'informations personnelles sensibles.",
     "Les sources sont affichées lorsqu'elles sont disponibles. Les réponses de l'IA peuvent toujours contenir des erreurs ; vérifiez les détails importants par rapport à leurs sources.",
-    "La langue automatique utilise le signal du pays d'hébergement. Si indisponible, votre navigateur demande un code pays à ipapi.co, qui reçoit votre adresse IP. Votre choix manuel est enregistré dans ce navigateur. Le texte de l'interface peut être traduit par Gemini ; votre localisation n'est pas envoyée à Gemini."
+    "La langue automatique utilise le signal du pays d'hébergement. Si indisponible, votre navigateur demande un code pays à ipapi.co, qui reçoit votre adresse IP. Votre choix manuel est enregistré dans ce navigateur. Le texte de l'interface peut être traduit par Groq ; votre localisation n'est pas envoyée à Groq."
   ],
   "language": "Langue",
   "auto": "Auto",

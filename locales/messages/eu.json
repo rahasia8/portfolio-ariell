@@ -57,11 +57,11 @@
   "transparent": "GIZATASUN PIXKAT BAT",
   "privacyTitle": "Zure elkarrizketa, azaldua.",
   "privacy": [
-    "Galderak eta azken elkarrizketaren testuingurua konfiguratutako AI hornitzaileari bidaiatzen zaizkio (lehenetsita Gemini) portfolio dokumentu publikoak erabiliz erantzuteko. Hornitzaileak datu hau bere baldintzapean prozesatzen du.",
+    "Galderak eta azken elkarrizketaren testuingurua konfiguratutako AI hornitzaileari bidaiatzen zaizkio (lehenetsita Groq) portfolio dokumentu publikoak erabiliz erantzuteko. Hornitzaileak datu hau bere baldintzapean prozesatzen du.",
     "Aplikazio honek txataren historia zure nabigatzailearen saioaren biltegian gordetzen du fitxa honetarako. Elkarrizketa berri batek historia hori garbitzen du. Ez du elkarrizketaren testurik gordetzen datu-basean edo aplikazioaren erregistroetan.",
     "Eragiketa-erregistroek eskaera IDak, denborak, token kopuruak eta erorketa-egoera dituzte. Sareko identifikatzaile aldatuak aldi baterako erabiltzen dira tasa-mugarako. Mesedez, ez partekatu informazio pertsonal sentikorrik.",
     "Iturriak erabilgarri daudenean erakusten dira. AIren erantzunek oraindik akatsak egin ditzakete; egiaztatu xehetasun garrantzitsuak haien iturriekin.",
-    "Hizkuntza automatikoak ostalaritza herrialdearen seinalea erabiltzen du. Erabilgarri ez badago, zure nabigatzaileak herrialde kode bat eskatzen du ipapi.co-ri, eta honek zure IP helbidea jasotzen du. Zure eskuzko aukeraketa nabigatzaile honetan gordetzen da. Interfazearen testua Geminik itzul dezake; zure kokapena ez zaio Geminiri bidaltzen."
+    "Hizkuntza automatikoak ostalaritza herrialdearen seinalea erabiltzen du. Erabilgarri ez badago, zure nabigatzaileak herrialde kode bat eskatzen du ipapi.co-ri, eta honek zure IP helbidea jasotzen du. Zure eskuzko aukeraketa nabigatzaile honetan gordetzen da. Interfazearen testua Groqk itzul dezake; zure kokapena ez zaio Groqri bidaltzen."
   ],
   "language": "Hizkuntza",
   "auto": "Auto",

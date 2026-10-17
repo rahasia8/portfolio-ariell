@@ -1,17 +1,14 @@
 import { createHash } from "node:crypto";
 import type { Pool } from "pg";
-import { vector } from "./db";
 import { chunkText, type KnowledgeDocument } from "./knowledge";
-import type { EmbeddingProvider } from "./types";
 export type PreparedChunk = {
   document: KnowledgeDocument;
   content: string;
-  embedding: string;
+  embedding: string | null;
   index: number;
 };
 export async function prepareKnowledge(
   documents: KnowledgeDocument[],
-  provider: EmbeddingProvider,
   allowEmpty = false,
 ): Promise<PreparedChunk[]> {
   const ids = documents.map((document) => document.id);
@@ -27,14 +24,11 @@ export async function prepareKnowledge(
   const rows: PreparedChunk[] = [];
   for (const document of publicDocuments) {
     const chunks = chunkText(document.content);
-    const vectors = await provider.embed(chunks, "RETRIEVAL_DOCUMENT");
-    if (vectors.length !== chunks.length)
-      throw new Error("Embedding count does not match chunks");
     for (let index = 0; index < chunks.length; index++)
       rows.push({
         document,
         content: chunks[index],
-        embedding: vector(vectors[index]),
+        embedding: null,
         index,
       });
   }

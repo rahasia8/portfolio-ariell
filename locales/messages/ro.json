@@ -57,11 +57,11 @@
   "transparent": "PUȚINĂ TRANSPARENȚĂ",
   "privacyTitle": "Conversația ta, explicată.",
   "privacy": [
-    "Întrebările și contextul recent al conversației sunt trimise furnizorului de AI configurat (Gemini în mod implicit) pentru a răspunde folosind documente publice din portofoliu. Furnizorului procesează aceste date în conformitate cu propriii termeni.",
+    "Întrebările și contextul recent al conversației sunt trimise furnizorului de AI configurat (Groq în mod implicit) pentru a răspunde folosind documente publice din portofoliu. Furnizorului procesează aceste date în conformitate cu propriii termeni.",
     "Această aplicație păstrează istoricul chatului în stocarea de sesiune a browserului tău pentru această filă. O conversație nouă șterge acest istoric. Nu stochează textul conversației în baza de date sau în jurnalele aplicației.",
     "Jurnalele operaționale conțin ID-uri de cerere, momente temporale, număr de jetoane și starea de rezervă (fallback). Identificatorii de rețea hashuiți sunt utilizați temporar pentru limitarea ratei de cereri. Te rugăm să nu distribui informații personale sensibile.",
     "Sursele sunt afișate atunci când sunt disponibile. Răspunsurile generate de AI pot conține totuși greșeli; verifică detaliile importante pe baza surselor lor.",
-    "Limba automată folosește semnalul țării de găzduire. Dacă nu este disponibilă, browserul tău solicită un cod de țară de la ipapi.co, care primește adresa ta IP. Alegerea ta manuală este salvată în acest browser. Textul interfeței poate fi tradus de Gemini; locația ta nu este trimisă către Gemini."
+    "Limba automată folosește semnalul țării de găzduire. Dacă nu este disponibilă, browserul tău solicită un cod de țară de la ipapi.co, care primește adresa ta IP. Alegerea ta manuală este salvată în acest browser. Textul interfeței poate fi tradus de Groq; locația ta nu este trimisă către Groq."
   ],
   "language": "Limbă",
   "auto": "Automat",

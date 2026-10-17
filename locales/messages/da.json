@@ -57,11 +57,11 @@
   "transparent": "EN SMULE TRANSPARENS",
   "privacyTitle": "Din samtale, forklaret.",
   "privacy": [
-    "Spørgsmål og nylig samtale-kontekst sendes til den konfigurerede AI-udbyder (Gemini som standard) for at svare ved hjælp af offentlige porteføljedokumenter. Udbyderen behandler disse data under egne vilkår.",
+    "Spørgsmål og nylig samtale-kontekst sendes til den konfigurerede AI-udbyder (Groq som standard) for at svare ved hjælp af offentlige porteføljedokumenter. Udbyderen behandler disse data under egne vilkår.",
     "Denne app gemmer chathistorik i din browsers sessionslager for denne fane. Ny samtale rydder denne historik. Den gemmer ikke samtaletekst i databasen eller applikationslogfiler.",
     "Operationelle logfiler indeholder anmodnings-id'er, tider, tokentællinger og fallback-status. Hashede netværksidentifikatorer bruges midlertidigt til hastighedsbegrænsning. Del venligst ikke følsomme personlige oplysninger.",
     "Kilder vises, når de er tilgængelige. AI-svar kan stadig begå fejl; verificér vigtige detaljer op mod deres kilder.",
-    "Automatisk sprog bruger det værtslandets signal. Hvis utilgængeligt, anmoder din browser om en landekode fra ipapi.co, som modtager din IP-adresse. Dit manuelle valg gemmes i denne browser. UI-tekst kan blive oversat af Gemini; din placering sendes ikke til Gemini."
+    "Automatisk sprog bruger det værtslandets signal. Hvis utilgængeligt, anmoder din browser om en landekode fra ipapi.co, som modtager din IP-adresse. Dit manuelle valg gemmes i denne browser. UI-tekst kan blive oversat af Groq; din placering sendes ikke til Groq."
   ],
   "language": "Sprog",
   "auto": "Auto",

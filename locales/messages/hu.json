@@ -57,11 +57,11 @@
   "transparent": "KIS ÁTLÁTHATÓSÁG",
   "privacyTitle": "A beszélgetésed magyarázata.",
   "privacy": [
-    "A kérdések és a legutóbbi beszélgetés kontextusai továbbításra kerülnek a konfigurált AI-szolgáltatónak (alapértelmezés szerint a Gemini), hogy a nyilvános portfóliódokumentumok felhasználásával válaszoljanak. A szolgáltató a saját feltételei szerint dolgozza fel ezeket az adatokat.",
+    "A kérdések és a legutóbbi beszélgetés kontextusai továbbításra kerülnek a konfigurált AI-szolgáltatónak (alapértelmezés szerint a Groq), hogy a nyilvános portfóliódokumentumok felhasználásával válaszoljanak. A szolgáltató a saját feltételei szerint dolgozza fel ezeket az adatokat.",
     "Ez az alkalmazás a csevegési előzményeket a böngésző munkamenet-tárhelyén (session storage) tárolja ehhez a laphoz. Az új beszélgetés törli ezt az előzményt. Nem tárol beszélgetési szöveget az adatbázisban vagy az alkalmazásnaplókban.",
     "Az operatív naplók kérelem-azonosítókat, időzítéseket, tokendebeteket és tartalékstátuszt tartalmaznak. A hashed hálózati azonosítókat ideiglenesen használják a sebességkorlátozáshoz. Kérjük, ne ossz meg érzékeny személyes adatokat.",
     "A források akkor jelennek meg, amikor elérhetők. Az AI-válaszok továbbra is tévedhetnek; ellenőrizd a fontos részleteket a forrásaik alapján.",
-    "Az automatikus nyelvhasználat a tárhelyet biztosító ország jelzésén alapul. Ha nem érhető el, a böngésződ országkódot kér az ipapi.co-tól, amely megkapja az IP-címedet. A kézi választásod ebben a böngészőben van elmentve. A felhasználói felület szövegét a Gemini fordíthatja; a tartózkodási helyed nem kerül elküldésre a Gemininek."
+    "Az automatikus nyelvhasználat a tárhelyet biztosító ország jelzésén alapul. Ha nem érhető el, a böngésződ országkódot kér az ipapi.co-tól, amely megkapja az IP-címedet. A kézi választásod ebben a böngészőben van elmentve. A felhasználói felület szövegét a Groq fordíthatja; a tartózkodási helyed nem kerül elküldésre a Groqnek."
   ],
   "language": "Nyelv",
   "auto": "Automatikus",

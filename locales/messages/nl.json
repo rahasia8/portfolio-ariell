@@ -57,11 +57,11 @@
   "transparent": "EEN BEETJE TRANSPARANTIE",
   "privacyTitle": "Je gesprek, uitgelegd.",
   "privacy": [
-    "Vragen en de context van recente gesprekken worden naar de geconfigureerde AI-provider (standaard Gemini) gestuurd om antwoord te geven met behulp van publieke portfoliodocumenten. De provider verwerkt deze gegevens onder zijn eigen voorwaarden.",
+    "Vragen en de context van recente gesprekken worden naar de geconfigureerde AI-provider (standaard Groq) gestuurd om antwoord te geven met behulp van publieke portfoliodocumenten. De provider verwerkt deze gegevens onder zijn eigen voorwaarden.",
     "Deze app bewaart de gespreksgeschiedenis in de sessieopslag van je browser voor dit tabblad. Een nieuw gesprek wist die geschiedenis. Het slaat geen gesprekstekst op in de database of applicatielogboeken.",
     "Operationele logboeken bevatten verzoek-ID's, timing, het aantal tokens en de fallback-status. Gehashte netwerk-ID's worden tijdelijk gebruikt voor snelheidsbeperking. Deel alsjeblieft geen gevoelige persoonlijke informatie.",
     "Bronnen worden getoond wanneer beschikbaar. AI-antwoorden kunnen nog steeds fouten bevatten; verifieer belangrijke details aan de hand van de bronnen.",
-    "Automatische taal gebruikt het signaal van het land van hosting. Indien niet beschikbaar, vraagt je browser een landcode op bij ipapi.co, dat je IP-adres ontvangt. Je handmatige keuze wordt in deze browser opgeslagen. UI-tekst kan door Gemini worden vertaald; je locatie wordt niet naar Gemini gestuurd."
+    "Automatische taal gebruikt het signaal van het land van hosting. Indien niet beschikbaar, vraagt je browser een landcode op bij ipapi.co, dat je IP-adres ontvangt. Je handmatige keuze wordt in deze browser opgeslagen. UI-tekst kan door Groq worden vertaald; je locatie wordt niet naar Groq gestuurd."
   ],
   "language": "Taal",
   "auto": "Auto",

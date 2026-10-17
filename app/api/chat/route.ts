@@ -1,4 +1,4 @@
-import { GeminiRequestError } from "@/lib/gemini-request";
+import { GroqRequestError } from "@/lib/groq-request";
 import { requestLanguage } from "@/lib/locale";
 import { randomUUID } from "node:crypto";
 import { config, configured } from "@/lib/config";
@@ -106,7 +106,7 @@ export async function POST(request: Request) {
         requestId,
         totalMs: Date.now() - start,
         phase,
-        ...(error instanceof GeminiRequestError
+        ...(error instanceof GroqRequestError
           ? {
               providerStatus: error.status,
               providerMethod: error.method,

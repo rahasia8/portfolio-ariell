@@ -57,11 +57,11 @@
   "transparent": "TROCHA TRANSPARENTNOSTI",
   "privacyTitle": "Vaše konverzace, vysvětleno.",
   "privacy": [
-    "Otázky a kontext nedávné konverzace jsou odesílány nakonfigurovanému poskytovateli AI (ve výchozím nastavení Gemini), aby odpověděl pomocí veřejných dokumentů portfolia. Poskytovatel zpracovává tato data podle svých vlastních podmínek.",
+    "Otázky a kontext nedávné konverzace jsou odesílány nakonfigurovanému poskytovateli AI (ve výchozím nastavení Groq), aby odpověděl pomocí veřejných dokumentů portfolia. Poskytovatel zpracovává tato data podle svých vlastních podmínek.",
     "Tato aplikace uchovává historii chatu v relaci vašeho prohlížeče pro tuto kartu. Nová konverzace tuto historii vymaže. Neukládá text konverzace v databázi ani v protokolech aplikace.",
     "Provozní protokoly obsahují ID požadavků, časování, počty tokenů a stav záložního řešení. Hashované síťové identifikátory se dočasně používají pro omezování rychlosti (rate limiting). Nesdílejte prosím citlivé osobní údaje.",
     "Zdroje se zobrazují, jsou-li k dispozici. Odpovědi AI mohou stále obsahovat chyby; ověřte si důležité podrobnosti u jejich zdrojů.",
-    "Automatický jazyk používá signál hostitelské země. Pokud není k dispozici, váš prohlížeč si vyžádá kód země od ipapi.co, který obdrží vaši IP adresu. Vaše manuální volba se uloží v tomto prohlížeči. Text uživatelského rozhraní může být přeložen pomocí Gemini; vaše poloha není odesílána do Gemini."
+    "Automatický jazyk používá signál hostitelské země. Pokud není k dispozici, váš prohlížeč si vyžádá kód země od ipapi.co, který obdrží vaši IP adresu. Vaše manuální volba se uloží v tomto prohlížeči. Text uživatelského rozhraní může být přeložen pomocí Groq; vaše poloha není odesílána do Groq."
   ],
   "language": "Jazyk",
   "auto": "Auto",

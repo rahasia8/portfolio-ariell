@@ -57,11 +57,11 @@
   "transparent": "ŠIEK TIEK SKAIDRUMO",
   "privacyTitle": "Jūsų pokalbis, paaiškintas.",
   "privacy": [
-    "Klausimai ir naujausio pokalbio kontekstas siunčiami sukonfigūruotam DI teikėjui („Gemini“ pagal numatytuosius nustatymus), kad būtų galima atsakyti naudojant viešus portfolio dokumentus. Teikėjas apdoroja šiuos duomenis pagal savo sąlygas.",
+    "Klausimai ir naujausio pokalbio kontekstas siunčiami sukonfigūruotam DI teikėjui („Groq“ pagal numatytuosius nustatymus), kad būtų galima atsakyti naudojant viešus portfolio dokumentus. Teikėjas apdoroja šiuos duomenis pagal savo sąlygas.",
     "Ši programėlė saugo pokalbių istoriją jūsų naršyklės sesijos atmintyje šiam skirtukui. Naujas pokalbis išvalo šią istoriją. Ji nesaugo pokalbio teksto duomenų bazėje ar programėlės žurnaluose.",
     "Veikimo žurnaluose pateikiami užklausų ID, laikai, žetonų skaičius ir atsarginės būsenos. Maišyti tinklo identifikatoriai laikinai naudojami užklausų dažniui riboti. Prašome nebendrinti jautrios asmeninės informacijos.",
     "Šaltiniai rodomi, kai jie pasiekiami. DI atsakymai vis tiek gali padaryti klaidų; patikrinkite svarbias detales pagal jų šaltinius.",
-    "Automatinė kalba naudoja priimančiosios šalies signalą. Jei ji nepasiekiama, jūsų naršyklė užklausia šalies kodo iš ipapi.co, kuris gauna jūsų IP adresą. Jūsų rankinis pasirinkimas išsaugomas šioje naršyklėje. UI tekstą gali išversti „Gemini“; jūsų vieta į „Gemini“ nesiunčiama."
+    "Automatinė kalba naudoja priimančiosios šalies signalą. Jei ji nepasiekiama, jūsų naršyklė užklausia šalies kodo iš ipapi.co, kuris gauna jūsų IP adresą. Jūsų rankinis pasirinkimas išsaugomas šioje naršyklėje. UI tekstą gali išversti „Groq“; jūsų vieta į „Groq“ nesiunčiama."
   ],
   "language": "Kalba",
   "auto": "Automatinė",

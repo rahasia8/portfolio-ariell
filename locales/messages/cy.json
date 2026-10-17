@@ -57,11 +57,11 @@
   "transparent": "YCHYDIG O DRYLOWDER",
   "privacyTitle": "Eich sgwrs, wedi'i esbonio.",
   "privacy": [
-    "Anfonir cwestiynau a chyd-destun sgwrs ddiweddar at ddarparwr AI ffurfweddedig (Gemini yn ddiofal) i ateb gan ddefnyddio dogfennau portffolio cyhoeddus. Mae'r darparwr yn prosesu'r data hwn o dan ei delerau ei hun.",
+    "Anfonir cwestiynau a chyd-destun sgwrs ddiweddar at ddarparwr AI ffurfweddedig (Groq yn ddiofal) i ateb gan ddefnyddio dogfennau portffolio cyhoeddus. Mae'r darparwr yn prosesu'r data hwn o dan ei delerau ei hun.",
     "Mae'r ap hwn yn cadw hanes sgwrs yn storfa sesiwn eich porwr ar gyfer y tab hwn. Mae sgwrs newydd yn clirio'r hanes hwnnw. Nid yw'n storio testun sgwrs yn y gronfa ddata nac mewn logiau cymhwysiad.",
     "Mae logiau gweithredol yn cynnwys IDs cais, amserau, cyfrif tocynnau, a statu cwympo yn ôl. Defnyddir dynodwyr rhwydwaith wedi'u hasio dros dro ar gyfer cyfyngu cyfradd. Peidiwch â rhannu gwybodaeth bersonol sensitif.",
     "Dangosir ffynonellau pan fyddant ar gael. Gall atebion AI wneud camgymeriadau o hyd; gwiriwch fanylion pwysig yn erbyn eu ffynonellau.",
-    "Mae iaith awtomatig yn defnyddio signal y wlad sy'n cynnal. Os nad yw ar gael, mae eich porwr yn gofyn am god gwlad o ipapi.co, sy'n derbyn eich cyfeiriad IP. Cedwir eich dewis llawlyfr yn y porwr hwn. Gall testun rhyngwyneb gael ei gyfieithu gan Gemini; ni anfonir eich lleoliad at Gemini."
+    "Mae iaith awtomatig yn defnyddio signal y wlad sy'n cynnal. Os nad yw ar gael, mae eich porwr yn gofyn am god gwlad o ipapi.co, sy'n derbyn eich cyfeiriad IP. Cedwir eich dewis llawlyfr yn y porwr hwn. Gall testun rhyngwyneb gael ei gyfieithu gan Groq; ni anfonir eich lleoliad at Groq."
   ],
   "language": "Iaith",
   "auto": "Awtomatig",

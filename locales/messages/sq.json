@@ -57,11 +57,11 @@
   "transparent": "PAK TRANSPARENCË",
   "privacyTitle": "Biseda juaj, e shpjeguar.",
   "privacy": [
-    "Pyetjet dhe konteksti i bisedës së fundit i dërgohen ofruesit të konfiguruar të AI (Gemini si parazgjedhje) për të përdorur dokumentet publike të portofolit për përgjigje. Ofruesi e përpunon këtë të dhënë sipas kushteve të veta.",
+    "Pyetjet dhe konteksti i bisedës së fundit i dërgohen ofruesit të konfiguruar të AI (Groq si parazgjedhje) për të përdorur dokumentet publike të portofolit për përgjigje. Ofruesi e përpunon këtë të dhënë sipas kushteve të veta.",
     "Ky aplikacion ruan historikun e bisedave në hapësirën e ruajtjes së sesionit të shfletuesit tuaj për këtë skedë. Biseda e re e fshin këtë historik. Ai nuk ruan tekstin e bisedës në bazën e të dhënave ose në regjistrat e aplikacionit.",
     "Regjistrat operacionalë përmbajnë ID-të e kërkesave, kohëmatësit, numrin e shenjave (tokens) dhe statusin e rikthimit. Identifikuesit e rrjetit të koduar (hashed) përdoren përkohësisht për kufizimin e shpejtësisë. Ju lutemi mos ndani informacione të ndjeshme personale.",
     "Burimet shfaqen kur janë të disponueshme. Përgjigjet e AI mund të bëjnë ende gabime; verifikoni detajet e rëndësishme kundrejt burimeve të tyre.",
-    "Gjuha automatike përdor sinjalin e vendit pritës. Nëse nuk është i disponueshëm, shfletuesi juaj kërkon një kod vendi nga ipapi.co, i cili merr adresën tuaj IP. Zgjedhja juaj manuale ruhet në këtë shfletues. Teksti i ndërfaqes mund të përkthehet nga Gemini; vendndodhja juaj nuk i dërgohet Gemini-t."
+    "Gjuha automatike përdor sinjalin e vendit pritës. Nëse nuk është i disponueshëm, shfletuesi juaj kërkon një kod vendi nga ipapi.co, i cili merr adresën tuaj IP. Zgjedhja juaj manuale ruhet në këtë shfletues. Teksti i ndërfaqes mund të përkthehet nga Groq; vendndodhja juaj nuk i dërgohet Groq-t."
   ],
   "language": "Gjuha",
   "auto": "Auto",

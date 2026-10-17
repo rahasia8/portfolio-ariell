@@ -57,11 +57,11 @@
   "transparent": "KAUNTING TRANSPARENCY",
   "privacyTitle": "Ang iyong pag-uusap, ipinaliwanag.",
   "privacy": [
-    "Ang mga tanong at konteksto ng kamakailang pag-uusap ay ipinapadala sa naka-configure na AI provider (Gemini bilang default) upang sumagot gamit ang mga pampublikong dokumento ng portfolio. Pinoproseso ng provider ang datang ito sa ilalim ng sarili nitong mga tuntunin.",
+    "Ang mga tanong at konteksto ng kamakailang pag-uusap ay ipinapadala sa naka-configure na AI provider (Groq bilang default) upang sumagot gamit ang mga pampublikong dokumento ng portfolio. Pinoproseso ng provider ang datang ito sa ilalim ng sarili nitong mga tuntunin.",
     "Pinapanatili ng app na ito ang kasaysayan ng chat sa session storage ng iyong browser para sa tab na ito. Nililinis ng bagong pag-uusap ang kasaysayan na iyon. Hindi ito nag-imbak ng teksto ng pag-uusap sa database o mga log ng aplikasyon.",
     "Ang mga operational log ay naglalaman ng mga ID ng kahilingan, mga timing, mga bilang ng token, at katayuan ng fallback. Ang mga naka-hash na identifier ng network ay pansamantalang ginagamit para sa rate limiting. Mangyaring huwag magbahagi ng sensitibong personal na impormasyon.",
     "Ang mga pinagmulan ay ipinapakita kapag magagamit. Ang mga sagot ng AI ay maaari pa ring magkamali; i-verify ang mga mahalagang detalye laban sa kanilang mga pinagmulan.",
-    "Ang awtomatikong wika ay gumagamit ng senyas ng bansa kung saan ito naka-host. Kung hindi magagamit, humihiling ang iyong browser ng code ng bansa mula sa ipapi.co, na tumatanggap ng iyong IP address. Ang iyong manu-manong pagpipilian ay naka-save sa browser na ito. Ang teksto ng UI ay maaaring isalin ng Gemini; ang iyong lokasyon ay hindi ipinapadala sa Gemini."
+    "Ang awtomatikong wika ay gumagamit ng senyas ng bansa kung saan ito naka-host. Kung hindi magagamit, humihiling ang iyong browser ng code ng bansa mula sa ipapi.co, na tumatanggap ng iyong IP address. Ang iyong manu-manong pagpipilian ay naka-save sa browser na ito. Ang teksto ng UI ay maaaring isalin ng Groq; ang iyong lokasyon ay hindi ipinapadala sa Groq."
   ],
   "language": "Wika",
   "auto": "Auto",

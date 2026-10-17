@@ -57,11 +57,11 @@
   "transparent": "SEDIKIT KETELUSAN",
   "privacyTitle": "Perbualan anda, dijelaskan.",
   "privacy": [
-    "Soalan dan konteks perbualan terkini dihantar kepada penyedia AI yang dikonfigurasikan (Gemini secara lalai) untuk menjawab menggunakan dokumen portfolio awam. Penyedia memproses data ini di bawah terma mereka sendiri.",
+    "Soalan dan konteks perbualan terkini dihantar kepada penyedia AI yang dikonfigurasikan (Groq secara lalai) untuk menjawab menggunakan dokumen portfolio awam. Penyedia memproses data ini di bawah terma mereka sendiri.",
     "Aplikasi ini menyimpan sejarah sembang dalam storan sesi pelayar anda untuk tab ini. Perbualan baharu akan memadamkan sejarah tersebut. Ia tidak menyimpan teks perbualan dalam pangkalan data atau log aplikasi.",
     "Log operasi mengandungi ID permintaan, masa, kiraan token, dan status sandaran. Pengecam rangkaian yang dicincang (hashed) digunakan buat sementara waktu untuk pengehadan kadar. Sila jangan kongsi maklumat peribadi yang sensitif.",
     "Sumber ditunjukkan apabila tersedia. Jawapan AI masih boleh membuat kesilapan; sahkan butiran penting dengan sumbernya.",
-    "Bahasa automatik menggunakan isyarat negara pengehosan. Jika tidak tersedia, pelayar anda meminta kod negara daripada ipapi.co, yang menerima alamat IP anda. Pilihan manual anda disimpan dalam pelayar ini. Teks UI mungkin diterjemahkan oleh Gemini; lokasi anda tidak dihantar kepada Gemini."
+    "Bahasa automatik menggunakan isyarat negara pengehosan. Jika tidak tersedia, pelayar anda meminta kod negara daripada ipapi.co, yang menerima alamat IP anda. Pilihan manual anda disimpan dalam pelayar ini. Teks UI mungkin diterjemahkan oleh Groq; lokasi anda tidak dihantar kepada Groq."
   ],
   "language": "Bahasa",
   "auto": "Auto",

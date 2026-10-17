@@ -8,9 +8,6 @@ import { closeDb } from "../../lib/db";
 import type { KnowledgeDocument } from "../../lib/knowledge";
 const schema = `automation_${randomUUID().replaceAll("-", "")}`;
 const url = process.env.TEST_DATABASE_URL;
-const embedding = {
-  embed: async (texts: string[]) => texts.map(() => [1, ...Array(767).fill(0)]),
-};
 const document: KnowledgeDocument = {
   id: "public-test",
   title: "Public test",
@@ -37,8 +34,7 @@ describe("PostgreSQL/pgvector integration in an isolated test schema", () => {
     connection.searchParams.set("options", `-c search_path=${schema},public`);
     pool = new Pool({ connectionString: connection.toString() });
     vi.stubEnv("DATABASE_URL", connection.toString());
-    vi.stubEnv("EMBEDDING_MODEL", "automation-embedding");
-    vi.stubEnv("RELEVANCE_THRESHOLD", "0.75");
+    vi.stubEnv("GROQ_API_KEY", "");
     await pool.query(await readFile("db/001_initial.sql", "utf8"));
   });
   beforeEach(async () => {
@@ -52,38 +48,35 @@ describe("PostgreSQL/pgvector integration in an isolated test schema", () => {
     }
     vi.unstubAllEnvs();
   });
-  it("publishes public documents and retrieves only the configured embedding model", async () => {
-    const rows = await prepareKnowledge(
-      [
-        document,
-        { ...document, id: "private", visibility: "private" },
-        { ...document, id: "draft", visibility: "draft" },
-      ],
-      embedding,
-    );
+  it("publishes public documents and retrieves matching text without embeddings", async () => {
+    const rows = await prepareKnowledge([
+      document,
+      { ...document, id: "private", visibility: "private" },
+      { ...document, id: "draft", visibility: "draft" },
+    ]);
     await publishKnowledge(pool, rows, "automation-embedding");
     expect((await pool.query("SELECT source_id FROM knowledge_chunks")).rows).toEqual([
       { source_id: "public-test" },
     ]);
+    expect((await retrieve("Synthetic project")).map((row) => row.source_id)).toEqual([
+      "public-test",
+    ]);
+    expect(await retrieve("unrelatedxyz")).toEqual([]);
     expect(
-      (await retrieve("Synthetic project", embedding)).map((row) => row.source_id),
-    ).toEqual(["public-test"]);
-    vi.stubEnv("EMBEDDING_MODEL", "other-model");
-    expect(await retrieve("Synthetic project", embedding)).toEqual([]);
-    vi.stubEnv("EMBEDDING_MODEL", "automation-embedding");
+      (await pool.query("SELECT embedding FROM knowledge_chunks")).rows[0].embedding,
+    ).toBeNull();
   });
   it("replaces old versions and removes deleted/private documents atomically", async () => {
     await publishKnowledge(
       pool,
-      await prepareKnowledge([document, { ...document, id: "deleted" }], embedding),
+      await prepareKnowledge([document, { ...document, id: "deleted" }]),
       "automation-embedding",
     );
     await publishKnowledge(
       pool,
-      await prepareKnowledge(
-        [{ ...document, version: 2, content: "Updated synthetic facts." }],
-        embedding,
-      ),
+      await prepareKnowledge([
+        { ...document, version: 2, content: "Updated synthetic facts." },
+      ]),
       "automation-embedding",
     );
     expect(
@@ -99,10 +92,10 @@ describe("PostgreSQL/pgvector integration in an isolated test schema", () => {
   it("rolls back a constraint failure and preserves the previous published snapshot", async () => {
     await publishKnowledge(
       pool,
-      await prepareKnowledge([document], embedding),
+      await prepareKnowledge([document]),
       "automation-embedding",
     );
-    const invalid = await prepareKnowledge([{ ...document, version: 0 }], embedding);
+    const invalid = await prepareKnowledge([{ ...document, version: 0 }]);
     await expect(
       publishKnowledge(pool, invalid, "automation-embedding"),
     ).rejects.toThrow();
@@ -113,22 +106,47 @@ describe("PostgreSQL/pgvector integration in an isolated test schema", () => {
   it("clears the index only when an empty snapshot was explicitly prepared", async () => {
     await publishKnowledge(
       pool,
-      await prepareKnowledge([document], embedding),
+      await prepareKnowledge([document]),
       "automation-embedding",
     );
-    await expect(prepareKnowledge([], embedding)).rejects.toThrow("No public");
+    await expect(prepareKnowledge([])).rejects.toThrow("No public");
     expect(
       (await pool.query("SELECT count(*)::int AS count FROM knowledge_chunks")).rows[0]
         .count,
     ).toBe(1);
     await publishKnowledge(
       pool,
-      await prepareKnowledge([], embedding, true),
+      await prepareKnowledge([], true),
       "automation-embedding",
     );
     expect(
       (await pool.query("SELECT count(*)::int AS count FROM knowledge_chunks")).rows[0]
         .count,
     ).toBe(0);
+  });
+  it("ranks existing public text for Groq without calling an embedding provider", async () => {
+    await publishKnowledge(
+      pool,
+      await prepareKnowledge([
+        { ...document, id: "aaa-other", content: "Public contact information." },
+        {
+          ...document,
+          id: "zzz-project",
+          content: "Built a TypeScript chatbot application.",
+        },
+      ]),
+      "old-embedding-model",
+    );
+    vi.stubEnv("TOP_K", "1");
+    const fetcher = vi.fn();
+    vi.stubGlobal("fetch", fetcher);
+    try {
+      const result = await retrieve("Which TypeScript projects?");
+      expect(result.map((row) => row.source_id)).toEqual(["zzz-project"]);
+      expect(Number(result[0].score)).toBeGreaterThan(0);
+      expect(fetcher).not.toHaveBeenCalled();
+    } finally {
+      vi.unstubAllGlobals();
+    }
   });
 });

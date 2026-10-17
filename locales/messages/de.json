@@ -57,11 +57,11 @@
   "transparent": "EIN WENIG TRANSPARENZ",
   "privacyTitle": "Ihr Gespräch, erklärt.",
   "privacy": [
-    "Fragen und der aktuelle Gesprächskontext werden an den konfigurierten KI-Anbieter (standardmäßig Gemini) gesendet, um anhand öffentlicher Portfoliodokumente zu antworten. Es gelten die Bedingungen des Anbieters.",
+    "Fragen und der aktuelle Gesprächskontext werden an den konfigurierten KI-Anbieter (standardmäßig Groq) gesendet, um anhand öffentlicher Portfoliodokumente zu antworten. Es gelten die Bedingungen des Anbieters.",
     "Der Gesprächsverlauf wird im Sitzungsspeicher dieses Browser-Tabs gespeichert. Ein neues Gespräch löscht diesen Verlauf. Gesprächstexte werden nicht in der Datenbank oder den Anwendungsprotokollen gespeichert.",
     "Betriebsprotokolle enthalten Anfrage-IDs, Laufzeiten, Tokenzahlen und den Fallback-Status. Gehashte Netzwerkkennungen werden vorübergehend zur Ratenbegrenzung verwendet. Bitte teilen Sie keine sensiblen persönlichen Informationen.",
     "Quellen werden angezeigt, wenn sie verfügbar sind. KI-Antworten können Fehler enthalten; überprüfen Sie wichtige Angaben anhand der Quellen.",
-    "Die automatische Sprache nutzt das vom Hosting erkannte Land. Falls es fehlt, fragt der Browser einen Ländercode bei ipapi.co ab; dabei erhält der Dienst Ihre IP-Adresse. Ihre manuelle Auswahl wird im Browser gespeichert. Oberflächentexte können von Gemini übersetzt werden; Ihr Standort wird nicht an Gemini gesendet."
+    "Die automatische Sprache nutzt das vom Hosting erkannte Land. Falls es fehlt, fragt der Browser einen Ländercode bei ipapi.co ab; dabei erhält der Dienst Ihre IP-Adresse. Ihre manuelle Auswahl wird im Browser gespeichert. Oberflächentexte können von Groq übersetzt werden; Ihr Standort wird nicht an Groq gesendet."
   ],
   "language": "Sprache",
   "auto": "Automatisch",

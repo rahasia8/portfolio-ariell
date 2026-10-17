@@ -9,8 +9,7 @@ export async function GET() {
         { headers: { "Cache-Control": "no-store" } },
       );
     const { rows } = await db().query(
-      "SELECT count(*)::int AS count FROM knowledge_chunks WHERE visibility = 'public' AND embedding_model = $1",
-      [config().EMBEDDING_MODEL],
+      "SELECT count(*)::int AS count FROM knowledge_chunks WHERE visibility = 'public'",
     );
     return Response.json(
       {

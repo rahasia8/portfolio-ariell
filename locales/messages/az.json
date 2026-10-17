@@ -57,11 +57,11 @@
   "transparent": "BİR QƏDƏR ŞƏFFAFLIQ",
   "privacyTitle": "Söhbətiniz izah edildi.",
   "privacy": [
-    "Suallar və son söhbət konteksti ictimai portfel sənədlərindən istifadə edərək cavab vermək üçün konfiqurasiya edilmiş süni intellekt provayderinə (defolt olaraq Gemini) göndərilir. Provayder bu məlumatı öz şərtləri əsasında emal edir.",
+    "Suallar və son söhbət konteksti ictimai portfel sənədlərindən istifadə edərək cavab vermək üçün konfiqurasiya edilmiş süni intellekt provayderinə (defolt olaraq Groq) göndərilir. Provayder bu məlumatı öz şərtləri əsasında emal edir.",
     "Bu tətbiq söhbət tarixçəsini bu vərəq üçün brauzerinizin sessiya yaddaşında saxlayır. Yeni söhbət həmin tarixçəni təmizləyir. O, söhbət mətnini verilənlər bazasında və ya tətbiq loqlarında saxlamır.",
     "Əməliyyat loqlarına sorğu ID-ləri, vaxtlar, token sayları və ehtiyat statusu daxildir. Rate limiting üçün şəbəkə identifikatorları müvəqqəti olaraq hasblənir. Zəhmət olmasa həssas şəxsi məlumatları paylaşmayın.",
     "Mənbələr mövcud olduqda göstərilir. Süni intellekt cavabları yenə də səhvlərə yol verə bilər; vacib detalları mənbələri ilə yoxlayın.",
-    "Avtomatik dil ev sahibliyi edən ölkə siqnalından istifadə edir. Əgər mövcud deyilsə, brauzeriniz IP ünvanınızı alan ipapi.co-dan ölkə kodu tələb edir. Əl ilə etdiyiniz seçim bu brauzerdə yadda saxlanılır. İnterfeys mətni Gemini tərəfindən tərcümə oluna bilər; yerləşdiyiniz yer Gemini-yə göndərilmir."
+    "Avtomatik dil ev sahibliyi edən ölkə siqnalından istifadə edir. Əgər mövcud deyilsə, brauzeriniz IP ünvanınızı alan ipapi.co-dan ölkə kodu tələb edir. Əl ilə etdiyiniz seçim bu brauzerdə yadda saxlanılır. İnterfeys mətni Groq tərəfindən tərcümə oluna bilər; yerləşdiyiniz yer Groq-yə göndərilmir."
   ],
   "language": "Dil",
   "auto": "Avtomatik",

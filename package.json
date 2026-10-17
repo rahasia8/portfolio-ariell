@@ -27,7 +27,8 @@
     "format": "prettier --write . --ignore-unknown",
     "format:check": "prettier --check . --ignore-unknown",
     "knowledge:migration": "node --env-file-if-exists=.env.local --import tsx scripts/knowledge-migration.ts",
-    "knowledge:check": "node --env-file-if-exists=.env.local --import tsx scripts/knowledge-migration.ts --check"
+    "knowledge:check": "node --env-file-if-exists=.env.local --import tsx scripts/knowledge-migration.ts --check",
+    "rag:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-rag.ts"
   },
   "dependencies": {
     "@netlify/database": "^2.0.1",

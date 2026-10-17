@@ -14,12 +14,6 @@ export type GeneratedAnswer = {
   sourceIds: string[];
   usage?: { inputTokens: number; outputTokens: number };
 };
-export interface EmbeddingProvider {
-  embed(
-    texts: string[],
-    task: "RETRIEVAL_DOCUMENT" | "RETRIEVAL_QUERY",
-  ): Promise<number[][]>;
-}
 export interface LLMProvider {
   generate(
     question: string,

@@ -3,7 +3,7 @@ import { browserLanguage, requestLanguage, normalizeLanguage } from "../lib/loca
 import { fallback, answerFromChunks } from "../lib/rag";
 import { chatSchema } from "../lib/validation";
 import { GET } from "../app/api/locale/route";
-import { GeminiLLM } from "../lib/providers";
+import { GroqLLM } from "../lib/providers";
 afterEach(() => {
   vi.unstubAllGlobals();
   vi.unstubAllEnvs();
@@ -92,30 +92,21 @@ describe("visitor language", () => {
     expect(generate).not.toHaveBeenCalled();
   });
   it("instructs the model to use the selected language without location metadata", async () => {
+    vi.stubEnv("GROQ_API_KEY", "test-only");
     const mock = vi.fn().mockResolvedValue(
-      new Response(
-        JSON.stringify({
-          candidates: [
-            {
-              content: {
-                parts: [
-                  {
-                    text: JSON.stringify({
-                      answer: "Jawaban",
-                      sourceIds: [],
-                    }),
-                  },
-                ],
-              },
-            },
-          ],
-        }),
-      ),
+      Response.json({
+        choices: [
+          {
+            finish_reason: "stop",
+            message: { content: JSON.stringify({ answer: "Jawaban", sourceIds: [] }) },
+          },
+        ],
+      }),
     );
     vi.stubGlobal("fetch", mock);
-    await new GeminiLLM().generate("Hello", [], [], "id");
+    await new GroqLLM().generate("Hello", [], [], "id");
     const body = JSON.parse(mock.mock.calls[0][1].body);
-    expect(body.systemInstruction.parts[0].text).toContain("Respond in Indonesian (id)");
+    expect(body.messages[0].content).toContain("Respond in Indonesian (id)");
     expect(JSON.stringify(body)).not.toContain("Asia/Jakarta");
   });
 });

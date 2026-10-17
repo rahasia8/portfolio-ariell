@@ -72,3 +72,11 @@ Supersedes the two-language restriction and browser-timezone behavior above.
 - TypeScript and production build passed. Prettier applied across supported files; format check passed. VS Code recommends the formatter and enables format on save. Locale-generation outputs use the same formatting rules.
 - Added GitHub Actions configuration for formatting, type checks, locale validation, unit coverage, pgvector integration, build, and browser tests. The workflow has not run on GitHub; it requires committing/pushing these files. Linux hosted CI/browser binaries were not exercised locally; local browser verification used installed Chrome on macOS.
 - No live Gemini or visitor-location requests were used by automated tests. Integration credentials stay in git-ignored `.env.test.local`; test/example credentials in CI are disposable service credentials only.
+
+## Groq full-text RAG migration — 17 October 2026
+
+- Replaced all active provider paths with Groq, including answer generation, multilingual keyword expansion, and UI translation tooling. Removed the old provider request module and credentials from active configuration.
+- Ingestion and generated public snapshots store text with null vectors under `postgres-fulltext-v1`; no AI request or API key is needed for indexing. Added a PostgreSQL GIN full-text index and a forward schema migration. Applied SQL migrations and locale provenance remain historical records.
+- 120 unit tests and five isolated PostgreSQL integration tests passed. TypeScript, coverage thresholds, 72 locale catalogs, and the production build passed.
+- Migrated the local database and published two public documents as three text chunks.
+- Live Groq checks passed: an Indonesian education question returned a cited answer from `ariell-resume`; an unrelated football question returned fallback with no sources. This is a smoke check, not a broad retrieval-quality evaluation. Use `npm run rag:check` to repeat it with server-side credentials.

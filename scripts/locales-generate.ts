@@ -1,6 +1,7 @@
 import { format, resolveConfig } from "prettier";
 import { mkdir, readFile, readdir, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { config } from "../lib/config";
 import { generateTranslation } from "../lib/translate";
 import { normalizeLanguage } from "../lib/locale";
 import { validateTranslation, translations } from "../lib/translations";
@@ -90,8 +91,8 @@ const sources = JSON.parse(await readFile("locales/sources.json", "utf8"));
 for (const locale of Object.keys(catalog))
   if (!sources.catalogs[locale])
     sources.catalogs[locale] = {
-      origin: "Machine-translated project UI with configured Gemini model",
-      model: process.env.GENERATION_MODEL || "configured provider",
+      origin: "Machine-translated project UI with configured Groq model",
+      model: config().GROQ_MODEL,
       review: "Structurally validated; native-language review recommended",
     };
 await saveAtomic("locales/sources.json", JSON.stringify(sources, null, 2) + "\n");

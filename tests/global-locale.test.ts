@@ -12,7 +12,7 @@ import {
   validateTranslation,
 } from "../lib/translations";
 import { getTranslation, generateTranslation } from "../lib/translate";
-import { GeminiLLM } from "../lib/providers";
+import { GroqLLM } from "../lib/providers";
 import { fallback } from "../lib/rag";
 afterEach(() => {
   vi.unstubAllGlobals();
@@ -73,31 +73,22 @@ describe("worldwide language support", () => {
     expect(() => validateTranslation({ ...translations.en, nav: ["Kontakt"] })).toThrow();
   });
   it("passes German as an explicit model response language", async () => {
+    vi.stubEnv("GROQ_API_KEY", "test-only");
     const mock = vi.fn().mockResolvedValue(
-      new Response(
-        JSON.stringify({
-          candidates: [
-            {
-              content: {
-                parts: [
-                  {
-                    text: JSON.stringify({
-                      answer: "Antwort",
-                      sourceIds: [],
-                    }),
-                  },
-                ],
-              },
-            },
-          ],
-        }),
-      ),
+      Response.json({
+        choices: [
+          {
+            finish_reason: "stop",
+            message: { content: JSON.stringify({ answer: "Antwort", sourceIds: [] }) },
+          },
+        ],
+      }),
     );
     vi.stubGlobal("fetch", mock);
-    await new GeminiLLM().generate("Hello", [], [], "de");
-    expect(
-      JSON.parse(mock.mock.calls[0][1].body).systemInstruction.parts[0].text,
-    ).toContain("Respond in German (de)");
+    await new GroqLLM().generate("Hello", [], [], "de");
+    expect(JSON.parse(mock.mock.calls[0][1].body).messages[0].content).toContain(
+      "Respond in German (de)",
+    );
   });
 });
 describe("visitor-side VPN detection", () => {
@@ -136,37 +127,36 @@ describe("visitor-side VPN detection", () => {
   });
 });
 describe("local UI catalogs and development generation", () => {
-  it("never contacts Gemini for built-in German", async () => {
+  it("never contacts Groq for built-in German", async () => {
     const mock = vi.fn();
     vi.stubGlobal("fetch", mock);
     expect((await getTranslation("de")).language).toBe("Sprache");
     expect(mock).not.toHaveBeenCalled();
   });
   it("generates only interface strings and validates structure during development", async () => {
-    vi.stubEnv("GEMINI_API_KEY", "test-only");
+    vi.stubEnv("GROQ_API_KEY", "test-only");
     const mock = vi.fn().mockResolvedValue(
-      new Response(
-        JSON.stringify({
-          candidates: [
-            {
-              content: { parts: [{ text: JSON.stringify(translations.en) }] },
-            },
-          ],
-        }),
-      ),
+      Response.json({
+        choices: [
+          {
+            finish_reason: "stop",
+            message: { content: JSON.stringify(translations.en) },
+          },
+        ],
+      }),
     );
     vi.stubGlobal("fetch", mock);
     await generateTranslation("eo");
     expect(mock).toHaveBeenCalledTimes(1);
     const body = JSON.parse(mock.mock.calls[0][1].body);
-    expect(body.systemInstruction.parts[0].text).toContain("Esperanto");
-    expect(JSON.parse(body.contents[0].parts[0].text)).toEqual(translations.en);
+    expect(body.messages[0].content).toContain("Esperanto");
+    expect(JSON.parse(body.messages[1].content)).toEqual(translations.en);
     expect(mock.mock.calls[0][1].body).not.toContain("ariell_ariza@yahoo.com");
   });
   it("rejects malformed translation output and permits a later retry", async () => {
-    vi.stubEnv("GEMINI_API_KEY", "test-only");
+    vi.stubEnv("GROQ_API_KEY", "test-only");
     const raw = (text: string) =>
-      new Response(JSON.stringify({ candidates: [{ content: { parts: [{ text }] } }] }));
+      Response.json({ choices: [{ finish_reason: "stop", message: { content: text } }] });
     const mock = vi
       .fn()
       .mockResolvedValueOnce(raw("{}"))

@@ -39,7 +39,7 @@ export default defineConfig({
     timeout: 60000,
     env: {
       DATABASE_URL: "",
-      GEMINI_API_KEY: "",
+      GROQ_API_KEY: "",
       LOCATION_PROVIDER: "none",
       NEXT_TELEMETRY_DISABLED: "1",
     },

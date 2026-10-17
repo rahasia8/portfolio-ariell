@@ -1,6 +1,6 @@
 # Tests
 
-Requires Node 24 and `npm ci`. No real Gemini key is required for automated tests.
+Requires Node 24 and `npm ci`. No real Groq key is required for automated tests.
 
 | Command                          | Scope                                                         |
 | -------------------------------- | ------------------------------------------------------------- |
@@ -23,7 +23,7 @@ Copy `.env.test.example` to `.env.test.local` and configure `TEST_DATABASE_URL` 
 CREATE EXTENSION IF NOT EXISTS vector WITH SCHEMA public;
 ```
 
-Tests create a unique temporary schema, apply the real migration, test publication, version replacement, private/draft exclusion, embedding-model filtering, rollback, and explicit clearing, then drop their schema. They do not send embeddings to Gemini. An interrupted run may leave a schema with the `automation_` prefix in the test database; production data is never used. CI provides an ephemeral pgvector/PostgreSQL service automatically.
+Tests create a unique temporary schema, apply the real migration, test publication, version replacement, private/draft exclusion, embedding-model filtering, rollback, and explicit clearing, then drop their schema. They do not send embeddings to Groq. An interrupted run may leave a schema with the `automation_` prefix in the test database; production data is never used. CI provides an ephemeral pgvector/PostgreSQL service automatically.
 
 ## Browser automation
 

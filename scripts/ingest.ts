@@ -2,9 +2,8 @@ import { prepareKnowledge, publishKnowledge } from "../lib/ingestion";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { db, closeDb } from "../lib/db";
-import { config, requireSettings } from "../lib/config";
+import { requireSettings, knowledgeIndex } from "../lib/config";
 import { parseDocument, type KnowledgeDocument } from "../lib/knowledge";
-import { GeminiEmbedding } from "../lib/providers";
 async function files(dir: string): Promise<string[]> {
   const entries = await readdir(dir, { withFileTypes: true });
   const result: string[] = [];
@@ -18,7 +17,7 @@ async function files(dir: string): Promise<string[]> {
   return result;
 }
 async function main() {
-  requireSettings(["DATABASE_URL", "GEMINI_API_KEY"]);
+  requireSettings(["DATABASE_URL"]);
   try {
     await db().query("SELECT 1 FROM knowledge_chunks LIMIT 1");
   } catch {
@@ -29,12 +28,8 @@ async function main() {
   const documents: KnowledgeDocument[] = [];
   for (const file of await files("knowledge"))
     documents.push(parseDocument(await readFile(file, "utf8"), path.extname(file)));
-  const rows = await prepareKnowledge(
-    documents,
-    new GeminiEmbedding(),
-    process.argv.includes("--allow-empty"),
-  );
-  await publishKnowledge(db(), rows, config().EMBEDDING_MODEL);
+  const rows = await prepareKnowledge(documents, process.argv.includes("--allow-empty"));
+  await publishKnowledge(db(), rows, knowledgeIndex());
   console.log(
     `Published ${documents.filter((d) => d.visibility === "public").length} documents / ${rows.length} chunks. Removed deleted, private, and old-version sources.`,
   );

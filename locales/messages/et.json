@@ -57,11 +57,11 @@
   "transparent": "VÄHEKE LÄBIPAISTVUST",
   "privacyTitle": "Sinu vestlus, selgitatud.",
   "privacy": [
-    "Küsimused ja hiljutine vestluse kontekst saadetakse konfigureeritud AI-teenuse pakkujale (vaikimisi Gemini), et vastata avalike portfooliodokumentide abil. Teenusepakkuja töötleb neid andmeid oma tingimuste alusel.",
+    "Küsimused ja hiljutine vestluse kontekst saadetakse konfigureeritud AI-teenuse pakkujale (vaikimisi Groq), et vastata avalike portfooliodokumentide abil. Teenusepakkuja töötleb neid andmeid oma tingimuste alusel.",
     "See rakendus hoiab vestluse ajalugu Sinu brauseri sessioonimälus selle vahekaardi jaoks. Uus vestlus kustutab selle ajaloo. See ei salvesta vestluse teksti andmebaasi ega rakenduse logidesse.",
     "Töölogid sisaldavad päringu ID-sid, ajastusi, märkide arvu ja varuoleku olekut. Piirangute seadmiseks kasutatakse ajutiselt räsitud võrguidentifikaatoreid. Palun ära jaga tundlikke isikuandmeid.",
     "Allikad kuvatakse, kui need on saadaval. AI vastustes võib siiski esineda vigu; kontrolli olulisi detaile nende allikatest.",
-    "Automaatne keel kasutab hostimisriigi signaali. Kui see pole saadaval, küsib Sinu brauser riigikoodi aadressilt ipapi.co, mis saab Sinu IP-aadressi. Sinu käsitsi tehtud valik salvestatakse sellesse brauserisse. Kasutajaliidese teksti võib tõlkida Gemini; Sinu asukohta Geminile ei saadeta."
+    "Automaatne keel kasutab hostimisriigi signaali. Kui see pole saadaval, küsib Sinu brauser riigikoodi aadressilt ipapi.co, mis saab Sinu IP-aadressi. Sinu käsitsi tehtud valik salvestatakse sellesse brauserisse. Kasutajaliidese teksti võib tõlkida Groq; Sinu asukohta Groqle ei saadeta."
   ],
   "language": "Keel",
   "auto": "Automaatne",

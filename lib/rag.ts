@@ -1,16 +1,11 @@
+import { retrievalQuery } from "./retrieval-query";
 import { builtInTranslation } from "./translations";
 import type { Language } from "./locale";
-import { db, vector } from "./db";
+import { db } from "./db";
 import { config } from "./config";
-import { GeminiEmbedding, GeminiLLM } from "./providers";
+import { createLLM } from "./providers";
 import { safeUrl } from "./knowledge";
-import type {
-  RetrievedChunk,
-  HistoryMessage,
-  EmbeddingProvider,
-  LLMProvider,
-  Source,
-} from "./types";
+import type { RetrievedChunk, HistoryMessage, LLMProvider, Source } from "./types";
 export function fallback(question: string, language?: Language) {
   const detected =
     language ||
@@ -30,17 +25,18 @@ export async function localizedFallback(question: string, language?: Language) {
     return fallback(question, language);
   }
 }
-export async function retrieve(
-  question: string,
-  embedding: EmbeddingProvider = new GeminiEmbedding(),
-): Promise<RetrievedChunk[]> {
+export async function retrieve(question: string): Promise<RetrievedChunk[]> {
   const c = config();
-  const [values] = await embedding.embed([question], "RETRIEVAL_QUERY");
+  const query = await retrievalQuery(question);
+  if (!query) return [];
   const result = await db().query<RetrievedChunk>(
-    `SELECT id, source_id, title, content, source_url, 1 - (embedding <=> $1::vector) AS score
-    FROM knowledge_chunks WHERE visibility = 'public' AND embedding_model = $2
-    AND 1 - (embedding <=> $1::vector) >= $3 ORDER BY embedding <=> $1::vector LIMIT $4`,
-    [vector(values), c.EMBEDDING_MODEL, c.RELEVANCE_THRESHOLD, c.TOP_K],
+    `SELECT id, source_id, title, content, source_url,
+      ts_rank_cd(to_tsvector('english', title || ' ' || content),
+        websearch_to_tsquery('english', $1)) AS score
+     FROM knowledge_chunks WHERE visibility = 'public'
+       AND to_tsvector('english', title || ' ' || content) @@ websearch_to_tsquery('english', $1)
+     ORDER BY score DESC, source_id, chunk_index LIMIT $2`,
+    [query, c.TOP_K],
   );
   return result.rows;
 }
@@ -62,7 +58,7 @@ export async function answerFromChunks(
   question: string,
   chunks: RetrievedChunk[],
   history: HistoryMessage[],
-  llm: LLMProvider = new GeminiLLM(),
+  llm: LLMProvider = createLLM(),
   language?: Language,
 ) {
   if (!chunks.length)

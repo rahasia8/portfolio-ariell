@@ -57,11 +57,11 @@
   "transparent": "ÖURLÍTID GEGNÆSI",
   "privacyTitle": "Samtal þitt, útskýrt.",
   "privacy": [
-    "Spurningar og nýlegt samtalsamhengi eru send til stillta gervigreindarveitunnar (Gemini sjálfgefið) til að svara með opinberum safnritsskjölum. Veitan vinnur úr þessum gögnum samkvæmt eigin skilmálum.",
+    "Spurningar og nýlegt samtalsamhengi eru send til stillta gervigreindarveitunnar (Groq sjálfgefið) til að svara með opinberum safnritsskjölum. Veitan vinnur úr þessum gögnum samkvæmt eigin skilmálum.",
     "Þetta forrit geymir spjallferil í lotugeymslu vafra þessa ferils fyrir þennan flipa. Nýtt samtal hreinsar þennan feril. Það geymir ekki samtalsmál í gagnagrunni eða forritsannlum.",
     "Notkunarannlar innihalda beiðniauðkenni, tímasetningu, táknatölur og varastöðu. Dulnefnd netauðkenni eru notuð tímabundið til takmörkunar á tíðni. Vinsamlegast deildu ekki viðkvæmum persónulegum upplýsingum.",
     "Heimildir birtast þegar þær eru tiltækar. Svör gervigreindar geta samt gert mistök; staðfestu mikilvægar upplýsingar út frá heimildum þeirra.",
-    "Sjálfgefið tungumál notar merki hýsingarlandsins. Ef það er ekki tiltækt biður vafrinn þinn um landskóða frá ipapi.co, sem fær IP-tölu þína. Handvirka valið þitt er vistað í þessum vafra. Viðmótstexti gæti verið þýddur af Gemini; staðsetning þín er ekki send til Gemini."
+    "Sjálfgefið tungumál notar merki hýsingarlandsins. Ef það er ekki tiltækt biður vafrinn þinn um landskóða frá ipapi.co, sem fær IP-tölu þína. Handvirka valið þitt er vistað í þessum vafra. Viðmótstexti gæti verið þýddur af Groq; staðsetning þín er ekki send til Groq."
   ],
   "language": "Tungumál",
   "auto": "Sjálfvirkt",

@@ -57,11 +57,11 @@
   "transparent": "MALO TRANSPARENTNOSTI",
   "privacyTitle": "Vaš razgovor, objašnjeno.",
   "privacy": [
-    "Pitanja i kontekst nedavnog razgovora šalju se konfigurisanom AI provajderu (podrazumevano Gemini) radi davanja odgovora korišćenjem javnih dokumenata iz portfolija. Provajder obrađuje ove podatke pod sopstvenim uslovima.",
+    "Pitanja i kontekst nedavnog razgovora šalju se konfigurisanom AI provajderu (podrazumevano Groq) radi davanja odgovora korišćenjem javnih dokumenata iz portfolija. Provajder obrađuje ove podatke pod sopstvenim uslovima.",
     "Ova aplikacija čuva istoriju ćaskanja u memoriji sesije vašeg pretraživača za ovu karticu. Novi razgovor briše tu istoriju. Ne čuva tekst razgovora u bazi podataka ili dnevnicima aplikacije.",
     "Operativni dnevnici sadrže ID-jeve zahteva, vremena, brojeve tokena i status rezervne opcije. Heširani mrežni identifikatori se privremeno koriste za ograničavanje učestalosti (rate limiting). Molimo vas da ne delite osetljive lične podatke.",
     "Izvori se prikazuju kada su dostupni. AI odgovori i dalje mogu praviti greške; proverite važne detalje u odnosu na njihove izvore.",
-    "Automatski jezik koristi signal zemlje u kojoj se sadržaj hostuje. Ako nije dostupan, vaš pretraživač traži kod zemlje od ipapi.co, koji prima vašu IP adresu. Vaš ručni izbor se čuva u ovom pretraživaču. Tekst korisničkog interfejsa može prevesti Gemini; vaša lokacija se ne šalje Geminiju."
+    "Automatski jezik koristi signal zemlje u kojoj se sadržaj hostuje. Ako nije dostupan, vaš pretraživač traži kod zemlje od ipapi.co, koji prima vašu IP adresu. Vaš ručni izbor se čuva u ovom pretraživaču. Tekst korisničkog interfejsa može prevesti Groq; vaša lokacija se ne šalje Groqju."
   ],
   "language": "Jezik",
   "auto": "Automatski",

@@ -57,11 +57,11 @@
   "transparent": "BAGAH ZERGIIN IL TOD BAIDAL",
   "privacyTitle": "Taanii yariag tailbarlav.",
   "privacy": [
-    "Asuultuud bolon suliin yariin aguulgiig niitiin portfolio-iin barimt bichgiig ashiglan hariulah zoriulalttai tohiruulsan AI uilchilgeegeer (default-oor Gemini) ilgeene. Uilchilgee uzuulegch ug ogogdliig oorstroo bolovsruulna.",
+    "Asuultuud bolon suliin yariin aguulgiig niitiin portfolio-iin barimt bichgiig ashiglan hariulah zoriulalttai tohiruulsan AI uilchilgeegeer (default-oor Groq) ilgeene. Uilchilgee uzuulegch ug ogogdliig oorstroo bolovsruulna.",
     "Ene app chat-iin tuuhig taanii browser-iin session storage-d ene tab-d hadgalna. Shine yaria tuuhig tseverlene. Ogogdlin baaz ba application log-d yariin bichver hadgaldaggui.",
     "Ajillalgin log-uud request ID, tsag, token-iin too, fallback status aguulna. Hashed network identifier-iig rate limit-d tur hugatsaagaar ashigladag. Hüniin emzeg huvin medeellig huvaaltsahgui baihiig husye.",
     "Eh suurvaljuud bolomjtoi uyd haruulagdana. AI-iin hariult aldaatai baij boloh tul чухал medeellig eh suurvaljaas nvtgelj shalgaarai.",
-    "Avtomat hel ashiglalt ni bairshliin ulsad tohiruulna. Herev bolomjgui bol taanii browser ipapi.co-oos ulsnii code huselt gargaj, taanii IP haygiig huleen avna. Taanii garaar songoson songolt ene browser-t hadgalagdana. UI bichver Gemini-geer orchuulagdaj boloh ba taanii bairshil Gemini ruu ilgeegdehgvi."
+    "Avtomat hel ashiglalt ni bairshliin ulsad tohiruulna. Herev bolomjgui bol taanii browser ipapi.co-oos ulsnii code huselt gargaj, taanii IP haygiig huleen avna. Taanii garaar songoson songolt ene browser-t hadgalagdana. UI bichver Groq-geer orchuulagdaj boloh ba taanii bairshil Groq ruu ilgeegdehgvi."
   ],
   "language": "Hel",
   "auto": "Avtomat",

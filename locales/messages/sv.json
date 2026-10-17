@@ -57,11 +57,11 @@
   "transparent": "LITE TRANSPARENS",
   "privacyTitle": "Din konversation, förklarad.",
   "privacy": [
-    "Frågor och nyligen ställd konversationskontext skickas till den konfigurerade AI-leverantören (Gemini som standard) för att svara med hjälp av offentliga portföljdokument. Leverantören behandlar dessa data under egna villkor.",
+    "Frågor och nyligen ställd konversationskontext skickas till den konfigurerade AI-leverantören (Groq som standard) för att svara med hjälp av offentliga portföljdokument. Leverantören behandlar dessa data under egna villkor.",
     "Denna app sparar chatthistorik i din webbläsares sessionslagring för den här fliken. Ny konversation rensar den historiken. Den lagrar inte konversationstext i databasen eller applikationsloggarna.",
     "Driftsloggar innehåller förfrågnings-ID:n, tidsstämplar, tokengränser och fallback-status. Hashade nätverksidentifierare används tillfälligt för hastighetsbegränsning. Dela inte känslig personlig information.",
     "Källor visas när de är tillgängliga. AI-svar kan ändå göra misstag; verifiera viktiga detaljer mot deras källor.",
-    "Automatiskt språk använder signalen från värdlandet. Om detta inte är tillgängligt begär din webbläsare en landskod från ipapi.co, som tar emot din IP-adress. Ditt manuella val sparas i den här webbläsaren. Gränssnittstext kan översättas av Gemini; din plats skickas inte till Gemini."
+    "Automatiskt språk använder signalen från värdlandet. Om detta inte är tillgängligt begär din webbläsare en landskod från ipapi.co, som tar emot din IP-adress. Ditt manuella val sparas i den här webbläsaren. Gränssnittstext kan översättas av Groq; din plats skickas inte till Groq."
   ],
   "language": "Språk",
   "auto": "Auto",

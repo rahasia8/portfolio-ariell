@@ -57,11 +57,11 @@
   "transparent": "FTIT TRASPARENZA",
   "privacyTitle": "Il-konversazzjoni tiegħek, spjegata.",
   "privacy": [
-    "Mistoqsijiet u kuntest ta' konversazzjoni reċenti jintbagħtu lill-fornitur tal-AI ikkonfigurat (Gemini awtomatikament) b'mod li jwieġeb bl-użu ta' dokumenti pubbliċi tal-portafoll. Il-fornitur jipproċessa din id-data taħt it-termini tiegħu stess.",
+    "Mistoqsijiet u kuntest ta' konversazzjoni reċenti jintbagħtu lill-fornitur tal-AI ikkonfigurat (Groq awtomatikament) b'mod li jwieġeb bl-użu ta' dokumenti pubbliċi tal-portafoll. Il-fornitur jipproċessa din id-data taħt it-termini tiegħu stess.",
     "Din l-app iżżomm l-istorja taċ-chat fil-memorja tas-session tal-browser tiegħek għal din it-tab. Konversazzjoni ġdida tneħħi dik l-istorja. Hija ma taħżinx test ta' konversazzjoni fid-database jew fil-logs tal-applikazzjoni.",
     "Il-logs operazzjonali fihom ID tar-reġistrazzjoni, ħinijiet, għadd ta' tokens, u status ta' fallback. Identifikaturi tan-netwerk imfittxija jintużaw temporanjament għall-limitazzjoni tar-rata. Jekk jogħġbok taqsamx informazzjoni personali sensittiva.",
     "Is-sorsi jintwerew meta jkunu disponibbli. It-tweġibiet tal-AI xorta jistgħu jagħmlu żbalji; ivverifika dettalji importanti kontra s-sorsi tagħhom.",
-    "Il-lingwa awtomatika tuża s-sinjal tal-pajjiż li jospita. Jekk mhux disponibbli, il-browser tiegħek jitlob kodiċi tal-pajjiż minn ipapi.co, li jirċievi l-indirizz IP tiegħek. L-għażla manwali tiegħek tiġi salvata f'dan il-browser. It-test tal-UI jista' jiġi tradott minn Gemini; il-post tiegħek ma jintbagħatx lil Gemini."
+    "Il-lingwa awtomatika tuża s-sinjal tal-pajjiż li jospita. Jekk mhux disponibbli, il-browser tiegħek jitlob kodiċi tal-pajjiż minn ipapi.co, li jirċievi l-indirizz IP tiegħek. L-għażla manwali tiegħek tiġi salvata f'dan il-browser. It-test tal-UI jista' jiġi tradott minn Groq; il-post tiegħek ma jintbagħatx lil Groq."
   ],
   "language": "Lingwa",
   "auto": "Awtomatiku",

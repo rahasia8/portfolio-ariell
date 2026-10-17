@@ -57,11 +57,11 @@
   "transparent": "UKUGCWELEKA KOCINGA",
   "privacyTitle": "Ingxoxo yakho, ichazwe.",
   "privacy": [
-    "Imibuzo kanye nomongo wengxoxo yakamuva kuthunyelwa kumnikezi we-AI osethiwe (i-Gemini ngokuzenzakalelayo) ukuze aphendule esebenzisa amadokhumenti ephothifoliyo yomphakathi. Umnikezi ucubungula le datha ngaphansi kwemigomo yakhe.",
+    "Imibuzo kanye nomongo wengxoxo yakamuva kuthunyelwa kumnikezi we-AI osethiwe (i-Groq ngokuzenzakalelayo) ukuze aphendule esebenzisa amadokhumenti ephothifoliyo yomphakathi. Umnikezi ucubungula le datha ngaphansi kwemigomo yakhe.",
     "Lolu hlelo lokusebenza lugcina umlando wezingxoxo kwisitoreji seseshini sesiphequluli sakho kule thebhu. Ingxoxo entsha isula lowo mlando. Ayigcini umbhalo wengxoxo ku-database noma kumalogi wohlelo lokusebenza.",
-    "Amalogi okusebenza aququkatha ama-ID ezicelo, izikhathi, izinombolo zamathokheni, nesimo sokubuyela emuva. Izihlonzi zenethiwekhi ezifihliwe zisetshenziswa okwesikhashana ukuze kulawulwe izinga. Sicela ungabi nabelani ngemininingwane yabantu ebucayi.",
+    "Amalogi okusebenza aququkatha ama-ID ezicelo, izikhathi, izinombolo zamathokheni, nesimo sokubuyela emuva. Izihlonzi zenethiwekhi ezifihliwe zisetshenziswa okwesikhashana ukuze kulawulwe izinga. Sicela ungabi nabelani nGroqningwane yabantu ebucayi.",
     "Imithombo iyabonakala uma ikhona. Izimpendulo ze-AI zisenokwenza amaphutha; qinisekisa imininingwane ebalulekile emithonjeni yayo.",
-    "Ulimi oluzenzakalelayo lusebenzisa isignali yezwe elamukelayo. Uma ingatholakali, isiphequluli sakho sicela ikhodi yelizwe ku-ipapi.co, ethola ikheli lakho le-IP. Ukukhetha kwakho ngesandla kugcinwa kulesi siphequluli. Umbhalo we-UI ungahunyushwa ngu-Gemini; indawo yakho ayithunyelwa ku-Gemini."
+    "Ulimi oluzenzakalelayo lusebenzisa isignali yezwe elamukelayo. Uma ingatholakali, isiphequluli sakho sicela ikhodi yelizwe ku-ipapi.co, ethola ikheli lakho le-IP. Ukukhetha kwakho ngesandla kugcinwa kulesi siphequluli. Umbhalo we-UI ungahunyushwa ngu-Groq; indawo yakho ayithunyelwa ku-Groq."
   ],
   "language": "Ulimi",
   "auto": "Okuzenzakalelayo",

@@ -57,11 +57,11 @@
   "transparent": "ODROBINA PRZEJRZYSTOŚCI",
   "privacyTitle": "Twoja rozmowa, wyjaśniona.",
   "privacy": [
-    "Pytania i kontekst ostatniej rozmowy są wysyłane do skonfigurowanego dostawcy AI (domyślnie Gemini), aby odpowiedzieć przy użyciu publicznych dokumentów portfolio. Dostawca przetwarza te dane zgodnie z własnym regulaminem.",
+    "Pytania i kontekst ostatniej rozmowy są wysyłane do skonfigurowanego dostawcy AI (domyślnie Groq), aby odpowiedzieć przy użyciu publicznych dokumentów portfolio. Dostawca przetwarza te dane zgodnie z własnym regulaminem.",
     "Ta aplikacja przechowuje historię czatu w pamięci sesji przeglądarki dla tej karty. Nowa rozmowa czyści tę historię. Nie przechowuje tekstu rozmowy w bazie danych ani logach aplikacji.",
     "Logi operacyjne zawierają identyfikatory żądań, czasy trwania, liczbę tokenów i statusy awaryjne. Skrócone identyfikatory sieciowe są używane tymczasowo do ograniczania liczby zapytań. Prosimy nie udostępniać wrażliwych danych osobowych.",
     "Źródła są wyświetlane, gdy są dostępne. Odpowiedzi AI mogą nadal zawierać błędy; weryfikuj ważne szczegóły w źródłach.",
-    "Automatyczny język wykorzystuje sygnał kraju hostingu. Jeśli jest niedostępny, przeglądarka prosi o kod kraju z ipapi.co, który otrzymuje Twój adres IP. Twój ręczny wybór jest zapisywany w tej przeglądarce. Tekst interfejsu może być tłumaczony przez Gemini; Twoja lokalizacja nie jest wysyłana do Gemini."
+    "Automatyczny język wykorzystuje sygnał kraju hostingu. Jeśli jest niedostępny, przeglądarka prosi o kod kraju z ipapi.co, który otrzymuje Twój adres IP. Twój ręczny wybór jest zapisywany w tej przeglądarce. Tekst interfejsu może być tłumaczony przez Groq; Twoja lokalizacja nie jest wysyłana do Groq."
   ],
   "language": "Język",
   "auto": "Automatycznie",

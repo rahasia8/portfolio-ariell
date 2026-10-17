@@ -57,11 +57,11 @@
   "transparent": "TENTANG TRANSPARANSI",
   "privacyTitle": "Tentang percakapan Anda.",
   "privacy": [
-    "Pertanyaan dan konteks percakapan terbaru dikirim ke penyedia AI yang dikonfigurasi (Gemini secara default) untuk menjawab berdasarkan dokumen portfolio publik. Penyedia memproses data sesuai ketentuannya.",
+    "Pertanyaan dan konteks percakapan terbaru dikirim ke penyedia AI yang dikonfigurasi (Groq secara default) untuk menjawab berdasarkan dokumen portfolio publik. Penyedia memproses data sesuai ketentuannya.",
     "Aplikasi menyimpan riwayat di session storage browser untuk tab ini. Percakapan baru menghapus riwayat tersebut. Teks percakapan tidak disimpan di database atau log aplikasi.",
     "Log operasional berisi ID permintaan, waktu proses, jumlah token, dan status fallback. Identitas jaringan yang di-hash digunakan sementara untuk pembatasan permintaan. Jangan membagikan informasi pribadi sensitif.",
     "Sumber ditampilkan jika tersedia. Jawaban AI tetap dapat keliru; periksa detail penting pada sumbernya.",
-    "Bahasa otomatis menggunakan negara dari platform hosting. Jika tidak tersedia, browser meminta kode negara ke ipapi.co, yang menerima alamat IP Anda. Pilihan manual disimpan di browser. Terjemahan antarmuka dapat diproses oleh Gemini; lokasi tidak dikirim ke Gemini."
+    "Bahasa otomatis menggunakan negara dari platform hosting. Jika tidak tersedia, browser meminta kode negara ke ipapi.co, yang menerima alamat IP Anda. Pilihan manual disimpan di browser. Terjemahan antarmuka dapat diproses oleh Groq; lokasi tidak dikirim ke Groq."
   ],
   "language": "Bahasa",
   "auto": "Otomatis",

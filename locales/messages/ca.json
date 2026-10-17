@@ -57,11 +57,11 @@
   "transparent": "UNA MICA DE TRANSPARÈNCIA",
   "privacyTitle": "La teva conversa, explicada.",
   "privacy": [
-    "Les preguntes i el context recent de la conversa s'envien al proveïdor d'IA configurat (Gemini per defecte) per respondre utilitzant documents públics del portafoli. El proveïdor processa aquestes dades sota els seus propis termes.",
+    "Les preguntes i el context recent de la conversa s'envien al proveïdor d'IA configurat (Groq per defecte) per respondre utilitzant documents públics del portafoli. El proveïdor processa aquestes dades sota els seus propis termes.",
     "Aquesta aplicació manté l'historial del xat a l'emmagatzematge de sessió del teu navegador per a aquesta pestanya. La nova conversa esborra aquest historial. No emmagatzema el text de la conversa a la base de dades ni als registres de l'aplicació.",
     "Els registres operatius contenen IDs de sol·licitud, temps, recomptes de tokens i estat de reserva. Els identificadors de xarxa encriptats (hash) s'utilitzen temporalment per a la limitació de velocitat. Si us plau, no comparteixis informació personal sensible.",
     "Les fonts es mostren quan estan disponibles. Les respostes de la IA encara poden cometre errors; verifica els detalls importants amb les seves fonts.",
-    "La llengua automàtica utilitza el senyal del país d'allotjament. Si no està disponible, el teu navegador sol·licita un codi de país a ipapi.co, el qual rep la teva adreça IP. La teva selecció manual es desa en aquest navegador. El text de la interfície pot ser traduït per Gemini; la teva ubicació no s'envia a Gemini."
+    "La llengua automàtica utilitza el senyal del país d'allotjament. Si no està disponible, el teu navegador sol·licita un codi de país a ipapi.co, el qual rep la teva adreça IP. La teva selecció manual es desa en aquest navegador. El text de la interfície pot ser traduït per Groq; la teva ubicació no s'envia a Groq."
   ],
   "language": "Idioma",
   "auto": "Automàtic",

@@ -48,7 +48,7 @@ describe("JSON translation catalogs", () => {
       );
     }
   });
-  it("loads saved French region variants without contacting Gemini", async () => {
+  it("loads saved French region variants without contacting Groq", async () => {
     const fetch = vi.fn();
     vi.stubGlobal("fetch", fetch);
     expect((await getTranslation("fr-CA")).language).toBe("Langue");
