@@ -15,6 +15,7 @@ import {
 } from "@/lib/translations";
 import { detectVisitorLanguage } from "@/lib/location-client";
 import Image from "next/image";
+import AnswerText from "./answer-text";
 import PrivacyDialog from "./privacy-dialog";
 import Icon from "./icon";
 import type { Source } from "@/lib/types";
@@ -29,10 +30,12 @@ export default function Portfolio({
   name,
   role,
   initialLanguage = "en",
+  useHostingLookup = false,
 }: {
   name: string;
   role: string;
   initialLanguage?: Language;
+  useHostingLookup?: boolean;
 }) {
   const [locationUnavailable, setLocationUnavailable] = useState(false);
   const [automaticLanguage, setAutomaticLanguage] = useState<Language>(initialLanguage);
@@ -76,7 +79,11 @@ export default function Portfolio({
       lastCheck = Date.now();
       cancel.abort();
       cancel = new AbortController();
-      const language = await detectVisitorLanguage(cancel.signal);
+      const language = await detectVisitorLanguage(
+        cancel.signal,
+        fetch,
+        useHostingLookup,
+      );
       if (!cancel.signal.aborted) {
         setLocationUnavailable(!language);
         if (language) setAutomaticLanguage(language);
@@ -88,7 +95,7 @@ export default function Portfolio({
       cancel.abort();
       window.removeEventListener("focus", detect);
     };
-  }, [languageChoice]);
+  }, [languageChoice, useHostingLookup]);
   useEffect(() => {
     document.documentElement.lang = uiLanguage;
     document.documentElement.dir = languageDirection(uiLanguage);
@@ -281,7 +288,13 @@ export default function Portfolio({
             aria-label={`ariellbot · ${t.accessibility.home}`}
           >
             <span className="brand-mark" aria-hidden="true">
-              <Icon name="bot" size={30} />
+              <Image
+                src="/images/ariell-profile.jpeg"
+                alt=""
+                width={44}
+                height={44}
+                className="brand-avatar"
+              />
             </span>
             <span>
               ariell<span className="brand-dot">bot</span>
@@ -399,37 +412,27 @@ export default function Portfolio({
                     t.you
                   ) : (
                     <>
-                      {" "}
-                      <Icon name="bot" size={18} /> ariellbot
+                      <Image
+                        src="/images/ariell-profile.jpeg"
+                        alt=""
+                        width={28}
+                        height={28}
+                        className="message-avatar"
+                      />
+                      ariellbot
                     </>
                   )}
                 </div>
-                <div className="message-text">{m.content}</div>
-                {!!m.sources?.length && (
-                  <div className="sources">
-                    <span>{t.sources}</span>
-                    {m.sources.map((s) =>
-                      s.url && /^(https?:\/\/|\/(?!\/))/.test(s.url) ? (
-                        <a
-                          key={s.sourceId}
-                          href={s.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {s.title} <Icon name="external" size={12} />
-                          <span className="sr-only">
-                            {" "}
-                            ({t.accessibility.opensNewTab})
-                          </span>
-                        </a>
-                      ) : (
-                        <span className="source-chip" key={s.sourceId}>
-                          {s.title}
-                        </span>
-                      ),
-                    )}
-                  </div>
-                )}
+                <div className="message-text">
+                  {m.role === "assistant" ? (
+                    <AnswerText
+                      text={m.content}
+                      opensNewTab={t.accessibility.opensNewTab}
+                    />
+                  ) : (
+                    m.content
+                  )}
+                </div>
               </article>
             ))}
           </div>

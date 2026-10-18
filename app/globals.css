@@ -27,7 +27,10 @@
   --placeholder: #667b95;
   --send-background: linear-gradient(135deg, #547eaf, #355f93);
   --on-accent: #ffffff;
-  --user-background: #eaf2fc;
+  --user-background: #285a91;
+  --user-ink: #ffffff;
+  --user-label: #e0edff;
+  --assistant-background: #f0f4f8;
   --overlay: #17263e66;
   --error: #b42318;
 }
@@ -52,7 +55,10 @@
     --placeholder: #a3b9d5;
     --send-background: linear-gradient(135deg, #b2d5ff, #8ab7ef);
     --on-accent: #152942;
-    --user-background: #2b4160;
+    --user-background: #315f96;
+    --user-ink: #ffffff;
+    --user-label: #e0edff;
+    --assistant-background: #263247;
     --overlay: #07101eb3;
     --error: #ffb4a8;
   }
@@ -398,9 +404,14 @@ footer {
 }
 .message.user {
   background: var(--user-background);
+  color: var(--user-ink);
   margin-inline-start: 12%;
 }
+.message.user .message-label {
+  color: var(--user-label);
+}
 .message.assistant {
+  background: var(--assistant-background);
   margin-inline-end: 6%;
 }
 .message-label {
@@ -408,6 +419,13 @@ footer {
   font-size: 11px;
   font-weight: 700;
   margin-bottom: var(--space-1);
+}
+.message-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 .message-text {
   line-height: 1.8;
@@ -625,7 +643,7 @@ footer {
   }
 }
 
-/* Shared stroke icons keep the ariellbot identity consistent in both themes. */
+/* Profile photos keep the ariellbot identity consistent in both themes. */
 .brand-mark {
   display: grid;
   place-items: center;
@@ -665,9 +683,9 @@ footer {
     height: 38px;
     border-radius: 12px;
   }
-  .brand-mark svg {
-    width: 26px;
-    height: 26px;
+  .brand-mark .brand-avatar {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -800,4 +818,22 @@ footer {
   .startup-loader-dots i {
     animation: none;
   }
+}
+
+.brand-avatar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.brand-mark,
+.startup-loader-mark {
+  overflow: hidden;
+}
+
+.message-text a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }

@@ -166,3 +166,19 @@ describe("local UI catalogs and development generation", () => {
     await expect(generateTranslation("yo")).resolves.toBeTruthy();
   });
 });
+
+it("skips the hosting endpoint when no hosting country provider is configured", async () => {
+  const fetcher = vi.fn().mockResolvedValue(new Response("DE"));
+  expect(await detectVisitorLanguage(new AbortController().signal, fetcher, false)).toBe(
+    "de",
+  );
+  expect(fetcher).toHaveBeenCalledTimes(1);
+  expect(fetcher.mock.calls[0][0]).toBe("https://ipapi.co/country/");
+});
+it("does not start any lookup after cancellation", async () => {
+  const controller = new AbortController();
+  controller.abort();
+  const fetcher = vi.fn();
+  expect(await detectVisitorLanguage(controller.signal, fetcher, false)).toBeNull();
+  expect(fetcher).not.toHaveBeenCalled();
+});

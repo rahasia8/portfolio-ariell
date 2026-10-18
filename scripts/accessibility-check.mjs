@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { chromium } from "playwright-core";
 const require = createRequire(import.meta.url);
@@ -26,15 +25,6 @@ await context.route("**/*", async (route) => {
     return route.fulfill({ json: { country: "US", language: "en" } });
   if (url.pathname === "/api/health")
     return route.fulfill({ json: { status: "ok", knowledgeReady: true } });
-  if (url.pathname === "/api/translations") {
-    const locale = url.searchParams.get("locale");
-    if (!/^[a-z]{2,3}(?:-[A-Za-z]{2,8}){0,2}$/.test(locale || ""))
-      return route.fulfill({ status: 400, json: { error: "invalid" } });
-    const messages = JSON.parse(
-      await readFile(`locales/messages/${locale.split("-")[0]}.json`, "utf8"),
-    );
-    return route.fulfill({ json: { locale, messages } });
-  }
   if (url.pathname === "/api/chat") {
     const payload = request.postDataJSON();
     submitted.push(payload);

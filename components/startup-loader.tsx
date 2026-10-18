@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Icon from "./icon";
+import Image from "next/image";
 
 export default function StartupLoader() {
   const [phase, setPhase] = useState<"loading" | "leaving" | "done">("loading");
@@ -49,7 +49,14 @@ export default function StartupLoader() {
         </div>
         <div className="startup-loader-content">
           <div className="startup-loader-mark">
-            <Icon name="bot" size={48} />
+            <Image
+              src="/images/ariell-profile.jpeg"
+              alt=""
+              width={88}
+              height={88}
+              className="brand-avatar"
+              loading="eager"
+            />
           </div>
           <span className="startup-loader-brand" dir="ltr">
             ariellbot<span>.</span>

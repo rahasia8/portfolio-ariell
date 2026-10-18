@@ -1,3 +1,5 @@
+import { answerCacheKey, cachedAnswer, cacheHistory } from "@/lib/answer-cache";
+import { SYSTEM_PROMPT } from "@/lib/providers";
 import { GroqRequestError } from "@/lib/groq-request";
 import { requestLanguage } from "@/lib/locale";
 import { randomUUID } from "node:crypto";
@@ -54,9 +56,11 @@ export async function POST(request: Request) {
         fallback: true,
       });
     const count = await db().query(
-      "SELECT 1 FROM knowledge_chunks WHERE visibility = 'public' LIMIT 1",
+      `SELECT count(*)::int AS count,
+        md5(COALESCE(string_agg(md5(json_build_array(id, source_id, title, content, source_url)::text), '' ORDER BY id), '')) AS version
+       FROM knowledge_chunks WHERE visibility = 'public'`,
     );
-    if (!count.rowCount)
+    if (!count.rows[0]?.count)
       return json({
         answer: await localizedFallback(input.message, language),
         sources: [],
@@ -64,34 +68,42 @@ export async function POST(request: Request) {
         requestId,
         fallback: true,
       });
-    phase = "retrieval";
-    const retrievalStart = Date.now();
-    const query = [
-      ...input.history
-        .filter((m) => m.role === "user")
-        .slice(-2)
-        .map((m) => m.content),
-      input.message,
-    ]
-      .join("\n")
-      .slice(-6000);
-    const chunks = await retrieve(query);
-    const retrievalMs = Date.now() - retrievalStart;
-    phase = "generation";
-    const answer = await answerFromChunks(
-      input.message,
-      chunks,
-      input.history,
-      undefined,
+    const history = cacheHistory(input.message, input.history);
+    const settings = config();
+    const key = answerCacheKey({
+      question: input.message,
+      history,
       language,
-    );
+      knowledgeVersion: count.rows[0].version,
+      model: settings.GROQ_MODEL,
+      prompt: SYSTEM_PROMPT,
+      topK: settings.TOP_K,
+    });
+    let retrievalMs = 0;
+    const answer = await cachedAnswer(key, async () => {
+      phase = "retrieval";
+      const retrievalStart = Date.now();
+      const query = [
+        ...history
+          .filter((m) => m.role === "user")
+          .slice(-2)
+          .map((m) => m.content),
+        input.message,
+      ]
+        .join("\n")
+        .slice(-6000);
+      const chunks = await retrieve(query);
+      retrievalMs = Date.now() - retrievalStart;
+      phase = "generation";
+      return answerFromChunks(input.message, chunks, history, undefined, language);
+    });
     console.info(
       JSON.stringify({
         event: "chat",
         requestId,
         retrievalMs,
         totalMs: Date.now() - start,
-        resultCount: chunks.length,
+        cacheHit: answer.cacheHit,
         fallback: answer.fallback,
         usage: answer.usage,
       }),
