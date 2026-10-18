@@ -1,20 +1,31 @@
 import { test, expect } from "./fixtures";
 import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
-test("sends a question, displays citations, restores history, and clears it", async ({
+test("sends a question, links contacts, restores history, and clears it", async ({
   app,
 }) => {
   const input = app.getByRole("textbox");
   await input.fill("What projects did you build?");
   await input.press("Enter");
-  await expect(app.getByText("A test portfolio answer.")).toBeVisible();
-  const citation = app.getByRole("link", { name: /Test project/ });
-  await expect(citation).toHaveAttribute("href", "https://example.com/project");
-  await expect(citation).toHaveAccessibleName(/opens in a new tab/);
+  await expect(app.getByText("A test portfolio answer.", { exact: false })).toBeVisible();
+  await expect(app.getByRole("link", { name: "ariell@example.com" })).toHaveAttribute(
+    "href",
+    "mailto:ariell@example.com",
+  );
+  const linkedIn = app.getByRole("link", { name: /linkedin\.com\/in\/ariell-test/ });
+  await expect(linkedIn).toHaveAttribute(
+    "href",
+    "https://www.linkedin.com/in/ariell-test",
+  );
+  await expect(linkedIn).toHaveAttribute("target", "_blank");
+  await expect(linkedIn).toHaveAccessibleName(/opens in a new tab/);
+  await expect(app.getByRole("link", { name: /Test project/ })).toHaveCount(0);
   await app.reload();
-  await expect(app.getByText("A test portfolio answer.")).toBeVisible();
+  await expect(app.getByText("A test portfolio answer.", { exact: false })).toBeVisible();
   await app.getByRole("button", { name: "New conversation" }).click();
-  await expect(app.getByText("A test portfolio answer.")).toHaveCount(0);
+  await expect(app.getByText("A test portfolio answer.", { exact: false })).toHaveCount(
+    0,
+  );
   await expect(input).toBeFocused();
 });
 test("supports multiline input and bounded history payloads", async ({ app }) => {
@@ -95,7 +106,7 @@ test("keeps input available while waiting and reports provider outages", async (
 test("preserves manual language choice and supports RTL", async ({ app }) => {
   await app.getByRole("textbox").fill("Tell me about your projects.");
   await app.getByRole("textbox").press("Enter");
-  await expect(app.getByText("A test portfolio answer.")).toBeVisible();
+  await expect(app.getByText("A test portfolio answer.", { exact: false })).toBeVisible();
   await app.getByRole("combobox").selectOption("de");
   await expect(app.locator("html")).toHaveAttribute("lang", "de");
   await expect(app.getByRole("button", { name: "Neues Gespräch" })).toBeVisible();

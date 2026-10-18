@@ -20,6 +20,8 @@ await context.route("**/*", async (route) => {
   const request = route.request(),
     url = new URL(request.url());
   // Keep all test data local; never send portfolio content or visitor metadata externally.
+  if (url.origin === "https://ipapi.co" && url.pathname === "/country/")
+    return route.fulfill({ body: "US", contentType: "text/plain" });
   if (url.origin !== origin) return route.abort();
   if (url.pathname === "/api/locale")
     return route.fulfill({ json: { country: "US", language: "en" } });
@@ -37,7 +39,8 @@ await context.route("**/*", async (route) => {
     await new Promise((resolve) => setTimeout(resolve, 150));
     return route.fulfill({
       json: {
-        answer: "A source-backed test answer.",
+        answer:
+          "A source-backed test answer. LinkedIn: https://www.linkedin.com/in/ariell-test",
         sources: [
           { sourceId: "test", title: "Test source", url: "https://example.com/source" },
         ],
@@ -147,11 +150,11 @@ try {
   assert.match(await input.inputValue(), /\n/);
   await input.fill("Test question");
   await input.press("Enter");
-  await page.getByText("A source-backed test answer.").waitFor();
+  await page.getByText("A source-backed test answer.", { exact: false }).waitFor();
   assert.equal(submitted.length, 1);
   assert.match(
-    (await page.locator(".sources a").getAttribute("aria-label")) ||
-      (await page.locator(".sources a").textContent()),
+    (await page.locator(".message-text a").getAttribute("aria-label")) ||
+      (await page.locator(".message-text a").textContent()),
     /opens in a new tab/,
   );
   await audit("Answered conversation");
@@ -201,7 +204,7 @@ try {
   await page.emulateMedia({ forcedColors: "active" });
   await audit("Forced colors");
   console.log(
-    "Keyboard, modal focus/Escape/restore, multiline input, source-link notice, mobile reflow, dark mode, RTL, and forced-colors checks passed.",
+    "Keyboard, modal focus/Escape/restore, multiline input, contact-link notice, mobile reflow, dark mode, RTL, and forced-colors checks passed.",
   );
 } finally {
   await browser.close();
