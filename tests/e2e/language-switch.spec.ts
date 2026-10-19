@@ -8,7 +8,8 @@ test("switches all welcome content and preserves the chosen language", async ({
     const messages = JSON.parse(
       await readFile(`locales/messages/${locale}.json`, "utf8"),
     );
-    await app.getByRole("combobox").selectOption(locale);
+    await app.getByRole("combobox").fill(locale);
+    await app.locator(`[role="option"][data-value="${locale}"]`).click();
     await expect(app.locator("html")).toHaveAttribute("lang", locale);
     await expect(app.getByRole("heading", { level: 1 })).toHaveText(messages.heading);
     await expect(app.locator(".intro-copy")).toHaveText(messages.intro);
@@ -42,15 +43,16 @@ test("saved languages work even when the translation endpoint is unavailable", a
     const messages = JSON.parse(
       await readFile(`locales/messages/${locale}.json`, "utf8"),
     );
-    await app.getByRole("combobox").selectOption(locale);
+    await app.getByRole("combobox").fill(locale);
+    await app.locator(`[role="option"][data-value="${locale}"]`).click();
     await expect(app.getByRole("heading", { level: 1 })).toHaveText(messages.heading);
   }
   expect(requests).toBe(0);
+  await app.getByRole("combobox").fill("");
   const options = await app
-    .getByRole("combobox")
-    .locator("option")
+    .getByRole("option")
     .evaluateAll((elements) =>
-      elements.map((element) => (element as HTMLOptionElement).value),
+      elements.map((element) => element.getAttribute("data-value")),
     );
   expect(options).toEqual(expect.arrayContaining(languageOptions));
 });

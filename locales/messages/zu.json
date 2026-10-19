@@ -82,5 +82,6 @@
     "remaining": "izinhlamvu ezingu-{count} ezisele",
     "cleared": "Ingxoxo isuliwe.",
     "home": "Ikhaya lephothifoliyo"
-  }
+  },
+  "languageNotFound": "Akutholakali"
 }

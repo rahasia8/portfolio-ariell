@@ -82,5 +82,6 @@
     "remaining": "Noch {count} Zeichen",
     "cleared": "Gespräch gelöscht.",
     "home": "Portfolio-Startseite"
-  }
+  },
+  "languageNotFound": "Nicht gefunden"
 }

@@ -8,58 +8,58 @@
   --space-5: 48px;
   --content-gutter: clamp(24px, 5vw, 72px);
   --section-gap: 32px;
-  --ink: #20324f;
-  --muted: #62738a;
-  --accent: #456d9d;
-  --line: #e1e9f3;
-  --page-background: linear-gradient(135deg, #c5dff5 0%, #dceafa 45%, #edf3fc 100%);
-  --surface: #ffffff;
-  --window-surface: #f5f8fc;
-  --shell-border: #ffffffb3;
-  --shell-shadow: #3c5f8c30;
-  --soft: #f0f6fd;
-  --soft-hover: #e2edfb;
-  --control-border: #d3e1f2;
-  --control-text: #4b6483;
-  --portrait-glow: #88b9ee3b;
-  --portrait-background: #e4effb;
-  --composer-ring: #f3f7fc;
-  --placeholder: #667b95;
-  --send-background: linear-gradient(135deg, #547eaf, #355f93);
-  --on-accent: #ffffff;
-  --user-background: #285a91;
-  --user-ink: #ffffff;
-  --user-label: #e0edff;
-  --assistant-background: #f0f4f8;
-  --overlay: #17263e66;
+  --ink: #182a43;
+  --muted: #5c6470;
+  --accent: #263f60;
+  --line: #ded5c6;
+  --page-background: linear-gradient(135deg, #d8c8ae 0%, #e9deca 45%, #f3ecdf 100%);
+  --surface: #faf6ed;
+  --window-surface: #eee5d5;
+  --shell-border: #faf6edb3;
+  --shell-shadow: #182a4330;
+  --soft: #f0e8da;
+  --soft-hover: #e5d9c5;
+  --control-border: #ccbea7;
+  --control-text: #304560;
+  --portrait-glow: #b6a17f3b;
+  --portrait-background: #e6dac6;
+  --composer-ring: #eee5d5;
+  --placeholder: #626975;
+  --send-background: #203650;
+  --on-accent: #faf6ed;
+  --user-background: #203650;
+  --user-ink: #faf6ed;
+  --user-label: #e9deca;
+  --assistant-background: #eee5d5;
+  --overlay: #14213666;
   --error: #b42318;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --ink: #e7effa;
-    --muted: #a8bbd4;
-    --accent: #a2cafa;
-    --line: #34465f;
-    --page-background: linear-gradient(135deg, #14253f 0%, #1d2b43 45%, #253854 100%);
-    --surface: #1b273a;
-    --window-surface: #202e44;
-    --shell-border: #405778;
+    --ink: #f3ecdf;
+    --muted: #bdb6aa;
+    --accent: #e1cda9;
+    --line: #38465b;
+    --page-background: linear-gradient(135deg, #0e192a 0%, #152238 45%, #1c2c43 100%);
+    --surface: #17253a;
+    --window-surface: #1d2d44;
+    --shell-border: #43516a;
     --shell-shadow: #00000055;
-    --soft: #263a54;
-    --soft-hover: #324b6b;
-    --control-border: #476183;
-    --control-text: #c0d4ef;
-    --portrait-glow: #79b0ed26;
-    --portrait-background: #304a6e;
-    --composer-ring: #24354d;
-    --placeholder: #a3b9d5;
-    --send-background: linear-gradient(135deg, #b2d5ff, #8ab7ef);
-    --on-accent: #152942;
-    --user-background: #315f96;
-    --user-ink: #ffffff;
-    --user-label: #e0edff;
-    --assistant-background: #263247;
-    --overlay: #07101eb3;
+    --soft: #23334b;
+    --soft-hover: #30425c;
+    --control-border: #58647a;
+    --control-text: #e9deca;
+    --portrait-glow: #d7be9426;
+    --portrait-background: #30415a;
+    --composer-ring: #223249;
+    --placeholder: #bdb6aa;
+    --send-background: #203650;
+    --on-accent: #faf6ed;
+    --user-background: #2b405d;
+    --user-ink: #faf6ed;
+    --user-label: #e9deca;
+    --assistant-background: #223249;
+    --overlay: #080f1bb3;
     --error: #ffb4a8;
   }
 }
@@ -78,6 +78,7 @@ body {
   padding: clamp(16px, 5vw, 74px);
 }
 button,
+input,
 textarea,
 select {
   font: inherit;
@@ -99,7 +100,7 @@ button:disabled {
 a {
   color: inherit;
 }
-:where(a, button, select, textarea, [tabindex]):focus-visible {
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
@@ -171,6 +172,8 @@ header {
 .language-picker {
   position: relative;
   display: inline-flex;
+  width: 160px;
+  max-width: 100%;
   min-width: 0;
 }
 .language-picker::after {
@@ -188,7 +191,7 @@ header {
 html[dir="rtl"] .language-picker::after {
   transform: translateY(-70%) rotate(-45deg);
 }
-.language-picker select,
+.language-picker input,
 .reset {
   min-height: 44px;
   border: 1px solid var(--control-border);
@@ -199,10 +202,11 @@ html[dir="rtl"] .language-picker::after {
   font-size: 12px;
   max-width: 170px;
 }
-.language-picker select {
+.language-picker input {
   appearance: none;
   display: block;
-  width: 160px;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding-block: 12px;
   padding-inline: 16px 40px;
@@ -210,7 +214,7 @@ html[dir="rtl"] .language-picker::after {
   text-overflow: ellipsis;
   cursor: pointer;
 }
-.language-picker select:disabled {
+.language-picker input:disabled {
   cursor: default;
   opacity: 0.55;
 }
@@ -297,12 +301,12 @@ h1 {
   padding: 12px var(--space-2);
   min-height: 48px;
   text-align: start;
-  border: 1px solid var(--control-border);
+  border: 1px solid #304c70;
   border-radius: 30px;
-  background: var(--soft);
+  background: #203650;
   font-size: 12px;
   line-height: 1.5;
-  color: var(--control-text);
+  color: #faf6ed;
   transition:
     background 0.15s,
     transform 0.15s;
@@ -313,7 +317,7 @@ h1 {
   overflow-wrap: anywhere;
 }
 .suggestions button:hover {
-  background: var(--soft-hover);
+  background: #304c70;
   transform: translateY(-2px);
 }
 .composer-area {
@@ -577,9 +581,8 @@ footer {
   .header-actions {
     margin-inline-start: auto;
   }
-  .language-picker select {
+  .language-picker {
     width: 144px;
-    max-width: 100%;
   }
   .header-actions {
     flex-wrap: wrap;
@@ -657,9 +660,12 @@ footer {
   color: var(--accent);
   font-weight: 700;
 }
-.suggestions-panel h2 > svg,
-.suggestions button > svg {
+.suggestions-panel h2 > svg {
   color: var(--accent);
+  flex-shrink: 0;
+}
+.suggestions button > svg {
+  color: inherit;
   flex-shrink: 0;
 }
 .message-label,
@@ -836,4 +842,37 @@ footer {
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.language-options {
+  position: absolute;
+  inset-block-start: calc(100% + 8px);
+  inset-inline-end: 0;
+  z-index: 20;
+  width: 100%;
+  padding: 6px;
+  border: 1px solid var(--control-border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: 0 8px 24px var(--shell-shadow);
+}
+.language-options [role="listbox"] {
+  max-height: 268px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.language-options [role="option"],
+.language-empty {
+  padding: 12px;
+  border-radius: 8px;
+  color: var(--control-text);
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.language-options [role="option"]:hover,
+.language-options .is-active {
+  background: var(--soft-hover);
+}
+.language-options [aria-selected="true"] {
+  font-weight: 700;
 }

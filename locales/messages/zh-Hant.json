@@ -82,5 +82,6 @@
     "remaining": "還可輸入 {count} 個字元",
     "cleared": "對話已清除。",
     "home": "作品集首頁"
-  }
+  },
+  "languageNotFound": "找不到結果"
 }

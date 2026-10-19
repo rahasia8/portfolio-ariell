@@ -82,5 +82,6 @@
     "remaining": "{count} tegn gjenstår",
     "cleared": "Samtaler tømt.",
     "home": "Porteføljehjem"
-  }
+  },
+  "languageNotFound": "Ingen resultater"
 }

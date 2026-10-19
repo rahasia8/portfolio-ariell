@@ -82,5 +82,6 @@
     "remaining": "{count} tecken kvar",
     "cleared": "Konversationen har rensats.",
     "home": "Portföljens startsida"
-  }
+  },
+  "languageNotFound": "Inga resultat"
 }

@@ -82,5 +82,6 @@
     "remaining": "{count} caractères restants",
     "cleared": "Conversation effacée.",
     "home": "Accueil du portfolio"
-  }
+  },
+  "languageNotFound": "Aucun résultat"
 }

@@ -82,5 +82,6 @@
     "remaining": "liko {count} simbolių",
     "cleared": "Pokalbis išvalytas.",
     "home": "Portfolio pradžia"
-  }
+  },
+  "languageNotFound": "Nerasta"
 }

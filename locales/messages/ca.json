@@ -82,5 +82,6 @@
     "remaining": "{count} caràcters restants",
     "cleared": "Conversa esborrada.",
     "home": "Inici del portafoli"
-  }
+  },
+  "languageNotFound": "No s’ha trobat"
 }

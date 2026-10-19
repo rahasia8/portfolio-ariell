@@ -82,5 +82,6 @@
     "remaining": "{count} na character ang natitira",
     "cleared": "Nalinis ang pag-uusap.",
     "home": "Home ng portfolio"
-  }
+  },
+  "languageNotFound": "Walang nahanap"
 }

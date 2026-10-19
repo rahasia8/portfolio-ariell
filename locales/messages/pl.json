@@ -82,5 +82,6 @@
     "remaining": "Pozostało znaków: {count}",
     "cleared": "Rozmowa została wyczyszczona.",
     "home": "Strona główna portfolio"
-  }
+  },
+  "languageNotFound": "Nie znaleziono"
 }

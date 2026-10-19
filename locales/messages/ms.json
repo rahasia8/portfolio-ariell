@@ -82,5 +82,6 @@
     "remaining": "Baki {count} aksara",
     "cleared": "Perbualan dipadamkan.",
     "home": "Laman utama portfolio"
-  }
+  },
+  "languageNotFound": "Tidak ditemui"
 }

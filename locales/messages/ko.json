@@ -82,5 +82,6 @@
     "remaining": "{count}자 남음",
     "cleared": "대화를 지웠습니다.",
     "home": "포트폴리오 홈"
-  }
+  },
+  "languageNotFound": "검색 결과가 없습니다"
 }

@@ -82,5 +82,6 @@
     "remaining": "Kalan karakter: {count}",
     "cleared": "Sohbet temizlendi.",
     "home": "Portfolyo ana sayfası"
-  }
+  },
+  "languageNotFound": "Bulunamadı"
 }

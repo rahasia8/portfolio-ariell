@@ -82,5 +82,6 @@
     "remaining": "Nog {count} tekens",
     "cleared": "Gesprek gewist.",
     "home": "Portfolio-startpagina"
-  }
+  },
+  "languageNotFound": "Niet gevonden"
 }

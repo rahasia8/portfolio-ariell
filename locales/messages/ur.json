@@ -82,5 +82,6 @@
     "remaining": "{count} حروف باقی ہیں",
     "cleared": "گفتگو صاف کر دی گئی ہے۔",
     "home": "پورٹ فولیو ہوم"
-  }
+  },
+  "languageNotFound": "نہیں ملا"
 }

@@ -82,5 +82,6 @@
     "remaining": "Còn {count} ký tự",
     "cleared": "Đã xóa cuộc trò chuyện.",
     "home": "Trang chủ hồ sơ"
-  }
+  },
+  "languageNotFound": "Không tìm thấy"
 }

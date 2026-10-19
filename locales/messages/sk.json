@@ -82,5 +82,6 @@
     "remaining": "Zostáva {count} znakov",
     "cleared": "Konverzácia bola vymazaná.",
     "home": "Domovská stránka portfólia"
-  }
+  },
+  "languageNotFound": "Nenašlo sa"
 }

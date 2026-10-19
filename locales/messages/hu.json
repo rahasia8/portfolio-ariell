@@ -82,5 +82,6 @@
     "remaining": "{count} karakter maradt",
     "cleared": "A beszélgetés törölve.",
     "home": "Portfólió kezdőlapja"
-  }
+  },
+  "languageNotFound": "Nincs találat"
 }

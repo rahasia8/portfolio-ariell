@@ -82,5 +82,6 @@
     "remaining": "zbývá {count} znaků",
     "cleared": "Konverzace byla vymazána.",
     "home": "Úvodní stránka portfolia"
-  }
+  },
+  "languageNotFound": "Nenalezeno"
 }

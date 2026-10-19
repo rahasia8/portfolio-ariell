@@ -16,6 +16,7 @@ import {
 import { detectVisitorLanguage } from "@/lib/location-client";
 import Image from "next/image";
 import AnswerText from "./answer-text";
+import LanguagePicker from "./language-picker";
 import PrivacyDialog from "./privacy-dialog";
 import Icon from "./icon";
 import type { Source } from "@/lib/types";
@@ -301,23 +302,25 @@ export default function Portfolio({
             </span>
           </a>
           <div className="header-actions">
-            <label className="language-picker">
-              <span className="sr-only">{t.language}</span>
-              <select
-                value={languageChoice}
-                onChange={(e) => selectLanguage(e.target.value)}
-                disabled={busy}
-              >
-                <option value="auto">
-                  {t.auto} · {automaticLanguage.toUpperCase()}
-                </option>
-                {selectableLanguages.map((code) => (
-                  <option key={code} value={code}>
-                    {nativeNames.of(code) || code}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <LanguagePicker
+              label={t.language}
+              notFound={t.languageNotFound}
+              value={languageChoice}
+              disabled={busy}
+              onChange={selectLanguage}
+              options={[
+                {
+                  value: "auto",
+                  label: `${t.auto} · ${automaticLanguage.toUpperCase()}`,
+                  search: `${t.auto} auto ${automaticLanguage}`,
+                },
+                ...selectableLanguages.map((code) => ({
+                  value: code,
+                  label: nativeNames.of(code) || code,
+                  search: `${code} ${nativeNames.of(code) || ""} ${new Intl.DisplayNames(["en"], { type: "language" }).of(code) || ""} ${new Intl.DisplayNames([code], { type: "language" }).of(code) || ""}`,
+                })),
+              ]}
+            />
             {messages.length > 0 && (
               <button className="reset" onClick={clear} disabled={busy}>
                 <Icon name="refresh" size={16} /> <span>{t.newChat}</span>

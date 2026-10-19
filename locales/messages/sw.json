@@ -82,5 +82,6 @@
     "remaining": "herufi {count} zimesalia",
     "cleared": "Mazungumzo yamefutwa.",
     "home": "Nyumbani ya kwingineko"
-  }
+  },
+  "languageNotFound": "Haikupatikana"
 }

@@ -82,5 +82,6 @@
     "remaining": "{count} carachtar fágtha",
     "cleared": "Glanadh an comhrá.",
     "home": "Baile an phunainne"
-  }
+  },
+  "languageNotFound": "Níor aimsíodh"
 }

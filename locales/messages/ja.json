@@ -82,5 +82,6 @@
     "remaining": "残り{count}文字",
     "cleared": "会話を消去しました。",
     "home": "ポートフォリオのホーム"
-  }
+  },
+  "languageNotFound": "見つかりません"
 }

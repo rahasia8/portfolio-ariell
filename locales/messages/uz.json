@@ -82,5 +82,6 @@
     "remaining": "{count} ta belgi qoldi",
     "cleared": "Suhbat tozalandi.",
     "home": "Portfolio bosh sahifasi"
-  }
+  },
+  "languageNotFound": "Topilmadi"
 }

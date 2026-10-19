@@ -82,5 +82,6 @@
     "remaining": "{count} karattri li fadal",
     "cleared": "Konversazzjoni mneħħija.",
     "home": "Paġna ewlenija tal-portafoll"
-  }
+  },
+  "languageNotFound": "Ma nstabx"
 }

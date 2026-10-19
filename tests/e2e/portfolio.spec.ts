@@ -107,13 +107,15 @@ test("preserves manual language choice and supports RTL", async ({ app }) => {
   await app.getByRole("textbox").fill("Tell me about your projects.");
   await app.getByRole("textbox").press("Enter");
   await expect(app.getByText("A test portfolio answer.", { exact: false })).toBeVisible();
-  await app.getByRole("combobox").selectOption("de");
+  await app.getByRole("combobox").fill("de");
+  await app.locator(`[role="option"][data-value="${"de"}"]`).click();
   await expect(app.locator("html")).toHaveAttribute("lang", "de");
   await expect(app.getByRole("button", { name: "Neues Gespräch" })).toBeVisible();
   await app.reload();
   await expect(app.locator("html")).toHaveAttribute("lang", "de");
   await expect(app.getByRole("button", { name: "Neues Gespräch" })).toBeVisible();
-  await app.getByRole("combobox").selectOption("ar");
+  await app.getByRole("combobox").fill("ar");
+  await app.locator(`[role="option"][data-value="${"ar"}"]`).click();
   await expect(app.locator("html")).toHaveAttribute("dir", "rtl");
 });
 test("privacy opens, closes with Escape, and restores trigger focus", async ({ app }) => {

@@ -82,5 +82,6 @@
     "remaining": "{count} znakova preostalo",
     "cleared": "Razgovor je obrisan.",
     "home": "Početna stranica portfolija"
-  }
+  },
+  "languageNotFound": "Nije pronađeno"
 }

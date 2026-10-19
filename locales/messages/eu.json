@@ -82,5 +82,6 @@
     "remaining": "{count} karaktere geratzen dira",
     "cleared": "Elkarrizketa garbitu da.",
     "home": "Portfolioaren hasiera"
-  }
+  },
+  "languageNotFound": "Ez da aurkitu"
 }

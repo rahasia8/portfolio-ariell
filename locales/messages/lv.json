@@ -82,5 +82,6 @@
     "remaining": "Atlicis {count} rakstzīmju",
     "cleared": "Saruna ir notīrīta.",
     "home": "Portfeļa sākumlapa"
-  }
+  },
+  "languageNotFound": "Nav atrasts"
 }

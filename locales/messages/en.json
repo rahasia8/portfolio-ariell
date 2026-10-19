@@ -82,5 +82,6 @@
     "remaining": "{count} characters remaining",
     "cleared": "Conversation cleared.",
     "home": "Portfolio home"
-  }
+  },
+  "languageNotFound": "Not found"
 }

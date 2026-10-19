@@ -82,5 +82,6 @@
     "remaining": "{count} karakters oor",
     "cleared": "Gesprek uitgevee.",
     "home": "Portefeulje tuisblad"
-  }
+  },
+  "languageNotFound": "Nie gevind nie"
 }

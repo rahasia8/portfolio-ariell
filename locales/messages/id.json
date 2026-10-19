@@ -82,5 +82,6 @@
     "remaining": "Sisa {count} karakter",
     "cleared": "Percakapan dihapus.",
     "home": "Beranda portfolio"
-  }
+  },
+  "languageNotFound": "Tidak ditemukan"
 }

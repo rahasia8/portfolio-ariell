@@ -82,5 +82,6 @@
     "remaining": "{count} karaktere të mbetura",
     "cleared": "Biseda u fshi.",
     "home": "Fryma e portofolit"
-  }
+  },
+  "languageNotFound": "Nuk u gjet"
 }

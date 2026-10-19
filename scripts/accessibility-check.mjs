@@ -193,13 +193,15 @@ try {
   await audit("Mobile privacy dialog");
   await page.keyboard.press("Escape");
   await page.waitForFunction(() => document.querySelector("dialog")?.open === false);
-  await page.locator("select").selectOption("ar");
+  await page.getByRole("combobox").fill("ar");
+  await page.locator(`[role="option"][data-value="${"ar"}"]`).click();
   await page.waitForFunction(
     () =>
       document.documentElement.dir === "rtl" && document.documentElement.lang === "ar",
   );
   await audit("Arabic RTL");
-  await page.locator("select").selectOption("en");
+  await page.getByRole("combobox").fill("en");
+  await page.locator(`[role="option"][data-value="${"en"}"]`).click();
   await page.waitForFunction(() => document.documentElement.dir === "ltr");
   await page.emulateMedia({ forcedColors: "active" });
   await audit("Forced colors");

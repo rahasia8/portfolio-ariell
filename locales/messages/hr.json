@@ -82,5 +82,6 @@
     "remaining": "preostalo znakova: {count}",
     "cleared": "Razgovor je očišćen.",
     "home": "Početna stranica portfelja"
-  }
+  },
+  "languageNotFound": "Nije pronađeno"
 }
